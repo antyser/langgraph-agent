@@ -1,8 +1,8 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "product_summary_agent": "./src/product_summary/graph.py:graph"
-
+    "product_summary_agent": "./src/product_summary/graph.py:graph",
+    "product_summary_plan": "./src/product_summary/plan_graph.py:graph"
   },
   "env": ".env"
 }

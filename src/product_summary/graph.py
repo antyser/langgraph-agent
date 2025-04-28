@@ -19,7 +19,7 @@ from langgraph.graph import StateGraph
 from loguru import logger
 from scraper.bright_data.amazon import scrape_amazon_product
 
-from src.common.llm_models import GEMINI_2_5_FLASH_PREVIEW
+from src.common.llm_models import GEMINI_2_5_FLASH_PREVIEW, create_gemini
 from src.product_summary.config import Configuration
 from src.product_summary.state import InputState, State
 
@@ -43,34 +43,7 @@ Return the summary in markdown format and the summary only. No other text.
 # Remove the old generate_summary_stream function
 # async def generate_summary_stream(...) -> AsyncGenerator[str, None]: ...
 
-# Add create_llm function
-def create_llm(model_name: str = GEMINI_2_5_FLASH_PREVIEW) -> ChatGoogleGenerativeAI:
-    """
-    Create a LangChain ChatGoogleGenerativeAI instance configured for product summary.
 
-    Args:
-        model_name: Name of the Gemini model to use.
-
-    Returns:
-        A ChatGoogleGenerativeAI instance.
-    """
-    return     Use Search with Gemini 2:
-        .. code-block:: python
-
-            from google.ai.generativelanguage_v1beta.types import Tool as GenAITool
-            llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp")
-            resp = llm.invoke(
-                "When is the next total solar eclipse in US?",
-                tools=[GenAITool(google_search={})],
-            )(
-        model=model_name,
-        temperature=0.5,  # Slightly lower temperature for factual summary
-        google_api_key=os.environ.get("GEMINI_API_KEY"),
-        convert_system_message_to_human=True, # Recommended for Gemini function calling
-        # Enable search via tools - simpler syntax
-        tools=[{"google_search": {}}],
-        streaming=True
-    )
 
 # Add scrape_product_node
 async def scrape_product_node(state: State, config: RunnableConfig) -> Dict[str, Optional[str]]:
@@ -115,7 +88,7 @@ async def call_summary_node(state: State, config: RunnableConfig) -> Dict[str, L
 
     try:
         # Create the LLM with LangChain's Gemini integration
-        llm = create_llm(configuration.model)
+        llm = create_gemini(configuration.model)
 
         # Prepare messages for the LLM
         # Use SystemMessage for the prompt and HumanMessage for the input (scraped content)

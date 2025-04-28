@@ -75,6 +75,7 @@ my_langgraph_project/
 -   Create abstract base classes or interfaces for components to promote code reuse and modularity.
 -   Use dependency injection to configure components and their dependencies.
 -   Adhere to the Single Responsibility Principle (SRP) when designing components.
+-   Always use async. i.e. ainvoke, astream
 
 ### 1.5. Code Splitting Strategies
 
