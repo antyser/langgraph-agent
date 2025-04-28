@@ -1,0 +1,34 @@
+### 1.1. Directory Structure Best Practices (Multi-Agent Example - Flat)
+
+my_langgraph_project/
+├── src/
+│   ├── __init__.py
+│   ├── common/                  # Shared components across agents
+│   │   ├── __init__.py
+│   │   ├── schemas/             # Shared state/config definitions (e.g., agent_state.py)
+│   │   │   └── __init__.py
+│   │   ├── tools/               # Shared tools (e.g., tools.py)
+│   │   │   └── __init__.py
+│   │   └── utils/               # Shared utilities (e.g., model_loader.py)
+│   │       └── __init__.py
+│   ├── product_summary/         # Example: Specific agent package
+│   │   ├── __init__.py
+│   │   ├── graph.py             # Graph definition, nodes, routers for this agent
+│   │   ├── main.py              # Agent's entry point function
+│   │   └── prompts.py           # Agent-specific prompts (example)
+│   ├── product_review/          # Placeholder for another agent package
+│   │   ├── __init__.py
+│   │   ├── graph.py             # Placeholder graph definition
+│   │   └── main.py              # Placeholder entry point
+│   └── ...                      # Other agent packages...
+├── tests/                         # Unit and integration tests (structure mirroring src/)
+│   ├── __init__.py
+│   ├── common/
+│   │   └── ...
+│   └── product_summary/
+│       └── ...
+├── .env                           # Environment variables.
+├── requirements.txt               # Project dependencies.
+├── pyproject.toml                 # Project metadata and build settings (alternative to requirements.txt)
+├── langgraph.json                 # Optional: Configuration for LangGraph Platform deployment
+└── README.md                      # Project documentation. 

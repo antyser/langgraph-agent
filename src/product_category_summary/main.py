@@ -1,0 +1,1 @@
+"""Placeholder for the Product Category Summary agent entry point.""" 

@@ -1,0 +1,482 @@
+[
+  {
+    "product": {
+      "url": "https://www.amazon.com/dp/B08MLG2SG4",
+      "name": "Amara Smoothie Melts - Mango Carrot",
+      "questions": [
+        "1. 成分， 是否添加了糖或者别的非天然原料 (Ingredients, any added sugar or artificial ingredients?)",
+        "2. 小朋友一天能吃多少 (How much can a child eat per day?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: Amara Smoothie Melts are organic, plant-based yogurt snacks made with fruits and vegetables, designed for babies and toddlers aged 10 months and up. They're intended to be a healthy and convenient snack option for little ones.\n\n2. **Key Benefits (What's Good)**:\n    *   Made with simple, clean ingredients, typically 5 or fewer, with no added sugar, preservatives, or sweeteners.\n    *   Perfectly sized for little hands, helping babies and toddlers develop their pincer grip and self-feeding skills.\n    *   Lightweight and resealable packaging makes them convenient for on-the-go snacking without refrigeration.\n    *   Offers a nutritious way to introduce fruits and vegetables, with a taste that many kids enjoy, especially the coconut flavor.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   Some customers report the melts don't melt as described, while others find them very hard.\n    *   Mixed feedback on hardness; some find them easy to use, while others find them too hard.\n    *   While many appreciate the quality, some feel the price is high.\n\n4. **Bottom Line**: Amara Smoothie Melts are a good choice for parents seeking organic, no-sugar-added snacks to encourage self-feeding, but be aware that some users have experienced issues with the meltability and hardness of the product.",
+    "latency_ms": 13503.404167000554,
+    "question_evaluations": [
+      "yes",
+      "no"
+    ],
+    "questions_answered": {
+      "yes": 1,
+      "partially": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 2
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Samsonite-Freeform-Hardside-Spinner-Black/dp/B01M0A3BKH/",
+      "name": "Samsonite Freeform Hardside Carry-On",
+      "questions": [
+        "1. 是否耐用，表面是否容易刮花 (Is it durable? Does the surface scratch easily?)",
+        "2. 轮子是否好滑 (Are the wheels smooth?)",
+        "3. 是不是各个航空公司都允许登机 (Is it allowed as carry-on by most airlines?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Samsonite Freeform 21-Inch Hardside Carry-On is a lightweight, expandable suitcase designed for modern travelers who need a durable and easy-to-maneuver carry-on that meets most airline size restrictions.\n\n2. **Key Benefits (What's Good)**:\n    *   **Effortless Maneuverability:** The oversized, multi-directional spinner wheels ensure smooth gliding through airports.\n    *   **Lightweight Design:** At only 6.5 lbs, it helps avoid overweight baggage fees.\n    *   **Ample Packing Space:** The 21-inch size and expandable feature provide sufficient room for belongings, with interior straps and dividers to keep things organized.\n    *   **Secure Travel:** Built-in TSA-approved lock offers peace of mind.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   **Durability Concerns:** Some users have reported issues with the hardshell cracking or scuffing easily.\n    *   **Zipper Quality:** Some reviews mention zipper failures or concerns about their long-term reliability.\n    *   **TSA Lock Complexity:** A few users found the TSA lock difficult to set or use.\n\n4. **Bottom Line**: The Samsonite Freeform carry-on offers a lightweight and spacious solution for travelers seeking easy maneuverability, but potential buyers should be aware of mixed feedback regarding its long-term durability and zipper quality.",
+    "latency_ms": 15515.31674999569,
+    "question_evaluations": [
+      "yes",
+      "yes",
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 3,
+      "partially": 0,
+      "no": 0,
+      "unknown": 0,
+      "total": 3
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/dp/B0CHN9X9S2",
+      "name": "Sports Research Fish Oil Mini-Softgels",
+      "questions": [
+        "(需要知道怎么选鱼油) (Need to know how to choose fish oil)",
+        "1. What is this for? Skin, brain?",
+        "2. 有效成分是什么，相比于同类产品含量差别多少 (What are the active ingredients, how does the content compare to similar products?)",
+        "3. 萃取方法 (Extraction method?)",
+        "4. 鱼是否含有重金属 (Does the fish contain heavy metals?)",
+        "5. 副作用？ (Side effects?)",
+        "6. 牌子怎么样 (How is the brand reputation?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: Sports Research Fish Oil Mini-Softgels are small, easy-to-swallow capsules containing Omega-3 fatty acids sourced from wild-caught Alaska Pollock, designed for individuals seeking to support brain and heart health.\n\n2. **Key Benefits (What's Good)**:\n    *   **No Fishy Aftertaste:** The fish oil undergoes a 10-step refinement process to remove fishy odors and taste, preventing unpleasant burps.\n    *   **Easy to Swallow:** The mini-softgel size makes it easier to ingest compared to standard fish oil capsules.\n    *   **Sustainably Sourced:** Certified by the Marine Stewardship Council (MSC) ensuring the fish oil is sourced sustainably from Wild Alaska Pollock.\n    *   **Supports Overall Wellness:** Users report improvements in joint pain, skin health, and overall well-being.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   **Gelatin Source:** The softgel capsule is made from fish gelatin (tilapia-sourced), which may not be suitable for all dietary restrictions.\n    *   **Allergen Warning**: Contains fish (Alaska Pollock), which may not be suitable for people with fish allergies.\n\n4. **Bottom Line**: Sports Research Fish Oil Mini-Softgels are a good option for those seeking a high-quality, sustainably sourced Omega-3 supplement without the common fishy aftertaste, especially if you prefer a smaller, easier-to-swallow capsule.",
+    "latency_ms": 12976.81983300572,
+    "question_evaluations": [
+      "no",
+      "yes",
+      "partially",
+      "unknown",
+      "unknown",
+      "partially",
+      "no"
+    ],
+    "questions_answered": {
+      "yes": 1,
+      "partially": 2,
+      "no": 2,
+      "unknown": 2,
+      "total": 7
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/dp/B003BHZ71G",
+      "name": "NOW Supplements, Sunflower Lecithin",
+      "questions": [
+        "1. What is this for?",
+        "2. Sources? Sunflower better than soy?",
+        "3. 正常人每天应该吃多少 (How much should a normal person take daily?)",
+        "4. 有没有副作用 (Are there side effects?)",
+        "5. 牌子怎么样 (How is the brand reputation?)"
+      ]
+    },
+    "summary": "NOW Supplements Sunflower Lecithin is a soy-free and non-GMO source of lecithin in softgel form, providing phosphatidyl choline and other phospholipids for nervous system support and fat emulsification. It's often used by breastfeeding mothers to help with milk flow and prevent clogged ducts.\n\n**Key Benefits (What's Good):**\n\n*   **Supports Milk Flow for Breastfeeding:** May help prevent clogged milk ducts and promote healthy milk flow, as reported by nursing mothers.\n*   **Soy-Free Lecithin Source:** Offers a lecithin supplement derived from sunflowers, making it suitable for individuals avoiding soy.\n*   **Supports Nervous System Function:** Contains phosphatidyl choline, which plays a key role in cellular signaling and synaptic function.\n*   **Aids Fat Emulsification:** Lecithin assists in breaking down fats, potentially improving digestion and nutrient absorption.\n\n**Potential Downsides (Keep in Mind):**\n\n*   **Large Pill Size:** Some users find the softgels to be quite large and difficult to swallow.\n*   **Gelatin Capsule:** The softgel capsule is made from bovine gelatin, making it unsuitable for vegans and some vegetarians.\n*   **Natural Color Variation:** The product may exhibit natural color variations, which could be unexpected for some users.\n\n**Bottom Line:** NOW Sunflower Lecithin is a popular choice, especially among breastfeeding mothers, for its potential to improve milk flow and provide soy-free lecithin. However, the large pill size and gelatin capsule may be drawbacks for some.",
+    "latency_ms": 24940.2851249979,
+    "question_evaluations": [
+      "yes",
+      "partially",
+      "no",
+      "no",
+      "partially"
+    ],
+    "questions_answered": {
+      "yes": 1,
+      "partially": 2,
+      "no": 2,
+      "unknown": 0,
+      "total": 5
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Aquasana-3-Stage-Filter-System-Chrome/dp/B06XGY3G28/",
+      "name": "Aquasana 3-Stage Water Filter",
+      "questions": [
+        "1. 滤水器到底能过滤什么有害物质 (What harmful substances does the filter remove?)",
+        "2. 过滤完的水足够健康么？ (Is the filtered water healthy enough?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Aquasana AQ-5300+.56 is an under-sink water filter system designed to provide cleaner, better-tasting water by reducing common contaminants while retaining beneficial minerals; it's ideal for homeowners looking to improve their tap water quality without sacrificing mineral content.\n\n2. **Key Benefits (What's Good)**:\n    *   Noticeably improves water taste by reducing chlorine and other contaminants.\n    *   Retains healthy, natural minerals like calcium and potassium.\n    *   Filter replacements are easy, requiring no disconnection of hoses or water lines.\n    *   Cost-effective, providing filtered water at approximately 10 cents per gallon.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   Some users have reported issues with leaks, potentially due to faulty installation or cracking of the plastic housing over time; Aquasana recommends replacing the housing every 5 years.\n    *   Initial setup may require additional parts (shut-off valve) and precautions (silicone mat, water detector) to protect under-sink cabinetry from potential leaks.\n    *   The initial filter flush may require running several gallons of water to eliminate a sulfur-like taste.\n    *   Some users have reported mixed experiences with water flow, with some experiencing slow drips.\n\n4. **Bottom Line**: The Aquasana Under Sink Water Filter is a good choice for those seeking to improve their water quality and taste while retaining beneficial minerals, but be prepared for potential installation challenges and the possibility of leaks, requiring proactive measures.",
+    "latency_ms": 15483.799415997055,
+    "question_evaluations": [
+      "partially",
+      "partially"
+    ],
+    "questions_answered": {
+      "yes": 0,
+      "partially": 2,
+      "no": 0,
+      "unknown": 0,
+      "total": 2
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/CRZ-YOGA-Butterluxe-Racerback-Longline/dp/B0BKQ6HRLQ",
+      "name": "CRZ YOGA Butterluxe Racerback",
+      "questions": [
+        "1. 是否适合跑步 (Is it suitable for running?)"
+      ]
+    },
+    "summary": "1.  **What it is & Who it's for**: The CRZ YOGA Butterluxe Racerback Longline Sports Bra is a soft, stretchy workout crop top with built-in pads, designed for women who want comfort and light support during activities like yoga or gym workouts.\n\n2.  **Key Benefits (What's Good)**:\n    *   Extremely soft and comfortable \"Butterluxe\" fabric feels great against the skin.\n    *   Offers light support and gentle compression, suitable for low-impact workouts.\n    *   Flattering longline design pairs well with high-waisted bottoms.\n    *   Good quality material that holds up well.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   Provides only light support, so it may not be suitable for high-impact activities.\n    *   Some may need to size down for extra support.\n    *   The built-in pads are removable, which some may find inconvenient.\n\n4.  **Bottom Line**: This sports bra is a great choice for those prioritizing comfort and a flattering look during low-impact workouts, but those needing significant support for running or high-intensity training may need a different option.",
+    "latency_ms": 20419.012625003234,
+    "question_evaluations": [
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 1,
+      "partially": 0,
+      "no": 0,
+      "unknown": 0,
+      "total": 1
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Nest-T3007ES-Thermostat-Temperature-Generation/dp/B0131RG6VK",
+      "name": "Nest Learning Thermostat",
+      "questions": [
+        "1. 如何安装 (How to install?)",
+        "2. 是否需要额外收费 (Are there additional fees?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Google Nest Learning Thermostat (3rd Gen) is a smart, programmable thermostat designed to learn your heating and cooling preferences to automatically adjust temperatures and save energy; it's ideal for homeowners looking to automate their home climate control and potentially lower energy bills.\n\n2. **Key Benefits (What's Good)**:\n    *   **Saves Energy**: Learns your habits and automatically adjusts to save an average of 10-12% on heating and 15% on cooling.\n    *   **Remote Control**: Control the thermostat from anywhere using the Nest app on your smartphone or tablet.\n    *   **Easy Installation**: Designed for easy, DIY installation, with clear instructions and no complex wiring.\n    *   **Voice Control**: Works with Alexa and Google Assistant, allowing you to adjust the temperature with voice commands.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   **Wi-Fi Connectivity Issues**: Some users report frequent disconnections from Wi-Fi, which can disrupt remote control and scheduling.\n    *   **Inconsistent Temperature Control**: Some users have reported issues with the thermostat blowing cold air or not maintaining consistent temperatures.\n    *   **Potential Compatibility Issues**: Ensure your HVAC system is compatible before purchasing using the Nest Compatibility Checker.\n    *   **Energy Savings Not Guaranteed**: Actual energy savings can vary significantly depending on usage, weather, and other factors.\n\n4. **Bottom Line**: The Google Nest Learning Thermostat offers convenient smart features and potential energy savings, but be aware of potential Wi-Fi connectivity and temperature control issues that some users have experienced. Compatibility with your existing system should be verified before purchase.",
+    "latency_ms": 23342.614667002636,
+    "question_evaluations": [
+      "yes",
+      "no"
+    ],
+    "questions_answered": {
+      "yes": 1,
+      "partially": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 2
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Company-Conscious-Plant-Based-Hypoallergenic-Dermatologist/dp/B07SH6HN2X/",
+      "name": "Honest Baby Wipes",
+      "questions": [
+        "1. 是否有刺激性物质 (Does it contain irritating substances?)",
+        "2. 是否适合敏感肌肤小孩 (Is it suitable for children with sensitive skin?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Honest Company Clean Conscious Wipes are plant-based, hypoallergenic, and unscented wipes designed for cleaning babies and the whole family, especially those with sensitive skin. They're made with over 99% water and are compostable.\n\n2. **Key Benefits (What's Good)**:\n    *   Gentle on sensitive skin, helping to prevent rashes and irritation.\n    *   Effective for cleaning various messes due to their durable and thick construction.\n    *   Made with transparent ingredients and are free of fragrances, parabens, and plastics.\n    *   Compostable, offering an eco-friendly disposal option.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   The rate of disintegration during composting may vary.\n    *   Mixed opinions on value, with some customers feeling there aren't enough wipes for the cost.\n    *   Composting requires specific conditions and may not be suitable for all waste types (e.g., animal waste).\n\n4. **Bottom Line**: These wipes are a good choice for parents seeking gentle, effective, and eco-conscious cleaning solutions for their babies and families, but consider whether the cost aligns with your budget and if composting is a viable option for you.",
+    "latency_ms": 12823.446292000881,
+    "question_evaluations": [
+      "yes",
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 2,
+      "partially": 0,
+      "no": 0,
+      "unknown": 0,
+      "total": 2
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Millie-Moon-Diapers-COUCHES-22lbs-33lbs/dp/B0CHV6QYRV/",
+      "name": "Millie Moon Diapers",
+      "questions": [
+        "1. 是否适合敏感肌肤小孩 (Is it suitable for children with sensitive skin?)",
+        "2. 是否容易漏 (Does it leak easily?)"
+      ]
+    },
+    "summary": "Millie Moon Diapers are designed for babies, offering comfort and protection with premium, soft materials. They aim to keep babies dry and comfortable while being gentle on sensitive skin.\n\n**Key Benefits (What's Good):**\n\n*   **Ultra-Soft Comfort:** Made with cloud-like, breathable materials that are gentle on the baby's skin, reducing irritation.\n*   **High Absorbency:** Quickly wicks away moisture, keeping the baby's skin dry for extended periods.\n*   **Leak Protection:** Features a leak-proof barrier to prevent messes and provide peace of mind.\n*   **Convenient Wetness Indicator:** Changes color when it's time for a diaper change, simplifying diaper monitoring.\n\n**Potential Downsides (Keep in Mind):**\n\n*   **Limited Stock Availability:** The listing indicates limited stock, so availability may be an issue.\n*   **Price Variation:** Prices vary across different sellers, so finding the best deal might require some shopping around.\n*   **Seller Ratings Vary:** Some sellers have low or no ratings, so it's important to check seller feedback before purchasing.\n\n**Bottom Line:** Millie Moon diapers are a good choice for parents seeking a soft, absorbent, and protective diaper for their baby, but be sure to compare prices across sellers and check their ratings before making a purchase.",
+    "latency_ms": 14021.931542003585,
+    "question_evaluations": [
+      "yes",
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 2,
+      "partially": 0,
+      "no": 0,
+      "unknown": 0,
+      "total": 2
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Keurig-K-Elite-Temperature-Capability-Programmable/dp/B078NN17K3",
+      "name": "Keurig K-Elite Coffee Maker",
+      "questions": [
+        "1. 是否容易清洗 (Is it easy to clean?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Keurig K-Elite is a single-serve K-Cup coffee maker designed for individuals or small households who value convenience and variety in their hot beverages. It offers multiple brew sizes and temperature settings, along with an iced coffee option.\n\n2. **Key Benefits (What's Good)**:\n    *   **Fast Brewing**: Makes coffee in minutes, ideal for busy mornings.\n    *   **Customizable Brew**: Offers strong brew option, temperature control, and multiple cup sizes (4-12oz) for personalized coffee.\n    *   **Large Water Reservoir**: The 75oz reservoir allows for brewing up to 8 cups before refilling, saving time and effort.\n    *   **Hot Water on Demand**: Provides hot water for instant soups, oatmeal, and other hot beverages.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   **Durability Concerns**: Some users have reported the machine breaking down after only a few months of use.\n    *   **Potential for Issues**: Some users have reported issues with the machine after a few months.\n    *   **Reliance on K-Cups**: Primarily designed for K-Cups, limiting coffee options unless using a separate reusable filter.\n    *   **Maintenance**: Requires regular descaling to maintain optimal performance and taste.\n\n4. **Bottom Line**: The Keurig K-Elite is a convenient and versatile single-serve coffee maker with customizable options, but potential buyers should be aware of reported durability issues and the ongoing cost of K-Cups.",
+    "latency_ms": 19557.02845799533,
+    "question_evaluations": [
+      "partially"
+    ],
+    "questions_answered": {
+      "yes": 0,
+      "partially": 1,
+      "no": 0,
+      "unknown": 0,
+      "total": 1
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Insta360-Standard-Bundle-Waterproof-Stabilization/dp/B0DBQBMQH2/",
+      "name": "Insta360 Ace Pro",
+      "questions": [
+        "1. 多久需要充电 (How long does the battery last/take to charge?)",
+        "2. 照片导入是否方便 (Is importing photos/videos convenient?)",
+        "3. 画质如何 (How is the image/video quality?)"
+      ]
+    },
+    "summary": "1.  **What it is & Who it's for**: The Insta360 X4 is a waterproof 8K 360 action camera designed for capturing immersive videos and photos, ideal for travel, sports, and creative content creation. It's great for users who want to record everything around them and reframe the best angles later.\n\n2.  **Key Benefits (What's Good)**:\n    *   Captures incredibly detailed 8K 360° video and high-resolution 72MP 360° photos, offering stunning image quality.\n    *   Offers exceptional stabilization using FlowState Stabilization and 360° Horizon Lock, ensuring smooth footage even in intense action.\n    *   Provides a long battery life of up to 135 minutes, allowing for extended shooting sessions without frequent charging.\n    *   Enables easy reframing of shots after recording using the AI-powered Insta360 app, providing flexibility in post-production.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   Some users report the camera can get hot quickly during use, which might affect performance or handling.\n    *   The included case may not fit all selfie sticks or the camera with the quick-release mount attached, requiring a separate purchase.\n    *   Sky exposure can be overexposed in daylight conditions while driving, potentially requiring manual adjustments.\n    *   Some features available on the desktop application are not available on the mobile app, limiting editing capabilities on the go.\n\n4.  **Bottom Line**: The Insta360 X4 is a powerful 360 camera with impressive video quality and stabilization, perfect for capturing immersive content, but be aware of potential overheating and limitations with the included accessories and mobile app features.",
+    "latency_ms": 15281.659084001149,
+    "question_evaluations": [
+      "yes",
+      "no",
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 2,
+      "partially": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 3
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Murad-Retinol-Youth-Renewal-Serum/dp/B01K629LDI/",
+      "name": "Murad Retinol Youth Renewal Serum",
+      "questions": [
+        "1. 对什么样的皮肤有效 (What skin types is it effective for?)",
+        "2. 多久才会有效 (How long does it take to see results?)",
+        "3. 有什么样的效果 (What are the effects?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Murad Retinol Youth Renewal Serum is a fast-acting retinol serum designed to visibly improve lines and wrinkles on the face and neck, leaving skin looking firmer and smoother; it's suitable for individuals looking to address signs of aging.\n\n2. **Key Benefits (What's Good)**:\n    *   Noticeably reduces the appearance of fine lines and wrinkles, improving overall complexion.\n    *   Leaves skin feeling soft, moisturized, and smoother.\n    *   Has a silky smooth texture for easy and pleasant application.\n    *   Gentle enough for nightly use and suitable for sensitive skin.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   Considered expensive by some users, especially given the small bottle size (1 fl oz).\n    *   The bottle size may not last long with regular use, requiring frequent re-purchasing.\n    *   Mild scent may not be preferred by all users, although most find it pleasant.\n\n4. **Bottom Line**: The Murad Retinol Youth Renewal Serum is a well-regarded product for those seeking to diminish wrinkles and improve skin texture, but the higher price point and small bottle size are important factors to consider.",
+    "latency_ms": 11021.639165999659,
+    "question_evaluations": [
+      "yes",
+      "no",
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 2,
+      "partially": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 3
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Ninja-Capacity-Dehydrate-Technology-AF141/dp/B0CSZ7WBYW/",
+      "name": "Ninja Air Fryer",
+      "questions": [
+        "1. 能够一次放多少东西 (How much can it hold at once?)",
+        "2. 有什么样的功能 (What functions does it have?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for:** The Ninja Air Fryer Pro is a 5-quart air fryer with four functions (air fry, roast, reheat, and dehydrate) designed for individuals or small families seeking a healthier and faster way to cook their favorite foods. It's ideal for those who want crispy results with little to no oil.\n\n2. **Key Benefits (What's Good):**\n    *   **Crispy Results with Less Oil:** Utilizes Air Crisp Technology to deliver crispy food using little to no oil, reducing fat content significantly.\n    *   **Versatile Cooking Options:** Offers four different cooking functions, allowing users to air fry, roast, reheat, and dehydrate a variety of foods.\n    *   **Fast and Convenient:** Cooks food quickly, saving time in the kitchen, and is easy to clean with its nonstick basket and crisper plate.\n    *   **Space-Saving Design:** Designed to save countertop space without sacrificing cooking capacity.\n\n3.  **Potential Downsides (Keep in Mind):**\n    *   **Capacity Limitations:** The 5-quart capacity might be insufficient for larger families or gatherings.\n    *   **Learning Curve:** Some users may require some experimentation to determine optimal cooking times and temperatures for different foods.\n    *   **Potential for Uneven Cooking:** While most users report even cooking, some air fryers can cook unevenly if food is not properly arranged.\n    *   **Nonstick Coating Durability:** The nonstick coating, while convenient for cleaning, may degrade over time with frequent use and harsh cleaning methods.\n\n4. **Bottom Line:** The Ninja Air Fryer Pro is a solid choice for individuals or small families looking for a versatile and efficient way to air fry, roast, reheat, and dehydrate foods, offering crispy results with less oil; however, its smaller capacity and the potential degradation of the nonstick coating should be considered.",
+    "latency_ms": 14345.247334000305,
+    "question_evaluations": [
+      "yes",
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 2,
+      "partially": 0,
+      "no": 0,
+      "unknown": 0,
+      "total": 2
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/FIFINE-Microphone-Voice-Over-Windscreen-Amplitank-K688/dp/B0B8SNVK5K/",
+      "name": "FIFINE USB/XLR Microphone K688",
+      "questions": [
+        "1. 音质是否够好 (Is the sound quality good enough?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The FIFINE K688 is a dynamic microphone with both XLR and USB connectivity, designed for podcasting, streaming, voice-over work, and studio recording, ideal for users seeking versatility and good sound quality.\n\n2. **Key Benefits (What's Good)**:\n    *   **Versatile Connectivity:** Offers both XLR and USB connections for use with various devices like computers, audio interfaces, and mixers.\n    *   **Clear Sound Quality:** Dynamic cardioid design effectively rejects background noise, delivering clear vocal recordings.\n    *   **Easy to Use:** Simple plug-and-play USB connectivity for quick setup and recording, especially convenient for beginners.\n    *   **Convenient Controls:** Features a tap-to-mute button, gain control, headphone jack, and volume adjustment for easy monitoring and control during recording (USB connection only).\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   **XLR Cable/Accessories Not Included:** Requires separate purchase of XLR cable, boom arm, and mic stand for XLR connectivity.\n    *   **Function Keys Limited to USB:** Mute button, gain control, and headphone monitoring features are only available when using the USB connection.\n    *   **Proximity Required:** Being a dynamic microphone, it requires the user to speak closely into it (2-6 inches) for optimal sound capture.\n    *   **Mixed Functionality Reviews:** Some users have reported issues with the microphone's functionality, while others find it works perfectly.\n\n4. **Bottom Line**: The FIFINE K688 offers excellent versatility and sound quality for its price, making it a solid choice for beginner to intermediate podcasters and streamers, but be aware that some features are limited to USB use and some users have reported functionality issues.",
+    "latency_ms": 15919.798540999182,
+    "question_evaluations": [
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 1,
+      "partially": 0,
+      "no": 0,
+      "unknown": 0,
+      "total": 1
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Apple-iPhone-16-Version-128GB/dp/B0DHJH2GZL/",
+      "name": "Apple iPhone 16",
+      "questions": [
+        "1. Apple Intelligence 效果怎么样 (How well does Apple Intelligence work?)",
+        "2. 和上一代比有什么不一样的 (What's different compared to the previous generation?)",
+        "3. 和pro比有什么不一样 (What's different compared to the Pro model?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: This is a renewed Apple iPhone 16 with 128GB of storage, unlocked for use with any carrier. It's a good option for someone looking for a flagship iPhone experience at a potentially lower price point than a brand-new model.\n\n2. **Key Benefits (What's Good)**:\n    *   Arrives in excellent condition, often appearing brand new with no visible scratches or wear.\n    *   Features a battery with at least 80% of its original capacity, and some users report receiving units with 100% battery health.\n    *   Offers a fast and smooth user experience due to Apple's advanced chipset and iOS optimization.\n    *   Provides a cost-effective way to own a high-end iPhone with access to its advanced camera capabilities and features.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   As a renewed device, accessories may not be original, though they will be compatible and fully functional.\n    *   The product comes in generic packaging, not the original Apple box.\n    *   While most users report excellent condition, there is always a risk of minor cosmetic imperfections inherent in renewed devices.\n    *   \"iPhone 16\" is a future product, so the listed specifications and features are based on current expectations and may not be entirely accurate upon release.\n\n4. **Bottom Line**: The renewed iPhone 16 offers a chance to own a premium Apple smartphone at a reduced price, with assurances of good condition and battery life; however, be aware that it's a renewed device with non-original accessories and packaging, and the \"iPhone 16\" is a future product, so details are subject to change.",
+    "latency_ms": 14448.984833004943,
+    "question_evaluations": [
+      "no",
+      "no",
+      "no"
+    ],
+    "questions_answered": {
+      "yes": 0,
+      "partially": 0,
+      "no": 3,
+      "unknown": 0,
+      "total": 3
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Apple-iPhone-MagSafe-Camera-Control/dp/B0DGHH9WMX/",
+      "name": "Apple iPhone 16 FineWoven Case",
+      "questions": [
+        "1. 厚度怎么样 (How thick is it?)",
+        "2. 是否容易坏 (Does it break easily?)",
+        "3. 是否容易脏 (Does it get dirty easily?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: This is a clear, thin Apple-designed case for the iPhone 16 that offers extra protection while showcasing the phone's color. It's ideal for iPhone 16 users who want to protect their phone without adding bulk and appreciate MagSafe compatibility and camera control features.\n\n2. **Key Benefits (What's Good)**:\n    *   Provides a good fit and adequate protection against scratches and drops.\n    *   Offers seamless MagSafe attachment and faster wireless charging.\n    *   Features a unique camera control button for easy photo taking.\n    *   Made with materials optimized to prevent yellowing over time.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   The grip can be slippery for some users, potentially increasing the risk of drops.\n    *   Some users feel the case isn't protective enough for the price.\n    *   The value for money is debated, with some finding it expensive for the level of protection offered.\n\n4. **Bottom Line**: The Apple iPhone 16 Clear Case is a stylish way to protect your phone and enjoy MagSafe charging and camera control, but consider whether the grip and level of protection are sufficient for your needs, given the price.",
+    "latency_ms": 15738.576957999612,
+    "question_evaluations": [
+      "partially",
+      "unknown",
+      "partially"
+    ],
+    "questions_answered": {
+      "yes": 0,
+      "partially": 2,
+      "no": 0,
+      "unknown": 1,
+      "total": 3
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/dp/B0BJ62BW91",
+      "name": "Gravol Kids Liquid",
+      "questions": [
+        "1. 效果如何 (How effective is it?)",
+        "2. 有没有副作用 (Are there side effects?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: Gravol Kids Liquid is a fruit-flavored, dye-free, and alcohol-free liquid medication designed to prevent and treat motion sickness, nausea, vomiting, and dizziness in children ages 2 and up. It's ideal for parents seeking a convenient and palatable solution for their kids during travel.\n\n2. **Key Benefits (What's Good)**:\n    *   Provides fast and effective relief from motion sickness symptoms.\n    *   Easy to administer liquid form, especially for children who have trouble swallowing pills.\n    *   Appealing fruit flavor makes it easier for kids to take.\n    *   Dye-free and alcohol-free formulation is suitable for sensitive children.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   Contains sugar (sucrose and sorbitol), which may be a concern for parents monitoring their child's sugar intake.\n    *   The effect lasts for 6-7 hours, so re-administration might be needed for longer trips.\n    *   Some children might still dislike the taste, despite the fruit flavoring.\n\n4. **Bottom Line**: Gravol Kids Liquid is a well-regarded option for preventing and treating motion sickness in children, offering a palatable and easy-to-administer solution, but parents should be mindful of the sugar content and duration of effect.",
+    "latency_ms": 17531.348415999673,
+    "question_evaluations": [
+      "yes",
+      "partially"
+    ],
+    "questions_answered": {
+      "yes": 1,
+      "partially": 1,
+      "no": 0,
+      "unknown": 0,
+      "total": 2
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Orgain-Organic-Protein-Powder-Strawberries/dp/B09SJ4WJNV/",
+      "name": "Orgain Organic Protein Powder",
+      "questions": [
+        "1. 是否会导致肠胃不适 (Does it cause gastrointestinal discomfort?)",
+        "2. 有没有副作用 (Are there side effects?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for:** Orgain Organic Vegan Protein Powder in Strawberries & Cream flavor is a plant-based protein powder designed to provide a protein boost for anyone looking to maintain a healthy lifestyle, workout, or supplement their diet, especially those with dietary restrictions.\n\n2. **Key Benefits (What's Good):**\n   *   Provides 21g of organic, vegan protein per serving, including all nine essential amino acids.\n   *   Offers a good source of prebiotic fiber (4g per serving) for gut support.\n   *   Blends smoothly into shakes, smoothies, and baked goods without a grainy texture.\n   *   Free from common allergens and artificial additives, including gluten, soy, dairy, artificial sweeteners, and GMOs.\n\n3.  **Potential Downsides (Keep in Mind):**\n    *   The Strawberries & Cream flavor receives mixed reviews; some find it overly sweet, while others enjoy it.\n    *   Some users have described the texture as grainy, though this is not a universal experience.\n    *   Some customers have noted that the container is not completely full upon arrival.\n    *   The stevia sweetener may not appeal to everyone and can have a distinct aftertaste for some.\n\n4. **Bottom Line:** Orgain Organic Vegan Protein Powder is a solid choice for those seeking a clean, plant-based protein source, but be aware that the taste and texture can be subjective, and the sweetness from stevia might not suit all palates.",
+    "latency_ms": 15586.298624999472,
+    "question_evaluations": [
+      "no",
+      "partially"
+    ],
+    "questions_answered": {
+      "yes": 0,
+      "partially": 1,
+      "no": 1,
+      "unknown": 0,
+      "total": 2
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/Quencher-Cupholder-Compatible-Insulated-Stainless/dp/B0DCDQ1RFV/",
+      "name": "Stanley Quencher H2.0 FlowState Tumbler",
+      "questions": [
+        "1. 是否会有塑料的味道 (Does it have a plastic taste/smell?)",
+        "2. 是否可以装热水 (Can it hold hot water?)",
+        "3. 是否容易清洗 (Is it easy to clean?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Stanley Quencher H2.0 is a 40-oz insulated stainless steel tumbler designed to keep drinks cold (or hot) for hours, perfect for anyone needing a large-capacity, durable, and stylish hydration solution on the go. It is ideal for commuters, gym-goers, or anyone who wants to reduce single-use plastic.\n\n2. **Key Benefits (What's Good)**:\n    *   Keeps drinks cold or hot for extended periods thanks to double-wall vacuum insulation.\n    *   Durable construction using recycled stainless steel, built to last a lifetime.\n    *   Cup holder compatible design (narrow base) makes it convenient for travel.\n    *   Dishwasher safe, making cleaning easy and hassle-free.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   Not completely leak-proof; some users report spills from the lid opening.\n    *   Relatively large size (40 oz) may be unwieldy for some users.\n    *   Some customers feel it's overpriced compared to similar tumblers.\n    *   The handle, while ergonomic, adds to the overall bulkiness.\n\n4. **Bottom Line**: The Stanley Quencher H2.0 is a popular, durable, and effective insulated tumbler for those needing a large-capacity drink container, but be aware that it may not be entirely spill-proof and some find it a bit expensive.",
+    "latency_ms": 14380.224417000136,
+    "question_evaluations": [
+      "no",
+      "yes",
+      "yes"
+    ],
+    "questions_answered": {
+      "yes": 2,
+      "partially": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 3
+    }
+  },
+  {
+    "product": {
+      "url": "https://www.amazon.com/SENSARTE-Nonstick-Frying-Pan-Skillet/dp/B086PHS2V8/",
+      "name": "SENSARTE Nonstick Frying Pan",
+      "questions": [
+        "1. 是否含有有害物质，特别是高温后或者放洗碗机后 (Does it contain harmful substances, especially after high heat or dishwasher use?)"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The SENSARTE Nonstick Frying Pan is a versatile skillet designed for everyday cooking, featuring a Swiss granite non-stick coating and compatibility with all stovetops, ideal for home cooks seeking easy cleanup and healthy cooking.\n\n2. **Key Benefits (What's Good)**:\n    *   **Effortless Food Release and Cleaning**: The Swiss granite coating ensures food doesn't stick, making cooking and cleanup a breeze.\n    *   **Even Heating**: The thick, magnetic conductive base distributes heat evenly, preventing hot spots and ensuring consistent cooking results.\n    *   **Comfortable and Safe Handling**: The woodgrain Bakelite handle stays cool during cooking and provides a comfortable, ergonomic grip.\n    *   **Durable Construction**: Made of cast aluminum, the pan is sturdy and designed for long-lasting use.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   **Mixed Reports on Stickiness**: While many users praise the non-stick performance, some report food sticking during cooking and cleaning.\n    *   **Oven Safe Temperature Limit**: The handle is only oven-safe up to 302°F (150°C), which may limit its versatility for some recipes.\n    *   **Potential for Scratches**: The manufacturer notes that minor scratches on the stainless steel base are normal due to factory polishing.\n\n4. **Bottom Line**: The SENSARTE Nonstick Frying Pan is a good value for those looking for a versatile and easy-to-clean pan, but be aware that some users have experienced issues with food sticking and the oven-safe temperature is limited.",
+    "latency_ms": 14051.490666999598,
+    "question_evaluations": [
+      "no"
+    ],
+    "questions_answered": {
+      "yes": 0,
+      "partially": 0,
+      "no": 1,
+      "unknown": 0,
+      "total": 1
+    }
+  }
+]
