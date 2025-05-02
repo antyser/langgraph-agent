@@ -2,35 +2,42 @@
 
 import asyncio
 import argparse
-import logging
+# Remove standard logging import
+# import logging
 import os
 from typing import Dict
 from pathlib import Path
 from datetime import datetime
 import uuid # For generating unique IDs
 from dotenv import load_dotenv
+# Import loguru logger
+from loguru import logger
 
-# Configure logging first
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+# Remove standard logging configuration
+# logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# logger = logging.getLogger(__name__)
 
 # Load .env before other imports that might need env vars
 load_dotenv()
 
-# Import evaluation components AFTER basic setup
-from .common_defs import (
-    DATA_DIR, SUMMARY_LOG_FILE, GraphConfiguration,
-    RAW_FILENAME, EVAL_FILENAME, REPORT_FILENAME_TEMPLATE
+# Use absolute imports for evaluation components
+from src.evaluation.common_defs import (
+    DATA_DIR, GraphConfiguration,
+    RAW_FILENAME, EVAL_FILENAME
 )
-# Import the new single-execution functions
-from .run_graph import execute_single_graph_run
-from .run_evaluation import execute_single_evaluation
-from .generate_report import execute_single_report_generation
+# Use absolute imports for execution functions
+from src.evaluation.run_graph import execute_single_graph_run
+from src.evaluation.run_evaluation import execute_single_evaluation
+from src.evaluation.generate_report import execute_single_report_generation
 
-# Import graph definitions and product data
+# Use absolute imports for graph definitions and product data
 # Adjust these imports based on your actual project structure
-from ..product_summary.plan_graph import graph as plan_graph
-from ..product_summary.graph import graph as scrape_graph
+from src.product_summary.plan_graph import graph as plan_graph
+from src.product_summary.graph import graph as scrape_graph
+# Use absolute import for the new direct search graph
+from src.product_summary.no_plan_search_graph import graph as direct_search_graph
+
+# Use absolute import for evaluation data
 from evaluation_data import PRODUCTS_TO_EVALUATE
 
 # Define Graph Configurations
@@ -38,19 +45,19 @@ from evaluation_data import PRODUCTS_TO_EVALUATE
 ALL_GRAPH_CONFIGURATIONS: Dict[str, GraphConfiguration] = {
     "plan_google": {
         "graph": plan_graph,
-        # Type hint for clarity, used in run_graph.py
-        # "type": "plan_google",
         "initial_state": {"search_engine": "google"}
     },
     "plan_openai": {
         "graph": plan_graph,
-        # "type": "plan_openai",
         "initial_state": {"search_engine": "openai"}
     },
-    "scrape": {
-        "graph": scrape_graph,
-        # "type": "scrape",
-        "initial_state": {}
+    "direct_google": {
+        "graph": direct_search_graph,
+        "initial_state": {"search_engine": "google"}
+    },
+    "direct_openai": {
+        "graph": direct_search_graph,
+        "initial_state": {"search_engine": "openai"}
     }
     # Add more configurations here
 }
@@ -64,8 +71,9 @@ async def main():
     parser.add_argument("--run-evaluation", action="store_true", help="Load raw results, perform LLM evaluation, save evaluated results.")
     parser.add_argument("--generate-report", action="store_true", help="Load evaluated results, generate Markdown reports and update combined log.")
     parser.add_argument("--graph-key", type=str, default=None,
+                        # Update choices after removing scrape
                         choices=list(ALL_GRAPH_CONFIGURATIONS.keys()), metavar='KEY',
-                        help=f"Specify ONE graph configuration to process. If omitted, uses the first defined key.")
+                        help=f"Specify ONE graph configuration to process. Choices: {list(ALL_GRAPH_CONFIGURATIONS.keys())}. If omitted, uses the first defined key.")
     parser.add_argument("--skip-existing-raw", action="store_true",
                         help="If --run-graphs is set, skip running graphs for which raw results JSON already exists.")
     # Add argument for specifying run ID / folder name
@@ -161,4 +169,7 @@ async def main():
     logger.info("Evaluation pipeline finished.")
 
 if __name__ == "__main__":
+    # Configure loguru basic settings (optional, defaults are often sufficient)
+    # Example: logger.add("file_{time}.log", level="INFO") # To add file logging
+    # The default logs INFO and above to stderr.
     asyncio.run(main()) 

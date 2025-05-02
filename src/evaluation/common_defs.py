@@ -40,15 +40,12 @@ class QuestionEvaluation(BaseModel):
     )
 
 class RawResult(BaseModel):
-    """Structure for results after graph execution, before LLM evaluation."""
-    model_config = ConfigDict(extra='ignore')
-
+    """Represents the raw output from a single graph run for one product."""
     graph_key: str
-    graph_type: Literal["plan_google", "plan_openai", "scrape", "unknown"]
     product: Dict[str, Any]
     summary: str
     latency_ms: float
-    node_latencies: Dict[str, float]
+    node_latencies: Dict[str, float] = {}
     error: Optional[str] = None
 
 class EvaluatedResult(RawResult):
