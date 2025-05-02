@@ -49,11 +49,11 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
     md.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     md.append(f"Number of Products Evaluated: {num_products}")
     md.append("\n## Overall Metrics")
-    md.append(f"- **Average Overall Latency:** {avg_overall_latency:.2f} ms")
+    md.append(f"- **Average Overall Latency:** {avg_overall_latency / 1000:.3f} s")
     if node_latency_avgs:
-        md.append("- **Average Node Latencies:**")
+        md.append("- **Average Node Latencies (seconds):**")
         for node, avg_lat in sorted(node_latency_avgs.items()):
-            md.append(f"  - `{node}`: {avg_lat * 1000:.2f} ms ({avg_lat:.3f} s)")
+            md.append(f"  - `{node}`: {avg_lat:.3f} s")
     if total_questions > 0:
         md.append("- **Question Answering:**")
         md.append(f"  - Total Questions Asked: {total_questions}")
@@ -61,13 +61,13 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
         md.append(f"  - Answered 'Yes' or 'Partially': {total_yes + total_partially} ({yes_partially_pct:.1f}%)")
 
     md.append("\n## Individual Product Results")
-    md.append("| # | Product | Overall Latency (ms) | Node Latencies (s) | Q's Answered | Summary Snippet | Error |")
-    md.append("|---|---------|----------------------|--------------------|--------------|-----------------|-------|")
+    md.append("| # | Product | Overall Latency (s) | Node Latencies (s) | Q's Answered | Summary Snippet | Error |")
+    md.append("|---|---------|---------------------|--------------------|--------------|-----------------|-------|")
 
     for i, r in enumerate(evaluated_results):
         product_info = r.product
         product_name = product_info.get("name", product_info.get("url", "Unknown"))[:50]
-        latency_ms = f"{r.latency_ms:.2f}"
+        latency_s = f"{r.latency_ms / 1000:.3f}"
         node_lats = r.node_latencies
         q_answered = r.questions_answered
         summary = r.summary
@@ -81,14 +81,14 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
         
         # Add check to ensure summary is a string before processing
         if isinstance(summary, str):
-            summary_snippet = summary[:100].replace('\n', ' ').replace('|', '\\|') + "..."
+            summary_snippet = summary.replace('\n', '<br>')
         else:
             logger.warning(f"Summary for product {product_name} is not a string ({type(summary)}), using placeholder.")
             summary_snippet = "[Summary is not a string]"
             
         error_str = error if error else "None"
 
-        md.append(f"| {i+1} | {product_name} | {latency_ms} | {node_lat_str} | {q_answered_str} | {summary_snippet} | {error_str} |")
+        md.append(f"| {i+1} | {product_name} | {latency_s} | {node_lat_str} | {q_answered_str} | {summary_snippet} | {error_str} |")
 
     # Add section for detailed Q&A
     md.append("\n## Detailed Question Evaluation")
@@ -126,11 +126,11 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
             eval_status = detail.evaluation.upper()
             excerpt_reason = ""
             if detail.evaluation in ["yes", "partially"] and detail.excerpt:
-                excerpt_reason = f"*Excerpt:* {detail.excerpt[:100].replace('|','\\').replace('\n', ' ')}..."
+                excerpt_reason = f"*Excerpt:* {detail.excerpt.replace('|','\\').replace('\n', '<br>')}"
             elif detail.reason:
-                excerpt_reason = f"*Reason:* {detail.reason[:100].replace('|','\\').replace('\n', ' ')}..."
+                excerpt_reason = f"*Reason:* {detail.reason.replace('|','\\').replace('\n', '<br>')}"
 
-            question_text = question[:80].replace('|','\\').replace('\n', ' ') + ("..." if len(question) > 80 else "")
+            question_text = question.replace('|','\\').replace('\n', '<br>')
 
             md.append(f"| {display_q_num} | **{eval_status}** | {excerpt_reason} | {question_text} |")
 
