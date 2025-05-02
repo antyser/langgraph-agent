@@ -2,6 +2,7 @@
 
 import asyncio
 import json
+import sys
 from loguru import logger
 import time
 from typing import Any, Dict, List, Optional
@@ -12,6 +13,8 @@ from langgraph.graph.graph import CompiledGraph
 from src.evaluation.common_defs import RawResult, GraphConfiguration, RAW_FILENAME
 from src.common.callbacks import NodeLatencyCallback
 
+logger.remove() # Remove default handler
+logger.add(sys.stderr, level="TRACE") # Add handler with TRACE level
 
 async def run_graph_for_product(
     product_info: Dict[str, Any],
@@ -43,7 +46,6 @@ async def run_graph_for_product(
 
     # --- Determine Input State (Simplified) ---
     input_state = initial_state.copy()
-    execution_possible = True
 
     # Check if graph requires 'product' in its input schema
     graph_input_schema = getattr(graph_obj, 'input_schema', None)
@@ -56,63 +58,76 @@ async def run_graph_for_product(
          logger.warning(f"Graph {graph_key} requires inputs ({required_inputs}) but does not explicitly take 'product'. Relying only on initial_state: {initial_state}")
          # Proceed, assuming initial_state is sufficient
 
-    # If required inputs are not met by initial_state + product, log error (optional detailed check)
-    # For simplicity, we assume initial_state + product covers most cases now
-    # Example check (can be added if needed):
-    # missing_required = required_inputs - set(input_state.keys())
-    # if missing_required:
-    #    logger.error(f"Graph {graph_key} missing required inputs {missing_required} even after adding 'product' and initial_state. Skipping.")
-    #    execution_possible = False
-
     # --- Execute Graph ---
     start_time = time.perf_counter()
     node_latencies: Dict[str, float] = {}
-    summary = "Execution skipped or failed."
+    summary = "Graph execution did not complete successfully or yielded no final output."
     error_str: Optional[str] = None
     graph_output: Optional[Dict[str, Any]] = None
 
-    if execution_possible:
-        try:
-            graph_output = await graph_obj.ainvoke(
-                input_state,
-                config={"callbacks": [latency_callback]}
-            )
-            node_latencies = latency_callback.get_last_run_report()
+    try:
+        final_event_data = None
+        last_event_output = None # Variable to store the data from the last relevant event
+        async for event in graph_obj.astream(input_state, config={"callbacks": [latency_callback]}):
+            logger.trace(f"Stream event for {graph_key} - {name}: {event}") # Log all events
+            # Check if the event dictionary is not empty and store its value part
+            # The key is the node name (e.g., 'direct_search', 'plan', 'summarize')
+            # The value is the output dictionary from that node
+            if isinstance(event, dict) and event:
+                # Get the first (and likely only) value from the event dict
+                # This assumes the structure {node_name: output_dict}
+                node_output = next(iter(event.values()), None)
+                if node_output is not None:
+                    last_event_output = node_output
 
+        # After the loop, assign the data from the last captured event
+        if last_event_output:
+            final_event_data = last_event_output
+            logger.debug(f"Captured final event data for {graph_key} - {name}: {final_event_data}")
+
+        # Get latencies after the stream finishes (or errors out)
+        node_latencies = latency_callback.get_last_run_report()
+
+        # Assign graph_output if we got a final state
+        if final_event_data:
+            graph_output = final_event_data
             # --- Extract Summary (Simplified) ---
-            if graph_output:
-                if "summary" in graph_output and graph_output["summary"] is not None:
-                    summary = str(graph_output["summary"])
-                elif "search_results" in graph_output and graph_output["search_results"] is not None:
-                    # Use search_results as fallback (for direct_search graph)
-                    summary = str(graph_output["search_results"])
-                    logger.debug(f"Using 'search_results' as summary for {graph_key} - {name}")
-                else:
-                    summary = f"Summary/search_results not found in graph output keys: {list(graph_output.keys())}. Output: {str(graph_output)[:200]}..."
-                    logger.warning(summary)
+            if "summary" in graph_output and graph_output["summary"] is not None:
+                summary = str(graph_output["summary"])
+            elif "search_results" in graph_output and graph_output["search_results"] is not None:
+                # Use search_results as fallback (for direct_search graph)
+                summary = str(graph_output["search_results"])
+                logger.debug(f"Using 'search_results' as summary for {graph_key} - {name}")
             else:
-                 summary = "Graph executed but returned None output."
-                 logger.warning(summary)
+                summary = f"Summary/search_results not found in final output keys: {list(graph_output.keys())}. Output: {str(graph_output)[:200]}..."
+                logger.warning(summary)
+        else:
+            # Stream finished but we didn't capture a final state with output
+            summary = "Graph stream finished, but no final output state captured."
+            logger.warning(summary)
 
-        except Exception as e:
-            logger.error(f"Error invoking {graph_key} for product {name}: {e}", exc_info=True)
-            error_str = str(e)
-            node_latencies = latency_callback.get_last_run_report() # Get latencies up to the error
-            summary = f"Error during execution: {error_str}"
-    else:
-        error_str = "Execution skipped due to invalid input state."
+    except Exception as e:
+        logger.error(f"Error streaming {graph_key} for product {name}: {e}", exc_info=True)
+        error_str = str(e)
+        # Get latencies up to the error, even if stream fails
+        node_latencies = latency_callback.get_last_run_report()
+        summary = f"Error during execution: {error_str}"
 
     end_time = time.perf_counter()
     total_latency_ms = (end_time - start_time) * 1000
     logger.info(f"Finished [{graph_key}] {name} in {total_latency_ms:.2f}ms")
 
     # --- Prepare Raw Result (Simplified) ---
+    # Get TTFT from the callback after the run
+    ttft_ms = latency_callback.get_ttft_ms()
+
     raw_result = RawResult(
         graph_key=graph_key,
         # graph_type=graph_type, # Removed
         product=product_info,
         summary=summary, # Ensure summary is always a string
         latency_ms=total_latency_ms,
+        ttft_ms=ttft_ms, # Add TTFT here
         node_latencies=node_latencies,
         error=error_str
     )

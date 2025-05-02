@@ -25,6 +25,11 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
     total_overall_latency = sum(r.latency_ms for r in evaluated_results)
     avg_overall_latency = total_overall_latency / num_products if num_products else 0
 
+    # Calculate TTFT average
+    ttfts_ms = [r.ttft_ms for r in evaluated_results if r.ttft_ms is not None]
+    num_ttfts = len(ttfts_ms)
+    avg_ttft_ms = sum(ttfts_ms) / num_ttfts if num_ttfts else None
+
     node_latency_sums: Dict[str, float] = {}
     node_latency_counts: Dict[str, int] = {}
     for r in evaluated_results:
@@ -50,6 +55,8 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
     md.append(f"Number of Products Evaluated: {num_products}")
     md.append("\n## Overall Metrics")
     md.append(f"- **Average Overall Latency:** {avg_overall_latency / 1000:.3f} s")
+    if avg_ttft_ms is not None:
+        md.append(f"- **Average Time To First Token (TTFT):** {avg_ttft_ms:.2f} ms")
     if node_latency_avgs:
         md.append("- **Average Node Latencies (seconds):**")
         for node, avg_lat in sorted(node_latency_avgs.items()):
@@ -61,13 +68,14 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
         md.append(f"  - Answered 'Yes' or 'Partially': {total_yes + total_partially} ({yes_partially_pct:.1f}%)")
 
     md.append("\n## Individual Product Results")
-    md.append("| # | Product | Overall Latency (s) | Node Latencies (s) | Q's Answered | Summary Snippet | Error |")
-    md.append("|---|---------|---------------------|--------------------|--------------|-----------------|-------|")
+    md.append("| # | Product | Overall Latency (s) | TTFT (ms) | Node Latencies (s) | Q's Answered | Summary Snippet | Error |")
+    md.append("|---|---------|---------------------|-----------|--------------------|--------------|-----------------|-------|")
 
     for i, r in enumerate(evaluated_results):
         product_info = r.product
         product_name = product_info.get("name", product_info.get("url", "Unknown"))[:50]
         latency_s = f"{r.latency_ms / 1000:.3f}"
+        ttft_str = f"{r.ttft_ms:.2f}" if r.ttft_ms is not None else "N/A"
         node_lats = r.node_latencies
         q_answered = r.questions_answered
         summary = r.summary
@@ -88,7 +96,7 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
             
         error_str = error if error else "None"
 
-        md.append(f"| {i+1} | {product_name} | {latency_s} | {node_lat_str} | {q_answered_str} | {summary_snippet} | {error_str} |")
+        md.append(f"| {i+1} | {product_name} | {latency_s} | {ttft_str} | {node_lat_str} | {q_answered_str} | {summary_snippet} | {error_str} |")
 
     # Add section for detailed Q&A
     md.append("\n## Detailed Question Evaluation")
@@ -162,6 +170,11 @@ def update_combined_log(graph_key: str, evaluated_results: List[EvaluatedResult]
             total_overall_latency = sum(r.latency_ms for r in evaluated_results)
             avg_overall_latency = total_overall_latency / num_products if num_products else 0
 
+            # Calculate TTFT average
+            ttfts_ms = [r.ttft_ms for r in evaluated_results if r.ttft_ms is not None]
+            num_ttfts = len(ttfts_ms)
+            avg_ttft_ms = sum(ttfts_ms) / num_ttfts if num_ttfts else None
+
             node_latency_sums: Dict[str, float] = {}
             node_latency_counts: Dict[str, int] = {}
             for r in evaluated_results:
@@ -180,7 +193,7 @@ def update_combined_log(graph_key: str, evaluated_results: List[EvaluatedResult]
                 for node, avg_lat in sorted(node_latency_avgs.items()):
                     f.write(f"\n  - {node}: {avg_lat:.3f} s")
 
-            f.write("\n\n--- Individual Product Details ---")
+            f.write(f"\n\n--- Individual Product Details ---")
             for i, r in enumerate(evaluated_results):
                 product_info = r.product
                 product_name = product_info.get("name", product_info.get("url", "Unknown Product"))

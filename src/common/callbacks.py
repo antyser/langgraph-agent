@@ -1,7 +1,7 @@
 """Custom LangChain Callback Handlers."""
 
 from langchain_core.callbacks import AsyncCallbackHandler
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 import time
 from uuid import UUID
 import logging
@@ -9,7 +9,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 class NodeLatencyCallback(AsyncCallbackHandler):
-    """Async callback handler for tracking node execution latency in LangGraph for the last run."""
+    """Async callback handler for tracking node execution latency and TTFT in LangGraph for the last run."""
 
     def __init__(self) -> None:
         """Initialize the callback handler."""
@@ -22,6 +22,9 @@ class NodeLatencyCallback(AsyncCallbackHandler):
         self.run_id_to_node_name: Dict[str, str] = {} # Map run_id to node name
         # Store {node_name: latency} for the current/last run
         self.last_run_latencies: Dict[str, float] = {} 
+        # TTFT tracking
+        self.graph_start_time: Optional[float] = None
+        self.first_token_time: Optional[float] = None
 
     async def on_chain_start(
         self,
@@ -36,6 +39,18 @@ class NodeLatencyCallback(AsyncCallbackHandler):
     ) -> None:
         """Record start time and map run_id to node name."""
         run_id_str = str(run_id)
+        current_time = time.monotonic()
+
+        # If it's the overall graph start (no parent_run_id within the context of this specific run)
+        # Heuristic: The first on_chain_start event for the graph itself might lack a parent_run_id 
+        # or have a specific tag/metadata indicating it's the top-level start.
+        # A simpler approach: record the first call to on_chain_start as graph_start_time.
+        if self.graph_start_time is None:
+            self.graph_start_time = current_time
+            # Reset TTFT time for the new graph run
+            self.first_token_time = None
+            logger.debug(f"Graph start time recorded: {self.graph_start_time:.4f}")
+
         try:
             # Use _get_node_name primarily to identify the node
             node_name = self._get_node_name(run_id, tags, metadata, serialized, **kwargs)
@@ -83,6 +98,20 @@ class NodeLatencyCallback(AsyncCallbackHandler):
                  del self.start_times[run_id_str]
              if run_id_str in self.run_id_to_node_name:
                  del self.run_id_to_node_name[run_id_str]
+
+    async def on_llm_new_token(
+        self,
+        token: str,
+        *,
+        run_id: UUID,
+        parent_run_id: UUID | None = None,
+        **kwargs: Any,
+    ) -> None:
+        """Record the time when the first token is received."""
+        # Check if this is the first token received for the current graph run
+        if self.first_token_time is None:
+            self.first_token_time = time.monotonic()
+            logger.debug(f"First token time recorded: {self.first_token_time:.4f} (run_id: {run_id})")
 
     # _get_node_name now mainly used by on_chain_start to identify the node initially
     def _get_node_name(self, run_id: UUID, tags: List[str] | None, metadata: Dict[str, Any] | None, serialized: Dict[str, Any] | None, **kwargs: Any) -> str | None:
@@ -136,4 +165,16 @@ class NodeLatencyCallback(AsyncCallbackHandler):
 
     def reset(self) -> None:
          """Reset the callback handler state for a new evaluation run."""
-         self._reset_run_tracking() 
+         self._reset_run_tracking()
+
+    def get_ttft_ms(self) -> Optional[float]:
+        """Calculate and return the Time To First Token in milliseconds."""
+        if self.graph_start_time is not None and self.first_token_time is not None:
+            ttft_s = self.first_token_time - self.graph_start_time
+            # Ensure TTFT is not negative (shouldn't happen with monotonic clock)
+            if ttft_s >= 0:
+                return ttft_s * 1000
+            else:
+                 logger.warning(f"Calculated negative TTFT ({ttft_s:.4f}s). Returning None. Start: {self.graph_start_time}, First Token: {self.first_token_time}")
+                 return None
+        return None 

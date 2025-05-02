@@ -2,7 +2,7 @@ import asyncio
 import os
 import time
 from common.llm_models import create_gemini, create_openai
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, AIMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
 from google.ai.generativelanguage_v1beta.types import Tool as GenAITool
@@ -73,7 +73,19 @@ async def planning_node(state: SimpleState, config: Any) -> Dict[str, Any]:
         HumanMessage(content=f"Product: {product}")
     ]
 
-    response: SearchQueries = await structured_llm.ainvoke(messages)
+    # Use astream for streaming and collect the final structured output
+    response = None
+    async for chunk in structured_llm.astream(messages):
+        # The last chunk with the full structured output replaces the previous
+        if isinstance(chunk, SearchQueries):
+            response = chunk
+
+    # Handle cases where the stream might not yield the expected type
+    if not isinstance(response, SearchQueries):
+        logger.error(f"Planning node failed to get SearchQueries structure. Last chunk: {response}")
+        # Decide on error handling: raise exception, return empty, etc.
+        # For now, let's return an empty list to avoid downstream errors, but log the issue.
+        return {"search_queries": []}
 
     queries = response.queries
 
@@ -99,26 +111,44 @@ async def _search_single_query(
         HumanMessage(content=SEARCH_PROMPT),
         HumanMessage(content=query)
     ]
+
+    # Collect streamed content
+    content_parts = []
+    resp_metadata = None
+
+    # Use astream and collect content chunks
     if search_engine == "google" and isinstance(llm, ChatGoogleGenerativeAI):
-        resp = await llm.ainvoke(messages, tools=[GenAITool(google_search={})])
+        async for chunk in llm.astream(messages, tools=[GenAITool(google_search={})]):
+            if isinstance(chunk.content, str):
+                content_parts.append(chunk.content)
+            if chunk.response_metadata:
+                resp_metadata = chunk.response_metadata # Store metadata if needed
     elif search_engine == "openai" and isinstance(llm, ChatOpenAI):
-        resp = await llm.ainvoke(messages, tools=[{"type": "web_search_preview"}])
+        async for chunk in llm.astream(messages, tools=[{"type": "web_search_preview"}]):
+            # OpenAI might stream content differently, adjust aggregation as needed
+            # Assuming AIMessage chunks with string content here
+            if isinstance(chunk.content, str):
+                content_parts.append(chunk.content)
+            if chunk.response_metadata:
+                resp_metadata = chunk.response_metadata
     else:
         # Handle mismatch or unsupported engine
         raise ValueError(f"Unsupported search engine '{search_engine}' or LLM type mismatch.")
 
+    # Join collected content parts
+    full_content = "".join(content_parts)
+
     # Ensure the return value is always a string to prevent TypeError downstream
-    if isinstance(resp.content, list):
-        # If it's a list (e.g., search snippets), join them into a single string
-        # Adjust the joiner (e.g., "\n") if needed based on expected list content
-        logger.debug(f"OpenAI search returned list, joining: {resp.content}")
-        return "\n".join(map(str, resp.content))
-    elif resp.content is None:
+    if not full_content:
         logger.warning(f"Search query '{query}' returned None content.")
         return "" # Return empty string for None
     else:
         # Otherwise, assume it's string-like and cast just in case
-        return str(resp.content)
+        # Depending on the tool use (google_search vs web_search_preview),
+        # the content might be structured (e.g., JSON string) or plain text.
+        # Returning the raw string for now.
+        logger.debug(f"Search result for '{query}': {full_content[:100]}...")
+        return full_content
 
 async def search_node(state: SimpleState, config: Any) -> Dict[str, Any]:
     """
@@ -174,18 +204,23 @@ async def summary_node(state: SimpleState, config: Any) -> Dict[str, Any]:
         HumanMessage(content=SUMMARY_PROMPT),
         HumanMessage(content=search_results_str)
     ]
-    resp = await llm.ainvoke(messages)
+
+    # Collect streamed summary content
+    summary_parts = []
+    final_resp = None
+    async for chunk in llm.astream(messages):
+        # Check if chunk is AIMessage and has content
+        if isinstance(chunk, AIMessage) and isinstance(chunk.content, str):
+            summary_parts.append(chunk.content)
+        final_resp = chunk # Keep track of the last chunk for potential metadata
+
+    # Join collected content parts
+    summary_str = "".join(summary_parts)
 
     # Ensure summary content is a string before returning
-    summary_content = resp.content
-    if isinstance(summary_content, list):
-        logger.debug("Summary node returned list, joining: %s", summary_content)
-        summary_str = "\n".join(map(str, summary_content))
-    elif summary_content is None:
+    if not summary_str:
         logger.warning("Summary node returned None content.")
         summary_str = "" # Return empty string for None
-    else:
-        summary_str = str(summary_content)
 
     return {"summary": summary_str}
 

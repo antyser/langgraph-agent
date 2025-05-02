@@ -44,7 +44,8 @@ class RawResult(BaseModel):
     graph_key: str
     product: Dict[str, Any]
     summary: str
-    latency_ms: float
+    latency_ms: float # Overall latency for the graph run
+    ttft_ms: Optional[float] = None # Time To First Token
     node_latencies: Dict[str, float] = {}
     error: Optional[str] = None
 
