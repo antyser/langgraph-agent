@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+1. prefer to use pydantic instead of dictionary for better data sturcture enforcement
+2. when handling exception, you should try to log the details of which line causes the error and the input. and then rethrow the exception. Don't handle it for now.
+3. don't use reletive import. Always use absolute import

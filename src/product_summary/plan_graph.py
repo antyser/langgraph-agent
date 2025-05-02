@@ -1,12 +1,18 @@
 import asyncio
 import os
 import time
-from common.llm_models import create_gemini
+from common.llm_models import create_gemini, create_openai
 from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 from google.ai.generativelanguage_v1beta.types import Tool as GenAITool
 from langgraph.graph import StateGraph
-from typing import TypedDict, List, Dict, Any
+from typing import List, Dict, Any, Literal
+from src.product_summary.schemas import SearchQueries
+import logging
+from pydantic import BaseModel, ConfigDict, Field as PydanticField
+
+logger = logging.getLogger(__name__)
 
 PLANNING_PROMPT = """
 You are an expert product researcher. Given a product name or description, generate 3-5 specific search queries that will help gather the most important information for a consumer summary (e.g., main features, pros, cons, who it's for, common complaints, ingredients, etc.).
@@ -14,7 +20,7 @@ Return only the list of queries. Make sure the queries are not overlapping.
 """
 
 SEARCH_PROMPT = """
-Use the Google Search tool to answer the following query about the product. Return the most relevant facts and details.
+Use the Search tool to answer the following query about the product. Return the most relevant facts and details.
 """
 
 SUMMARY_PROMPT = """You are an expert research summarizer that synthesizes information follow the original instructions.
@@ -26,46 +32,65 @@ SUMMARY_PROMPT = """You are an expert research summarizer that synthesizes infor
 - Anticipate and proactively address potential follow-up questions or related relevant context that enhances overall comprehension.
 - Incorporate relevant recent advancements, unconventional perspectives, or alternative viewpoints, explicitly marking these as emerging or speculative when applicable."""
 
-class SimpleState(TypedDict):
-    """Represents the state for the simple product summary agent graph."""
+class SimpleState(BaseModel):
+    """Represents the Pydantic state for the simple product summary agent graph."""
+    model_config = ConfigDict(extra='ignore') # Or 'allow' if nodes might add temp fields
+
     product: str
-    search_queries: List[str]
-    search_results: List[str]
-    summary: str
+    search_engine: Literal["google", "openai"] = "google" # Default search engine
+    search_queries: List[str] = PydanticField(default_factory=list)
+    search_results: List[str] = PydanticField(default_factory=list)
+    summary: str = ""
 
-def _parse_queries_from_response(response_content: str) -> List[str]:
-    """Parse the queries from the LLM response, handling bullet points or numbered lists."""
-    lines = [line.strip("- ").strip() for line in response_content.strip().split("\n") if line.strip()]
-    return [line for line in lines if line]
-
-async def planning_node(state: Dict[str, Any], config: Any) -> Dict[str, Any]:
+async def planning_node(state: SimpleState, config: Any) -> Dict[str, Any]:
     """
-    Planning node that generates search queries for a given product and logs latency.
+    Planning node that generates search queries using structured output, 
+    selecting the LLM based on the state's search_engine.
 
     Args:
         state: The current state containing the product.
         config: The configuration for the node.
 
     Returns:
-        A dictionary with the generated search queries and plan_latency.
+        A dictionary with the generated search queries list.
     """
-    product = state["product"]
-    llm = create_gemini()
+    product = state.product
+    search_engine = state.search_engine # No need for .get() with default
+
+    # Select LLM based on search_engine
+    if search_engine == "google":
+        llm = create_gemini()
+    elif search_engine == "openai":
+        llm = create_openai()
+    else:
+        raise ValueError(f"Unsupported search engine in planning_node: {search_engine}")
+
+    # Configure LLM for structured output using the Pydantic schema
+    structured_llm = llm.with_structured_output(SearchQueries)
+
     messages = [
         HumanMessage(content=PLANNING_PROMPT),
         HumanMessage(content=f"Product: {product}")
     ]
-    response = await llm.ainvoke(messages)
-    queries = _parse_queries_from_response(response.content)
+
+    response: SearchQueries = await structured_llm.ainvoke(messages)
+
+    queries = response.queries
+
     return {"search_queries": queries}
 
-async def _search_single_query(llm: ChatGoogleGenerativeAI, query: str) -> str:
+async def _search_single_query(
+    llm: ChatGoogleGenerativeAI | ChatOpenAI,
+    query: str,
+    search_engine: Literal["google", "openai"]
+) -> str:
     """
-    Helper function to perform a single search query using Gemini and Google Search tool.
+    Helper function to perform a single search query using the specified engine.
 
     Args:
-        llm: The Gemini LLM instance.
+        llm: The LLM instance (Gemini or OpenAI).
         query: The search query string.
+        search_engine: The search engine to use ("google" or "openai").
 
     Returns:
         The search result as a string.
@@ -74,44 +99,95 @@ async def _search_single_query(llm: ChatGoogleGenerativeAI, query: str) -> str:
         HumanMessage(content=SEARCH_PROMPT),
         HumanMessage(content=query)
     ]
-    resp = await llm.ainvoke(messages, tools=[GenAITool(google_search={})])
-    return resp.content
+    if search_engine == "google" and isinstance(llm, ChatGoogleGenerativeAI):
+        resp = await llm.ainvoke(messages, tools=[GenAITool(google_search={})])
+    elif search_engine == "openai" and isinstance(llm, ChatOpenAI):
+        resp = await llm.ainvoke(messages, tools=[{"type": "web_search_preview"}])
+    else:
+        # Handle mismatch or unsupported engine
+        raise ValueError(f"Unsupported search engine '{search_engine}' or LLM type mismatch.")
 
-async def search_node(state: Dict[str, Any], config: Any) -> Dict[str, Any]:
+    # Ensure the return value is always a string to prevent TypeError downstream
+    if isinstance(resp.content, list):
+        # If it's a list (e.g., search snippets), join them into a single string
+        # Adjust the joiner (e.g., "\n") if needed based on expected list content
+        logger.debug(f"OpenAI search returned list, joining: {resp.content}")
+        return "\n".join(map(str, resp.content))
+    elif resp.content is None:
+        logger.warning(f"Search query '{query}' returned None content.")
+        return "" # Return empty string for None
+    else:
+        # Otherwise, assume it's string-like and cast just in case
+        return str(resp.content)
+
+async def search_node(state: SimpleState, config: Any) -> Dict[str, Any]:
     """
-    Search node that runs all search queries in parallel using Gemini and Google Search tool, and logs latency.
+    Search node that runs all search queries in parallel using the specified search engine.
 
     Args:
-        state: The current state containing search queries.
+        state: The current state containing search queries and search_engine choice.
         config: The configuration for the node.
 
     Returns:
-        A dictionary with the list of search results and search_latency.
+        A dictionary with the list of search results.
     """
-    queries = state["search_queries"]
-    llm = create_gemini()
-    results = await asyncio.gather(*[_search_single_query(llm, q) for q in queries])
+    queries = state.search_queries
+    search_engine = state.search_engine
+
+    if search_engine == "google":
+        llm = create_gemini()
+    elif search_engine == "openai":
+        llm = create_openai()
+    else:
+        raise ValueError(f"Unsupported search engine: {search_engine}")
+
+    results = await asyncio.gather(*[_search_single_query(llm, q, search_engine) for q in queries])
     return {"search_results": list(results)}
 
-async def summary_node(state: Dict[str, Any], config: Any) -> Dict[str, Any]:
+async def summary_node(state: SimpleState, config: Any) -> Dict[str, Any]:
     """
-    Summary node that generates a product summary from search results and logs latency.
+    Summary node that generates a product summary from search results, 
+    selecting the LLM based on the state's search_engine.
 
     Args:
-        state: The current state containing search results.
+        state: The current state containing search results and search_engine.
         config: The configuration for the node.
 
     Returns:
         A dictionary with the generated summary and summary_latency.
     """
-    search_results = "\n\n".join(state["search_results"])
-    llm = create_gemini()
+    search_results_list = state.search_results
+    search_engine = state.search_engine
+
+    # Join the list of strings
+    search_results_str = "\n\n".join(search_results_list)
+
+    # Select LLM based on search_engine
+    if search_engine == "google":
+        llm = create_gemini()
+    elif search_engine == "openai":
+        llm = create_openai()
+    else:
+        raise ValueError(f"Unsupported search engine in summary_node: {search_engine}")
+
     messages = [
         HumanMessage(content=SUMMARY_PROMPT),
-        HumanMessage(content=search_results)
+        HumanMessage(content=search_results_str)
     ]
     resp = await llm.ainvoke(messages)
-    return {"summary": resp.content}
+
+    # Ensure summary content is a string before returning
+    summary_content = resp.content
+    if isinstance(summary_content, list):
+        logger.debug("Summary node returned list, joining: %s", summary_content)
+        summary_str = "\n".join(map(str, summary_content))
+    elif summary_content is None:
+        logger.warning("Summary node returned None content.")
+        summary_str = "" # Return empty string for None
+    else:
+        summary_str = str(summary_content)
+
+    return {"summary": summary_str}
 
 
 builder = StateGraph(SimpleState)

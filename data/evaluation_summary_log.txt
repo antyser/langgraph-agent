@@ -1,0 +1,268 @@
+
+
+============================================================
+EVALUATION RUN - PLAN_OPENAI - 2025-05-02 09:44:54
+============================================================
+Average Overall Latency: 86683.60 ms
+Average Node Latencies (seconds):
+  - plan: 3.557 s
+  - search: 9.950 s
+  - summarize: 73.164 s
+
+--- Individual Product Details ---
+
+1. Product: Amara Smoothie Melts - Mango Carrot
+   Overall Latency: 67959.67 ms
+   Node Latencies: plan: 2.988s / search: 7.722s / summarize: 57.137s
+   Questions answered: 14/17
+   Summary Snippet: ---  # Comprehensive Analysis: Amara Smoothie Melts (Mango Carrot Flavor)  ## 1. Product Overview  **Amara Smoothie Melts in Mango Carrot flavor** are...
+
+2. Product: Samsonite Freeform Hardside Carry-On
+   Overall Latency: 105209.77 ms
+   Node Latencies: plan: 2.295s / search: 8.640s / summarize: 94.268s
+   Questions answered: 18/18
+   Summary Snippet: # Comprehensive Summary of the Samsonite Freeform Hardside Carry-On  ## 1. Overview and Core Features  The **Samsonite Freeform Hardside Carry-On** is...
+
+3. Product: Sports Research Fish Oil Mini-Softgels
+   Overall Latency: 134666.36 ms
+   Node Latencies: plan: 8.533s / search: 11.057s / summarize: 115.068s
+   Questions answered: 16/17
+   Summary Snippet: # Comprehensive Analysis of Sports Research Fish Oil Mini-Softgels  ## 1. Product Overview  ### 1.1. Formulation and Key Features  **Sports Research F...
+
+4. Product: NOW Supplements, Sunflower Lecithin
+   Overall Latency: 122461.93 ms
+   Node Latencies: plan: 2.618s / search: 10.548s / summarize: 109.291s
+   Questions answered: 10/13
+   Summary Snippet: Certainly! Here is a comprehensive, structured summary of NOW Sunflower Lecithin, its uses, evidence, pros/cons, and key considerations, following you...
+
+5. Product: Aquasana 3-Stage Water Filter
+   Overall Latency: 132233.39 ms
+   Node Latencies: plan: 8.216s / search: 10.226s / summarize: 113.785s
+   Questions answered: 13/16
+   Summary Snippet: # Comprehensive Summary and Synthesis: Aquasana 3-Stage Under Sink Water Filter System (AQ-5300)  ---  ## 1. System Overview  ### 1.1. Primary Purpose...
+
+6. Product: CRZ YOGA Butterluxe Racerback
+   Overall Latency: 147449.68 ms
+   Node Latencies: plan: 4.031s / search: 15.365s / summarize: 128.044s
+   Questions answered: 15/16
+   Summary Snippet: Certainly! Below is a comprehensive, structured synthesis of the CRZ YOGA Butterluxe Racerback Tank Top and its comparison with similar products, draw...
+
+7. Product: Nest Learning Thermostat
+   Overall Latency: 162355.03 ms
+   Node Latencies: plan: 3.064s / search: 10.798s / summarize: 148.485s
+   Questions answered: 12/16
+   Summary Snippet: Certainly! Below is a **comprehensive, structured synthesis** of the Nest Learning Thermostat (4th Gen), combining confirmed features, user experience...
+
+8. Product: Honest Baby Wipes
+   Overall Latency: 80444.43 ms
+   Node Latencies: plan: 2.939s / search: 8.243s / summarize: 69.255s
+   Questions answered: 13/14
+   Summary Snippet: Certainly! Here is a comprehensive, structured synthesis of Honest Baby Wipes—features, ingredients, pros and cons, safety, criticisms, and a comparat...
+
+9. Product: Millie Moon Diapers
+   Overall Latency: 52272.77 ms
+   Node Latencies: plan: 2.057s / search: 10.971s / summarize: 39.239s
+   Questions answered: 12/14
+   Summary Snippet: Certainly! Here is a detailed, structured summary of Millie Moon Luxury Diapers—covering their features, benefits, comparative analysis, customer feed...
+
+10. Product: Keurig K-Elite Coffee Maker
+   Overall Latency: 71638.82 ms
+   Node Latencies: plan: 3.047s / search: 10.793s / summarize: 57.793s
+   Questions answered: 13/17
+   Summary Snippet: ## Comprehensive Synthesis: Keurig K-Elite Coffee Maker  ---  ### 1. Overview and Main Features  The **Keurig K-Elite** is a premium single-serve coff...
+
+11. Product: Insta360 Ace Pro
+   Overall Latency: 62217.58 ms
+   Node Latencies: plan: 2.439s / search: 11.091s / summarize: 48.679s
+   Questions answered: 15/20
+   Summary Snippet: # Comprehensive Synthesis: Insta360 Ace Pro Action Camera  ---  ## 1. Overview & Confirmed Features  ### 1.1. Imaging and Optics - **Sensor & Lens:** ...
+
+12. Product: Murad Retinol Youth Renewal Serum
+   Overall Latency: 91439.41 ms
+   Node Latencies: plan: 2.471s / search: 7.395s / summarize: 81.563s
+   Questions answered: 12/14
+   Summary Snippet: Certainly! Here is a **comprehensive, structured synthesis** of current research, clinical, and user perspectives on **Murad’s Retinol Youth Renewal S...
+
+13. Product: Ninja Air Fryer
+   Overall Latency: 68873.07 ms
+   Node Latencies: plan: 3.053s / search: 11.377s / summarize: 54.437s
+   Questions answered: 13/18
+   Summary Snippet: ## Comprehensive Synthesis: Ninja Air Fryers—Features, Performance, Suitability, Issues, and Safety  ---  ### 1. Overview and Key Features  Ninja offe...
+
+14. Product: FIFINE USB/XLR Microphone K688
+   Overall Latency: 59184.31 ms
+   Node Latencies: plan: 3.198s / search: 9.699s / summarize: 46.279s
+   Questions answered: 12/14
+   Summary Snippet: ---  # FIFINE K688 Dynamic Microphone: Comprehensive Synthesis  ## 1. Overview and Positioning  The **FIFINE K688** is a dynamic, broadcast-style micr...
+
+15. Product: Apple iPhone 16
+   Overall Latency: 96796.01 ms
+   Node Latencies: plan: 4.318s / search: 9.757s / summarize: 82.715s
+   Questions answered: 9/12
+   Summary Snippet: # Comprehensive Synthesis: Apple iPhone 16—Features, Issues, Audience, and Competitive Position  ---  ## 1. Overview of Key Features and Specification...
+
+16. Product: Apple iPhone 16 FineWoven Case
+   Overall Latency: 42759.93 ms
+   Node Latencies: plan: 2.371s / search: 8.086s / summarize: 32.296s
+   Questions answered: 11/18
+   Summary Snippet: Certainly! Here is a comprehensive, structured, and fully sourced synthesis of Apple’s FineWoven case lifecycle, its reception, discontinuation, and t...
+
+17. Product: Gravol Kids Liquid
+   Overall Latency: 55980.16 ms
+   Node Latencies: plan: 2.870s / search: 11.307s / summarize: 41.795s
+   Questions answered: 11/15
+   Summary Snippet: Certainly! Here is a detailed, structured synthesis of the available information on Gravol Kids Liquid, comparing it to alternative motion sickness re...
+
+18. Product: Orgain Organic Protein Powder
+   Overall Latency: 58671.03 ms
+   Node Latencies: plan: 3.915s / search: 9.014s / summarize: 45.736s
+   Questions answered: 15/19
+   Summary Snippet: Certainly! Below is a comprehensive, structured synthesis of information on **Orgain Organic Protein Powder**, following your guidelines.  ---  # 1. P...
+
+19. Product: Stanley Quencher H2.0 FlowState Tumbler
+   Overall Latency: 76685.06 ms
+   Node Latencies: plan: 3.311s / search: 8.768s / summarize: 64.580s
+   Questions answered: 11/17
+   Summary Snippet: Certainly! Below is a detailed, structured synthesis of the Stanley Quencher H2.0 FlowState Tumbler, organized for thoroughness, clarity, and depth. S...
+
+20. Product: SENSARTE Nonstick Frying Pan
+   Overall Latency: 44373.54 ms
+   Node Latencies: plan: 3.397s / search: 8.134s / summarize: 32.836s
+   Questions answered: 19/19
+   Summary Snippet: # Comprehensive Review and Analysis: SENSARTE Nonstick Frying Pan  ## 1. Product Overview and Key Features  ### 1.1 Nonstick Coating - **Swiss ILAG No...
+
+============================================================
+
+
+============================================================
+EVALUATION RUN - PLAN_GOOGLE - 2025-05-02 10:21:32
+============================================================
+Average Overall Latency: 37615.51 ms
+Average Node Latencies (seconds):
+  - plan: 3.773 s
+  - search: 9.480 s
+  - summarize: 24.349 s
+
+--- Individual Product Details ---
+
+1. Product: Amara Smoothie Melts - Mango Carrot
+   Overall Latency: 33748.72 ms
+   Node Latencies: plan: 2.902s / search: 8.223s / summarize: 22.519s
+   Questions answered: 13/17
+   Summary Snippet: Based on research from various online sources, here is a detailed summary of Amara Smoothie Melts in Mango Carrot flavor, covering reviews, pros, cons...
+
+2. Product: Samsonite Freeform Hardside Carry-On
+   Overall Latency: 28554.92 ms
+   Node Latencies: plan: 5.204s / search: 8.479s / summarize: 14.865s
+   Questions answered: 16/18
+   Summary Snippet: Based on the synthesis of information simulating Google Search results for consumer reviews and product details, here is a comprehensive summary of th...
+
+3. Product: Sports Research Fish Oil Mini-Softgels
+   Overall Latency: 33298.10 ms
+   Node Latencies: plan: 2.954s / search: 7.945s / summarize: 22.392s
+   Questions answered: 12/17
+   Summary Snippet: Based on information gathered from product descriptions, customer reviews, and general resources regarding fish oil supplements, here is a detailed su...
+
+4. Product: NOW Supplements, Sunflower Lecithin
+   Overall Latency: 27237.72 ms
+   Node Latencies: plan: 4.294s / search: 7.427s / summarize: 15.510s
+   Questions answered: 11/13
+   Summary Snippet: Based on the information gathered from various sources, here is a detailed summary regarding NOW Supplements Sunflower Lecithin, covering its benefits...
+
+5. Product: Aquasana 3-Stage Water Filter
+   Overall Latency: 40496.91 ms
+   Node Latencies: plan: 3.624s / search: 10.253s / summarize: 26.612s
+   Questions answered: 15/16
+   Summary Snippet: Okay, here is a detailed review of the Aquasana 3-Stage Water Filter, synthesizing information from various sources based on your request.  The Aquasa...
+
+6. Product: CRZ YOGA Butterluxe Racerback
+   Overall Latency: 32460.74 ms
+   Node Latencies: plan: 6.990s / search: 9.293s / summarize: 16.171s
+   Questions answered: 13/16
+   Summary Snippet: Based on a synthesis of online reviews, product descriptions, and comparison articles, here is a detailed summary of the CRZ YOGA Butterluxe Racerback...
+
+7. Product: Nest Learning Thermostat
+   Overall Latency: 55729.29 ms
+   Node Latencies: plan: 3.164s / search: 10.240s / summarize: 42.312s
+   Questions answered: 15/16
+   Summary Snippet: The Nest Learning Thermostat is a prominent smart thermostat designed to automate home temperature control, optimize energy usage, and integrate with ...
+
+8. Product: Honest Baby Wipes
+   Overall Latency: 30716.24 ms
+   Node Latencies: plan: 4.100s / search: 7.797s / summarize: 18.800s
+   Questions answered: 13/14
+   Summary Snippet: Based on the information gathered, here is a detailed summary of Honest Baby Wipes, covering their composition, features, intended use, and common use...
+
+9. Product: Millie Moon Diapers
+   Overall Latency: 42046.96 ms
+   Node Latencies: plan: 4.361s / search: 10.159s / summarize: 27.520s
+   Questions answered: 12/14
+   Summary Snippet: Millie Moon diapers are a popular choice among parents, often highlighted for their premium feel at a competitive price point. Based on a synthesis of...
+
+10. Product: Keurig K-Elite Coffee Maker
+   Overall Latency: 30233.67 ms
+   Node Latencies: plan: 3.621s / search: 11.111s / summarize: 15.495s
+   Questions answered: 16/17
+   Summary Snippet: Based on the information synthesized from previous searches regarding reviews, features, comparisons, and troubleshooting, here is a comprehensive sum...
+
+11. Product: Insta360 Ace Pro
+   Overall Latency: 48055.23 ms
+   Node Latencies: plan: 2.804s / search: 10.689s / summarize: 34.556s
+   Questions answered: 16/20
+   Summary Snippet: The Insta360 Ace Pro is a notable action camera that entered the market with several features aimed at challenging established players like GoPro. Co-...
+
+12. Product: Murad Retinol Youth Renewal Serum
+   Overall Latency: 29902.00 ms
+   Node Latencies: plan: 3.972s / search: 7.819s / summarize: 18.105s
+   Questions answered: 13/14
+   Summary Snippet: Okay, here is a detailed summary of the Murad Retinol Youth Renewal Serum, synthesizing information regarding its ingredients, benefits, target audien...
+
+13. Product: Ninja Air Fryer
+   Overall Latency: 27309.66 ms
+   Node Latencies: plan: 2.002s / search: 8.240s / summarize: 17.059s
+   Questions answered: 14/18
+   Summary Snippet: Based on an analysis of numerous online reviews, product descriptions, and user forums found through Google Search, here is a comprehensive summary of...
+
+14. Product: FIFINE USB/XLR Microphone K688
+   Overall Latency: 37056.77 ms
+   Node Latencies: plan: 4.981s / search: 12.994s / summarize: 19.076s
+   Questions answered: 12/14
+   Summary Snippet: Based on reviews and information found through Google Search, here is a summary of the pros and cons of the FIFINE K688 USB/XLR dynamic microphone:  T...
+
+15. Product: Apple iPhone 16
+   Overall Latency: 34994.52 ms
+   Node Latencies: plan: 3.654s / search: 10.781s / summarize: 20.550s
+   Questions answered: 11/12
+   Summary Snippet: Based on the information provided in the source text, here is a summary of the Apple iPhone 16 specifications, new features, availability, price, pros...
+
+16. Product: Apple iPhone 16 FineWoven Case
+   Overall Latency: 75328.36 ms
+   Node Latencies: plan: 3.626s / search: 9.873s / summarize: 61.822s
+   Questions answered: 12/18
+   Summary Snippet: Based on the available information and typical product release cycles, the Apple iPhone 16 has not been released as of my last knowledge update, and t...
+
+17. Product: Gravol Kids Liquid
+   Overall Latency: 30886.79 ms
+   Node Latencies: plan: 3.174s / search: 7.429s / summarize: 20.278s
+   Questions answered: 11/15
+   Summary Snippet: Gravol Kids Liquid is one of several options available for parents seeking to prevent or treat motion sickness in their children. Understanding the di...
+
+18. Product: Orgain Organic Protein Powder
+   Overall Latency: 44691.01 ms
+   Node Latencies: plan: 2.349s / search: 10.741s / summarize: 31.595s
+   Questions answered: 15/19
+   Summary Snippet: Okay, here is a detailed summary of reviews, facts, and details about Orgain Organic Protein Powder, based on the information gathered from the search...
+
+19. Product: Stanley Quencher H2.0 FlowState Tumbler
+   Overall Latency: 35070.62 ms
+   Node Latencies: plan: 4.162s / search: 10.157s / summarize: 20.720s
+   Questions answered: 14/17
+   Summary Snippet: Based on a synthesis of consumer reviews, product specifications, and comparison articles gathered through Google Search, here is a detailed summary o...
+
+20. Product: SENSARTE Nonstick Frying Pan
+   Overall Latency: 34491.93 ms
+   Node Latencies: plan: 3.518s / search: 9.945s / summarize: 21.022s
+   Questions answered: 18/19
+   Summary Snippet: Based on the information synthesized from Google Search results as provided by the user, here is a detailed summary of the SENSARTE Nonstick Frying Pa...
+
+============================================================
