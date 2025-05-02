@@ -33,29 +33,114 @@
       "summarize": 57.137222584016854
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "no",
-      "partially",
-      "yes",
-      "yes",
-      "no",
-      "no",
-      "partially",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Composed of organic mango, coconut milk, carrots, and lemon juice",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "No Added Sugar or Fillers: Sweetened solely by the natural sugars in fruit and vegetables.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Short Ingredient List: Only four ingredients—no preservatives or artificial additives.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "coconut milk provides a dairy-free, plant-based alternative.",
+        "reason": "Mentions absence of dairy and plant-based nature, but does not explicitly state presence/absence of other allergens (soy, nuts, gluten)."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "\"Melt really quick and are soft on his little gums...\"",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Melt-in-Mouth Texture: Reduces choking risk for new eaters, though consumer reports indicate variability (see Section 5).",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "Melt-in-Mouth Texture",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "Age Range: 8 months to 4 years",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "partially",
+        "excerpt": "Nutritional Information (Per 1/4 Cup)",
+        "reason": "Gives nutrition per 1/4 cup but does not explicitly call this the recommended serving size."
+      },
+      {
+        "question_number": 10,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No information on recommended frequency of consumption."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Mentions macro-nutrients (fat, carbs, protein) but does not discuss key vitamins or micronutrients."
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Frequently praised for natural, appealing taste and clean label.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "Packaging: Resealable, lightweight bags",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Does not state the number of melts per package."
+      },
+      {
+        "question_number": 15,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Shelf life is not mentioned."
+      },
+      {
+        "question_number": 16,
+        "evaluation": "yes",
+        "excerpt": "no refrigeration needed; ideal for travel and snacks-on-the-go.",
+        "reason": "States that no refrigeration is needed and mentions portability, which implies storage at room temperature."
+      },
+      {
+        "question_number": 17,
+        "evaluation": "yes",
+        "excerpt": "Amara is generally more expensive than mainstream brands (e.g., Gerber), similar to other premium, organic snacks.",
+        "reason": null
+      }
     ],
     "questions_answered": {
-      "yes": 10,
-      "partially": 4,
-      "no": 3,
+      "yes": 11,
+      "partially": 2,
+      "no": 4,
       "unknown": 0,
       "total": 17
     }
@@ -95,29 +180,119 @@
       "summarize": 94.26793899998302
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "partially",
-      "partially",
-      "partially",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "partially"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Material: Injection-molded polypropylene (noted for flexibility and moisture resistance)",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "partially",
+        "excerpt": "Polypropylene Shell: Regarded as both lightweight and flexible, offering impact and moisture resistance.",
+        "reason": "While 'flexible' and 'impact resistance' are mentioned, explicit resistance to cracking is not directly addressed."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Prone to scuffing and scratching, especially in darker colors. This is a common issue with hard-sided luggage but seems particularly noted with this model.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Wheels: Four double 360-degree spinner wheels",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "The double 360-degree spinner wheels provide smooth, multi-directional movement, making the case highly maneuverable in crowded spaces. Reported Drawback: Some users find wheels can be noisy on rough surfaces.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Component Durability: Some user reports of zippers and wheels failing after limited use.",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "partially",
+        "excerpt": "Note: While the Freeform is marketed as a carry-on, actual acceptance depends on airline guidelines. Some users report that, when fully expanded, the case may exceed certain international or budget airline size limits.",
+        "reason": "It addresses carry-on compliance in general but notes it may not fit all airline restrictions, especially when expanded."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "Overall Dimensions: 23\" (H) x 15\" (L) x 10\" (W)",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "Weight: 6.5 lbs",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "Lightweight Advantage: Lighter than many similarly sized competitors.",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "Interior cross straps, divider, multiple pockets, and 1\" expandability",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Handles: Retractable multistage aluminum pull handle; retracting top and side carry handles",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "Multistage Aluminum Handle: Lightweight and retractable, with some complaints about potential flimsiness and wobbliness.",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "TSA-compatible three-dial combination recessed lock",
+        "reason": null
+      },
+      {
+        "question_number": 15,
+        "evaluation": "yes",
+        "excerpt": "TSA-Compatible Combination Lock: Integrated for convenience and security. No reported significant issues with locking mechanism.",
+        "reason": null
+      },
+      {
+        "question_number": 16,
+        "evaluation": "yes",
+        "excerpt": "Prone to scuffing and scratching, especially in darker colors.",
+        "reason": null
+      },
+      {
+        "question_number": 17,
+        "evaluation": "yes",
+        "excerpt": "Warranty: Limited 10-year global warranty",
+        "reason": null
+      },
+      {
+        "question_number": 18,
+        "evaluation": "yes",
+        "excerpt": "Brand Reputation: Samsonite is globally recognized for reliable warranty and customer service.",
+        "reason": null
+      }
     ],
     "questions_answered": {
-      "yes": 13,
-      "partially": 5,
+      "yes": 16,
+      "partially": 2,
       "no": 0,
       "unknown": 0,
       "total": 18
@@ -157,24 +332,109 @@
       "summarize": 115.06803416600451
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "no",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "partially"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Cardiovascular Support... Brain and Cognitive Health... Anti-Inflammatory and Joint Health... Immune Function",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Each mini-softgel contains 625 mg of Wild Alaska Pollock Fish Oil Concentrate, yielding 520 mg total omega-3s (345 mg EPA, 130 mg DHA, and 45 mg other omega-3s).",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Each mini-softgel contains ... 130 mg DHA",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "in a highly bioavailable triglyceride form.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "5-star rating from International Fish Oil Standards (IFOS)",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "heavy-metal tested",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary states the product is IFOS 5-star rated but does not mention accessibility of test results or IFOS reports."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "Wild-caught Alaska Pollock (Bering Sea)",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "Wild-caught Alaska Pollock (Bering Sea)",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "certified by the Marine Stewardship Council (MSC) for sustainability and traceability.",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "minimizing aftertaste (\"fish burps\")... Majority report no fishy burps or aftertaste... A small minority report mild fishy burps",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Mild gastrointestinal upset (nausea, diarrhea, constipation), occasional aftertaste",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "Mini-softgels are smaller than typical fish oil capsules, improving ease of swallowing",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "Consistently praised for manageable capsule size, suitable for children and adults with pill aversion",
+        "reason": null
+      },
+      {
+        "question_number": 15,
+        "evaluation": "partially",
+        "excerpt": "tocopherols (vitamin E for preservation)",
+        "reason": "Mentions vitamin E as a preservative (which provides oxidation protection), but does not elaborate on other oxidation prevention measures."
+      },
+      {
+        "question_number": 16,
+        "evaluation": "yes",
+        "excerpt": "Users highlight certifications, lack of odor, and overall trust in the brand",
+        "reason": null
+      },
+      {
+        "question_number": 17,
+        "evaluation": "partially",
+        "excerpt": "\"Price: Perceived as more expensive than some alternatives, though often justified by quality\" and comparison table with omega-3 content per serving",
+        "reason": "Provides some price/value context and omega-3 content comparison, but does not give a direct price-per-EPA/DHA analysis."
+      }
     ],
     "questions_answered": {
       "yes": 14,
@@ -214,20 +474,85 @@
       "summarize": 109.29099716601195
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "no",
-      "no",
-      "yes",
-      "no"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "NOW Sunflower Lecithin ... is primarily valued for its phospholipid content ... Several studies support lecithin's role in cognitive function and neural health ... Lecithin acts as a fat emulsifier ... potentially protecting against fatty liver disease ... Some evidence suggests lecithin may help lower LDL (\"bad\") cholesterol and raise HDL (\"good\") cholesterol",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Several studies support lecithin's role in cognitive function and neural health—especially in relation to choline supplementation ... robust clinical trials specific to sunflower lecithin are limited. Most data extrapolate from general phospholipid/choline research.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "providing a non-GMO, soy-free alternative to traditional soy lecithin ... Those with soy allergies or seeking non-GMO options may prefer sunflower lecithin",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "**NOW Sunflower Lecithin** is a dietary supplement sourced from sunflower seeds, providing a non-GMO, soy-free alternative to traditional soy lecithin.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "It is available in powder, liquid, and softgel formats ...",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "| Format    | Key Ingredients ... | Notable Nutrients/Phospholipids (per serving) ... | Powder ... 2,500mg phosphatidyl choline ... Softgel ... 2.4g lecithin ... Liquid ...",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "**Typical Dosage:** 2 softgels daily (or equivalent powder/liquid serving), preferably with meals",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "Powder ... 2,500mg phosphatidyl choline ... Softgel ... 360mg phosphatidyl choline (per 2 softgels) ... Liquid ... ~19% phosphatidyl choline ...",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "**Digestive Upset:** High doses may cause diarrhea, nausea, or stomach pain ... **Allergic Reactions:** Rare, but reported ...",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not discuss NOW Supplements' brand reputation or quality beyond describing product features."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Purity testing or GMP certification is not mentioned in the summary."
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Taste/Texture Issues: Powder and liquid forms can be thick, hard to dissolve, and have a strong flavor",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no reference to organic certification in the summary."
+      }
     ],
     "questions_answered": {
       "yes": 10,
@@ -270,23 +595,103 @@
       "summarize": 113.78540458300267
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "no",
-      "no",
-      "no",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "\"Contaminant Reduction - Chlorine & Chloramines: >97% - Lead & Microplastics: 99% - PFOA/PFOS: 96% - Also addresses: Mercury, asbestos, cysts, herbicides, pesticides, VOCs, pharmaceuticals, and more.\"",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "\"Certification and Testing - NSF/ANSI Standards 42, 53, 401\"",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "\"Mineral Retention: Does not remove beneficial minerals like calcium, potassium, and magnesium.\"",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "\"Taste Improvement: Most users report noticeably better water taste and odor.\"",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "\"Standard Model: 0.5 gallons per minute (gpm), 600-gallon filter life (~6 months) - Max Flow Model: 0.72 gpm, 800-gallon filter life (~6 months)\"",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "\"Operating Cost: Filters at approx. $60–$80 per 6 months.\"",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "\"Ease of Installation: Generally considered a straightforward DIY project.\"",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "\"Twist-off filter design enables simple, tool-free changes.\"",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "\"Twist-off filter design enables simple, tool-free changes.\"",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "\"Reduced Flow Rate: Water comes out more slowly than a standard tap; especially noticeable as filters near capacity.\"",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "partially",
+        "excerpt": "\"Faucet Options: Comes with a dedicated, 100% lead-free faucet (chrome, brushed nickel, or oil-rubbed bronze).\"",
+        "reason": "Mentions lead-free status and finishes, but does not explicitly comment on faucet build or durability/quality beyond being 'lead-free'."
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "\"Leakage Issues: Leakage may occur during or after filter changes; can be due to misaligned O-rings, overtightening, or cracked housings.\"",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No mention of the actual physical dimensions of the filter unit."
+      },
+      {
+        "question_number": 14,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Does not specify the amount of under-sink space required for installation."
+      },
+      {
+        "question_number": 15,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No mention of any warranty details offered by Aquasana."
+      },
+      {
+        "question_number": 16,
+        "evaluation": "yes",
+        "excerpt": "\"Customer Support: Reports of delayed or poor customer service responses.\"",
+        "reason": null
+      }
     ],
     "questions_answered": {
       "yes": 12,
@@ -329,27 +734,107 @@
       "summarize": 128.04409595800098
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "no",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Support is likely insufficient for high-impact activities without an additional sports bra underneath.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "No built-in bra in some models, allowing for customizable layering with preferred bras... Not universally included in every variant; buyers should check product details.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "The proprietary Butterluxe fabric is noted for its ultra-soft, brushed feel",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "4-way stretch aids flexibility and unrestricted movement.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "echoing the texture and sensation of premium brands like Lululemon",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Lightweight and moisture-wicking, suitable for intense workouts and warm climates.",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "Lightweight and moisture-wicking, suitable for intense workouts and warm climates.",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "Some customers find it true to size, while others suggest sizing up for a less compressive feel",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "Runs tight, with a body-hugging silhouette.",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "partially",
+        "excerpt": "Length Options: Waist-length and hip-length available to suit different body types and preferences.",
+        "reason": "Mentions different length options and coverage but does not directly use the term 'longline' or go into detail about specific coverage."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "Most customers report the fabric holds up well, but the integrity of removable padding can diminish after multiple washes",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "No widespread issues noted with pilling or loss of elasticity after recommended care.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "Removable cups offer customization",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "some users experience creasing, shifting, or visible outline, especially in lighter colors",
+        "reason": null
+      },
+      {
+        "question_number": 15,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary discusses opacity and sheerness of lighter colors but does not mention color accuracy relative to product images."
+      },
+      {
+        "question_number": 16,
+        "evaluation": "yes",
+        "excerpt": "Price: CRZ YOGA stands out as a budget-friendly alternative with comparable comfort.",
+        "reason": null
+      }
     ],
     "questions_answered": {
-      "yes": 13,
-      "partially": 2,
+      "yes": 14,
+      "partially": 1,
       "no": 1,
       "unknown": 0,
       "total": 16
@@ -388,23 +873,103 @@
       "summarize": 148.48504570798832
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "no",
-      "yes",
-      "no",
-      "yes",
-      "no",
-      "yes",
-      "yes",
-      "yes",
-      "no"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "\"Most users can self-install; professional help may be needed for complex systems\"",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "\"Some installations require a C-wire and professional assistance\"",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "\"Recommendation: Use the Nest Compatibility Checker for personalized assessment.\"",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "\"Compatible with most 24-volt heating/cooling systems (natural gas, oil, electric, single/multi-stage, heat pumps, dual-fuel)\"",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "\"Schedules adapt to household routines\" and \"Learning algorithms may revert to pre-programmed settings\"",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "\"Users report up to 20% savings on energy bills\"",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "\"Initial manual adjustments required\"",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No direct mention of the intuitiveness or reliability of the Nest/Google Home app."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "\"Full control via mobile app, beneficial for travelers\"",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No explicit mention of energy monitoring features within the app."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "\"Matter Certification: Ensures broad smart home compatibility, including Google Home, Alexa, and Apple HomeKit\"",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No direct commentary on the usability of the thermostat's physical/manual controls."
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "\"2.7-inch LCD screen, 60% larger than the previous generation for enhanced readability\" and \"Modern look, easy-to-read screen\"",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "\"Wi-Fi Drops: Often due to weak signal or low battery\"",
+        "reason": null
+      },
+      {
+        "question_number": 15,
+        "evaluation": "yes",
+        "excerpt": "\"Unresponsive/Blank Display: Power issues or software glitches; restarting or resetting usually helps\"",
+        "reason": null
+      },
+      {
+        "question_number": 16,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No explicit statement about whether core features require a subscription."
+      }
     ],
     "questions_answered": {
       "yes": 12,
@@ -445,21 +1010,91 @@
       "summarize": 69.25508825000725
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "no"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "**Free From Harsh Chemicals:** No plastics, parabens, fragrances, or chlorine-processed materials.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "**Plant-Based and Compostable:** Wipes are made from plant-based materials and are home-compostable, breaking down within ~8 weeks.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "**Skin-Friendly:** Suitable for eczema and delicate skin (awarded NEA Seal of Acceptance™)...positive user feedback for durability and gentleness.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "**Texture Issues:** Some users report roughness or insufficient thickness",
+        "reason": "The summary addresses texture (roughness) but does not directly describe or rate softness."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "**Durable and Thick:** Designed to handle heavy messes without tearing.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "**Durability:** Thick and sturdy, requiring fewer wipes per clean",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "partially",
+        "excerpt": "**High Water Content:** Over 99% water, supporting gentle cleansing...Moisture Concerns: Reports of wipes drying out, even when sealed",
+        "reason": "Mentions high water content and some issues with drying, but does not clearly describe an ideal wetness level."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "**Moisture Concerns:** Reports of wipes drying out, even when sealed",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "**Packaging Flaws:** Issues with dispensing more than one wipe at a time",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "**Fragrance-Free:** Less irritation risk, appealing to those avoiding scents",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "**Plant-Based and Compostable:** Wipes are made from plant-based materials and are home-compostable, breaking down within ~8 weeks.",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "The product has been certified by reputable organizations (EWG, NEA)...",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "partially",
+        "excerpt": "**Cost Efficiency:** Higher upfront cost may be offset by using fewer wipes due to size and durability.",
+        "reason": "Compares general cost level and efficiency, but does not provide specific per-wipe comparisons."
+      },
+      {
+        "question_number": 14,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not mention any specific package sizes."
+      }
     ],
     "questions_answered": {
       "yes": 10,
@@ -500,21 +1135,91 @@
       "summarize": 39.23909929097863
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "partially",
-      "no",
-      "yes",
-      "no",
-      "yes",
-      "yes",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Well-received by families with babies prone to skin irritation; lack of fragrances and lotions seen as beneficial.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Free from lotions, latex, fragrances, and elemental chlorine; dermatologically tested for sensitive skin.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Utilizes an ultra-absorbent core and double leak guards, advertising up to 12 hours of leak protection—suitable for overnight use.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Features secure tabs, high waistband, and snug fit to help prevent leaks and shifting during movement.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "Designed with ultra-soft, premium materials to provide a gentle touch for delicate skin.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "partially",
+        "excerpt": "Features secure tabs, high waistband, and snug fit to help prevent leaks and shifting during movement.",
+        "reason": "Flexibility is not explicitly mentioned; comfort is discussed mainly in relation to fit and softness."
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "Utilizes an ultra-absorbent core and double leak guards... Generally effective at preventing leaks and blowouts; reliable for overnight use.",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "partially",
+        "excerpt": "parents noting reduced rates of rashes and irritation.",
+        "reason": "Explicit mention of skin dryness is absent, but reduced rashes/irritation implies dryness is maintained."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No information about odor control or management is provided."
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "Color-changing strip signals when a diaper is wet and needs changing.",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Reliability of the wetness indicator is not discussed."
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Some parents report diapers run large or small compared to standard sizing, leading to fit issues.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "$0.23–$0.27/diaper; only at Target... Coterie: $0.45/diaper... Honest & Pampers Pure: Mid-range pricing; more widely available.",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "Primarily available at Target, limiting accessibility.",
+        "reason": null
+      }
     ],
     "questions_answered": {
       "yes": 10,
@@ -558,29 +1263,114 @@
       "summarize": 57.79341416701209
     },
     "error": null,
-    "question_evaluations": [
-      "no",
-      "no",
-      "no",
-      "yes",
-      "partially",
-      "yes",
-      "partially",
-      "yes",
-      "partially",
-      "no",
-      "yes",
-      "yes",
-      "partially",
-      "partially",
-      "yes",
-      "yes",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not specifically describe the ease of cleaning the needle and K-Cup holder."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not mention how often descaling is typically required."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no explicit description of the simplicity or complexity of the descaling process."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Durability Concerns: Some reports of unit failures within months.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Durability: Some units reported to fail early.",
+        "reason": "Mentions early failures but does not provide specific expected lifespan data."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Durability Concerns: Some reports of unit failures within months.",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Taste consistency of brewed coffee is not discussed."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "Brewing Temperature: Some users feel the top temperature (193°F) is insufficient for certain beverages.",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "partially",
+        "excerpt": "Strong Brew Option: Increases brewing time for a bolder cup.",
+        "reason": "Describes the function's intent but does not fully evaluate its effectiveness."
+      },
+      {
+        "question_number": 10,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Brew speed is not addressed."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "Quiet Brew Technology: Designed for minimal operational noise.",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Removable Water Reservoir: 75-ounce capacity; up to eight cups before refilling.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "partially",
+        "excerpt": "Reservoir Design: Difficult to remove/refill; water level not easily visible from front.",
+        "reason": "Mentions challenges with removal/refilling but not cleaning."
+      },
+      {
+        "question_number": 14,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No discussion of the intuitiveness or ease of using the controls."
+      },
+      {
+        "question_number": 15,
+        "evaluation": "yes",
+        "excerpt": "Adjustable Temperature: Selectable brew temps from 187°F to 192°F.\nIced Coffee Capability: Dedicated button brews concentrated coffee over ice, minimizing dilution.",
+        "reason": null
+      },
+      {
+        "question_number": 16,
+        "evaluation": "yes",
+        "excerpt": "K-Cup Compatibility: Accepts all K-Cup pods and reusable My K-Cup filters.",
+        "reason": null
+      },
+      {
+        "question_number": 17,
+        "evaluation": "yes",
+        "excerpt": "Dimensions: 13.1\" (H) × 9.9\" (W) × 12.7\" (D).",
+        "reason": null
+      }
     ],
     "questions_answered": {
       "yes": 8,
-      "partially": 5,
-      "no": 4,
+      "partially": 3,
+      "no": 6,
       "unknown": 0,
       "total": 17
     }
@@ -622,31 +1412,131 @@
       "summarize": 48.67933425001684
     },
     "error": null,
-    "question_evaluations": [
-      "partially",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "partially",
-      "no",
-      "no",
-      "partially",
-      "no",
-      "yes",
-      "yes",
-      "no",
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "no",
-      "yes",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Video Versatility: 8K and high-frame rate 4K are appreciated by creators",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Low-Light Excellence: Notably better than many rivals via AI-powered PureVideo",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Stabilization: FlowState with 6-axis gyroscope for smooth video",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "Shoots up to 48MP stills in DNG, JPEG, and RAW formats.",
+        "reason": "Mentions photo specs but does not describe real-world photo quality."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "Battery: 1650mAh (≈100 min @ 4K/30fps); fast charging (80% in 22min).",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "partially",
+        "excerpt": "fast charging (80% in 22min)",
+        "reason": "States time to 80% charge but not full charge duration."
+      },
+      {
+        "question_number": 7,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No information provided about footage transfer speed or ease."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No mention of app intuitiveness."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "partially",
+        "excerpt": "AI Highlights Assistant for automated editing",
+        "reason": "Mentions AI-assisted editing, but does not detail the richness or breadth of app editing features."
+      },
+      {
+        "question_number": 10,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No comment on app stability."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "Build Quality: Durable, waterproof, withstands tough environments",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Waterproofing: 10m (33ft) without case",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Mentions lens cover is not user-replaceable, but does not address scratch resistance."
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "Audio Quality: Internal mic 'tinny'; wind reduction less effective",
+        "reason": null
+      },
+      {
+        "question_number": 15,
+        "evaluation": "yes",
+        "excerpt": "wind reduction less effective",
+        "reason": null
+      },
+      {
+        "question_number": 16,
+        "evaluation": "yes",
+        "excerpt": "Overheating: Common at high resolutions; may stop recording",
+        "reason": null
+      },
+      {
+        "question_number": 17,
+        "evaluation": "yes",
+        "excerpt": "Usability: Flip-up touchscreen is highly praised for vlogging and creative angles",
+        "reason": null
+      },
+      {
+        "question_number": 18,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No direct mention of menu navigation ease."
+      },
+      {
+        "question_number": 19,
+        "evaluation": "yes",
+        "excerpt": "Comparative Analysis Against Key Competitors",
+        "reason": null
+      },
+      {
+        "question_number": 20,
+        "evaluation": "yes",
+        "excerpt": "Price: $449.99 is above some competitors",
+        "reason": null
+      }
     ],
     "questions_answered": {
-      "yes": 10,
-      "partially": 5,
+      "yes": 12,
+      "partially": 3,
       "no": 5,
       "unknown": 0,
       "total": 20
@@ -683,21 +1573,91 @@
       "summarize": 81.56326116700075
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "no",
-      "no",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Murad’s Retinol Youth Renewal Serum is a dermatologist-developed topical treatment targeting **fine lines, wrinkles, and uneven skin tone**. It aims to provide both **anti-aging** and **skin-smoothing** benefits.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "**Gentle Formulation**: Designed for most skin types, including sensitive and retinol-new users.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "**Visible Results**: Smoother, brighter skin and refined texture reported after consistent use (2–4 weeks).",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Smoother, brighter skin and refined texture reported...Noticeable reduction in fine lines for a significant subset.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "A proprietary formulation combining three retinoid components to maximize efficacy and minimize irritation: ... Tri-Active Retinol Technology",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "**Common**: Mild dryness, flaking, or tingling (more likely during initial weeks).",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "Formulated with hyaluronic acid and ceramides to counteract typical retinol dryness...Tri-Active Retinol Technology...minimize irritation",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not describe the serum's texture (e.g., light, creamy, gel, etc.)."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no comment on absorption feel, such as being non-greasy or non-sticky."
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "**Fragrance**: Floral scent appreciated by many, but too strong for some.",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "Airless Packaging: Designed to maintain retinol stability by minimizing air/light exposure...Packaging: Issues with the pump dispenser, including occasional malfunction or product oxidation.",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "**Nighttime Use**: Apply a thin layer after cleansing/toning...**Gradual Introduction**: Begin with alternate-night application if new to retinoids.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "partially",
+        "excerpt": "Combining multiple actives increases risk of irritation. Introduce one active at a time, or use on alternating nights to reduce risk of inflammation or barrier disruption.",
+        "reason": "The summary advises caution and suggests alternating actives but does not directly state that the serum layers well with other products."
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "Cost: Premium pricing vs. drugstore retinol options...Value proposition may shift with new market entrants...It receives high marks for gentle efficacy and visible results but is limited by its price, fragrance, and allergen content.",
+        "reason": null
+      }
     ],
     "questions_answered": {
       "yes": 11,
@@ -742,30 +1702,120 @@
       "summarize": 54.437313333008206
     },
     "error": null,
-    "question_evaluations": [
-      "no",
-      "yes",
-      "no",
-      "yes",
-      "partially",
-      "partially",
-      "partially",
-      "partially",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "no",
-      "yes",
-      "no",
-      "no",
-      "partially"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not provide specific examples of how much food (e.g., lbs of wings) the 5.5 qt basket can hold."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "\"Ninja offers a diverse range of air fryers designed to cater to different household sizes, culinary needs...\" and \"Models range from compact 4-quart baskets to large 10-quart, dual-zone units...\"",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No physical dimensions or detailed counter space measurements are provided."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "\"Delivers crispy textures quickly with minimal oil\"",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": null,
+        "reason": "Roast is listed as a function and included in the strengths under 'versatility' but there is no specific comment on roasting performance."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "partially",
+        "excerpt": null,
+        "reason": "Bake is listed as a feature and mentioned under 'versatility', but there is no direct comment on baking performance."
+      },
+      {
+        "question_number": 7,
+        "evaluation": "partially",
+        "excerpt": null,
+        "reason": "Reheat is listed as a function and cited as a benefit, but no specific performance evaluation is provided."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "partially",
+        "excerpt": "\"Multiple cooking modes (including specialty ones like dehydration)\"",
+        "reason": "Dehydrate is mentioned as a feature, but there is no detailed performance assessment."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "\"Delivers crispy textures quickly...\" and \"Occasional unevenness in air-frying, often requiring manual shaking or batch adjustments\"",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "\"Simple controls and clear displays make for a short learning curve\"",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not discuss the usefulness of presets."
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "\"Removable, non-stick components support quick cleanup\" and \"Non-stick, often dishwasher-safe baskets and crisper plates\"",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "\"Dishwasher-safe baskets and crisper plates\"",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No information is given on the long-term durability of parts after repeated dishwasher use."
+      },
+      {
+        "question_number": 15,
+        "evaluation": "yes",
+        "excerpt": "\"Noticeably loud operation on some units, which may annoy sensitive users\"",
+        "reason": null
+      },
+      {
+        "question_number": 16,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No mention of preheating requirement or typical preheat time is included."
+      },
+      {
+        "question_number": 17,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of user reports of plastic smell."
+      },
+      {
+        "question_number": 18,
+        "evaluation": "partially",
+        "excerpt": "\"Ninja is generally praised for user experience, versatility, and reliability...\"",
+        "reason": "Build quality is implied as good but not discussed explicitly or in terms of sturdiness."
+      }
     ],
     "questions_answered": {
       "yes": 7,
-      "partially": 6,
-      "no": 5,
+      "partially": 5,
+      "no": 6,
       "unknown": 0,
       "total": 18
     }
@@ -801,21 +1851,91 @@
       "summarize": 46.27865079199546
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "no",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "no",
-      "yes",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Sound Quality: Clear, balanced, and rich for spoken word. Cardioid pattern provides good background noise rejection—ideal for untreated rooms and home studios.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "partially",
+        "excerpt": "It offers both USB-C and XLR connectivity, making it accessible for entry-level users (plug-and-play via USB) as well as professionals (XLR integration with audio interfaces).",
+        "reason": "The summary discusses XLR connectivity and its suitability for professionals, but does not explicitly describe sound quality via XLR for voice applications."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "It competes most directly with the Samson Q2U and AT2005, but surpasses them in build quality and aesthetic.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "USB-C Output: Plug-and-play with computers and PlayStation 5; compatible with Windows, macOS, Linux.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "Plug-and-play with computers and PlayStation 5; compatible with Windows, macOS, Linux.",
+        "reason": "Plug-and-play implies no special drivers are required."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Cardioid pattern provides good background noise rejection—ideal for untreated rooms and home studios.",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not mention the gain requirements when using XLR."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "Sensitivity: -58dB ± 3dB.",
+        "reason": "The summary provides the sensitivity specification for voice pickup."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "Body: All-metal, robust and professional appearance. Build Quality: Durable, all-metal construction and integrated shock mount.",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "partially",
+        "excerpt": "Detachable Windscreen: Thin at top; basic plosive protection, but users often recommend an additional pop filter.",
+        "reason": "Quality is commented on for the windscreen and shock mount, but not comprehensively for all accessories."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "Touch Mute Button: Can be triggered unintentionally, especially during repositioning.",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary mentions volume controls and a gain knob but does not comment on the reliability or feel of the gain knob."
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "Headphone Monitoring: 3.5mm jack, zero-latency monitoring; compatible with 16–75Ω headphones.",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "The FIFINE K688 stands out for its value proposition—giving both professional and beginner users flexibility without a significant investment.",
+        "reason": null
+      }
     ],
     "questions_answered": {
       "yes": 10,
@@ -854,24 +1974,84 @@
       "summarize": 82.71497654198902
     },
     "error": null,
-    "question_evaluations": [
-      "partially",
-      "partially",
-      "yes",
-      "yes",
-      "partially",
-      "no",
-      "yes",
-      "no",
-      "no",
-      "partially",
-      "partially",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Apple Intelligence: Advanced device-based AI for writing, content creation, and personal assistance with a privacy-first approach",
+        "reason": "The summary mentions device-based AI for writing, content creation, and assistance, but gives limited detail on specific, practical use cases or how well these features work day-to-day."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "partially",
+        "excerpt": "Apple is betting on device-based AI for privacy and performance. This may future-proof the iPhone 16, but could also fragment the experience if features remain region-locked",
+        "reason": "The summary implies AI enhances the user experience by offering privacy and performance, and calls it a differentiator, but does not explicitly state or describe significant practical impact or user delight."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Camera Improvements: 48MP sensor, new camera controls, excellent photo/video quality, autofocus on ultrawide",
+        "reason": "It clearly notes new hardware (48MP sensor), features (autofocus on ultrawide), and overall better photo/video quality compared to prior models."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "Battery: Up to 22h video (vs. 20h in iPhone 14); larger battery.",
+        "reason": "While it gives a quantifiable battery gain for iPhone 14, it does not explicitly quantify battery improvement versus iPhone 15, only suggesting 'all-day usage' and 'larger battery'."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "A18 chip and 8GB RAM enable smooth multitasking, gaming, and AI operations",
+        "reason": "The summary states improved performance and mentions the new A18 chip is a leap over the A16, but does not quantify or directly compare speed to iPhone 15."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No direct mention of display quality improvements over iPhone 15; in fact, it highlights that the 60Hz refresh rate lags behind Android, implying no improvement."
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "Action and Camera Control Buttons add convenience and customizability",
+        "reason": "It discusses the Action and Camera Control Buttons as adding practical utility, with further note on the camera button's usability quirks."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "partially",
+        "excerpt": "iPhone 16 Pro/Pro Max: Enthusiasts/professionals seeking top-tier specs, exclusive AI/photo/video/audio tools",
+        "reason": "The summary implies differences in AI, camera, and audio tools, but does not enumerate the main functional differences side by side."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "partially",
+        "excerpt": "iPhone 16e: $599, targets budget-conscious consumers, emerging markets... omits wide-angle camera but retains A18 chip and AI",
+        "reason": "It gives an example of missing features (wide-angle camera on the 16e), but does not list standard 16 vs. 16 Pro feature omissions in detail."
+      },
+      {
+        "question_number": 10,
+        "evaluation": "partially",
+        "excerpt": "Camera Improvements: 48MP sensor, new camera controls, excellent photo/video quality, autofocus on ultrawide",
+        "reason": "It claims 'excellent photo/video quality' but does not specifically comment on low-light performance, except in comparison to much older models (iPhone 14/13)."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "partially",
+        "excerpt": "Camera Layout: Returns to vertical (from diagonal on 15); reminiscent of iPhone X... Colors: New options (Pink, Teal, Ultramarine).",
+        "reason": "The summary mentions changes in camera layout and colors, but does not specifically address changes in weight, ergonomics, or physical 'feel.'"
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Overheating: During gaming, video, or intensive app usage",
+        "reason": "It clearly mentions thermal performance issues during intensive tasks."
+      }
     ],
     "questions_answered": {
-      "yes": 4,
-      "partially": 5,
-      "no": 3,
+      "yes": 3,
+      "partially": 8,
+      "no": 1,
       "unknown": 0,
       "total": 12
     }
@@ -911,29 +2091,119 @@
       "summarize": 32.29559562500799
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "partially",
-      "no",
-      "no",
-      "no",
-      "yes",
-      "yes",
-      "no",
-      "no",
-      "no",
-      "partially",
-      "no",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "The FineWoven material was highly susceptible to scratches, scuffs, and fraying—even from fingernails, keys, or normal use. These marks were often permanent and accumulated rapidly.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "The fabric absorbed liquids and oils, making stains difficult or impossible to remove.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "The FineWoven material was highly susceptible to scratches, scuffs, and fraying—even from fingernails, keys, or normal use.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "These marks were often permanent and accumulated rapidly.",
+        "reason": "The summary discusses the accumulation of permanent marks but does not mention 'patina' or a positive, deliberate aging/wearing process."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "crafted from a microtwill material, designed to mimic the look and feel of suede... Users praised the soft, velvety feel of the material",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Users praised the soft, velvety feel of the material, which enhanced device grip and in-hand comfort.",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "partially",
+        "excerpt": "While offering basic scratch and minor drop protection, the thin, fibrous texture raised concerns about resilience in more severe impacts.",
+        "reason": "Basic drop protection is mentioned, but there is concern about performance in severe drops."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of a raised lip or screen protection in the summary."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of a raised lip or protection for the camera."
+      },
+      {
+        "question_number": 10,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not comment on the bulkiness of the case."
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "It also attracted lint and dust, compounding cleaning difficulties.",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "The fabric absorbed liquids and oils, making stains difficult or impossible to remove... attracted lint and dust, compounding cleaning difficulties.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of the strength of the MagSafe connection."
+      },
+      {
+        "question_number": 14,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of MagSafe charging interference."
+      },
+      {
+        "question_number": 15,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not describe the feel or responsiveness of the button covers."
+      },
+      {
+        "question_number": 16,
+        "evaluation": "yes",
+        "excerpt": "Some users reported issues with misaligned cutouts and sharp edges, impacting the case’s ergonomics and usability.",
+        "reason": null
+      },
+      {
+        "question_number": 17,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not mention color accuracy or fading."
+      },
+      {
+        "question_number": 18,
+        "evaluation": "yes",
+        "excerpt": "At a price point of $59, many felt the case did not deliver durability or quality to match its premium cost, especially compared to previous leather options.",
+        "reason": null
+      }
     ],
     "questions_answered": {
-      "yes": 8,
-      "partially": 3,
+      "yes": 9,
+      "partially": 2,
       "no": 7,
       "unknown": 0,
       "total": 18
@@ -971,22 +2241,97 @@
       "summarize": 41.7952976670058
     },
     "error": null,
-    "question_evaluations": [
-      "no",
-      "yes",
-      "partially",
-      "no",
-      "yes",
-      "yes",
-      "yes",
-      "no",
-      "no",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not mention how quickly Gravol Kids Liquid provides relief after administration."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Effectiveness: Consistently reported as effective for preventing motion sickness, especially during car or plane travel.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "partially",
+        "excerpt": "Can Gravol be used for causes of nausea other than motion sickness? – Yes, but only under professional guidance, as underlying causes should be evaluated (e.g., infection, GI conditions).",
+        "reason": "It briefly mentions off-label use for other causes of nausea, including those that could be from stomach bugs, but advises this only under professional guidance and does not specifically discuss effectiveness."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no information about the duration of effects after taking the product."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "Drowsiness: Most common complaint; some parents view it as beneficial on long trips.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Common Side Effects – Drowsiness (Very common, due to antihistaminic effect), Dry mouth, dizziness, blurred vision, headache, excitability (particularly in children)",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "Taste: Mixed reviews—most children accept the fruit flavor, but some dislike it.",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of the dosing tool or its ease of use."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not address the accuracy of the dosing tool."
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "Active Ingredient – Dimenhydrinate (15 mg per 5 mL): An antihistamine and antiemetic agent...",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "Dimenhydrinate (15 mg per 5 mL)",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "Children 2–6 years: ... Not for children under 2 years unless directed by a healthcare professional.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "Gravol Kids is now dye-free and alcohol-free, addressing past concerns regarding additive sensitivities.",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "Inactive Ingredients – Sorbitol: Sweetener. Sucrose: Sweetener.",
+        "reason": null
+      },
+      {
+        "question_number": 15,
+        "evaluation": "yes",
+        "excerpt": "Comparison with Alternative Remedies ... Dramamine Kids Chewable Tablets ... Emetrol Children's Nausea Relief ... Hyland's Motion Sickness Relief ... Sea-Band Child Wristbands ... Bonine Chewable Tablets",
+        "reason": null
+      }
     ],
     "questions_answered": {
       "yes": 10,
@@ -1032,31 +2377,126 @@
       "summarize": 45.73604795799474
     },
     "error": null,
-    "question_evaluations": [
-      "partially",
-      "yes",
-      "no",
-      "partially",
-      "partially",
-      "yes",
-      "yes",
-      "no",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "partially",
-      "partially",
-      "partially",
-      "no",
-      "no",
-      "partially"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Some experience bloating, gas, and cramps, especially if the powder contains erythritol or from high fiber.",
+        "reason": "Comments are made about digestive issues (bloating, gas), but not explicitly about ease of digestion for all users."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Digestive Discomfort: Some experience bloating, gas, and cramps, especially if the powder contains erythritol or from high fiber.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not describe the taste of the Strawberries & Cream flavor specifically; only general flavor options are listed."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Sweetness/Aftertaste: Stevia and (in some varieties) erythritol may cause lingering aftertaste or excessive sweetness.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Sweetness/Aftertaste: Stevia and (in some varieties) erythritol may cause lingering aftertaste or excessive sweetness.",
+        "reason": "Artificiality is not mentioned, but aftertaste from sweeteners implies some perceived unnatural flavor."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Texture/Mixability: Users commonly report chalky or gritty mouthfeel; may leave residue.",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "Texture/Mixability: Users commonly report chalky or gritty mouthfeel; may leave residue... Especially when mixed with plain water or not blended thoroughly. Using a blender... can improve palatability.",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "partially",
+        "excerpt": "may leave residue... Especially when mixed with plain water or not blended thoroughly.",
+        "reason": "Clumping is not directly mentioned, but residue and the need for thorough blending are."
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "Formulated without gluten, soy, or dairy.",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "Sweeteners: Organic stevia (all), erythritol (some flavors)",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "Protein Blend: Organic pea protein, organic brown rice protein, organic mung bean protein, organic chia seed",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "delivering a complete amino acid profile per serving.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "USDA Certified Organic",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "Non-GMO",
+        "reason": "Stated as Non-GMO, but does not specify Non-GMO Project verification."
+      },
+      {
+        "question_number": 15,
+        "evaluation": "partially",
+        "excerpt": "Some third-party testing (e.g., Consumer Reports, 2018) found trace heavy metals in several plant-based powders, including Orgain.",
+        "reason": "Mentions third-party testing but not whether Orgain provides this info directly."
+      },
+      {
+        "question_number": 16,
+        "evaluation": "partially",
+        "excerpt": "21g protein/serving supports muscle repair and growth.",
+        "reason": "Mentions suitability for fitness goals and protein content but not specific user feedback on effectiveness."
+      },
+      {
+        "question_number": 17,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Cost per serving is not provided."
+      },
+      {
+        "question_number": 18,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Cost per gram of protein is not provided."
+      },
+      {
+        "question_number": 19,
+        "evaluation": "partially",
+        "excerpt": "some alternatives may offer higher protein per dollar",
+        "reason": "Provides a qualitative comparison but not a detailed value analysis with numbers."
+      }
     ],
     "questions_answered": {
-      "yes": 7,
-      "partially": 8,
-      "no": 4,
+      "yes": 10,
+      "partially": 6,
+      "no": 3,
       "unknown": 0,
       "total": 19
     }
@@ -1095,30 +2535,115 @@
       "summarize": 64.57963670798927
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "yes",
-      "partially",
-      "yes",
-      "partially",
-      "no",
-      "no",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "unknown",
-      "yes",
-      "yes",
-      "no",
-      "no",
-      "no"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Maintains cold for up to 11 hours, iced for up to 48 hours, and hot for up to 7 hours, depending on model.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Maintains cold for up to 11 hours, iced for up to 48 hours, and hot for up to 7 hours, depending on model.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "partially",
+        "excerpt": "Insulation: Superior to many competitors in keeping drinks cold or iced.",
+        "reason": "The summary affirms strong insulation performance but notes that a minority of users report inconsistent ice retention; it does not explicitly state that all models reliably meet the advertised times."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Leakage: Not completely leakproof; liquid may escape if tipped, especially via the straw opening.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "FlowState™ 3-Position Lid: Features straw opening, drink opening, and full-cover settings for splash resistance and versatility.",
+        "reason": "The summary mentions splash resistance and full-cover setting but does not directly confirm leak resistance when fully closed, only that it is 'not completely leakproof.'"
+      },
+      {
+        "question_number": 6,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no explicit statement about bag transport; the emphasis on leaks suggests it may not be safe, but this is not directly addressed."
+      },
+      {
+        "question_number": 7,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of user feedback about metallic or plastic taste imparted by the tumbler."
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "Dishwasher Safe: Both tumbler and lid can be cleaned in a dishwasher.",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "Cleaning Challenges: Lid has several parts (rotating mechanism, silicone inlays) that require thorough cleaning to prevent bacterial buildup.",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "Dishwasher Safe: Both tumbler and lid can be cleaned in a dishwasher.",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "partially",
+        "excerpt": "Durability Concerns: Some users report rust or peeling finishes, especially after dishwasher use or frequent insertion into tight cup holders.",
+        "reason": "Finish wear/peeling is mentioned but not specifically scratching."
+      },
+      {
+        "question_number": 12,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of dent resistance or susceptibility to denting from drops."
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "Narrow Base: Comfort-grip handle and car cup holder-compatible base (except for 64 oz size).",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "Ergonomic Handle & Narrow Base: Comfort-grip handle",
+        "reason": null
+      },
+      {
+        "question_number": 15,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no comment on how securely the handle is attached."
+      },
+      {
+        "question_number": 16,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No mention of the long-term durability of the FlowState lid mechanism."
+      },
+      {
+        "question_number": 17,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Straw durability is not discussed."
+      }
     ],
     "questions_answered": {
       "yes": 8,
       "partially": 3,
-      "no": 5,
-      "unknown": 1,
+      "no": 6,
+      "unknown": 0,
       "total": 17
     }
   },
@@ -1158,26 +2683,121 @@
       "summarize": 32.8357241670019
     },
     "error": null,
-    "question_evaluations": [
-      "yes",
-      "partially",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "yes",
-      "partially",
-      "partially",
-      "yes",
-      "yes"
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Users consistently report excellent food release and minimal sticking, even with little or no oil.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "partially",
+        "excerpt": "Some users note that the nonstick coating loses effectiveness with time, especially if exposed to high heat, metal utensils, or frequent dishwasher use.",
+        "reason": "Provides qualitative user feedback on nonstick longevity, but does not give a specific lifespan estimate."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "To preserve the nonstick coating, use only silicone, wooden, or plastic utensils; avoid metal tools. Hand washing with mild detergent and soft sponges is recommended.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "SENSARTE pans utilize an ILAG-certified nonstick surface from Switzerland...free from harmful chemicals like PFOA, PFOS...",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "free from harmful chemicals like...lead, and cadmium",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Swiss ILAG Nonstick Coating",
+        "reason": null
+      },
+      {
+        "question_number": 7,
+        "evaluation": "yes",
+        "excerpt": "The pan heats evenly and quickly, an attribute of both the aluminum construction and magnetic base.",
+        "reason": null
+      },
+      {
+        "question_number": 8,
+        "evaluation": "yes",
+        "excerpt": "High magnetic conductive stainless steel base enables compatibility with all cooktop types, including induction.",
+        "reason": null
+      },
+      {
+        "question_number": 9,
+        "evaluation": "yes",
+        "excerpt": "Die-cast aluminum construction offers robustness and reduces the risk of warping under high heat or rapid temperature changes.",
+        "reason": null
+      },
+      {
+        "question_number": 10,
+        "evaluation": "yes",
+        "excerpt": "The nonstick surface greatly simplifies cleaning—often a simple wipe or quick rinse suffices.",
+        "reason": null
+      },
+      {
+        "question_number": 11,
+        "evaluation": "yes",
+        "excerpt": "While the pan is technically dishwasher safe, hand washing is strongly recommended for longevity...repeated dishwasher use is discouraged by both manufacturer and user experience due to faster coating degradation.",
+        "reason": null
+      },
+      {
+        "question_number": 12,
+        "evaluation": "yes",
+        "excerpt": "The woodgrain bakelite handle is praised for its ergonomic comfort and ability to stay cool.",
+        "reason": null
+      },
+      {
+        "question_number": 13,
+        "evaluation": "yes",
+        "excerpt": "Ergonomically designed for a comfortable grip, remains cool to the touch during stovetop use",
+        "reason": null
+      },
+      {
+        "question_number": 14,
+        "evaluation": "yes",
+        "excerpt": "is oven-safe up to 302°F",
+        "reason": null
+      },
+      {
+        "question_number": 15,
+        "evaluation": "yes",
+        "excerpt": "The body is made from die-cast aluminum",
+        "reason": null
+      },
+      {
+        "question_number": 16,
+        "evaluation": "partially",
+        "excerpt": "The pan is relatively heavy, which may pose challenges for users with limited wrist strength",
+        "reason": "Addresses weight but does not directly address sturdiness or balance in detail."
+      },
+      {
+        "question_number": 17,
+        "evaluation": "partially",
+        "excerpt": "To preserve the nonstick coating, use only silicone, wooden, or plastic utensils; avoid metal tools.",
+        "reason": "Suggests the pan is not highly resistant to scratches from metal utensils, but does not quantify scratch-resistance."
+      },
+      {
+        "question_number": 18,
+        "evaluation": "yes",
+        "excerpt": "SENSARTE positions itself as a high-quality, affordable nonstick pan—competing with brands like T-fal, GreenPan, and Carote",
+        "reason": null
+      },
+      {
+        "question_number": 19,
+        "evaluation": "yes",
+        "excerpt": "Common size options include 8\", 9.5\", 10\", 11\", and 12.5\"",
+        "reason": null
+      }
     ],
     "questions_answered": {
       "yes": 16,

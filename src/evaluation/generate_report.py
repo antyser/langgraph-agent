@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Optional
 from pathlib import Path
 
 from src.evaluation.common_defs import (
-    EvaluatedResult,
+    EvaluatedResult, EvaluationDetail,
     EVAL_FILENAME, REPORT_FILENAME_TEMPLATE, SUMMARY_LOG_FILE
 )
 
@@ -90,6 +90,50 @@ def generate_markdown_report(evaluated_results: List[EvaluatedResult], graph_key
 
         md.append(f"| {i+1} | {product_name} | {latency_ms} | {node_lat_str} | {q_answered_str} | {summary_snippet} | {error_str} |")
 
+    # Add section for detailed Q&A
+    md.append("\n## Detailed Question Evaluation")
+    for i, r in enumerate(evaluated_results):
+        product_info = r.product
+        product_name = product_info.get("name", product_info.get("url", "Unknown"))
+        questions = product_info.get("questions", [])
+        details = r.question_details
+
+        md.append(f"\n### {i+1}. {product_name}")
+        md.append(f"**Summary Snippet:** {r.summary[:150].replace('\n', ' ')}...")
+        if r.error:
+            md.append(f"**ERROR:** {r.error}")
+        md.append("") # Blank line
+
+        if not details:
+            md.append("*No evaluation details available.*")
+            continue
+
+        md.append("| Q# | Evaluation | Excerpt / Reason | Question |")
+        md.append("|----|------------|------------------|----------|")
+
+        # Ensure details list matches questions list length for safe zip
+        num_q = len(questions)
+        num_d = len(details)
+        if num_q != num_d:
+             md.append(f"| *Mismatch* | *Error: {num_q} questions vs {num_d} details* | | |")
+
+        # Iterate through questions and corresponding details (up to the shorter list length)
+        for q_idx, (question, detail) in enumerate(zip(questions, details)): # Safe zip
+            q_num = q_idx + 1
+            # Use detail.question_number if available and matches, otherwise use loop index + 1
+            display_q_num = detail.question_number if detail.question_number == q_num else q_num
+
+            eval_status = detail.evaluation.upper()
+            excerpt_reason = ""
+            if detail.evaluation in ["yes", "partially"] and detail.excerpt:
+                excerpt_reason = f"*Excerpt:* {detail.excerpt[:100].replace('|','\\').replace('\n', ' ')}..."
+            elif detail.reason:
+                excerpt_reason = f"*Reason:* {detail.reason[:100].replace('|','\\').replace('\n', ' ')}..."
+
+            question_text = question[:80].replace('|','\\').replace('\n', ' ') + ("..." if len(question) > 80 else "")
+
+            md.append(f"| {display_q_num} | **{eval_status}** | {excerpt_reason} | {question_text} |")
+
     try:
         with open(report_path, "w", encoding="utf-8") as f:
             f.write("\n".join(md))
@@ -157,6 +201,23 @@ def update_combined_log(graph_key: str, evaluated_results: List[EvaluatedResult]
                 f.write(f"\n   Summary Snippet: {summary[:150].replace(chr(10), ' ')}...")
                 if error:
                     f.write(f"\n   ERROR: {error}")
+
+                # Add detailed Q&A to log
+                questions = product_info.get("questions", [])
+                details = r.question_details
+                f.write("\n   Detailed Evaluation:")
+                if details:
+                     num_q = len(questions)
+                     num_d = len(details)
+                     if num_q != num_d:
+                          f.write("\n     - !! Mismatch between questions and details !!")
+                     for q_idx, (question, detail) in enumerate(zip(questions, details)):
+                          q_num = q_idx + 1
+                          display_q_num = detail.question_number if detail.question_number == q_num else q_num
+                          excerpt_reason_log = f" (Excerpt: {detail.excerpt})" if detail.excerpt else f" (Reason: {detail.reason})" if detail.reason else ""
+                          f.write(f"\n     - Q{display_q_num}: {detail.evaluation.upper()}{excerpt_reason_log} [{question[:60]}...] ")
+                else:
+                     f.write("\n     - No details available.")
 
             f.write(f"\n\n{'=' * 60}\n") # End of block
         logger.info(f"Combined summary log updated with run for {graph_key}: {SUMMARY_LOG_FILE}")

@@ -9,25 +9,32 @@ from pathlib import Path
 from langchain_core.messages import HumanMessage
 
 from src.evaluation.common_defs import (RawResult, EvaluatedResult, QuestionEvaluation,
-                          RAW_FILENAME, EVAL_FILENAME)
+                          EvaluationDetail, RAW_FILENAME, EVAL_FILENAME)
 from src.common.llm_models import create_gemini, create_openai
 
 logger = logging.getLogger(__name__)
 
-async def check_summary_answers_questions(summary: str, questions: List[str]) -> List[str]:
+async def check_summary_answers_questions(summary: str, questions: List[str]) -> List[EvaluationDetail]:
     """
-    Evaluates if the product summary answers each question using an LLM.
+    Evaluates if the product summary answers each question using an LLM,
+    providing detailed results including excerpts and reasons.
 
     Args:
         summary: The product summary text.
         questions: List of questions to check.
 
     Returns:
-        List of evaluation statuses ("yes", "no", "partially", "unknown").
+        List of EvaluationDetail objects.
     """
     if not summary or summary == "No summary generated." or not isinstance(summary, str):
         logger.warning("Invalid or empty summary provided for evaluation.")
-        return ["unknown"] * len(questions)
+        return [
+            EvaluationDetail(
+                question_number=i+1,
+                evaluation="unknown",
+                reason="Invalid or empty summary provided."
+            ) for i in range(len(questions))
+        ]
 
     if not questions:
         return []
@@ -36,7 +43,11 @@ async def check_summary_answers_questions(summary: str, questions: List[str]) ->
         eval_llm = create_openai()
         structured_llm = eval_llm.with_structured_output(QuestionEvaluation)
 
-        prompt = f"""Evaluate if this product summary answers these questions:
+        prompt = f"""Evaluate if this product summary answers these questions. For each question, provide:
+1.  `question_number`: The original question number (1-based).
+2.  `evaluation`: Your assessment ('yes', 'no', 'partially', 'unknown').
+3.  `excerpt`: (OPTIONAL) A *brief*, directly quoted text excerpt from the summary that supports a 'yes' or 'partially' answer. Only include if directly relevant.
+4.  `reason`: (OPTIONAL) A *brief* explanation for 'no', 'partially', or 'unknown' evaluations, or if the answer is inferred rather than explicit.
 
 Summary:
 ---
@@ -46,16 +57,22 @@ Summary:
 Questions:
 {chr(10).join([f"{i+1}. {q}" for i, q in enumerate(questions)])}
 
-Return evaluations ONLY as a JSON object matching the QuestionEvaluation schema, using: yes, no, partially, unknown.
+Return ONLY a JSON object matching the QuestionEvaluation schema, containing a list under the key `evaluation_details`.
 """
         messages = [HumanMessage(content=prompt)]
         result: QuestionEvaluation = await structured_llm.ainvoke(messages)
 
-        return result.evaluations
+        return result.evaluation_details
 
     except Exception as e:
         logger.error(f"LLM Evaluation failed for summary starting with '{summary[:50]}...': {e}", exc_info=False)
-        return ["unknown"] * len(questions)
+        return [
+            EvaluationDetail(
+                question_number=i+1,
+                evaluation="unknown",
+                reason=f"LLM evaluation failed: {e}"
+            ) for i in range(len(questions))
+        ]
 
 async def evaluate_raw_results(raw_results: List[RawResult]) -> List[EvaluatedResult]:
     """
@@ -75,25 +92,31 @@ async def evaluate_raw_results(raw_results: List[RawResult]) -> List[EvaluatedRe
         product_name = product_dict.get('name', 'Unknown')
 
         logger.info(f"Evaluating questions for [{raw_result.graph_key}]: {product_name}")
-        question_evaluations = await check_summary_answers_questions(summary, questions)
+        evaluation_details: List[EvaluationDetail] = await check_summary_answers_questions(summary, questions)
 
-        # Log evaluation results
-        # for i, (q, e) in enumerate(zip(questions, question_evaluations)):
+        # Compute summary counts from the detailed results
+        eval_counts = {"yes": 0, "no": 0, "partially": 0, "unknown": 0}
+        for detail in evaluation_details:
+            eval_counts[detail.evaluation] = eval_counts.get(detail.evaluation, 0) + 1
+        questions_answered_summary = {
+             "yes": eval_counts["yes"],
+             "partially": eval_counts["partially"],
+             "no": eval_counts["no"],
+             "unknown": eval_counts["unknown"],
+             "total": len(evaluation_details)
+        }
+
+        # Log evaluation results (can be more detailed later if needed)
+        # for i, (q, e) in enumerate(zip(questions, evaluation_details)):
         #     q_short = q[:50] + "..." if len(q) > 50 else q
-        #     logger.info(f"  Q{i+1}: {q_short} - {e.upper()}")
+        #     logger.info(f"  Q{i+1}: {q_short} - {e.evaluation.upper()}")
 
-        # Create EvaluatedResult Pydantic model
+        # Create EvaluatedResult Pydantic model with detailed results
         try:
             evaluated_result = EvaluatedResult(
-                **raw_result.model_dump(), # Unpack existing raw result fields
-                question_evaluations=question_evaluations,
-                questions_answered={
-                    "yes": question_evaluations.count("yes"),
-                    "partially": question_evaluations.count("partially"),
-                    "no": question_evaluations.count("no"),
-                    "unknown": question_evaluations.count("unknown"),
-                    "total": len(question_evaluations)
-                }
+                **raw_result.model_dump(),
+                question_details=evaluation_details,
+                questions_answered=questions_answered_summary
             )
             evaluated_results.append(evaluated_result)
         except Exception as pydantic_error:
