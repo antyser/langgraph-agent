@@ -1,0 +1,666 @@
+[
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/dp/B08MLG2SG4",
+      "name": "Amara Smoothie Melts - Mango Carrot",
+      "questions": [
+        "1. Ingredients List: Does the summary list the main ingredients?",
+        "2. Added Sugars: Does the summary state if there are added sugars?",
+        "3. Artificial Additives: Does the summary state if there are artificial ingredients or preservatives?",
+        "4. Allergens: Does the summary list common allergens (dairy, soy, nuts, gluten) present or state their absence?",
+        "5. Dissolvability: Does the summary mention how quickly/easily the melts dissolve?",
+        "6. Choking Risk Info: Does the summary address choking risk (e.g., via dissolvability or texture description)?",
+        "7. Texture Description: Does the summary describe the texture?",
+        "8. Age Appropriateness: Does the summary indicate the recommended age range?",
+        "9. Serving Size: Does the summary state the recommended serving size?",
+        "10. Serving Frequency: Does the summary suggest a recommended frequency of consumption?",
+        "11. Key Nutrients: Does the summary mention key vitamins or nutrients provided?",
+        "12. Taste Feedback: Does the summary reference user reviews regarding taste/palatability?",
+        "13. Packaging Features: Does the summary mention ease of opening or resealing the package?",
+        "14. Quantity per Package: Does the summary state the number of melts per package?",
+        "15. Shelf Life: Does the summary mention the product's shelf life?",
+        "16. Storage Instructions: Does the summary provide storage instructions (especially after opening)?",
+        "17. Competitor Comparison: Does the summary compare this product to competitors (e.g., Gerber Melts) on aspects like ingredients, nutrition, or price?"
+      ]
+    },
+    "summary": "## Amara Smoothie Melts - Mango Carrot\n\n1. **What it is & Who it's for:** Amara Smoothie Melts are freeze-dried fruit and vegetable snacks designed for babies and toddlers (10 months+) as a healthy, no-added-sugar option. They're intended to melt in the mouth, making them easy for little ones to eat.\n\n2. **Key Benefits (What's Good):**\n    *   **Healthy Snack:** Made with organic fruits and vegetables and no added sugar or preservatives, offering a nutritious snack option.\n    *   **Convenient and Portable:** Lightweight and packaged in resealable bags, making them ideal for on-the-go snacking without refrigeration.\n    *   **Encourages Self-Feeding:** The melt shape is perfectly sized for tiny hands, aiding in pincer grip development and self-feeding skills.\n    *   **Appealing Taste:** Kids love the flavor.\n\n3.  **Potential Downsides (Keep in Mind):**\n    *   **Meltability Concerns**: Some users report that the melts don't dissolve as easily as expected and can be quite hard.\n    *   **Hardness:** Some customers describe them as very hard.\n    *   **Price:** Some customers feel the product is expensive.\n\n4. **Bottom Line:** Amara Smoothie Melts are a convenient and healthy snack option with simple ingredients for babies and toddlers. However, some users have concerns about the meltability and hardness of the product, so consider this if your child has difficulty with harder textures.",
+    "latency_ms": 15336.460999998963,
+    "ttft_ms": 13110.088834000635,
+    "node_latencies": {
+      "scrape": 11.208811374999641,
+      "generate": 4.092854333001014
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Samsonite-Freeform-Hardside-Spinner-Black/dp/B01M0A3BKH/",
+      "name": "Samsonite Freeform Hardside Carry-On",
+      "questions": [
+        "1. Material Type: Does the summary identify the hardshell material (e.g., polypropylene)?",
+        "2. Crack Resistance: Does the summary mention resistance to cracking?",
+        "3. Scuff/Scratch Resistance: Does the summary mention resistance to scuffs or scratches?",
+        "4. Wheel Type: Does the summary specify the type of wheels (e.g., 360-degree spinner)?",
+        "5. Wheel Performance: Does the summary describe the smoothness or quietness of the wheels on different surfaces?",
+        "6. Wheel Durability: Does the summary comment on the durability of the wheels?",
+        "7. Carry-On Compliance: Does the summary state whether it meets major airline carry-on size restrictions?",
+        "8. Exact Dimensions: Does the summary provide the exact dimensions (including wheels/handles)?",
+        "9. Weight Specification: Does the summary state the weight of the luggage?",
+        "10. Lightweight Comparison: Does the summary compare its weight to similar carry-ons?",
+        "11. Interior Organization: Does the summary describe interior features (dividers, straps, pockets)?",
+        "12. Handle Type: Does the summary describe the handle (e.g., telescoping)?",
+        "13. Handle Quality: Does the summary comment on the sturdiness or comfort of the handle?",
+        "14. TSA Lock: Does the summary state if it includes a built-in TSA-approved lock?",
+        "15. Lock Reliability: Does the summary mention the reliability or ease of use of the lock?",
+        "16. Finish Properties: Does the summary mention if the finish resists fingerprints or scratches easily?",
+        "17. Warranty Information: Does the summary state the warranty period?",
+        "18. Customer Service Reputation: Does the summary mention feedback on Samsonite's customer service for claims?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Samsonite Freeform 21-Inch Hardside Carry-On is a lightweight, expandable carry-on suitcase designed for travelers seeking a durable and easy-to-maneuver bag that meets most airline carry-on size restrictions. It's ideal for frequent flyers and those who want organized packing.\n\n2. **Key Benefits (What's Good)**:\n    *   **Effortless Mobility:** The four multi-directional spinner wheels ensure smooth gliding through airports.\n    *   **Lightweight Design:** At only 6.5 lbs, it helps avoid overweight baggage fees.\n    *   **Organized Packing:** Features elastic straps, a divider, and a pouch to keep belongings neatly in place.\n    *   **Added Security:** Built-in TSA-approved lock provides peace of mind.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   **Durability Concerns:** Some users report issues with the hardshell's long-term durability.\n    *   **Lock Functionality:** Some find the TSA lock tricky to figure out.\n    *   **Zipper Issues:** There are mixed reviews regarding the zipper quality, with some users reporting breakage.4.  **Bottom Line**: The Samsonite Freeform is a good choice for travelers who prioritize lightweight design and smooth maneuverability in a carry-on, but be aware of potential durability issues and mixed feedback on the TSA lock and zipper quality.",
+    "latency_ms": 17186.787416998413,
+    "ttft_ms": 15347.708083005273,
+    "node_latencies": {
+      "scrape": 14.00745804199687,
+      "generate": 3.1411702500045067
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/dp/B0CHN9X9S2",
+      "name": "Sports Research Fish Oil Mini-Softgels",
+      "questions": [
+        "1. Marketed Benefits: Does the summary list the specific health benefits the product is marketed for (heart, brain, joint, etc.)?",
+        "2. EPA Amount: Does the summary state the exact amount of EPA per serving/softgel?",
+        "3. DHA Amount: Does the summary state the exact amount of DHA per serving/softgel?",
+        "4. Oil Form: Does the summary specify if the oil is in triglyceride form?",
+        "5. Third-Party Testing: Does the summary state if it's third-party tested for purity and potency?",
+        "6. Specific Purity Tests: Does the summary mention testing for heavy metals (mercury), PCBs, or dioxins?",
+        "7. Test Result Accessibility: Does the summary indicate if test results (e.g., IFOS report) are accessible?",
+        "8. Fish Source: Does the summary identify the type of fish used (e.g., anchovy, sardine)?",
+        "9. Catch Method: Does the summary state if the fish are wild-caught?",
+        "10. Sustainability Certification: Does the summary mention any sustainability certifications (e.g., Friend of the Sea)?",
+        "11. Fishy Burps/Aftertaste: Does the summary mention user feedback regarding fishy burps or aftertaste?",
+        "12. Digestive Upset: Does the summary mention user feedback regarding digestive upset?",
+        "13. Capsule Size Description: Does the summary describe the size of the 'mini-softgels'?",
+        "14. Ease of Swallowing: Does the summary comment on how easy they are to swallow?",
+        "15. Oxidation Protection: Does the summary mention how the oil is protected from oxidation?",
+        "16. Brand Reputation: Does the summary comment on the reputation of the Sports Research brand?",
+        "17. Price Comparison: Does the summary compare its price/value to other fish oil brands based on EPA/DHA content?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: Sports Research Fish Oil Mini-Softgels are small, easy-to-swallow capsules providing Omega-3 fatty acids derived from wild-caught Alaskan Pollock, ideal for individuals seeking to support brain and heart health. They are great for people who want the benefits of fish oil without the large pills or fishy aftertaste.\n\n2. **Key Benefits (What's Good)**:\n    *   **No Fishy Aftertaste:** Undergoes a 10-step refinement process to eliminate fishy odors and taste.\n    *   **Easy to Swallow:** The mini-softgel size makes it easier to ingest compared to standard fish oil capsules.\n    *   **Sustainably Sourced:** MSC-certified and sourced exclusively from Wild Alaskan Pollock.\n    *   **Supports Overall Health:** Provides EPA and DHA, which may help support cardiovascular health, joint comfort, and skin health.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   **Gelatin Source:** The softgel capsule is made from fish gelatin (tilapia-sourced), which may not be suitable for all dietary restrictions (e.g., strict vegans).\n    *   **Allergen Warning**: Contains fish (Alaska Pollock).\n    *   **Price Variation:** Price can fluctuate depending on the count and sourcing (Alaska Pollock vs. Sockeye Salmon).\n\n4. **Bottom Line**: Sports Research Fish Oil Mini-Softgels are a great option for those seeking a convenient, burpless, and sustainably sourced Omega-3 supplement, especially if you dislike large pills or fishy taste. However, be mindful of the fish-based gelatin if you have strict dietary restrictions.",
+    "latency_ms": 17481.187541998224,
+    "ttft_ms": 15274.868958003935,
+    "node_latencies": {
+      "scrape": 13.86119687500468,
+      "generate": 3.6089252079982543
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/dp/B003BHZ71G",
+      "name": "NOW Supplements, Sunflower Lecithin",
+      "questions": [
+        "1. Reported Uses: Does the summary list the main reasons people take sunflower lecithin (brain, liver, cholesterol, etc.)?",
+        "2. Scientific Support: Does the summary mention scientific support for any claimed benefits?",
+        "3. Advantage vs. Soy: Does the summary explain the advantages of sunflower lecithin compared to soy lecithin?",
+        "4. GMO Status: Does the summary explicitly state if it's non-GMO?",
+        "5. Product Form: Does the summary specify the form (softgel, powder, granule)?",
+        "6. Lecithin per Serving: Does the summary state the amount of lecithin per serving?",
+        "7. Typical Dosage: Does the summary suggest a typical daily dosage?",
+        "8. Phosphatidylcholine Content: Does the summary specify the phosphatidylcholine content?",
+        "9. Potential Side Effects: Does the summary mention potential side effects (e.g., digestive issues)?",
+        "10. Brand Reputation: Does the summary comment on NOW Supplements' reputation for quality?",
+        "11. Quality Testing/GMP: Does the summary mention purity testing or GMP certification?",
+        "12. Taste/Mixability (if powder/granule): If applicable, does the summary describe the taste or mixability?",
+        "13. Organic Certification: Does the summary state if it's certified organic?"
+      ]
+    },
+    "summary": "NOW Supplements Sunflower Lecithin is a soy-free and non-GMO supplement providing phosphatidyl choline, which supports nervous system function. It's particularly popular among breastfeeding mothers and those seeking a natural source of choline.\n\n**Key Benefits (What's Good):**\n\n*   **Supports Milk Flow for Breastfeeding Mothers:** Helps prevent clogged milk ducts and may reduce the risk of mastitis.\n*   **Soy-Free and Non-GMO:** A good alternative to soy-based lecithin for those with sensitivities or dietary restrictions.\n*   **Supports Nervous System Function:** Phosphatidyl choline plays a key role in cellular signaling and synaptic function.\n*   **Good Value:** Considered a high-quality lecithin supplement at a reasonable price.\n\n**Potential Downsides (Keep in Mind):**\n\n*   **Large Pills:** Some users find the softgels to be quite large and difficult to swallow.\n*   **Gelatin Source:** The softgel capsules are made from bovine gelatin, which may not be suitable for vegetarians or vegans.\n*   **Natural Color Variation:** The color of the softgels may vary from batch to batch, which is normal but may concern some users.\n\n**Bottom Line:** NOW Sunflower Lecithin is a well-regarded supplement, especially for breastfeeding mothers looking for a soy-free option to support milk flow and prevent clogged ducts. However, be aware of the large pill size if you have difficulty swallowing pills.",
+    "latency_ms": 15091.315665995353,
+    "ttft_ms": 13152.485416998388,
+    "node_latencies": {
+      "scrape": 11.658314833002805,
+      "generate": 3.418591875000857
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Aquasana-3-Stage-Filter-System-Chrome/dp/B06XGY3G28/",
+      "name": "Aquasana 3-Stage Water Filter",
+      "questions": [
+        "1. Reduced Contaminants: Does the summary list specific contaminants reduced (chlorine, lead, PFOA/PFOS, etc.)?",
+        "2. NSF/ANSI Certification: Does the summary state which NSF/ANSI standards (42, 53, 401) it is certified for?",
+        "3. Mineral Retention: Does the summary mention if beneficial minerals are retained?",
+        "4. Taste/Odor Improvement: Does the summary report user feedback on improved water taste or odor?",
+        "5. Filter Lifespan (Gallons/Months): Does the summary specify the typical lifespan of the filters?",
+        "6. Replacement Filter Cost: Does the summary indicate the ongoing cost of replacement filters?",
+        "7. Installation Ease: Does the summary comment on the ease of under-sink installation for DIYers?",
+        "8. Filter Replacement Ease: Does the summary describe the ease of replacing filters?",
+        "9. Tools Required for Replacement: Does the summary mention if tools are needed for filter changes?",
+        "10. Flow Rate Impact: Does the summary mention if the filter affects the water flow rate?",
+        "11. Faucet Quality: Does the summary comment on the quality of the included faucet?",
+        "12. Leak Reports: Does the summary mention user reports regarding leaks?",
+        "13. System Dimensions: Does the summary provide the dimensions of the filter unit?",
+        "14. Required Under-Sink Space: Does the summary indicate the amount of under-sink space needed?",
+        "15. Warranty Details: Does the summary state the warranty offered by Aquasana?",
+        "16. Customer Support Feedback: Does the summary mention user feedback on customer support?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for:** The Aquasana AQ-5300+.56 is an under-sink water filter system designed to provide cleaner, healthier drinking water by reducing common contaminants while retaining beneficial minerals; it's ideal for homeowners looking to improve their tap water quality without sacrificing mineral content.\n\n2. **Key Benefits (What's Good):**\n    *   Significantly improves water taste by reducing chlorine and other contaminants, leading to better-tasting beverages and food.\n    *   Retains healthy minerals like calcium and potassium, unlike some filtration systems that strip everything out.\n    *   Filter replacements are designed to be easy with a simple twist-off mechanism, no disconnecting hoses required.\n    *   Cost-effective, providing filtered water at approximately 10 cents per gallon.\n\n3.  **Potential Downsides (Keep in Mind):**\n    *   Some users have reported issues with leaks, potentially due to faulty installation or cracking of the plastic housing over time; the housing is recommended to be replaced every five years.\n    *   Initial setup and filter changes may require more strength than expected, especially for those with arthritis.\n    *   The initial flow rate can be slow and a sulfur-like taste might be present initially, requiring several gallons to flush the system before optimal taste is achieved.\n    *   Mixed reviews exist regarding the overall quality of the plastic components used in the system.\n\n4. **Bottom Line:** The Aquasana AQ-5300 is a solid choice for improving tap water taste and reducing contaminants while keeping beneficial minerals, but potential buyers should be prepared for careful installation to avoid leaks and the possibility of needing to replace the housing after several years.",
+    "latency_ms": 16031.894957995974,
+    "ttft_ms": 13462.358832999598,
+    "node_latencies": {
+      "scrape": 12.245663000001514,
+      "generate": 3.773472042004869
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/CRZ-YOGA-Butterluxe-Racerback-Longline/dp/B0BKQ6HRLQ",
+      "name": "CRZ YOGA Butterluxe Racerback",
+      "questions": [
+        "1. Recommended Impact Level: Does the summary specify the suitable activity impact level (low, medium, high)?",
+        "2. Built-in Bra: Does the summary state if it has a built-in bra?",
+        "3. Fabric Softness: Does the summary describe the softness of the 'Butterluxe' fabric?",
+        "4. Fabric Stretch/Comfort: Does the summary comment on the stretch and comfort of the fabric?",
+        "5. Fabric Comparison (Lululemon): Does the summary compare the fabric to Lululemon Align fabric?",
+        "6. Breathability: Does the summary mention the fabric's breathability?",
+        "7. Moisture-Wicking: Does the summary state if the fabric is moisture-wicking?",
+        "8. Sizing Accuracy: Does the summary provide guidance on whether it runs true to size?",
+        "9. Fit Description: Does the summary describe the fit (compressive, relaxed)?",
+        "10. Length Description: Does the summary confirm if it's 'longline' and comment on coverage?",
+        "11. Durability After Washing: Does the summary mention how the fabric holds up after washing?",
+        "12. Pilling Issues: Does the summary mention user feedback regarding pilling?",
+        "13. Removable Pads: If there's a built-in bra, does the summary state if the pads are removable?",
+        "14. Pad Quality/Shape: Does the summary comment on the quality or shape of the pads?",
+        "15. Color Accuracy: Does the summary mention if the colors match the product images?",
+        "16. Value Comparison: Does the summary compare its price/value to similar tops from other brands?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The CRZ YOGA Butterluxe Sports Bra is a soft, stretchy, and comfortable workout crop top with built-in pads, designed for women who want light support during activities like yoga and low-impact cardio. It's ideal for those seeking a comfortable and flattering fit for everyday wear or light workouts.\n\n2. **Key Benefits (What's Good)**:\n    *   **Extremely Soft Fabric:** The \"Butterluxe\" fabric is known for its exceptional softness and comfort, making it feel great against the skin.\n    *   **Light Support & Comfortable Fit:** Designed for light support, suitable for yoga and low-impact activities, ensuring comfort during workouts or daily wear.\n    *   **Flattering Design:** Many customers find the bra flattering, enhancing their natural shape and providing a stylish look.\n    *   **Good Value:** The double-thickness fabric provides a sense of quality and durability for the price.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   **Limited Support for High-Impact Activities:** Designed for light support, it may not be suitable for running or high-impact workouts.\n    *   **Sizing can be tricky**: Some users recommend sizing down for extra support.\n    *   **Mixed opinions about sturdiness**: Some customers have mixed opinions about sturdiness.\n\n4.  **Bottom Line**: The CRZ YOGA Butterluxe Sports Bra is a great choice for those prioritizing comfort and a flattering fit during low-impact activities, but those needing more support for intense workouts may need to consider other options or size down.",
+    "latency_ms": 13767.034166005033,
+    "ttft_ms": 11543.62445800507,
+    "node_latencies": {
+      "scrape": 10.151621875003912,
+      "generate": 3.58889004199591
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Nest-T3007ES-Thermostat-Temperature-Generation/dp/B0131RG6VK",
+      "name": "Nest Learning Thermostat",
+      "questions": [
+        "1. Installation Difficulty: Does the summary comment on the ease/difficulty of installation for homeowners?",
+        "2. C-Wire Requirement: Does the summary clarify if a C-wire is required or if alternatives exist?",
+        "3. HVAC Compatibility Check: Does the summary explain how to check compatibility with HVAC systems?",
+        "4. Compatible Systems: Does the summary list types of compatible systems (multi-stage, heat pump, etc.)?",
+        "5. Learning Feature Effectiveness: Does the summary provide insight into how well the learning feature adapts?",
+        "6. Energy/Cost Savings: Does the summary mention user feedback or claims about energy/cost savings?",
+        "7. Initial User Input: Does the summary indicate how much initial 'teaching' is needed?",
+        "8. App Usability: Does the summary comment on the intuitiveness or reliability of the Nest/Google Home app?",
+        "9. Remote Control Functionality: Does the summary confirm reliable remote control via the app?",
+        "10. Energy Monitoring via App: Does the summary mention energy monitoring features in the app?",
+        "11. Smart Home Integration: Does the summary list compatible smart home ecosystems (Alexa, Google Assistant)?",
+        "12. Manual Interface Usability: Does the summary comment on the ease of using the thermostat's physical controls?",
+        "13. Display Quality: Does the summary describe the clarity or responsiveness of the display?",
+        "14. Wi-Fi Connectivity Issues: Does the summary mention common issues with Wi-Fi connectivity?",
+        "15. General Reliability Issues: Does the summary mention other common reliability problems?",
+        "16. Subscription Fees: Does the summary explicitly state if core features require a subscription?"
+      ]
+    },
+    "summary": "The Google Nest Learning Thermostat (3rd Gen) is a smart thermostat designed to learn your temperature preferences and automatically adjust to save energy, ideal for homeowners looking for convenience and potential cost savings.\n\n**Key Benefits (What's Good):**\n\n*   **Saves energy and money:** It learns your schedule and adjusts the temperature automatically, potentially saving you an average of 10-15% on heating and cooling costs.\n*   **Easy to control remotely:** Adjust the temperature from anywhere using the Nest app on your smartphone or tablet.\n*   **Voice control:** Compatible with Alexa and Google Assistant, allowing you to control the thermostat with voice commands.\n*   **Simple installation:** Many users report easy installation, even without prior experience.\n\n**Potential Downsides (Keep in Mind):**\n\n*   **Wi-Fi Connectivity Issues:** Some users report frequent disconnections from Wi-Fi, which can impact remote control and automation features.\n*   **Pricey compared to traditional thermostats:** It's more expensive upfront than basic programmable thermostats.\n*   **Savings not guaranteed**: Energy savings depend on individual usage, weather, and HVAC system efficiency.\n\n**Bottom Line:** The Google Nest Learning Thermostat offers convenient smart features and potential energy savings, making it a worthwhile investment for tech-savvy homeowners willing to pay a premium and who have a reliable Wi-Fi connection.",
+    "latency_ms": 20115.96187500254,
+    "ttft_ms": 18367.101708005066,
+    "node_latencies": {
+      "scrape": 16.795124583004508,
+      "generate": 3.287999917003617
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Company-Conscious-Plant-Based-Hypoallergenic-Dermatologist/dp/B07SH6HN2X/",
+      "name": "Honest Baby Wipes",
+      "questions": [
+        "1. Irritant Checklist: Does the summary confirm the absence of alcohol, parabens, phthalates, or fragrances?",
+        "2. Plant-Based Claim: Does the summary state they are plant-based?",
+        "3. Suitability for Sensitive Skin: Does the summary mention user feedback on suitability for sensitive skin/eczema?",
+        "4. Softness: Does the summary describe the softness of the wipes?",
+        "5. Durability/Strength: Does the summary comment on the durability or resistance to tearing?",
+        "6. Thickness: Does the summary provide information on the thickness of the wipes?",
+        "7. Wetness Level: Does the summary describe the moisture level (not too dry/wet)?",
+        "8. Drying Out Issue: Does the summary mention if they tend to dry out quickly after opening?",
+        "9. Dispensing Performance: Does the summary comment on whether they dispense one at a time easily?",
+        "10. Scent Description: Does the summary confirm they are unscented or describe any smell?",
+        "11. Biodegradability Claim: Does the summary mention any claims about biodegradability?",
+        "12. Substantiation of Eco Claims: Does the summary indicate if eco claims are substantiated (e.g., certifications)?",
+        "13. Cost Per Wipe Comparison: Does the summary compare the cost per wipe to other brands?",
+        "14. Available Package Sizes: Does the summary mention the different package sizes available?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Honest Company Clean Conscious Wipes are plant-based, hypoallergenic wipes designed for cleaning babies' sensitive skin and everyday messes, and are suitable for the whole family.\n\n2. **Key Benefits (What's Good)**:\n    *   Gentle on sensitive skin, helping to prevent rashes and irritation.\n    *   Effective for cleaning with a strong, durable fabric that resists tearing.\n    *   Unscented formula is appreciated by those sensitive to fragrances.\n    *   Made with over 99% water and only 7 transparent ingredients.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   Some customers feel the cost is high relative to the number of wipes per pack.\n    *   Compostability is dependent on local municipal facilities or proper home composting conditions (not suitable for all waste).\n    *   May not be thick enough for heavy-duty cleaning tasks.\n\n4. **Bottom Line**: These wipes are a good choice for those prioritizing gentle, plant-based ingredients and fragrance-free cleaning for sensitive skin, though they may be considered expensive by some and require specific composting conditions to break down.",
+    "latency_ms": 16773.14758299326,
+    "ttft_ms": 15236.070833001577,
+    "node_latencies": {
+      "scrape": 13.889519458003633,
+      "generate": 2.8695176249966607
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Millie-Moon-Diapers-COUCHES-22lbs-33lbs/dp/B0CHV6QYRV/",
+      "name": "Millie Moon Diapers",
+      "questions": [
+        "1. Suitability for Sensitive Skin: Does the summary mention user feedback on tolerance by babies with sensitive skin?",
+        "2. Absence of Irritants: Does the summary confirm the absence of fragrance, latex, or chlorine bleaching?",
+        "3. Leak Protection Effectiveness: Does the summary comment on effectiveness against leaks (daytime/overnight)?",
+        "4. Leg Cuff/Waistband Fit: Does the summary describe the fit and effectiveness of leg cuffs/waistband?",
+        "5. Softness (Inside/Outside): Does the summary describe the softness of the diaper's materials?",
+        "6. Flexibility/Comfort: Does the summary comment on the flexibility and comfort of the fit?",
+        "7. Absorption Speed/Capacity: Does the summary describe how well they absorb moisture?",
+        "8. Skin Dryness: Does the summary mention if they keep the baby's skin feeling dry?",
+        "9. Odor Control: Does the summary comment on how well odors are contained?",
+        "10. Wetness Indicator: Does the summary state if there is a wetness indicator?",
+        "11. Wetness Indicator Reliability: Does the summary comment on the reliability of the wetness indicator?",
+        "12. Sizing Accuracy: Does the summary provide guidance on whether the sizing is accurate based on weight?",
+        "13. Price Comparison: Does the summary compare the price to premium brands (Pampers/Huggies)?",
+        "14. Availability: Does the summary mention where they are typically sold or if availability is limited?"
+      ]
+    },
+    "summary": "Millie Moon diapers are designed for babies, offering comfort and protection with premium materials. They aim to keep babies dry and comfortable, reducing skin irritation.\n\n**Key Benefits (What's Good):**\n\n*   **Ultra-soft and Breathable:** Made with materials that feel gentle against the baby's skin, minimizing irritation.\n*   **High Absorbency:** Quickly wicks away moisture, keeping the baby's skin dry for extended periods.\n*   **Leak-Proof Design:** Helps prevent leaks and messes, providing peace of mind.\n*   **Wetness Indicator:** Conveniently changes color when it's time for a diaper change.\n\n**Potential Downsides (Keep in Mind):**\n\n*   Multiple sellers exist, so prices and shipping times can vary significantly.\n*   Some sellers have low ratings, indicating potential issues with service or product quality.\n\n**Bottom Line:** Millie Moon diapers are a good option for parents seeking a soft, absorbent, and eco-friendly diaper, but be sure to compare prices and seller ratings before purchasing to ensure a positive buying experience.",
+    "latency_ms": 15265.230707998853,
+    "ttft_ms": 13650.810749997618,
+    "node_latencies": {
+      "scrape": 12.37345975000062,
+      "generate": 2.8802653340026154
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Keurig-K-Elite-Temperature-Capability-Programmable/dp/B078NN17K3",
+      "name": "Keurig K-Elite Coffee Maker",
+      "questions": [
+        "1. Ease of Regular Cleaning: Does the summary describe the ease of cleaning the needle and K-Cup holder?",
+        "2. Descaling Frequency: Does the summary mention how often descaling is typically required?",
+        "3. Descaling Process Ease: Does the summary comment on the simplicity of the descaling process?",
+        "4. General Reliability Feedback: Does the summary mention user feedback on overall reliability?",
+        "5. Expected Lifespan: Does the summary provide insights into the expected lifespan based on reviews?",
+        "6. Common Failure Points: Does the summary mention any common points of failure?",
+        "7. Taste Consistency: Does the summary comment on the consistency of the brewed coffee taste?",
+        "8. Water Temperature: Does the summary mention if the water gets hot enough for a good brew?",
+        "9. 'Strong Brew' Effectiveness: Does the summary describe how well the 'Strong Brew' function works?",
+        "10. Brew Speed: Does the summary state how quickly it brews a cup?",
+        "11. Noise Level: Does the summary describe the noise level during heating or brewing?",
+        "12. Water Reservoir Capacity: Does the summary state the reservoir capacity?",
+        "13. Water Reservoir Ease of Use: Does the summary comment on filling/cleaning the reservoir?",
+        "14. Control Intuitiveness: Does the summary describe the ease of using the controls?",
+        "15. Feature Performance: Does the summary comment on features like temperature control or iced coffee setting?",
+        "16. K-Cup Compatibility (All types): Does the summary confirm compatibility with non-Keurig K-Cups and reusable pods?",
+        "17. Physical Dimensions: Does the summary provide the machine's dimensions or footprint?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Keurig K-Elite is a single-serve K-Cup pod coffee maker designed for individuals or small households seeking convenient and customizable coffee brewing. It's ideal for those who value quick, single-cup preparation with options for different brew strengths and sizes.\n\n2. **Key Benefits (What's Good)**:\n    *   **Customizable Brew**: Offers strong brew and iced coffee settings, along with adjustable temperature control, to tailor the drink to your preference.\n    *   **Convenient Hot Water**: Provides hot water on demand for other uses like tea, instant soups, or oatmeal.\n    *   **Large Water Reservoir**: The 75oz removable water reservoir allows for brewing multiple cups before needing a refill.\n    *   **Fast Brewing**: Brews coffee in minutes, saving time in the morning.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   **Durability Concerns**: Some users have reported the machine breaking down after a relatively short period.\n    *   **Potential Quality Issues**: Some customers have received obviously used products when purchasing what they believed to be new.\n    *   **Descaling Required**: Regular descaling is necessary to maintain optimal performance and taste.\n\n4. **Bottom Line**: The Keurig K-Elite is a convenient and feature-rich single-serve coffee maker that offers a customizable brewing experience, but potential buyers should be aware of reported durability issues and the need for regular maintenance.",
+    "latency_ms": 17082.150916998216,
+    "ttft_ms": 15143.133500001568,
+    "node_latencies": {
+      "scrape": 13.707160457997816,
+      "generate": 3.3609647499979474
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Insta360-Standard-Bundle-Waterproof-Stabilization/dp/B0DBQBMQH2/",
+      "name": "Insta360 Ace Pro",
+      "questions": [
+        "1. Video Quality (Daylight): Does the summary describe video quality in good lighting?",
+        "2. Video Quality (Low Light): Does the summary describe video quality in low light?",
+        "3. Stabilization Effectiveness: Does the summary comment on the effectiveness of FlowState stabilization?",
+        "4. Photo Quality: Does the summary describe the quality of still photos?",
+        "5. Battery Duration: Does the summary state typical battery life during recording (and at what settings)?",
+        "6. Charging Time: Does the summary state how long it takes to fully charge the battery?",
+        "7. Footage Transfer Speed/Ease: Does the summary comment on transferring footage to phone/computer?",
+        "8. App Intuitiveness: Does the summary describe the Insta360 app as intuitive?",
+        "9. App Editing Features: Does the summary mention the richness of editing features in the app?",
+        "10. App Stability: Does the summary comment on the stability of the companion app?",
+        "11. Ruggedness: Does the summary comment on its suitability for action sports/ruggedness?",
+        "12. Waterproofing Reliability: Does the summary mention the reliability of waterproofing without a case?",
+        "13. Lens Scratch Resistance: Does the summary mention if the lens is prone to scratching?",
+        "14. Built-in Audio Quality: Does the summary describe the quality of the internal microphones?",
+        "15. Wind Noise Handling: Does the summary comment on how well it handles wind noise?",
+        "16. Overheating Issues: Does the summary mention if the camera tends to overheat during long recordings?",
+        "17. Flip Screen Quality/Usability: Does the summary comment on the flip screen's quality and usability?",
+        "18. Menu Navigation Ease: Does the summary mention the ease of navigating the camera menus?",
+        "19. Comparison vs. GoPro/DJI: Does the summary compare it to GoPro HERO or DJI Osmo Action cameras?",
+        "20. Value for Money: Does the summary provide an assessment of its value proposition compared to competitors?"
+      ]
+    },
+    "summary": "1.  **What it is & Who it's for**: The Insta360 X4 is a waterproof 8K 360 action camera designed for travel, action sports, and creative video projects, offering immersive footage and easy reframing. It's ideal for content creators and adventurers who want to capture everything around them in high quality.\n\n2.  **Key Benefits (What's Good)**:\n    *   Captures stunning 8K 360° video and 4K wide-angle footage, providing exceptional image quality.\n    *   Offers superior stabilization with FlowState and 360° Horizon Lock for smooth, level shots during intense activity.\n    *   Features an \"invisible selfie stick\" effect for unique third-person perspectives without visible support.\n    *   Extended battery life, now lasting up to 135 minutes, allowing for longer shooting sessions.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   Some users report the camera can get hot quickly during use.\n    *   Sky exposure can be overexposed in daylight conditions while driving, requiring manual adjustment.\n    *   The included case has limited space and may not fit all selfie sticks or the camera with certain mounts attached.\n    *   While the app is useful, some features like direction lock are only available on the desktop application.\n\n4.  **Bottom Line**: The Insta360 X4 is a powerful and versatile 360 camera offering exceptional video quality and stabilization, making it great for capturing immersive content, but be aware of potential overheating and exposure issues in certain scenarios.",
+    "latency_ms": 13773.551958998723,
+    "ttft_ms": 11642.59512499848,
+    "node_latencies": {
+      "scrape": 10.118826249999984,
+      "generate": 3.6346693750019767
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Murad-Retinol-Youth-Renewal-Serum/dp/B01K629LDI/",
+      "name": "Murad Retinol Youth Renewal Serum",
+      "questions": [
+        "1. Targeted Aging Signs: Does the summary list the specific signs of aging targeted (lines, wrinkles, texture, firmness, dark spots)?",
+        "2. Suitability for Sensitive Skin: Does the summary indicate if it's suitable for sensitive skin based on reviews or claims?",
+        "3. Time to See Results: Does the summary provide an expected timeframe for seeing noticeable results?",
+        "4. Reported Positive Effects: Does the summary list commonly reported benefits (smoother skin, reduced lines, etc.)?",
+        "5. Retinol Type/Technology: Does the summary specify the type of retinol used (e.g., Retinol Tri-Active Technology)?",
+        "6. Likelihood of Irritation: Does the summary mention the potential for initial irritation (redness, peeling)?",
+        "7. Irritation Mitigation: Does the summary suggest the formula helps mitigate irritation?",
+        "8. Serum Texture: Does the summary describe the texture (light, creamy, etc.)?",
+        "9. Absorption Feel: Does the summary comment on how well it absorbs (non-greasy, non-sticky)?",
+        "10. Scent: Does the summary mention if the product has a noticeable scent?",
+        "11. Packaging Effectiveness: Does the summary comment on the effectiveness of the pump bottle (dispensing, protection)?",
+        "12. Recommended Frequency: Does the summary suggest how often to use the serum?",
+        "13. Layering Information: Does the summary indicate if it layers well with other skincare products?",
+        "14. Value for Money Assessment: Does the summary provide an assessment of its value considering the price and results?"
+      ]
+    },
+    "summary": "Okay, I understand. I will need you to provide me with the product details so I can create a summary in the requested format. I cannot create a summary without knowing which product you are asking about.",
+    "latency_ms": 18192.237750001368,
+    "ttft_ms": 17843.88595799828,
+    "node_latencies": {
+      "scrape": 16.50539329199819,
+      "generate": 1.6804141250031535
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Ninja-Capacity-Dehydrate-Technology-AF141/dp/B0CSZ7WBYW/",
+      "name": "Ninja Air Fryer",
+      "questions": [
+        "1. Practical Capacity: Does the summary give examples of how much food the 5.5 qt basket holds (e.g., lbs of wings)?",
+        "2. Suitability for Household Size: Does the summary indicate if the size is practical for families/individuals?",
+        "3. Counter Space/Dimensions: Does the summary provide the physical dimensions?",
+        "4. Air Fry Performance: Does the summary comment on how well it air fries (crispiness, evenness)?",
+        "5. Roast Performance: Does the summary comment on roasting performance?",
+        "6. Bake Performance: Does the summary comment on baking performance?",
+        "7. Reheat Performance: Does the summary comment on reheating performance?",
+        "8. Dehydrate Performance: Does the summary comment on dehydrating performance?",
+        "9. Cooking Evenness: Does the summary address whether it cooks food evenly?",
+        "10. Control Intuitiveness: Does the summary state if the controls are intuitive/easy?",
+        "11. Preset Usefulness: Does the summary comment on the usefulness of presets?",
+        "12. Cleaning Ease (Basket/Plate): Does the summary describe the ease of cleaning the basket and crisper plate?",
+        "13. Dishwasher Safety: Does the summary confirm if the basket/plate are dishwasher safe?",
+        "14. Dishwasher Durability: Does the summary mention how well parts hold up after dishwashing?",
+        "15. Noise Level: Does the summary describe the noise level during operation?",
+        "16. Preheating Requirement/Time: Does the summary state if preheating is needed and how long it takes?",
+        "17. Plastic Smell Reports: Does the summary mention user reports of plastic smell (especially initial uses)?",
+        "18. Build Quality: Does the summary comment on the overall build quality and sturdiness?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Ninja Air Fryer Pro is a 5-quart capacity air fryer with four functions (air fry, roast, reheat, and dehydrate), designed for individuals or small families seeking a healthier and faster way to cook their favorite foods with less oil.\n\n2. **Key Benefits (What's Good)**:\n    *   **Crispy Results with Less Oil**: Air Crisp Technology delivers crispy food using little to no oil, reducing fat intake.\n    *   **Versatile Cooking Options**: Offers 4-in-1 functionality to air fry, roast, reheat, and dehydrate, catering to various cooking needs.\n    *   **Fast Cooking**: Cooks frozen foods in minutes and delivers quick, convenient meals.\n    *   **Easy to Clean**: Features a nonstick basket and crisper plate, making cleanup a breeze.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   **Smaller Capacity:** The 5-quart capacity might be limiting for larger families or when cooking for guests.\n    *   **Potential Learning Curve:** While generally easy to use, mastering the optimal settings for different foods may require some experimentation.\n\n4. **Bottom Line**: The Ninja Air Fryer Pro is a great choice for individuals or small families looking for a versatile and easy-to-clean air fryer that delivers crispy results with less oil, though its smaller capacity may not suit everyone.",
+    "latency_ms": 15734.01770900091,
+    "ttft_ms": 13946.05941700138,
+    "node_latencies": {
+      "scrape": 12.571900625000126,
+      "generate": 3.151845417000004
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/FIFINE-Microphone-Voice-Over-Windscreen-Amplitank-K688/dp/B0B8SNVK5K/",
+      "name": "FIFINE USB/XLR Microphone K688",
+      "questions": [
+        "1. USB Sound Quality for Voice: Does the summary describe the sound quality via USB for voice applications?",
+        "2. XLR Sound Quality for Voice: Does the summary describe the sound quality via XLR for voice applications?",
+        "3. Sound Quality Comparison: Does the summary compare its sound quality to other mics in its price range?",
+        "4. USB Plug-and-Play Ease: Does the summary confirm easy plug-and-play setup via USB (Windows/Mac)?",
+        "5. Driver Requirement: Does the summary state if special drivers are needed for USB connection?",
+        "6. Background Noise Rejection: Does the summary comment on how well it rejects background noise/echo?",
+        "7. XLR Gain Requirement: Does the summary indicate if significant gain is needed when using XLR?",
+        "8. Sensitivity Level: Does the summary comment on the microphone's sensitivity for voice pickup?",
+        "9. Build Material/Durability: Does the summary describe the build quality or materials used?",
+        "10. Accessory Quality: Does the summary comment on the quality of included accessories (windscreen, mount)?",
+        "11. Mute Button Functionality: Does the summary comment on the reliability/feel of the mute button?",
+        "12. Gain Knob Functionality: Does the summary comment on the reliability/feel of the gain knob?",
+        "13. Headphone Jack Monitoring: Does the summary confirm zero-latency monitoring via the headphone jack?",
+        "14. Value Proposition: Does the summary assess its value considering dual connectivity and sound quality for the price?"
+      ]
+    },
+    "summary": "1.  **What it is & Who it's for**: The FIFINE K688 is a dynamic microphone with both XLR and USB connectivity, designed for podcasting, streaming, vocal recording, and voice-over work, well-suited for home studio use or on-the-go recording.\n\n2.  **Key Benefits (What's Good)**:\n    *   Delivers clear, clean sound quality with good background noise rejection due to its cardioid polar pattern.\n    *   Offers versatile connectivity with both XLR and USB options, making it compatible with various devices like computers, audio interfaces, and mixers.\n    *   Features convenient on-board controls, including a tap-to-mute button, headphone jack for monitoring, and gain control (USB connection only).\n    *   Solid, durable metal construction ensures longevity.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   Some users report inconsistent functionality, with a few experiencing issues getting the microphone to work correctly.\n    *   XLR cable, mic stand, or boom arm are not included, potentially requiring additional purchases.\n    *   Function keys like gain control and mute are only available when using the USB connection.\n    *   The microphone is dynamic, so it requires speaking in close proximity for optimal sound capture.\n\n4.  **Bottom Line**: The FIFINE K688 is a versatile and affordable microphone that offers good sound quality and flexible connectivity for various recording applications; however, potential buyers should be aware of the reported functionality issues and the need to purchase additional accessories for certain setups.",
+    "latency_ms": 15822.904125001514,
+    "ttft_ms": 13595.52029200131,
+    "node_latencies": {
+      "scrape": 12.19551595899975,
+      "generate": 3.6131536660031998
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Apple-iPhone-16-Version-128GB/dp/B0DHJH2GZL/",
+      "name": "Apple iPhone 16",
+      "questions": [
+        "1. AI Feature Usefulness: Does the summary provide insights into the practical usefulness of Apple Intelligence features?",
+        "2. AI Enhancement to Experience: Does the summary suggest AI features significantly enhance the user experience?",
+        "3. Camera Improvements vs. 15: Does the summary detail noticeable camera performance improvements over the iPhone 15?",
+        "4. Battery Life Improvements vs. 15: Does the summary quantify real-world battery life gains over the iPhone 15?",
+        "5. Speed Improvements vs. 15: Does the summary highlight noticeable processing speed improvements over the iPhone 15?",
+        "6. Display Improvements vs. 15: Does the summary describe tangible display quality improvements over the iPhone 15?",
+        "7. New Button Utility: Does the summary comment on the practical utility of the new Action/Capture button?",
+        "8. Key Functional Differences vs. Pro: Does the summary list the main functional differences compared to the 16 Pro?",
+        "9. Missing Pro Features: Does the summary identify key Pro features absent in the standard 16 (camera, display, etc.)?",
+        "10. Low Light Camera Performance: Does the summary specifically comment on low-light photo/video quality?",
+        "11. Design/Ergonomics Changes: Does the summary mention changes in physical design, weight, or feel compared to the 15?",
+        "12. Thermal Performance: Does the summary indicate how well the phone manages heat during intensive tasks?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: This is a renewed Apple iPhone 16 with 128GB of storage, offering a modern smartphone experience at a potentially lower price point for budget-conscious Apple enthusiasts. It's unlocked and compatible with all carriers in the US.\n\n2. **Key Benefits (What's Good)**:\n    *   **Like-new condition**: Many customers report receiving phones in excellent condition, often described as \"new\" with no scratches or signs of wear.\n    *   **Full battery capacity**: The phone's battery exceeds 80% of its original capacity, ensuring decent battery life.\n    *   **Cost Savings**: Offers a more affordable way to experience the latest iPhone technology compared to buying a brand-new device.\n    *   **Functionality**: The phone functions well, with easy setup, fast performance, and a great speaker.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   **Renewed Condition**: As a renewed device, it may have undergone prior use, and while inspected, it's not Apple certified, and accessories are not original.\n    *   **Generic Packaging**: The product may arrive in a generic box, which may not be ideal for those seeking the full \"unboxing\" experience.\n    *   **Price Variation**: The price of the phone may vary depending on the seller.\n\n4. **Bottom Line**: This renewed iPhone 16 offers a compelling option for those seeking a modern iPhone experience at a reduced cost and are willing to accept non-original accessories and packaging for a potentially like-new device. However, carefully compare prices from different sellers before purchasing.",
+    "latency_ms": 17700.161749999097,
+    "ttft_ms": 15360.094625000784,
+    "node_latencies": {
+      "scrape": 13.899595250004495,
+      "generate": 3.793993084000249
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Apple-iPhone-MagSafe-Camera-Control/dp/B0DGHH9WMX/",
+      "name": "Apple iPhone 16 FineWoven Case",
+      "questions": [
+        "1. Scratch/Scuff Resistance: Does the summary comment on the FineWoven material's resistance to scratches or scuffs?",
+        "2. Staining Resistance: Does the summary mention if the material stains easily?",
+        "3. Fraying Issues: Does the summary mention user reports of the material fraying?",
+        "4. Patina Development: Does the summary comment on how the material wears or develops a patina over time?",
+        "5. Texture Description: Does the summary describe the feel of the material (soft, textured)?",
+        "6. Grip Level: Does the summary comment on whether the case provides good grip or is slippery?",
+        "7. Drop Protection Level: Does the summary provide an assessment of the drop protection offered?",
+        "8. Screen Lip Protection: Does the summary confirm a raised lip for screen protection?",
+        "9. Camera Lip Protection: Does the summary confirm a raised lip for camera protection?",
+        "10. Bulkiness: Does the summary comment on how much bulk the case adds?",
+        "11. Dust/Lint Attraction: Does the summary mention if the material attracts dust or lint?",
+        "12. Ease of Cleaning: Does the summary describe how easy the case is to clean?",
+        "13. MagSafe Connection Strength: Does the summary comment on the strength of the MagSafe connection?",
+        "14. MagSafe Charging Interference: Does the summary mention any interference with MagSafe charging?",
+        "15. Button Tactility: Does the summary describe the feel and responsiveness of the button covers?",
+        "16. Cutout Precision: Does the summary comment on the precision of the cutouts?",
+        "17. Color Accuracy/Fading: Does the summary mention if colors match marketing or if they fade?",
+        "18. Value Assessment: Does the summary assess if the case is worth the cost compared to alternatives?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for:** This is an Apple-designed clear case with MagSafe for the iPhone 16, designed to offer protection while showcasing the phone's color. It's ideal for iPhone 16 owners who want a minimalist case with MagSafe compatibility and camera control features.\n\n2. **Key Benefits (What's Good):**\n    *   Provides a good fit and adequate protection against scratches and drops.\n    *   Compatible with MagSafe chargers for faster wireless charging.\n    *   Features a unique camera button design for enhanced camera control.\n    *   Made with materials optimized to prevent yellowing over time.\n\n3.  **Potential Downsides (Keep in Mind):**\n    *   Grip is inconsistent; some users find it slippery.\n    *   Protection level might not be sufficient for heavy-duty use; some users feel it's not protective enough.\n    *   The value for the money is debated, with some considering it expensive for the protection it offers.\n\n4. **Bottom Line:** The Apple iPhone 16 Clear Case with MagSafe offers a sleek design and MagSafe compatibility, but its grip and level of protection may not satisfy all users, especially considering the price point.",
+    "latency_ms": 11346.322165998572,
+    "ttft_ms": 9707.167374996061,
+    "node_latencies": {
+      "scrape": 8.02915049999865,
+      "generate": 3.3063274579981226
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/dp/B0BJ62BW91",
+      "name": "Gravol Kids Liquid",
+      "questions": [
+        "1. Speed of Relief: Does the summary indicate how quickly it provides relief?",
+        "2. Effectiveness for Motion Sickness: Does the summary comment on its effectiveness for motion sickness?",
+        "3. Effectiveness for Stomach Bugs: Does the summary comment on its effectiveness for stomach bugs?",
+        "4. Duration of Effects: Does the summary state how long the effects typically last?",
+        "5. Drowsiness Level: Does the summary describe the significance of drowsiness as a side effect?",
+        "6. Other Common Side Effects: Does the summary list other common side effects (dizziness, dry mouth)?",
+        "7. Taste/Palatability for Kids: Does the summary comment on whether kids generally accept the taste?",
+        "8. Dosing Tool Ease of Use: Does the summary describe the ease of using the included dosing tool?",
+        "9. Dosing Tool Accuracy: Does the summary comment on the accuracy of the dosing tool?",
+        "10. Active Ingredient Stated: Does the summary clearly state the active ingredient (Dimenhydrinate)?",
+        "11. Concentration Stated: Does the summary state the concentration of the active ingredient?",
+        "12. Recommended Minimum Age: Does the summary specify the minimum age for use?",
+        "13. Dye-Free Status: Does the summary state if the formula is dye-free?",
+        "14. Sugar/Sweetener Content: Does the summary provide info on sugar or artificial sweetener content?",
+        "15. Comparison to Alternatives: Does the summary compare it to other children's anti-nausea options?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: Gravol Kids Liquid is a fruit-flavored, dye-free liquid medication designed to prevent and treat motion sickness, nausea, vomiting, and dizziness in children ages 2 and up. It's ideal for parents seeking a fast-acting and easy-to-administer solution for their kids during travel.\n\n2. **Key Benefits (What's Good)**:\n    *   Provides fast and effective relief from motion sickness symptoms, lasting up to 6-7 hours according to some users.\n    *   Easy for children to take due to its great-tasting fruit flavor and liquid form, especially for those who have trouble swallowing pills.\n    *   Dye-free and alcohol-free formulation, making it a more appealing option for parents concerned about these additives.\n    *   Convenient, travel-friendly size, perfect for packing on trips, cruises, and flights.\n\n3. **Potential Downsides (Keep in Mind)**:\n    *   Contains sugar (sucrose and sorbitol), which may be a concern for parents managing their child's sugar intake.\n    *   Drowsiness is a possible side effect due to the active ingredient, dimenhydrinate.\n    *   Some alternative sellers may have higher prices or shipping costs, so comparing options is recommended.\n\n4. **Bottom Line**: Gravol Kids Liquid is a well-regarded and effective option for preventing motion sickness in children, particularly appreciated for its taste and ease of use; however, parents should be mindful of the sugar content and potential for drowsiness.",
+    "latency_ms": 17492.805124995357,
+    "ttft_ms": 15423.927083997114,
+    "node_latencies": {
+      "scrape": 14.05291616699833,
+      "generate": 3.4257880830045906
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Orgain-Organic-Protein-Powder-Strawberries/dp/B09SJ4WJNV/",
+      "name": "Orgain Organic Protein Powder",
+      "questions": [
+        "1. Ease of Digestion: Does the summary comment on how easily digestible it is?",
+        "2. Bloating/Gas Reports: Does the summary mention user feedback regarding bloating or gas?",
+        "3. Taste Description: Does the summary describe the taste of the Strawberries & Cream flavor?",
+        "4. Sweetness Level: Does the summary comment on the sweetness level?",
+        "5. Artificial Taste: Does the summary mention if it tastes artificial?",
+        "6. Texture Description (Gritty/Chalky): Does the summary describe the texture (gritty, chalky, smooth)?",
+        "7. Mixability: Does the summary describe how well it mixes with liquids?",
+        "8. Clumping Issues: Does the summary mention issues with clumping?",
+        "9. Allergen Info (Beyond Protein): Does the summary list other potential allergens (e.g., soy)?",
+        "10. Sweetener Type: Does the summary identify the type of sweetener used (erythritol, stevia)?",
+        "11. Protein Sources: Does the summary list the blend of plant proteins used?",
+        "12. Amino Acid Profile Info: Does the summary mention if info on the amino acid profile is available?",
+        "13. USDA Organic Certification: Does the summary confirm USDA Organic certification?",
+        "14. Non-GMO Verification: Does the summary confirm Non-GMO Project verification?",
+        "15. Heavy Metal Testing Info: Does the summary mention if Orgain provides info on heavy metal testing?",
+        "16. Effectiveness for Goals: Does the summary mention user feedback on effectiveness for fitness/supplementation goals?",
+        "17. Cost per Serving: Does the summary provide the cost per serving?",
+        "18. Cost per Gram of Protein: Does the summary provide the cost per gram of protein?",
+        "19. Value Comparison: Does the summary compare its value to other organic plant protein powders?"
+      ]
+    },
+    "summary": "**What it is & Who it's for:** Orgain Organic Vegan Protein Powder in Strawberries & Cream flavor is a plant-based protein powder providing 21g of protein per serving, designed for individuals seeking a vegan, gluten-free, and soy-free protein supplement to support their active lifestyle or dietary needs.\n\n**Key Benefits (What's Good):**\n\n*   **Smooth Texture & Mixability:** Blends easily into shakes and recipes without clumping or a grainy texture.\n*   **Versatile Use:** Can be mixed into smoothies, almond milk, oat milk, or used in baking for a protein boost.\n*   **Clean Ingredients:** Certified USDA Organic, Non-GMO, and free from soy, dairy, gluten, artificial sweeteners, flavors, and preservatives.\n*   **Added Fiber & Prebiotics:** Contains 4g of prebiotic fiber per serving to support gut health.\n\n**Potential Downsides (Keep in Mind):**\n\n*   **Sweetness:** Some users find the stevia-sweetened flavor overly sweet, which might not appeal to everyone.\n*   **Mixed Reviews on Taste:** While some enjoy the flavor, others may not find it palatable, so taste preferences vary.\n*   **Texture Concerns:** Some reviewers have described the texture as grainy.\n*   **Container size:** Some customers have noted that the container is barely half full.\n\n**Bottom Line:** Orgain Organic Vegan Protein Powder is a solid choice for those prioritizing organic, plant-based protein with added fiber and easy mixability, but be aware that the stevia sweetness and potential for varied taste experiences might not suit all palates.",
+    "latency_ms": 12850.383167002292,
+    "ttft_ms": 10696.508832996187,
+    "node_latencies": {
+      "scrape": 9.477835375000723,
+      "generate": 3.357164124994597
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/Quencher-Cupholder-Compatible-Insulated-Stainless/dp/B0DCDQ1RFV/",
+      "name": "Stanley Quencher H2.0 FlowState Tumbler",
+      "questions": [
+        "1. Cold Retention Time: Does the summary state how long it keeps drinks cold (with ice)?",
+        "2. Hot Retention Time: Does the summary state how long it keeps drinks hot?",
+        "3. Meets Advertised Times: Does the summary indicate if it meets the advertised insulation times?",
+        "4. Lid Leak Resistance (Straw Area): Does the summary comment on leak resistance around the straw opening?",
+        "5. Lid Leak Resistance (Closed): Does the summary comment on leak resistance when the lid is closed?",
+        "6. Suitability for Bag Transport: Does the summary advise if it's safe to carry in a bag without spilling?",
+        "7. Taste Imparted (Metallic/Plastic): Does the summary mention user feedback on any imparted taste?",
+        "8. Ease of Cleaning (Tumbler): Does the summary comment on the ease of cleaning the main tumbler body?",
+        "9. Ease of Cleaning (Lid): Does the summary comment on the ease/difficulty of cleaning the FlowState lid mechanism?",
+        "10. Dishwasher Safety: Does the summary confirm if all parts are dishwasher safe?",
+        "11. Finish Durability (Scratches): Does the summary comment on the powder coat's resistance to scratching?",
+        "12. Dent Resistance: Does the summary mention susceptibility to denting upon drops?",
+        "13. Cupholder Compatibility: Does the summary confirm it fits in standard car/stroller cupholders?",
+        "14. Handle Comfort: Does the summary comment on the comfort of the handle?",
+        "15. Handle Security: Does the summary comment on how securely the handle is attached?",
+        "16. Lid Mechanism Durability: Does the summary mention the long-term durability of the FlowState lid mechanism?",
+        "17. Straw Durability: Does the summary comment on the durability of the included straw?"
+      ]
+    },
+    "summary": "1. **What it is & Who it's for**: The Stanley Quencher H2.0 is a 40-ounce, insulated stainless steel tumbler designed to keep drinks cold or hot for hours, perfect for commuters, gym-goers, or anyone wanting to stay hydrated throughout the day. It features a handle, straw, and a 3-position lid.\n\n2. **Key Benefits (What's Good)**:\n    *   Keeps drinks cold for extended periods, ensuring refreshment throughout the day.\n    *   Durable construction using recycled stainless steel, making it a sustainable and long-lasting choice.\n    *   Convenient features like a comfort-grip handle and cup holder compatibility make it easy to carry and use on the go.\n    *   Easy to clean as it's dishwasher safe.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   Not completely leak-proof; some users report leaking, especially through the straw opening.\n    *   Some customers feel it's overpriced for what it offers.\n    *   Its large size (40oz) might be bulky for some users, though the narrow base fits most car cup holders.\n\n4. **Bottom Line**: The Stanley Quencher H2.0 is a popular choice for those prioritizing long-lasting insulation and durability in a large-capacity tumbler, but be aware of its potential for leaking and consider if the size and price align with your needs.",
+    "latency_ms": 15552.106208000623,
+    "ttft_ms": 13668.23954100255,
+    "node_latencies": {
+      "scrape": 12.226637917003245,
+      "generate": 3.2963133750017732
+    },
+    "error": null
+  },
+  {
+    "graph_key": "scrape_summary",
+    "product": {
+      "url": "https://www.amazon.com/SENSARTE-Nonstick-Frying-Pan-Skillet/dp/B086PHS2V8/",
+      "name": "SENSARTE Nonstick Frying Pan",
+      "questions": [
+        "1. Initial Nonstick Effectiveness: Does the summary describe how well the nonstick works initially (e.g., with eggs)?",
+        "2. Nonstick Lifespan: Does the summary provide an estimate or user feedback on how long the nonstick lasts?",
+        "3. Care Instructions Adherence: Does the summary mention the importance of following care instructions for longevity?",
+        "4. PFOA/PFAS Free Claim: Does the summary explicitly state it's free from PFOA/PFAS?",
+        "5. Lead/Cadmium Free Claim: Does the summary explicitly state it's free from lead and cadmium?",
+        "6. Coating Material Type: Does the summary identify the type of nonstick coating (e.g., granite)?",
+        "7. Heat Distribution Evenness: Does the summary comment on how evenly the pan heats?",
+        "8. Induction Compatibility: Does the summary confirm if it's suitable for induction cooktops?",
+        "9. Warping Resistance: Does the summary mention resistance to warping?",
+        "10. Ease of Hand Cleaning: Does the summary describe the ease of cleaning by hand?",
+        "11. Dishwasher Performance (if applicable): If dishwasher use is mentioned, does the summary comment on how the pan holds up?",
+        "12. Handle Comfort: Does the summary comment on the comfort of the handle grip?",
+        "13. Handle Heat Resistance: Does the summary state if the handle stays cool on the stovetop?",
+        "14. Oven Safety Temperature: Does the summary specify the maximum oven-safe temperature?",
+        "15. Pan Body Material: Does the summary identify the material of the pan body (e.g., cast aluminum)?",
+        "16. Sturdiness/Weight Balance: Does the summary comment on the pan's sturdiness or weight balance?",
+        "17. Scratch Resistance (Utensils): Does the summary mention resistance to scratches from utensils?",
+        "18. Value for Price: Does the summary assess the pan's value for its price?",
+        "19. Available Sizes: Does the summary mention if other sizes are available?"
+      ]
+    },
+    "summary": "1.  **What it is & Who it's for**: The SENSARTE Nonstick Frying Pan Skillet is a versatile pan designed for everyday cooking, especially for those seeking a healthy, easy-to-clean cooking experience. It's ideal for making omelets, frying, sauteing, and searing on various stovetops.\n\n2.  **Key Benefits (What's Good)**:\n    *   Features a Swiss-made nonstick coating that allows for low-oil cooking and easy food release.\n    *   The woodgrain bakelite handle stays cool during cooking and provides a comfortable grip.\n    *   The pan heats quickly and evenly due to its high magnetic conductive base, making it suitable for all stovetops, including induction.\n    *   Cleanup is a breeze – often requiring just a wipe or rinse.\n\n3.  **Potential Downsides (Keep in Mind)**:\n    *   Some users have reported that food sometimes sticks to the pan during cooking and cleaning, contrary to the non-stick claim.\n    *   Although dishwasher safe, hand washing is recommended.\n    *   Minor scratches on the stainless steel base are normal due to factory polishing, which might be a concern for some buyers.    *   Oven safe only up to 302°F, limiting its use for some oven-based recipes.\n\n4.  **Bottom Line**: The SENSARTE Nonstick Frying Pan is a good choice for those looking for a reliable nonstick pan for daily use and easy cleanup, especially if you value compatibility with all stovetops and a comfortable handle; however, be aware that some users have experienced food sticking and that the oven-safe temperature is relatively low.",
+    "latency_ms": 14577.113332998124,
+    "ttft_ms": 12477.3445000028,
+    "node_latencies": {
+      "scrape": 10.945248125004582,
+      "generate": 3.6213396249950165
+    },
+    "error": null
+  }
+]

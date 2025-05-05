@@ -4091,3 +4091,480 @@ Average Node Latencies (seconds):
      - Q19: NO (Reason: No mention of available sizes.) [19. Available Sizes: Does the summary mention if other sizes...] 
 
 ============================================================
+
+
+============================================================
+EVALUATION RUN - SCRAPE_SUMMARY - 2025-05-05 19:31:42
+============================================================
+Average Overall Latency: 15858.64 ms
+Average Node Latencies (seconds):
+  - generate: 3.345 s
+  - scrape: 12.496 s
+
+--- Individual Product Details ---
+
+1. Product: Amara Smoothie Melts - Mango Carrot
+   Overall Latency: 15336.46 ms
+   Node Latencies: generate: 4.093s / scrape: 11.209s
+   Questions answered: 9/17
+   Summary Snippet: ## Amara Smoothie Melts - Mango Carrot  1. **What it is & Who it's for:** Amara Smoothie Melts are freeze-dried fruit and vegetable snacks designed fo...
+   Detailed Evaluation:
+     - Q1: PARTIALLY (Excerpt: Made with organic fruits and vegetables) [1. Ingredients List: Does the summary list the main ingredie...] 
+     - Q2: YES (Excerpt: no added sugar) [2. Added Sugars: Does the summary state if there are added s...] 
+     - Q3: YES (Excerpt: no added sugar or preservatives) [3. Artificial Additives: Does the summary state if there are...] 
+     - Q4: NO (Reason: The summary does not mention the presence or absence of common allergens.) [4. Allergens: Does the summary list common allergens (dairy,...] 
+     - Q5: YES (Excerpt: some users report that the melts don't dissolve as easily as expected and can be quite hard) [5. Dissolvability: Does the summary mention how quickly/easi...] 
+     - Q6: PARTIALLY (Excerpt: some users have concerns about the meltability and hardness of the product, so consider this if your child has difficulty with harder textures.) [6. Choking Risk Info: Does the summary address choking risk ...] 
+     - Q7: YES (Excerpt: can be quite hard ... described them as very hard) [7. Texture Description: Does the summary describe the textur...] 
+     - Q8: YES (Excerpt: designed for babies and toddlers (10 months+)) [8. Age Appropriateness: Does the summary indicate the recomm...] 
+     - Q9: NO (Reason: The summary does not mention serving size.) [9. Serving Size: Does the summary state the recommended serv...] 
+     - Q10: NO (Reason: No information on recommended frequency of consumption.) [10. Serving Frequency: Does the summary suggest a recommende...] 
+     - Q11: NO (Reason: No key vitamins or nutrients are specified.) [11. Key Nutrients: Does the summary mention key vitamins or ...] 
+     - Q12: YES (Excerpt: Kids love the flavor.) [12. Taste Feedback: Does the summary reference user reviews ...] 
+     - Q13: YES (Excerpt: packaged in resealable bags) [13. Packaging Features: Does the summary mention ease of ope...] 
+     - Q14: NO (Reason: The summary does not state the number of melts per package.) [14. Quantity per Package: Does the summary state the number ...] 
+     - Q15: NO (Reason: Shelf life is not mentioned.) [15. Shelf Life: Does the summary mention the product's shelf...] 
+     - Q16: NO (Reason: No storage instructions are provided.) [16. Storage Instructions: Does the summary provide storage i...] 
+     - Q17: NO (Reason: No comparison to competitors is provided.) [17. Competitor Comparison: Does the summary compare this pro...] 
+
+2. Product: Samsonite Freeform Hardside Carry-On
+   Overall Latency: 17186.79 ms
+   Node Latencies: generate: 3.141s / scrape: 14.007s
+   Questions answered: 8/18
+   Summary Snippet: 1. **What it is & Who it's for**: The Samsonite Freeform 21-Inch Hardside Carry-On is a lightweight, expandable carry-on suitcase designed for travele...
+   Detailed Evaluation:
+     - Q1: NO (Reason: The summary describes it as a 'hardside' or 'hardshell' suitcase but does not specify the material type (e.g., polypropylene).) [1. Material Type: Does the summary identify the hardshell ma...] 
+     - Q2: NO (Reason: There is no mention of resistance to cracking.) [2. Crack Resistance: Does the summary mention resistance to ...] 
+     - Q3: NO (Reason: The summary does not mention resistance to scuffs or scratches.) [3. Scuff/Scratch Resistance: Does the summary mention resist...] 
+     - Q4: YES (Excerpt: The four multi-directional spinner wheels ensure smooth gliding through airports.) [4. Wheel Type: Does the summary specify the type of wheels (...] 
+     - Q5: PARTIALLY (Excerpt: Effortless Mobility: The four multi-directional spinner wheels ensure smooth gliding through airports.) [5. Wheel Performance: Does the summary describe the smoothne...] 
+     - Q6: NO (Reason: There is no mention of the durability of the wheels.) [6. Wheel Durability: Does the summary comment on the durabil...] 
+     - Q7: YES (Excerpt: meets most airline carry-on size restrictions) [7. Carry-On Compliance: Does the summary state whether it me...] 
+     - Q8: NO (Reason: The summary does not provide the exact dimensions.) [8. Exact Dimensions: Does the summary provide the exact dime...] 
+     - Q9: YES (Excerpt: At only 6.5 lbs, it helps avoid overweight baggage fees.) [9. Weight Specification: Does the summary state the weight o...] 
+     - Q10: PARTIALLY (Excerpt: Lightweight Design: At only 6.5 lbs, it helps avoid overweight baggage fees.) [10. Lightweight Comparison: Does the summary compare its wei...] 
+     - Q11: YES (Excerpt: Features elastic straps, a divider, and a pouch to keep belongings neatly in place.) [11. Interior Organization: Does the summary describe interio...] 
+     - Q12: NO (Reason: Does not describe the handle type.) [12. Handle Type: Does the summary describe the handle (e.g.,...] 
+     - Q13: NO (Reason: No mention of handle sturdiness or comfort.) [13. Handle Quality: Does the summary comment on the sturdine...] 
+     - Q14: YES (Excerpt: Built-in TSA-approved lock provides peace of mind.) [14. TSA Lock: Does the summary state if it includes a built-...] 
+     - Q15: PARTIALLY (Excerpt: Some find the TSA lock tricky to figure out.) [15. Lock Reliability: Does the summary mention the reliabili...] 
+     - Q16: NO (Reason: No mention of the finish resisting fingerprints or scratches.) [16. Finish Properties: Does the summary mention if the finis...] 
+     - Q17: NO (Reason: No warranty information is provided.) [17. Warranty Information: Does the summary state the warrant...] 
+     - Q18: NO (Reason: No mention of customer service feedback.) [18. Customer Service Reputation: Does the summary mention fe...] 
+
+3. Product: Sports Research Fish Oil Mini-Softgels
+   Overall Latency: 17481.19 ms
+   Node Latencies: generate: 3.609s / scrape: 13.861s
+   Questions answered: 7/17
+   Summary Snippet: 1. **What it is & Who it's for**: Sports Research Fish Oil Mini-Softgels are small, easy-to-swallow capsules providing Omega-3 fatty acids derived fro...
+   Detailed Evaluation:
+     - Q1: YES (Excerpt: Provides EPA and DHA, which may help support cardiovascular health, joint comfort, and skin health.) [1. Marketed Benefits: Does the summary list the specific hea...] 
+     - Q2: NO (Reason: The summary does not state the exact amount of EPA per serving or softgel.) [2. EPA Amount: Does the summary state the exact amount of EP...] 
+     - Q3: NO (Reason: The summary does not state the exact amount of DHA per serving or softgel.) [3. DHA Amount: Does the summary state the exact amount of DH...] 
+     - Q4: NO (Reason: There is no mention of the oil form (triglyceride, ethyl ester, etc.) in the summary.) [4. Oil Form: Does the summary specify if the oil is in trigl...] 
+     - Q5: NO (Reason: The summary does not state if the product is third-party tested for purity and potency.) [5. Third-Party Testing: Does the summary state if it's third...] 
+     - Q6: NO (Reason: No information on specific purity tests for heavy metals, PCBs, or dioxins is provided.) [6. Specific Purity Tests: Does the summary mention testing f...] 
+     - Q7: NO (Reason: There is no mention of test result accessibility or reports like IFOS.) [7. Test Result Accessibility: Does the summary indicate if t...] 
+     - Q8: YES (Excerpt: Omega-3 fatty acids derived from wild-caught Alaskan Pollock) [8. Fish Source: Does the summary identify the type of fish u...] 
+     - Q9: YES (Excerpt: sourced exclusively from Wild Alaskan Pollock) [9. Catch Method: Does the summary state if the fish are wild...] 
+     - Q10: YES (Excerpt: MSC-certified and sourced exclusively from Wild Alaskan Pollock) [10. Sustainability Certification: Does the summary mention a...] 
+     - Q11: YES (Excerpt: Undergoes a 10-step refinement process to eliminate fishy odors and taste.) [11. Fishy Burps/Aftertaste: Does the summary mention user fe...] 
+     - Q12: NO (Reason: There is no mention of digestive upset or user feedback about it.) [12. Digestive Upset: Does the summary mention user feedback ...] 
+     - Q13: YES (Excerpt: mini-softgel size makes it easier to ingest compared to standard fish oil capsules.) [13. Capsule Size Description: Does the summary describe the ...] 
+     - Q14: YES (Excerpt: The mini-softgel size makes it easier to ingest compared to standard fish oil capsules.) [14. Ease of Swallowing: Does the summary comment on how easy...] 
+     - Q15: NO (Reason: The summary does not mention anything about oxidation protection.) [15. Oxidation Protection: Does the summary mention how the o...] 
+     - Q16: NO (Reason: There is no comment on the reputation of the Sports Research brand.) [16. Brand Reputation: Does the summary comment on the reputa...] 
+     - Q17: NO (Reason: There is no comparison of price or value with other brands based on EPA/DHA content.) [17. Price Comparison: Does the summary compare its price/val...] 
+
+4. Product: NOW Supplements, Sunflower Lecithin
+   Overall Latency: 15091.32 ms
+   Node Latencies: generate: 3.419s / scrape: 11.658s
+   Questions answered: 6/13
+   Summary Snippet: NOW Supplements Sunflower Lecithin is a soy-free and non-GMO supplement providing phosphatidyl choline, which supports nervous system function. It's p...
+   Detailed Evaluation:
+     - Q1: PARTIALLY (Excerpt: Supports Milk Flow for Breastfeeding Mothers ... Supports Nervous System Function) [1. Reported Uses: Does the summary list the main reasons peo...] 
+     - Q2: NO (Reason: The summary states benefits but does not mention any scientific studies or evidence to support the claims.) [2. Scientific Support: Does the summary mention scientific s...] 
+     - Q3: YES (Excerpt: Soy-Free and Non-GMO: A good alternative to soy-based lecithin for those with sensitivities or dietary restrictions.) [3. Advantage vs. Soy: Does the summary explain the advantage...] 
+     - Q4: YES (Excerpt: Soy-Free and Non-GMO) [4. GMO Status: Does the summary explicitly state if it's non...] 
+     - Q5: YES (Excerpt: Some users find the softgels to be quite large and difficult to swallow.) [5. Product Form: Does the summary specify the form (softgel,...] 
+     - Q6: NO (Reason: There is no mention of the specific amount of lecithin per serving.) [6. Lecithin per Serving: Does the summary state the amount o...] 
+     - Q7: NO (Reason: The summary does not suggest a typical daily dosage.) [7. Typical Dosage: Does the summary suggest a typical daily ...] 
+     - Q8: PARTIALLY (Excerpt: providing phosphatidyl choline) [8. Phosphatidylcholine Content: Does the summary specify the...] 
+     - Q9: NO (Reason: Potential downsides are listed (large pills, gelatin source, color variation), but no mention of side effects like digestive issues.) [9. Potential Side Effects: Does the summary mention potentia...] 
+     - Q10: PARTIALLY (Excerpt: well-regarded supplement...Considered a high-quality lecithin supplement at a reasonable price.) [10. Brand Reputation: Does the summary comment on NOW Supple...] 
+     - Q11: NO (Reason: The summary does not mention purity testing or GMP certification.) [11. Quality Testing/GMP: Does the summary mention purity tes...] 
+     - Q12: NO (Reason: The product form is softgel; taste or mixability are not relevant or mentioned.) [12. Taste/Mixability (if powder/granule): If applicable, doe...] 
+     - Q13: NO (Reason: There is no mention of organic certification.) [13. Organic Certification: Does the summary state if it's ce...] 
+
+5. Product: Aquasana 3-Stage Water Filter
+   Overall Latency: 16031.89 ms
+   Node Latencies: generate: 3.773s / scrape: 12.246s
+   Questions answered: 9/16
+   Summary Snippet: 1. **What it is & Who it's for:** The Aquasana AQ-5300+.56 is an under-sink water filter system designed to provide cleaner, healthier drinking water ...
+   Detailed Evaluation:
+     - Q1: PARTIALLY (Excerpt: Significantly improves water taste by reducing chlorine and other contaminants) [1. Reduced Contaminants: Does the summary list specific cont...] 
+     - Q2: NO (Reason: There is no mention of NSF/ANSI standards or certifications in the summary.) [2. NSF/ANSI Certification: Does the summary state which NSF/...] 
+     - Q3: YES (Excerpt: Retains healthy minerals like calcium and potassium, unlike some filtration systems that strip everything out.) [3. Mineral Retention: Does the summary mention if beneficial...] 
+     - Q4: YES (Excerpt: Significantly improves water taste by reducing chlorine and other contaminants, leading to better-tasting beverages and food.) [4. Taste/Odor Improvement: Does the summary report user feed...] 
+     - Q5: NO (Reason: There is no information provided about the typical filter lifespan in gallons or months.) [5. Filter Lifespan (Gallons/Months): Does the summary specif...] 
+     - Q6: PARTIALLY (Excerpt: Cost-effective, providing filtered water at approximately 10 cents per gallon.) [6. Replacement Filter Cost: Does the summary indicate the on...] 
+     - Q7: PARTIALLY (Excerpt: Initial setup... may require more strength than expected, especially for those with arthritis.) [7. Installation Ease: Does the summary comment on the ease o...] 
+     - Q8: YES (Excerpt: Filter replacements are designed to be easy with a simple twist-off mechanism, no disconnecting hoses required.) [8. Filter Replacement Ease: Does the summary describe the ea...] 
+     - Q9: YES (Excerpt: simple twist-off mechanism, no disconnecting hoses required.) [9. Tools Required for Replacement: Does the summary mention ...] 
+     - Q10: PARTIALLY (Excerpt: initial flow rate can be slow) [10. Flow Rate Impact: Does the summary mention if the filter...] 
+     - Q11: NO (Reason: There is no mention of the quality of the included faucet.) [11. Faucet Quality: Does the summary comment on the quality ...] 
+     - Q12: YES (Excerpt: Some users have reported issues with leaks, potentially due to faulty installation or cracking of the plastic housing over time;) [12. Leak Reports: Does the summary mention user reports rega...] 
+     - Q13: NO (Reason: The summary does not provide any system dimensions.) [13. System Dimensions: Does the summary provide the dimensio...] 
+     - Q14: NO (Reason: There is no mention of required under-sink space.) [14. Required Under-Sink Space: Does the summary indicate the...] 
+     - Q15: NO (Reason: Warranty details are not mentioned in the summary.) [15. Warranty Details: Does the summary state the warranty of...] 
+     - Q16: NO (Reason: There is no mention of customer support or related user feedback.) [16. Customer Support Feedback: Does the summary mention user...] 
+
+6. Product: CRZ YOGA Butterluxe Racerback
+   Overall Latency: 13767.03 ms
+   Node Latencies: generate: 3.589s / scrape: 10.152s
+   Questions answered: 7/16
+   Summary Snippet: 1. **What it is & Who it's for**: The CRZ YOGA Butterluxe Sports Bra is a soft, stretchy, and comfortable workout crop top with built-in pads, designe...
+   Detailed Evaluation:
+     - Q1: YES (Excerpt: Designed for light support, suitable for yoga and low-impact activities) [1. Recommended Impact Level: Does the summary specify the su...] 
+     - Q2: YES (Excerpt: workout crop top with built-in pads) [2. Built-in Bra: Does the summary state if it has a built-in...] 
+     - Q3: YES (Excerpt: The 'Butterluxe' fabric is known for its exceptional softness and comfort) [3. Fabric Softness: Does the summary describe the softness o...] 
+     - Q4: YES (Excerpt: soft, stretchy, and comfortable) [4. Fabric Stretch/Comfort: Does the summary comment on the s...] 
+     - Q5: NO (Reason: No mention or comparison to Lululemon Align fabric.) [5. Fabric Comparison (Lululemon): Does the summary compare t...] 
+     - Q6: NO (Reason: Breathability is not mentioned.) [6. Breathability: Does the summary mention the fabric's brea...] 
+     - Q7: NO (Reason: No mention of moisture-wicking properties.) [7. Moisture-Wicking: Does the summary state if the fabric is...] 
+     - Q8: PARTIALLY (Excerpt: Some users recommend sizing down for extra support.) [8. Sizing Accuracy: Does the summary provide guidance on whe...] 
+     - Q9: PARTIALLY (Excerpt: comfortable and flattering fit) [9. Fit Description: Does the summary describe the fit (compr...] 
+     - Q10: NO (Reason: Does not confirm if it's 'longline' or comment on coverage.) [10. Length Description: Does the summary confirm if it's 'lo...] 
+     - Q11: NO (Reason: No mention of how the fabric holds up after washing.) [11. Durability After Washing: Does the summary mention how t...] 
+     - Q12: NO (Reason: No mention of user feedback regarding pilling.) [12. Pilling Issues: Does the summary mention user feedback r...] 
+     - Q13: NO (Reason: Pads are mentioned as built-in, but removability is not addressed.) [13. Removable Pads: If there's a built-in bra, does the summ...] 
+     - Q14: NO (Reason: No comment on the quality or shape of the pads.) [14. Pad Quality/Shape: Does the summary comment on the quali...] 
+     - Q15: NO (Reason: No mention of color accuracy.) [15. Color Accuracy: Does the summary mention if the colors m...] 
+     - Q16: PARTIALLY (Excerpt: provides a sense of quality and durability for the price) [16. Value Comparison: Does the summary compare its price/val...] 
+
+7. Product: Nest Learning Thermostat
+   Overall Latency: 20115.96 ms
+   Node Latencies: generate: 3.288s / scrape: 16.795s
+   Questions answered: 6/16
+   Summary Snippet: The Google Nest Learning Thermostat (3rd Gen) is a smart thermostat designed to learn your temperature preferences and automatically adjust to save en...
+   Detailed Evaluation:
+     - Q1: YES (Excerpt: Many users report easy installation, even without prior experience.) [1. Installation Difficulty: Does the summary comment on the ...] 
+     - Q2: NO (Reason: The summary does not mention the C-wire requirement or alternatives.) [2. C-Wire Requirement: Does the summary clarify if a C-wire ...] 
+     - Q3: NO (Reason: There is no information on how to check HVAC compatibility.) [3. HVAC Compatibility Check: Does the summary explain how to...] 
+     - Q4: NO (Reason: Types of compatible systems (multi-stage, heat pump, etc.) are not listed.) [4. Compatible Systems: Does the summary list types of compat...] 
+     - Q5: PARTIALLY (Excerpt: It learns your schedule and adjusts the temperature automatically) [5. Learning Feature Effectiveness: Does the summary provide ...] 
+     - Q6: YES (Excerpt: potentially saving you an average of 10-15% on heating and cooling costs.) [6. Energy/Cost Savings: Does the summary mention user feedba...] 
+     - Q7: NO (Reason: There is no mention of the amount of initial 'teaching' or setup needed.) [7. Initial User Input: Does the summary indicate how much in...] 
+     - Q8: NO (Reason: The summary does not comment on the app's intuitiveness or reliability.) [8. App Usability: Does the summary comment on the intuitiven...] 
+     - Q9: PARTIALLY (Excerpt: Adjust the temperature from anywhere using the Nest app on your smartphone or tablet.) [9. Remote Control Functionality: Does the summary confirm re...] 
+     - Q10: NO (Reason: Energy monitoring features in the app are not mentioned.) [10. Energy Monitoring via App: Does the summary mention ener...] 
+     - Q11: YES (Excerpt: Compatible with Alexa and Google Assistant) [11. Smart Home Integration: Does the summary list compatible...] 
+     - Q12: NO (Reason: No information provided about the ease of using the physical controls.) [12. Manual Interface Usability: Does the summary comment on ...] 
+     - Q13: NO (Reason: The summary doesn't describe the display's clarity or responsiveness.) [13. Display Quality: Does the summary describe the clarity o...] 
+     - Q14: YES (Excerpt: Some users report frequent disconnections from Wi-Fi, which can impact remote control and automation features.) [14. Wi-Fi Connectivity Issues: Does the summary mention comm...] 
+     - Q15: NO (Reason: Only Wi-Fi issues are mentioned; other reliability problems are not discussed.) [15. General Reliability Issues: Does the summary mention oth...] 
+     - Q16: NO (Reason: There is no statement about subscription fees or whether core features require a subscription.) [16. Subscription Fees: Does the summary explicitly state if ...] 
+
+8. Product: Honest Baby Wipes
+   Overall Latency: 16773.15 ms
+   Node Latencies: generate: 2.870s / scrape: 13.890s
+   Questions answered: 8/14
+   Summary Snippet: 1. **What it is & Who it's for**: The Honest Company Clean Conscious Wipes are plant-based, hypoallergenic wipes designed for cleaning babies' sensiti...
+   Detailed Evaluation:
+     - Q1: PARTIALLY (Excerpt: plant-based, hypoallergenic wipes ... Unscented formula is appreciated by those sensitive to fragrances.) [1. Irritant Checklist: Does the summary confirm the absence ...] 
+     - Q2: YES (Excerpt: plant-based, hypoallergenic wipes) [2. Plant-Based Claim: Does the summary state they are plant-...] 
+     - Q3: YES (Excerpt: Gentle on sensitive skin, helping to prevent rashes and irritation.) [3. Suitability for Sensitive Skin: Does the summary mention ...] 
+     - Q4: NO (Reason: No mention of the softness of the wipes.) [4. Softness: Does the summary describe the softness of the w...] 
+     - Q5: YES (Excerpt: Effective for cleaning with a strong, durable fabric that resists tearing.) [5. Durability/Strength: Does the summary comment on the dura...] 
+     - Q6: PARTIALLY (Excerpt: May not be thick enough for heavy-duty cleaning tasks.) [6. Thickness: Does the summary provide information on the th...] 
+     - Q7: NO (Reason: No information about the moisture or wetness level of the wipes.) [7. Wetness Level: Does the summary describe the moisture lev...] 
+     - Q8: NO (Reason: No mention of whether the wipes dry out quickly after opening.) [8. Drying Out Issue: Does the summary mention if they tend t...] 
+     - Q9: NO (Reason: No comment on dispensing performance.) [9. Dispensing Performance: Does the summary comment on wheth...] 
+     - Q10: YES (Excerpt: Unscented formula is appreciated by those sensitive to fragrances.) [10. Scent Description: Does the summary confirm they are uns...] 
+     - Q11: PARTIALLY (Excerpt: Compostability is dependent on local municipal facilities or proper home composting conditions (not suitable for all waste).) [11. Biodegradability Claim: Does the summary mention any cla...] 
+     - Q12: NO (Reason: No mention of eco certifications or other forms of substantiation for eco claims.) [12. Substantiation of Eco Claims: Does the summary indicate ...] 
+     - Q13: PARTIALLY (Excerpt: Some customers feel the cost is high relative to the number of wipes per pack.) [13. Cost Per Wipe Comparison: Does the summary compare the c...] 
+     - Q14: NO (Reason: No mention of available package sizes.) [14. Available Package Sizes: Does the summary mention the di...] 
+
+9. Product: Millie Moon Diapers
+   Overall Latency: 15265.23 ms
+   Node Latencies: generate: 2.880s / scrape: 12.373s
+   Questions answered: 7/14
+   Summary Snippet: Millie Moon diapers are designed for babies, offering comfort and protection with premium materials. They aim to keep babies dry and comfortable, redu...
+   Detailed Evaluation:
+     - Q1: NO (Reason: The summary mentions minimizing irritation but does not provide user feedback or specifically discuss suitability for babies with sensitive skin.) [1. Suitability for Sensitive Skin: Does the summary mention ...] 
+     - Q2: NO (Reason: There is no information about the absence of fragrance, latex, or chlorine bleaching in the summary.) [2. Absence of Irritants: Does the summary confirm the absenc...] 
+     - Q3: PARTIALLY (Excerpt: "Leak-Proof Design: Helps prevent leaks and messes, providing peace of mind.") [3. Leak Protection Effectiveness: Does the summary comment o...] 
+     - Q4: NO (Reason: There is no mention of leg cuffs or waistband fit or effectiveness.) [4. Leg Cuff/Waistband Fit: Does the summary describe the fit...] 
+     - Q5: YES (Excerpt: "Ultra-soft and Breathable: Made with materials that feel gentle against the baby's skin, minimizing irritation.") [5. Softness (Inside/Outside): Does the summary describe the ...] 
+     - Q6: PARTIALLY (Excerpt: "offering comfort and protection with premium materials") [6. Flexibility/Comfort: Does the summary comment on the flex...] 
+     - Q7: YES (Excerpt: "High Absorbency: Quickly wicks away moisture, keeping the baby's skin dry for extended periods.") [7. Absorption Speed/Capacity: Does the summary describe how ...] 
+     - Q8: YES (Excerpt: "Quickly wicks away moisture, keeping the baby's skin dry for extended periods.") [8. Skin Dryness: Does the summary mention if they keep the b...] 
+     - Q9: NO (Reason: The summary does not mention anything about odor control.) [9. Odor Control: Does the summary comment on how well odors ...] 
+     - Q10: YES (Excerpt: "Wetness Indicator: Conveniently changes color when it's time for a diaper change.") [10. Wetness Indicator: Does the summary state if there is a ...] 
+     - Q11: NO (Reason: The summary states the presence of a wetness indicator but does not address its reliability.) [11. Wetness Indicator Reliability: Does the summary comment ...] 
+     - Q12: NO (Reason: There is no information about sizing or weight guidance.) [12. Sizing Accuracy: Does the summary provide guidance on wh...] 
+     - Q13: NO (Reason: No comparison to Pampers, Huggies, or other premium brands is provided.) [13. Price Comparison: Does the summary compare the price to ...] 
+     - Q14: PARTIALLY (Excerpt: "Multiple sellers exist, so prices and shipping times can vary significantly.") [14. Availability: Does the summary mention where they are ty...] 
+
+10. Product: Keurig K-Elite Coffee Maker
+   Overall Latency: 17082.15 ms
+   Node Latencies: generate: 3.361s / scrape: 13.707s
+   Questions answered: 6/17
+   Summary Snippet: 1. **What it is & Who it's for**: The Keurig K-Elite is a single-serve K-Cup pod coffee maker designed for individuals or small households seeking con...
+   Detailed Evaluation:
+     - Q1: NO (Reason: The summary does not mention cleaning the needle or K-Cup holder, nor does it address ease of cleaning.) [1. Ease of Regular Cleaning: Does the summary describe the e...] 
+     - Q2: NO (Reason: Descaling is mentioned as necessary, but there is no detail about how often it should be performed.) [2. Descaling Frequency: Does the summary mention how often d...] 
+     - Q3: NO (Reason: The summary does not discuss how easy or difficult the descaling process is.) [3. Descaling Process Ease: Does the summary comment on the s...] 
+     - Q4: YES (Excerpt: Some users have reported the machine breaking down after a relatively short period.) [4. General Reliability Feedback: Does the summary mention us...] 
+     - Q5: PARTIALLY (Excerpt: Some users have reported the machine breaking down after a relatively short period.) [5. Expected Lifespan: Does the summary provide insights into...] 
+     - Q6: NO (Reason: There are mentions of breakdowns, but no specific failure points are identified.) [6. Common Failure Points: Does the summary mention any commo...] 
+     - Q7: NO (Reason: The summary does not address the consistency of the coffee's taste.) [7. Taste Consistency: Does the summary comment on the consis...] 
+     - Q8: PARTIALLY (Excerpt: Offers... adjustable temperature control, to tailor the drink to your preference.) [8. Water Temperature: Does the summary mention if the water ...] 
+     - Q9: NO (Reason: It only mentions the presence of a 'strong brew' setting, not its effectiveness.) [9. 'Strong Brew' Effectiveness: Does the summary describe ho...] 
+     - Q10: YES (Excerpt: Brews coffee in minutes, saving time in the morning.) [10. Brew Speed: Does the summary state how quickly it brews ...] 
+     - Q11: NO (Reason: Noise levels during brewing or heating are not addressed.) [11. Noise Level: Does the summary describe the noise level d...] 
+     - Q12: YES (Excerpt: The 75oz removable water reservoir allows for brewing multiple cups before needing a refill.) [12. Water Reservoir Capacity: Does the summary state the res...] 
+     - Q13: NO (Reason: While the reservoir's size and removability are mentioned, ease of filling or cleaning is not discussed.) [13. Water Reservoir Ease of Use: Does the summary comment on...] 
+     - Q14: NO (Reason: The summary does not mention the intuitiveness or ease of using the controls.) [14. Control Intuitiveness: Does the summary describe the eas...] 
+     - Q15: PARTIALLY (Excerpt: Offers strong brew and iced coffee settings, along with adjustable temperature control, to tailor the drink to your preference.) [15. Feature Performance: Does the summary comment on feature...] 
+     - Q16: NO (Reason: There is no mention of compatibility with non-Keurig K-Cups or reusable pods.) [16. K-Cup Compatibility (All types): Does the summary confir...] 
+     - Q17: NO (Reason: Physical dimensions or footprint are not provided.) [17. Physical Dimensions: Does the summary provide the machin...] 
+
+11. Product: Insta360 Ace Pro
+   Overall Latency: 13773.55 ms
+   Node Latencies: generate: 3.635s / scrape: 10.119s
+   Questions answered: 7/20
+   Summary Snippet: 1.  **What it is & Who it's for**: The Insta360 X4 is a waterproof 8K 360 action camera designed for travel, action sports, and creative video project...
+   Detailed Evaluation:
+     - Q1: YES (Excerpt: Captures stunning 8K 360° video and 4K wide-angle footage, providing exceptional image quality.) [1. Video Quality (Daylight): Does the summary describe video...] 
+     - Q2: NO (Reason: No mention of low light performance or video quality in low-light conditions.) [2. Video Quality (Low Light): Does the summary describe vide...] 
+     - Q3: YES (Excerpt: Offers superior stabilization with FlowState and 360° Horizon Lock for smooth, level shots during intense activity.) [3. Stabilization Effectiveness: Does the summary comment on ...] 
+     - Q4: NO (Reason: No information about still photo quality is provided.) [4. Photo Quality: Does the summary describe the quality of s...] 
+     - Q5: PARTIALLY (Excerpt: Extended battery life, now lasting up to 135 minutes, allowing for longer shooting sessions.) [5. Battery Duration: Does the summary state typical battery ...] 
+     - Q6: NO (Reason: Charging time is not mentioned.) [6. Charging Time: Does the summary state how long it takes t...] 
+     - Q7: NO (Reason: No mention of footage transfer speed or ease.) [7. Footage Transfer Speed/Ease: Does the summary comment on ...] 
+     - Q8: NO (Reason: App intuitiveness is not discussed.) [8. App Intuitiveness: Does the summary describe the Insta360...] 
+     - Q9: PARTIALLY (Excerpt: While the app is useful, some features like direction lock are only available on the desktop application.) [9. App Editing Features: Does the summary mention the richne...] 
+     - Q10: NO (Reason: Stability of the app is not commented on.) [10. App Stability: Does the summary comment on the stability...] 
+     - Q11: YES (Excerpt: designed for travel, action sports, and creative video projects) [11. Ruggedness: Does the summary comment on its suitability ...] 
+     - Q12: PARTIALLY (Excerpt: The Insta360 X4 is a waterproof 8K 360 action camera) [12. Waterproofing Reliability: Does the summary mention the ...] 
+     - Q13: NO (Reason: No information on lens scratch resistance.) [13. Lens Scratch Resistance: Does the summary mention if the...] 
+     - Q14: NO (Reason: No mention of built-in audio or microphone quality.) [14. Built-in Audio Quality: Does the summary describe the qu...] 
+     - Q15: NO (Reason: Wind noise handling is not discussed.) [15. Wind Noise Handling: Does the summary comment on how wel...] 
+     - Q16: YES (Excerpt: Some users report the camera can get hot quickly during use.) [16. Overheating Issues: Does the summary mention if the came...] 
+     - Q17: NO (Reason: No mention of flip screen quality or usability.) [17. Flip Screen Quality/Usability: Does the summary comment ...] 
+     - Q18: NO (Reason: Menu navigation is not discussed.) [18. Menu Navigation Ease: Does the summary mention the ease ...] 
+     - Q19: NO (Reason: No comparison to GoPro HERO or DJI Osmo Action cameras.) [19. Comparison vs. GoPro/DJI: Does the summary compare it to...] 
+     - Q20: NO (Reason: No assessment of value for money or comparison to competitors.) [20. Value for Money: Does the summary provide an assessment ...] 
+
+12. Product: Murad Retinol Youth Renewal Serum
+   Overall Latency: 18192.24 ms
+   Node Latencies: generate: 1.680s / scrape: 16.505s
+   Questions answered: 0/14
+   Summary Snippet: Okay, I understand. I will need you to provide me with the product details so I can create a summary in the requested format. I cannot create a summar...
+   Detailed Evaluation:
+     - Q1: NO (Reason: The summary does not mention any specific signs of aging targeted.) [1. Targeted Aging Signs: Does the summary list the specific ...] 
+     - Q2: NO (Reason: There is no information about suitability for sensitive skin.) [2. Suitability for Sensitive Skin: Does the summary indicate...] 
+     - Q3: NO (Reason: The summary does not discuss a timeframe for results.) [3. Time to See Results: Does the summary provide an expected...] 
+     - Q4: NO (Reason: No commonly reported benefits are listed in the summary.) [4. Reported Positive Effects: Does the summary list commonly...] 
+     - Q5: NO (Reason: There is no mention of the type of retinol or technology used.) [5. Retinol Type/Technology: Does the summary specify the typ...] 
+     - Q6: NO (Reason: Potential for irritation is not addressed.) [6. Likelihood of Irritation: Does the summary mention the po...] 
+     - Q7: NO (Reason: There is no information on whether the formula helps mitigate irritation.) [7. Irritation Mitigation: Does the summary suggest the formu...] 
+     - Q8: NO (Reason: The texture of the serum is not described.) [8. Serum Texture: Does the summary describe the texture (lig...] 
+     - Q9: NO (Reason: There is no comment on absorption or feel.) [9. Absorption Feel: Does the summary comment on how well it ...] 
+     - Q10: NO (Reason: The summary does not mention anything about the scent.) [10. Scent: Does the summary mention if the product has a not...] 
+     - Q11: NO (Reason: No information about packaging effectiveness is provided.) [11. Packaging Effectiveness: Does the summary comment on the...] 
+     - Q12: NO (Reason: Recommended frequency of use is not discussed.) [12. Recommended Frequency: Does the summary suggest how ofte...] 
+     - Q13: NO (Reason: There is no mention of layering with other skincare products.) [13. Layering Information: Does the summary indicate if it la...] 
+     - Q14: NO (Reason: There is no assessment of value for money.) [14. Value for Money Assessment: Does the summary provide an ...] 
+
+13. Product: Ninja Air Fryer
+   Overall Latency: 15734.02 ms
+   Node Latencies: generate: 3.152s / scrape: 12.572s
+   Questions answered: 7/18
+   Summary Snippet: 1. **What it is & Who it's for**: The Ninja Air Fryer Pro is a 5-quart capacity air fryer with four functions (air fry, roast, reheat, and dehydrate),...
+   Detailed Evaluation:
+     - Q1: NO (Reason: The summary mentions a 5-quart capacity but does not provide examples of how much food this holds (e.g., lbs of wings).) [1. Practical Capacity: Does the summary give examples of how...] 
+     - Q2: YES (Excerpt: designed for individuals or small families seeking a healthier and faster way to cook) [2. Suitability for Household Size: Does the summary indicate...] 
+     - Q3: NO (Reason: There is no mention of the physical dimensions or counter space requirements.) [3. Counter Space/Dimensions: Does the summary provide the ph...] 
+     - Q4: YES (Excerpt: Air Crisp Technology delivers crispy food using little to no oil) [4. Air Fry Performance: Does the summary comment on how well...] 
+     - Q5: PARTIALLY (Excerpt: Offers 4-in-1 functionality to air fry, roast, reheat, and dehydrate) [5. Roast Performance: Does the summary comment on roasting p...] 
+     - Q6: NO (Reason: Baking is not mentioned as a function or in terms of performance.) [6. Bake Performance: Does the summary comment on baking perf...] 
+     - Q7: PARTIALLY (Excerpt: Offers 4-in-1 functionality to air fry, roast, reheat, and dehydrate) [7. Reheat Performance: Does the summary comment on reheating...] 
+     - Q8: PARTIALLY (Excerpt: Offers 4-in-1 functionality to air fry, roast, reheat, and dehydrate) [8. Dehydrate Performance: Does the summary comment on dehydr...] 
+     - Q9: NO (Reason: There is no explicit mention of cooking evenness.) [9. Cooking Evenness: Does the summary address whether it coo...] 
+     - Q10: PARTIALLY (Excerpt: While generally easy to use, mastering the optimal settings for different foods may require some experimentation.) [10. Control Intuitiveness: Does the summary state if the con...] 
+     - Q11: NO (Reason: There is no discussion of the usefulness of presets.) [11. Preset Usefulness: Does the summary comment on the usefu...] 
+     - Q12: YES (Excerpt: Features a nonstick basket and crisper plate, making cleanup a breeze.) [12. Cleaning Ease (Basket/Plate): Does the summary describe ...] 
+     - Q13: NO (Reason: There is no mention of dishwasher safety for the basket or plate.) [13. Dishwasher Safety: Does the summary confirm if the baske...] 
+     - Q14: NO (Reason: There is no mention of dishwasher durability for any parts.) [14. Dishwasher Durability: Does the summary mention how well...] 
+     - Q15: NO (Reason: Noise level during operation is not mentioned.) [15. Noise Level: Does the summary describe the noise level d...] 
+     - Q16: NO (Reason: Preheating requirement or time is not addressed.) [16. Preheating Requirement/Time: Does the summary state if p...] 
+     - Q17: NO (Reason: The summary does not mention user reports of plastic smell.) [17. Plastic Smell Reports: Does the summary mention user rep...] 
+     - Q18: NO (Reason: There is no comment on build quality or sturdiness.) [18. Build Quality: Does the summary comment on the overall b...] 
+
+14. Product: FIFINE USB/XLR Microphone K688
+   Overall Latency: 15822.90 ms
+   Node Latencies: generate: 3.613s / scrape: 12.196s
+   Questions answered: 6/14
+   Summary Snippet: 1.  **What it is & Who it's for**: The FIFINE K688 is a dynamic microphone with both XLR and USB connectivity, designed for podcasting, streaming, voc...
+   Detailed Evaluation:
+     - Q1: PARTIALLY (Excerpt: Delivers clear, clean sound quality with good background noise rejection due to its cardioid polar pattern.) [1. USB Sound Quality for Voice: Does the summary describe th...] 
+     - Q2: PARTIALLY (Excerpt: Delivers clear, clean sound quality with good background noise rejection due to its cardioid polar pattern.) [2. XLR Sound Quality for Voice: Does the summary describe th...] 
+     - Q3: NO (Reason: There is no direct comparison to other microphones in its price range.) [3. Sound Quality Comparison: Does the summary compare its so...] 
+     - Q4: NO (Reason: The summary does not explicitly mention ease of plug-and-play setup or compatibility with Windows/Mac.) [4. USB Plug-and-Play Ease: Does the summary confirm easy plu...] 
+     - Q5: NO (Reason: The summary does not state whether special drivers are needed for USB connection.) [5. Driver Requirement: Does the summary state if special dri...] 
+     - Q6: YES (Excerpt: good background noise rejection due to its cardioid polar pattern.) [6. Background Noise Rejection: Does the summary comment on h...] 
+     - Q7: NO (Reason: There is no mention of required gain levels when using XLR.) [7. XLR Gain Requirement: Does the summary indicate if signif...] 
+     - Q8: PARTIALLY (Excerpt: The microphone is dynamic, so it requires speaking in close proximity for optimal sound capture.) [8. Sensitivity Level: Does the summary comment on the microp...] 
+     - Q9: YES (Excerpt: Solid, durable metal construction ensures longevity.) [9. Build Material/Durability: Does the summary describe the ...] 
+     - Q10: NO (Reason: The summary only mentions that accessories are not included, not their quality.) [10. Accessory Quality: Does the summary comment on the quali...] 
+     - Q11: NO (Reason: The summary mentions the existence of a mute button but does not comment on its reliability or feel.) [11. Mute Button Functionality: Does the summary comment on t...] 
+     - Q12: NO (Reason: The summary does not describe the reliability or feel of the gain knob.) [12. Gain Knob Functionality: Does the summary comment on the...] 
+     - Q13: NO (Reason: The summary mentions a headphone jack for monitoring but does not specify zero-latency monitoring.) [13. Headphone Jack Monitoring: Does the summary confirm zero...] 
+     - Q14: YES (Excerpt: The FIFINE K688 is a versatile and affordable microphone that offers good sound quality and flexible connectivity for various recording applications) [14. Value Proposition: Does the summary assess its value con...] 
+
+15. Product: Apple iPhone 16
+   Overall Latency: 17700.16 ms
+   Node Latencies: generate: 3.794s / scrape: 13.900s
+   Questions answered: 0/12
+   Summary Snippet: 1. **What it is & Who it's for**: This is a renewed Apple iPhone 16 with 128GB of storage, offering a modern smartphone experience at a potentially lo...
+   Detailed Evaluation:
+     - Q1: NO (Reason: The summary does not mention Apple Intelligence or any AI features.) [1. AI Feature Usefulness: Does the summary provide insights ...] 
+     - Q2: NO (Reason: There is no discussion of AI features or their impact on user experience.) [2. AI Enhancement to Experience: Does the summary suggest AI...] 
+     - Q3: NO (Reason: The summary does not compare the camera performance to the iPhone 15 or discuss improvements.) [3. Camera Improvements vs. 15: Does the summary detail notic...] 
+     - Q4: NO (Reason: No comparison or quantification of battery life versus the iPhone 15 is given.) [4. Battery Life Improvements vs. 15: Does the summary quanti...] 
+     - Q5: NO (Reason: The summary says 'fast performance,' but there is no comparison to the iPhone 15 or speed improvements mentioned.) [5. Speed Improvements vs. 15: Does the summary highlight not...] 
+     - Q6: NO (Reason: There is no mention of display quality or improvements over the iPhone 15.) [6. Display Improvements vs. 15: Does the summary describe ta...] 
+     - Q7: NO (Reason: No comment is made about the new Action/Capture button or its utility.) [7. New Button Utility: Does the summary comment on the pract...] 
+     - Q8: NO (Reason: There is no comparison or listing of functional differences versus the 16 Pro.) [8. Key Functional Differences vs. Pro: Does the summary list...] 
+     - Q9: NO (Reason: The summary does not identify features that are missing compared to the Pro model.) [9. Missing Pro Features: Does the summary identify key Pro f...] 
+     - Q10: NO (Reason: Low-light photo or video quality is not mentioned.) [10. Low Light Camera Performance: Does the summary specifica...] 
+     - Q11: NO (Reason: No reference is made to design, ergonomics, weight, or physical feel compared to the 15.) [11. Design/Ergonomics Changes: Does the summary mention chan...] 
+     - Q12: NO (Reason: The summary does not address thermal performance or heat management.) [12. Thermal Performance: Does the summary indicate how well ...] 
+
+16. Product: Apple iPhone 16 FineWoven Case
+   Overall Latency: 11346.32 ms
+   Node Latencies: generate: 3.306s / scrape: 8.029s
+   Questions answered: 8/18
+   Summary Snippet: 1. **What it is & Who it's for:** This is an Apple-designed clear case with MagSafe for the iPhone 16, designed to offer protection while showcasing t...
+   Detailed Evaluation:
+     - Q1: YES (Excerpt: Provides a good fit and adequate protection against scratches and drops.) [1. Scratch/Scuff Resistance: Does the summary comment on the...] 
+     - Q2: NO (Reason: The summary does not mention staining resistance or if the material stains easily.) [2. Staining Resistance: Does the summary mention if the mate...] 
+     - Q3: NO (Reason: There is no mention of fraying or related user reports.) [3. Fraying Issues: Does the summary mention user reports of ...] 
+     - Q4: PARTIALLY (Excerpt: Made with materials optimized to prevent yellowing over time.) [4. Patina Development: Does the summary comment on how the m...] 
+     - Q5: NO (Reason: The summary does not describe the feel or texture of the material.) [5. Texture Description: Does the summary describe the feel o...] 
+     - Q6: YES (Excerpt: Grip is inconsistent; some users find it slippery.) [6. Grip Level: Does the summary comment on whether the case ...] 
+     - Q7: YES (Excerpt: Provides a good fit and adequate protection against scratches and drops...Protection level might not be sufficient for heavy-duty use; some users feel it's not protective enough.) [7. Drop Protection Level: Does the summary provide an assess...] 
+     - Q8: NO (Reason: There is no mention of a raised lip or specific screen protection features.) [8. Screen Lip Protection: Does the summary confirm a raised ...] 
+     - Q9: NO (Reason: Camera protection is not described in terms of a raised lip.) [9. Camera Lip Protection: Does the summary confirm a raised ...] 
+     - Q10: PARTIALLY (Excerpt: offers a sleek design) [10. Bulkiness: Does the summary comment on how much bulk the...] 
+     - Q11: NO (Reason: Dust or lint attraction is not mentioned.) [11. Dust/Lint Attraction: Does the summary mention if the ma...] 
+     - Q12: NO (Reason: Ease of cleaning is not discussed.) [12. Ease of Cleaning: Does the summary describe how easy the...] 
+     - Q13: NO (Reason: The summary notes MagSafe compatibility but does not discuss connection strength.) [13. MagSafe Connection Strength: Does the summary comment on...] 
+     - Q14: NO (Reason: No mention of interference with MagSafe charging.) [14. MagSafe Charging Interference: Does the summary mention ...] 
+     - Q15: PARTIALLY (Excerpt: Features a unique camera button design for enhanced camera control.) [15. Button Tactility: Does the summary describe the feel and...] 
+     - Q16: NO (Reason: Cutout precision is not addressed.) [16. Cutout Precision: Does the summary comment on the precis...] 
+     - Q17: PARTIALLY (Excerpt: designed to offer protection while showcasing the phone's color) [17. Color Accuracy/Fading: Does the summary mention if color...] 
+     - Q18: YES (Excerpt: The value for the money is debated, with some considering it expensive for the protection it offers.) [18. Value Assessment: Does the summary assess if the case is...] 
+
+17. Product: Gravol Kids Liquid
+   Overall Latency: 17492.81 ms
+   Node Latencies: generate: 3.426s / scrape: 14.053s
+   Questions answered: 9/15
+   Summary Snippet: 1. **What it is & Who it's for**: Gravol Kids Liquid is a fruit-flavored, dye-free liquid medication designed to prevent and treat motion sickness, na...
+   Detailed Evaluation:
+     - Q1: YES (Excerpt: Provides fast and effective relief from motion sickness symptoms) [1. Speed of Relief: Does the summary indicate how quickly it...] 
+     - Q2: YES (Excerpt: effective option for preventing motion sickness in children) [2. Effectiveness for Motion Sickness: Does the summary comme...] 
+     - Q3: NO (Reason: The summary does not mention stomach bugs or effectiveness for nausea/vomiting due to causes other than motion sickness.) [3. Effectiveness for Stomach Bugs: Does the summary comment ...] 
+     - Q4: YES (Excerpt: lasting up to 6-7 hours according to some users) [4. Duration of Effects: Does the summary state how long the ...] 
+     - Q5: PARTIALLY (Excerpt: Drowsiness is a possible side effect due to the active ingredient, dimenhydrinate.) [5. Drowsiness Level: Does the summary describe the significa...] 
+     - Q6: NO (Reason: No other side effects (dizziness, dry mouth, etc.) are listed besides drowsiness.) [6. Other Common Side Effects: Does the summary list other co...] 
+     - Q7: YES (Excerpt: great-tasting fruit flavor and liquid form, especially for those who have trouble swallowing pills.) [7. Taste/Palatability for Kids: Does the summary comment on ...] 
+     - Q8: NO (Reason: The summary does not address the included dosing tool or its ease of use.) [8. Dosing Tool Ease of Use: Does the summary describe the ea...] 
+     - Q9: NO (Reason: There is no mention of dosing tool accuracy.) [9. Dosing Tool Accuracy: Does the summary comment on the acc...] 
+     - Q10: YES (Excerpt: active ingredient, dimenhydrinate.) [10. Active Ingredient Stated: Does the summary clearly state...] 
+     - Q11: NO (Reason: The concentration of the active ingredient is not provided.) [11. Concentration Stated: Does the summary state the concent...] 
+     - Q12: YES (Excerpt: in children ages 2 and up) [12. Recommended Minimum Age: Does the summary specify the mi...] 
+     - Q13: YES (Excerpt: Dye-free and alcohol-free formulation) [13. Dye-Free Status: Does the summary state if the formula i...] 
+     - Q14: YES (Excerpt: Contains sugar (sucrose and sorbitol), which may be a concern for parents) [14. Sugar/Sweetener Content: Does the summary provide info o...] 
+     - Q15: NO (Reason: There is no comparison to other children's anti-nausea options.) [15. Comparison to Alternatives: Does the summary compare it ...] 
+
+18. Product: Orgain Organic Protein Powder
+   Overall Latency: 12850.38 ms
+   Node Latencies: generate: 3.357s / scrape: 9.478s
+   Questions answered: 9/19
+   Summary Snippet: **What it is & Who it's for:** Orgain Organic Vegan Protein Powder in Strawberries & Cream flavor is a plant-based protein powder providing 21g of pro...
+   Detailed Evaluation:
+     - Q1: NO (Reason: The summary does not mention anything about ease of digestion.) [1. Ease of Digestion: Does the summary comment on how easily...] 
+     - Q2: NO (Reason: There is no mention of user feedback regarding bloating or gas.) [2. Bloating/Gas Reports: Does the summary mention user feedb...] 
+     - Q3: PARTIALLY (Excerpt: Mixed Reviews on Taste: While some enjoy the flavor, others may not find it palatable, so taste preferences vary.) [3. Taste Description: Does the summary describe the taste of...] 
+     - Q4: YES (Excerpt: Sweetness: Some users find the stevia-sweetened flavor overly sweet, which might not appeal to everyone.) [4. Sweetness Level: Does the summary comment on the sweetnes...] 
+     - Q5: NO (Reason: The summary does not mention whether it tastes artificial.) [5. Artificial Taste: Does the summary mention if it tastes a...] 
+     - Q6: YES (Excerpt: Smooth Texture & Mixability: Blends easily into shakes and recipes without clumping or a grainy texture. ... Some reviewers have described the texture as grainy.) [6. Texture Description (Gritty/Chalky): Does the summary des...] 
+     - Q7: YES (Excerpt: Smooth Texture & Mixability: Blends easily into shakes and recipes without clumping or a grainy texture.) [7. Mixability: Does the summary describe how well it mixes w...] 
+     - Q8: YES (Excerpt: Blends easily into shakes and recipes without clumping or a grainy texture.) [8. Clumping Issues: Does the summary mention issues with clu...] 
+     - Q9: YES (Excerpt: free from soy, dairy, gluten, artificial sweeteners, flavors, and preservatives.) [9. Allergen Info (Beyond Protein): Does the summary list oth...] 
+     - Q10: YES (Excerpt: Sweetness: Some users find the stevia-sweetened flavor overly sweet) [10. Sweetener Type: Does the summary identify the type of sw...] 
+     - Q11: NO (Reason: The summary does not list the sources or blend of plant proteins used.) [11. Protein Sources: Does the summary list the blend of plan...] 
+     - Q12: NO (Reason: There is no information about the amino acid profile.) [12. Amino Acid Profile Info: Does the summary mention if inf...] 
+     - Q13: YES (Excerpt: Certified USDA Organic) [13. USDA Organic Certification: Does the summary confirm USD...] 
+     - Q14: YES (Excerpt: Non-GMO) [14. Non-GMO Verification: Does the summary confirm Non-GMO P...] 
+     - Q15: NO (Reason: The summary does not mention anything about heavy metal testing.) [15. Heavy Metal Testing Info: Does the summary mention if Or...] 
+     - Q16: NO (Reason: There is no user feedback on effectiveness for fitness or supplementation goals.) [16. Effectiveness for Goals: Does the summary mention user f...] 
+     - Q17: NO (Reason: Cost per serving is not mentioned.) [17. Cost per Serving: Does the summary provide the cost per ...] 
+     - Q18: NO (Reason: Cost per gram of protein is not mentioned.) [18. Cost per Gram of Protein: Does the summary provide the c...] 
+     - Q19: NO (Reason: No value comparison to other organic plant protein powders is provided.) [19. Value Comparison: Does the summary compare its value to ...] 
+
+19. Product: Stanley Quencher H2.0 FlowState Tumbler
+   Overall Latency: 15552.11 ms
+   Node Latencies: generate: 3.296s / scrape: 12.227s
+   Questions answered: 6/17
+   Summary Snippet: 1. **What it is & Who it's for**: The Stanley Quencher H2.0 is a 40-ounce, insulated stainless steel tumbler designed to keep drinks cold or hot for h...
+   Detailed Evaluation:
+     - Q1: NO (Reason: The summary states it keeps drinks cold for extended periods but does not specify an exact retention time.) [1. Cold Retention Time: Does the summary state how long it k...] 
+     - Q2: NO (Reason: The summary says it keeps drinks hot for hours, but no specific hot retention time is provided.) [2. Hot Retention Time: Does the summary state how long it ke...] 
+     - Q3: NO (Reason: There is no mention of whether the product meets any advertised insulation times.) [3. Meets Advertised Times: Does the summary indicate if it m...] 
+     - Q4: YES (Excerpt: Not completely leak-proof; some users report leaking, especially through the straw opening.) [4. Lid Leak Resistance (Straw Area): Does the summary commen...] 
+     - Q5: NO (Reason: Leak resistance is only discussed in relation to the straw opening, not the lid when closed.) [5. Lid Leak Resistance (Closed): Does the summary comment on...] 
+     - Q6: PARTIALLY (Excerpt: Not completely leak-proof; some users report leaking, especially through the straw opening.) [6. Suitability for Bag Transport: Does the summary advise if...] 
+     - Q7: NO (Reason: There is no mention of user feedback regarding metallic or plastic taste.) [7. Taste Imparted (Metallic/Plastic): Does the summary menti...] 
+     - Q8: YES (Excerpt: Easy to clean as it's dishwasher safe.) [8. Ease of Cleaning (Tumbler): Does the summary comment on t...] 
+     - Q9: NO (Reason: The summary does not specifically discuss cleaning the FlowState lid mechanism.) [9. Ease of Cleaning (Lid): Does the summary comment on the e...] 
+     - Q10: PARTIALLY (Excerpt: Easy to clean as it's dishwasher safe.) [10. Dishwasher Safety: Does the summary confirm if all parts...] 
+     - Q11: NO (Reason: No details about the powder coat's resistance to scratching are provided.) [11. Finish Durability (Scratches): Does the summary comment ...] 
+     - Q12: NO (Reason: There is no mention of dent resistance or susceptibility to denting upon drops.) [12. Dent Resistance: Does the summary mention susceptibility...] 
+     - Q13: YES (Excerpt: the narrow base fits most car cup holders.) [13. Cupholder Compatibility: Does the summary confirm it fit...] 
+     - Q14: YES (Excerpt: Convenient features like a comfort-grip handle) [14. Handle Comfort: Does the summary comment on the comfort ...] 
+     - Q15: NO (Reason: There is no comment on how securely the handle is attached.) [15. Handle Security: Does the summary comment on how securel...] 
+     - Q16: NO (Reason: No information is provided on the long-term durability of the FlowState lid mechanism.) [16. Lid Mechanism Durability: Does the summary mention the l...] 
+     - Q17: NO (Reason: The summary does not mention the durability of the included straw.) [17. Straw Durability: Does the summary comment on the durabi...] 
+
+20. Product: SENSARTE Nonstick Frying Pan
+   Overall Latency: 14577.11 ms
+   Node Latencies: generate: 3.621s / scrape: 10.945s
+   Questions answered: 11/19
+   Summary Snippet: 1.  **What it is & Who it's for**: The SENSARTE Nonstick Frying Pan Skillet is a versatile pan designed for everyday cooking, especially for those see...
+   Detailed Evaluation:
+     - Q1: PARTIALLY (Excerpt: Features a Swiss-made nonstick coating that allows for low-oil cooking and easy food release.) [1. Initial Nonstick Effectiveness: Does the summary describe...] 
+     - Q2: NO (Reason: There is no information about the nonstick lifespan or how long the coating lasts.) [2. Nonstick Lifespan: Does the summary provide an estimate o...] 
+     - Q3: PARTIALLY (Excerpt: Although dishwasher safe, hand washing is recommended.) [3. Care Instructions Adherence: Does the summary mention the...] 
+     - Q4: NO (Reason: The summary does not mention anything about PFOA/PFAS-free claims.) [4. PFOA/PFAS Free Claim: Does the summary explicitly state i...] 
+     - Q5: NO (Reason: The summary does not mention lead or cadmium-free claims.) [5. Lead/Cadmium Free Claim: Does the summary explicitly stat...] 
+     - Q6: PARTIALLY (Excerpt: Features a Swiss-made nonstick coating) [6. Coating Material Type: Does the summary identify the type...] 
+     - Q7: YES (Excerpt: The pan heats quickly and evenly due to its high magnetic conductive base) [7. Heat Distribution Evenness: Does the summary comment on h...] 
+     - Q8: YES (Excerpt: making it suitable for all stovetops, including induction.) [8. Induction Compatibility: Does the summary confirm if it's...] 
+     - Q9: NO (Reason: There is no mention of resistance to warping.) [9. Warping Resistance: Does the summary mention resistance t...] 
+     - Q10: YES (Excerpt: Cleanup is a breeze – often requiring just a wipe or rinse.) [10. Ease of Hand Cleaning: Does the summary describe the eas...] 
+     - Q11: PARTIALLY (Excerpt: Although dishwasher safe, hand washing is recommended.) [11. Dishwasher Performance (if applicable): If dishwasher us...] 
+     - Q12: YES (Excerpt: provides a comfortable grip.) [12. Handle Comfort: Does the summary comment on the comfort ...] 
+     - Q13: YES (Excerpt: The woodgrain bakelite handle stays cool during cooking) [13. Handle Heat Resistance: Does the summary state if the ha...] 
+     - Q14: YES (Excerpt: Oven safe only up to 302°F) [14. Oven Safety Temperature: Does the summary specify the ma...] 
+     - Q15: NO (Reason: The summary does not identify the material of the pan body.) [15. Pan Body Material: Does the summary identify the materia...] 
+     - Q16: NO (Reason: There are no comments on the pan's sturdiness or weight balance.) [16. Sturdiness/Weight Balance: Does the summary comment on t...] 
+     - Q17: NO (Reason: Scratch resistance from utensil use is not addressed; only minor scratches on the base from factory polishing are mentioned.) [17. Scratch Resistance (Utensils): Does the summary mention ...] 
+     - Q18: PARTIALLY (Excerpt: a good choice for those looking for a reliable nonstick pan for daily use and easy cleanup) [18. Value for Price: Does the summary assess the pan's value...] 
+     - Q19: NO (Reason: There is no mention of other available sizes.) [19. Available Sizes: Does the summary mention if other sizes...] 
+
+============================================================

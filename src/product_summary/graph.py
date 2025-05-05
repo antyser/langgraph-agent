@@ -1,27 +1,21 @@
 """Product Summary Agent Graph Definition."""
 
+import json
 import os
 from typing import Dict, List, Optional
-import json
+
 import httpx
-
-# Remove unused google genai imports
-# import asyncio
-# import base64
-# from google import genai
-# from google.genai import types
-
-# Add LangChain imports
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_core.runnables import RunnableConfig
+
 from langgraph.graph import StateGraph
 from loguru import logger
-from scraper.bright_data.amazon import scrape_amazon_product
 
-from src.common.llm_models import GEMINI_2_5_FLASH_PREVIEW, create_gemini
+from scraper.bright_data.amazon import scrape_amazon_product
+from src.common.llm_models import create_gemini
 from src.product_summary.config import Configuration
 from src.product_summary.state import InputState, State
+
 
 # Structured prompt for product summaries
 STRUCTURED_PROMPT = """
@@ -44,16 +38,19 @@ Return the summary in markdown format and the summary only. No other text.
 # async def generate_summary_stream(...) -> AsyncGenerator[str, None]: ...
 
 
-
 # Add scrape_product_node
-async def scrape_product_node(state: State, config: RunnableConfig) -> Dict[str, Optional[str]]:
-   resp = await scrape_amazon_product(state.get("url"))
-   logger.info(f"Scraped content: {resp}")
-   return {"scraped_content": str(resp)}
+async def scrape_product_node(
+    state: State, config: RunnableConfig
+) -> Dict[str, Optional[str]]:
+    resp = await scrape_amazon_product(state.get("url"))
+    logger.info(f"Scraped content: {resp}")
+    return {"scraped_content": str(resp)}
 
 
 # Refactor call_summary_node
-async def call_summary_node(state: State, config: RunnableConfig) -> Dict[str, List[BaseMessage]]:
+async def call_summary_node(
+    state: State, config: RunnableConfig
+) -> Dict[str, BaseMessage | None]:
     """
     Node that calls the summary generation function using LangChain Gemini integration,
     now using scraped content from the state.
@@ -63,7 +60,7 @@ async def call_summary_node(state: State, config: RunnableConfig) -> Dict[str, L
         config: Configuration for the runnable.
 
     Returns:
-        A dictionary with the 'messages' field containing the AI response.
+        A dictionary with the 'summary_message' field containing the AI response or None.
     """
     logger.info("---GENERATE SUMMARY---")
     configuration = Configuration.from_runnable_config(config)
@@ -73,18 +70,16 @@ async def call_summary_node(state: State, config: RunnableConfig) -> Dict[str, L
     scraped_content = state.get("scraped_content")
 
     if not scraped_content:
-         logger.error("No scraped content found in state for summarization.")
-         # If scraping failed, the error message might already be in state["messages"]
-         # We could return here, or return a specific error message.
-         # Let's return an error message to make it explicit.
-         return {
-             "messages": [
-                 AIMessage(
-                     content="I apologize, but I couldn't retrieve the product information to generate a summary. Please check the URL or try again."
-                 )
-             ]
-         }
-
+        logger.error("No scraped content found in state for summarization.")
+        # If scraping failed, the error message might already be in state["messages"]
+        # We could return here, or return a specific error message.
+        # Let's return an error message to make it explicit.
+        return {
+            # Return None for the message if scraping failed
+            "summary_message": AIMessage(
+                content="Scraping failed, cannot generate summary."
+            )
+        }
 
     try:
         # Create the LLM with LangChain's Gemini integration
@@ -95,44 +90,63 @@ async def call_summary_node(state: State, config: RunnableConfig) -> Dict[str, L
         prepared_messages = [
             SystemMessage(content=STRUCTURED_PROMPT),
             # Provide the scraped content as the context for summarization
-            HumanMessage(content=f"Here are some the product details:\n\n{scraped_content}. You should summarize the product based on the details provided. Think about what information are needed for user to make a purchase decision. if the information cannot be found, use search and fill those information."),
+            HumanMessage(
+                content=f"Here are some the product details:\n\n{scraped_content}. You should summarize the product based on the details provided. Think about what information are needed for user to make a purchase decision. if the information cannot be found, use search and fill those information."
+            ),
         ]
 
-        # Invoke the LLM
-        response = llm.invoke(prepared_messages, config=config) # Pass config
+        # Stream the LLM response
+        summary_parts = []
+        response = None  # Initialize response
+        async for chunk in llm.astream(prepared_messages, config=config):
+            # Check if chunk is AIMessage and has content
+            if isinstance(chunk, AIMessage) and isinstance(chunk.content, str):
+                summary_parts.append(chunk.content)
+            response = (
+                chunk  # Keep track of the last chunk for final AIMessage attributes
+            )
+
+        # Reconstruct the final AIMessage with aggregated content
+        if response is not None:
+            # Use attributes from the last chunk but with combined content
+            final_content = "".join(summary_parts)
+            response = AIMessage(
+                content=final_content,
+                id=response.id,
+                response_metadata=response.response_metadata,
+                tool_calls=response.tool_calls,
+                usage_metadata=response.usage_metadata,
+            )
+        else:
+            # Handle case where stream yields nothing
+            logger.warning("LLM stream yielded no chunks.")
+            response = AIMessage(content="")  # Create an empty message
 
         # Log the response for debugging
         logger.info(f"Generated response type: {type(response)}")
-        logger.info(f"Generated response content: {response.content}")
 
         if not response or not hasattr(response, "content") or not response.content:
             logger.error("Empty or invalid response received from LLM")
             return {
-                "messages": [
-                    AIMessage(
-                        content="I apologize, but I couldn't generate a summary. Please try again."
-                    )
-                ]
+                # Return error message
+                "summary_message": AIMessage(content="LLM returned empty response.")
             }
 
         # The response should already be an AIMessage
         # Ensure tool calls are handled if they appear unexpectedly, although the prompt asks for text.
         if response.tool_calls:
-             logger.warning(f"Unexpected tool calls in response: {response.tool_calls}")
-             # Decide how to handle tool calls if needed, for now, just return content
-             return {"messages": [AIMessage(content=response.content)]}
-
+            logger.warning(f"Unexpected tool calls in response: {response.tool_calls}")
+            # Decide how to handle tool calls if needed, for now, just return content
+            return {"summary_message": AIMessage(content=response.content)}
 
         # Return the AIMessage response
-        return {"messages": [response]}
+        return {"summary_message": response}
 
     except Exception as e:
-        logger.error(
-            f"Error in call_summary_node: {e}", exc_info=True
-        )
+        logger.error(f"Error in call_summary_node: {e}", exc_info=True)
         # Send an error message if something goes wrong
         return {
-            "messages": [AIMessage(content=f"Sorry, I encountered an error generating the summary: {str(e)}")]
+            "summary_message": AIMessage(content=f"Error generating summary: {str(e)}")
         }
 
 
