@@ -7,15 +7,13 @@ from typing import Dict, List, Optional
 import httpx
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_core.runnables import RunnableConfig
-
 from langgraph.graph import StateGraph
 from loguru import logger
 
 from scraper.bright_data.amazon import scrape_amazon_product
-from src.common.llm_models import create_gemini
+from src.common.llm_models import GEMINI_2_5_FLASH_PREVIEW, create_gemini
+from src.evaluation.common_defs import State
 from src.product_summary.config import Configuration
-from src.product_summary.state import InputState, State
-
 
 # Structured prompt for product summaries
 STRUCTURED_PROMPT = """
@@ -42,7 +40,13 @@ Return the summary in markdown format and the summary only. No other text.
 async def scrape_product_node(
     state: State, config: RunnableConfig
 ) -> Dict[str, Optional[str]]:
-    resp = await scrape_amazon_product(state.get("url"))
+    # Access url directly from the State model
+    url = state.url
+    if not url:
+        logger.error("Scrape node: URL not found in state.")
+        return {"scraped_content": "Error: URL not provided for scraping."}
+
+    resp = await scrape_amazon_product(url)
     logger.info(f"Scraped content: {resp}")
     return {"scraped_content": str(resp)}
 
@@ -60,25 +64,25 @@ async def call_summary_node(
         config: Configuration for the runnable.
 
     Returns:
-        A dictionary with the 'summary_message' field containing the AI response or None.
+        A dictionary with the 'output' field containing the AI response content as a string.
     """
     logger.info("---GENERATE SUMMARY---")
     configuration = Configuration.from_runnable_config(config)
     logger.info(f"State received in call_summary_node: {state}")
 
     # Extract scraped content from the state
-    scraped_content = state.get("scraped_content")
+    scraped_content = state.scraped_content  # Access directly from State model
 
-    if not scraped_content:
-        logger.error("No scraped content found in state for summarization.")
+    if not scraped_content or "Error:" in scraped_content:
+        logger.error(
+            f"No valid scraped content found in state for summarization: {scraped_content}"
+        )
         # If scraping failed, the error message might already be in state["messages"]
         # We could return here, or return a specific error message.
         # Let's return an error message to make it explicit.
         return {
             # Return None for the message if scraping failed
-            "summary_message": AIMessage(
-                content="Scraping failed, cannot generate summary."
-            )
+            "output": "Scraping failed or no content, cannot generate summary."
         }
 
     try:
@@ -122,14 +126,14 @@ async def call_summary_node(
             logger.warning("LLM stream yielded no chunks.")
             response = AIMessage(content="")  # Create an empty message
 
-        # Log the response for debugging
-        logger.info(f"Generated response type: {type(response)}")
+        final_summary_content = response.content if response else ""
+        logger.info(f"Generated summary content: {final_summary_content[:100]}...")
 
-        if not response or not hasattr(response, "content") or not response.content:
+        if not final_summary_content:
             logger.error("Empty or invalid response received from LLM")
             return {
                 # Return error message
-                "summary_message": AIMessage(content="LLM returned empty response.")
+                "output": "LLM returned empty response."
             }
 
         # The response should already be an AIMessage
@@ -137,21 +141,19 @@ async def call_summary_node(
         if response.tool_calls:
             logger.warning(f"Unexpected tool calls in response: {response.tool_calls}")
             # Decide how to handle tool calls if needed, for now, just return content
-            return {"summary_message": AIMessage(content=response.content)}
+            return {"output": response.content}
 
         # Return the AIMessage response
-        return {"summary_message": response}
+        return {"output": final_summary_content}
 
     except Exception as e:
         logger.error(f"Error in call_summary_node: {e}", exc_info=True)
         # Send an error message if something goes wrong
-        return {
-            "summary_message": AIMessage(content=f"Error generating summary: {str(e)}")
-        }
+        return {"output": f"Error generating summary: {str(e)}"}
 
 
 # Define the graph
-builder = StateGraph(State, input=InputState, config_schema=Configuration)
+builder = StateGraph(State, config_schema=Configuration)
 
 # Add the nodes
 builder.add_node("scrape", scrape_product_node)
@@ -169,7 +171,3 @@ builder.add_edge("generate", "__end__")
 # Compile the graph
 graph = builder.compile()
 graph.name = "Product Summary Agent"
-
-# Optional: Add memory (commented out, assumed setup elsewhere if needed)
-# memory = SqliteSaver.from_conn_string(":memory:")
-# graph = builder.compile(checkpointer=memory)

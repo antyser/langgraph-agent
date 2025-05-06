@@ -1,15 +1,15 @@
 import asyncio
 import logging
-from typing import Dict, Any, Literal, List
+from typing import Any, Dict, List, Literal
 
 from google.ai.generativelanguage_v1beta.types import Tool as GenAITool
 from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph
-from pydantic import BaseModel, Field as PydanticField
 
 from common.llm_models import create_gemini, create_openai
+from src.evaluation.common_defs import State
 
 logger = logging.getLogger(__name__)
 
@@ -17,13 +17,8 @@ SEARCH_PROMPT_TEMPLATE = """
 Analyze this product: {product}.
 """
 
-class DirectSearchState(BaseModel):
-    """Represents the Pydantic state for the direct search agent graph."""
-    product: str
-    search_engine: Literal["google", "openai"] = "google" # Default search engine
-    search_results: str = "" # Store the single search result as a string
 
-async def direct_search_node(state: DirectSearchState, config: Any) -> Dict[str, Any]:
+async def direct_search_node(state: State, config: Any) -> Dict[str, Any]:
     """
     Performs a direct search for the product using the specified search engine.
 
@@ -43,7 +38,9 @@ async def direct_search_node(state: DirectSearchState, config: Any) -> Dict[str,
     elif search_engine == "openai":
         llm: ChatOpenAI = create_openai()
     else:
-        logger.error(f"Unsupported search engine in direct_search_node: {search_engine}")
+        logger.error(
+            f"Unsupported search engine in direct_search_node: {search_engine}"
+        )
         raise ValueError(f"Unsupported search engine: {search_engine}")
 
     # Prepare the search message
@@ -65,16 +62,20 @@ async def direct_search_node(state: DirectSearchState, config: Any) -> Dict[str,
         result_str = str(resp.content)
 
     except Exception as e:
-        logger.exception(f"Error during direct search for '{product_name}' using {search_engine}: {e}")
+        logger.exception(
+            f"Error during direct search for '{product_name}' using {search_engine}: {e}"
+        )
         # Re-raise the exception after logging
         raise
 
-    return {"search_results": result_str}
+    # Output the final search result to the standardized 'output' field
+    return {"output": result_str}
 
 
 # Define the graph
-builder = StateGraph(DirectSearchState)
+builder = StateGraph(State)  # Use the unified State
 builder.add_node("direct_search", direct_search_node)
 builder.add_edge("__start__", "direct_search")
 builder.add_edge("direct_search", "__end__")
+# Compile the graph, explicitly setting the output schema to be the full state
 graph = builder.compile()

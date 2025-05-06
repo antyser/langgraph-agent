@@ -1,16 +1,23 @@
 import asyncio
+import logging
 import os
 import time
-from common.llm_models import create_gemini, create_openai
-from langchain_core.messages import HumanMessage, AIMessage
+from typing import Any, Dict, List, Literal
+
+from google.ai.generativelanguage_v1beta.types import Tool as GenAITool
+from langchain_core.messages import AIMessage, HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
-from google.ai.generativelanguage_v1beta.types import Tool as GenAITool
 from langgraph.graph import StateGraph
-from typing import List, Dict, Any, Literal
-from src.product_summary.schemas import SearchQueries
-import logging
-from pydantic import BaseModel, ConfigDict, Field as PydanticField
+
+from common.llm_models import create_gemini, create_openai
+from src.evaluation.common_defs import State  # Import unified State
+from src.product_summary.schemas import (
+    SearchQueries,  # Keep this if planning_node still uses it for structured_llm output
+)
+
+# from pydantic import BaseModel, ConfigDict, Field as PydanticField # Remove old Pydantic
+
 
 logger = logging.getLogger(__name__)
 
@@ -32,19 +39,10 @@ SUMMARY_PROMPT = """You are an expert research summarizer that synthesizes infor
 - Anticipate and proactively address potential follow-up questions or related relevant context that enhances overall comprehension.
 - Incorporate relevant recent advancements, unconventional perspectives, or alternative viewpoints, explicitly marking these as emerging or speculative when applicable."""
 
-class SimpleState(BaseModel):
-    """Represents the Pydantic state for the simple product summary agent graph."""
-    model_config = ConfigDict(extra='ignore') # Or 'allow' if nodes might add temp fields
 
-    product: str
-    search_engine: Literal["google", "openai"] = "google" # Default search engine
-    search_queries: List[str] = PydanticField(default_factory=list)
-    search_results: List[str] = PydanticField(default_factory=list)
-    summary: str = ""
-
-async def planning_node(state: SimpleState, config: Any) -> Dict[str, Any]:
+async def planning_node(state: State, config: Any) -> Dict[str, Any]:
     """
-    Planning node that generates search queries using structured output, 
+    Planning node that generates search queries using structured output,
     selecting the LLM based on the state's search_engine.
 
     Args:
@@ -55,7 +53,7 @@ async def planning_node(state: SimpleState, config: Any) -> Dict[str, Any]:
         A dictionary with the generated search queries list.
     """
     product = state.product
-    search_engine = state.search_engine # No need for .get() with default
+    search_engine = state.search_engine  # No need for .get() with default
 
     # Select LLM based on search_engine
     if search_engine == "google":
@@ -70,7 +68,7 @@ async def planning_node(state: SimpleState, config: Any) -> Dict[str, Any]:
 
     messages = [
         HumanMessage(content=PLANNING_PROMPT),
-        HumanMessage(content=f"Product: {product}")
+        HumanMessage(content=f"Product: {product}"),
     ]
 
     # Use astream for streaming and collect the final structured output
@@ -82,19 +80,21 @@ async def planning_node(state: SimpleState, config: Any) -> Dict[str, Any]:
 
     # Handle cases where the stream might not yield the expected type
     if not isinstance(response, SearchQueries):
-        logger.error(f"Planning node failed to get SearchQueries structure. Last chunk: {response}")
+        logger.error(
+            f"Planning node failed to get SearchQueries structure. Last chunk: {response}"
+        )
         # Decide on error handling: raise exception, return empty, etc.
         # For now, let's return an empty list to avoid downstream errors, but log the issue.
         return {"search_queries": []}
 
-    queries = response.queries
+    # Return only the updated field for LangGraph to merge
+    return {"search_queries": response.queries}
 
-    return {"search_queries": queries}
 
 async def _search_single_query(
     llm: ChatGoogleGenerativeAI | ChatOpenAI,
     query: str,
-    search_engine: Literal["google", "openai"]
+    search_engine: Literal["google", "openai"],
 ) -> str:
     """
     Helper function to perform a single search query using the specified engine.
@@ -107,10 +107,7 @@ async def _search_single_query(
     Returns:
         The search result as a string.
     """
-    messages = [
-        HumanMessage(content=SEARCH_PROMPT),
-        HumanMessage(content=query)
-    ]
+    messages = [HumanMessage(content=SEARCH_PROMPT), HumanMessage(content=query)]
 
     # Collect streamed content
     content_parts = []
@@ -122,9 +119,11 @@ async def _search_single_query(
             if isinstance(chunk.content, str):
                 content_parts.append(chunk.content)
             if chunk.response_metadata:
-                resp_metadata = chunk.response_metadata # Store metadata if needed
+                resp_metadata = chunk.response_metadata  # Store metadata if needed
     elif search_engine == "openai" and isinstance(llm, ChatOpenAI):
-        async for chunk in llm.astream(messages, tools=[{"type": "web_search_preview"}]):
+        async for chunk in llm.astream(
+            messages, tools=[{"type": "web_search_preview"}]
+        ):
             # OpenAI might stream content differently, adjust aggregation as needed
             # Assuming AIMessage chunks with string content here
             if isinstance(chunk.content, str):
@@ -133,7 +132,9 @@ async def _search_single_query(
                 resp_metadata = chunk.response_metadata
     else:
         # Handle mismatch or unsupported engine
-        raise ValueError(f"Unsupported search engine '{search_engine}' or LLM type mismatch.")
+        raise ValueError(
+            f"Unsupported search engine '{search_engine}' or LLM type mismatch."
+        )
 
     # Join collected content parts
     full_content = "".join(content_parts)
@@ -141,7 +142,7 @@ async def _search_single_query(
     # Ensure the return value is always a string to prevent TypeError downstream
     if not full_content:
         logger.warning(f"Search query '{query}' returned None content.")
-        return "" # Return empty string for None
+        return ""  # Return empty string for None
     else:
         # Otherwise, assume it's string-like and cast just in case
         # Depending on the tool use (google_search vs web_search_preview),
@@ -150,7 +151,8 @@ async def _search_single_query(
         logger.debug(f"Search result for '{query}': {full_content[:100]}...")
         return full_content
 
-async def search_node(state: SimpleState, config: Any) -> Dict[str, Any]:
+
+async def search_node(state: State, config: Any) -> Dict[str, Any]:
     """
     Search node that runs all search queries in parallel using the specified search engine.
 
@@ -171,12 +173,15 @@ async def search_node(state: SimpleState, config: Any) -> Dict[str, Any]:
     else:
         raise ValueError(f"Unsupported search engine: {search_engine}")
 
-    results = await asyncio.gather(*[_search_single_query(llm, q, search_engine) for q in queries])
+    results = await asyncio.gather(
+        *[_search_single_query(llm, q, search_engine) for q in queries]
+    )
     return {"search_results": list(results)}
 
-async def summary_node(state: SimpleState, config: Any) -> Dict[str, Any]:
+
+async def summary_node(state: State, config: Any) -> Dict[str, Any]:
     """
-    Summary node that generates a product summary from search results, 
+    Summary node that generates a product summary from search results,
     selecting the LLM based on the state's search_engine.
 
     Args:
@@ -202,7 +207,7 @@ async def summary_node(state: SimpleState, config: Any) -> Dict[str, Any]:
 
     messages = [
         HumanMessage(content=SUMMARY_PROMPT),
-        HumanMessage(content=search_results_str)
+        HumanMessage(content=search_results_str),
     ]
 
     # Collect streamed summary content
@@ -212,7 +217,7 @@ async def summary_node(state: SimpleState, config: Any) -> Dict[str, Any]:
         # Check if chunk is AIMessage and has content
         if isinstance(chunk, AIMessage) and isinstance(chunk.content, str):
             summary_parts.append(chunk.content)
-        final_resp = chunk # Keep track of the last chunk for potential metadata
+        final_resp = chunk  # Keep track of the last chunk for potential metadata
 
     # Join collected content parts
     summary_str = "".join(summary_parts)
@@ -220,12 +225,13 @@ async def summary_node(state: SimpleState, config: Any) -> Dict[str, Any]:
     # Ensure summary content is a string before returning
     if not summary_str:
         logger.warning("Summary node returned None content.")
-        summary_str = "" # Return empty string for None
+        summary_str = ""  # Return empty string for None
 
-    return {"summary": summary_str}
+    # Output the final summary to the standardized 'output' field
+    return {"output": summary_str}
 
 
-builder = StateGraph(SimpleState)
+builder = StateGraph(State)
 builder.add_node("plan", planning_node)
 builder.add_node("search", search_node)
 builder.add_node("summarize", summary_node)

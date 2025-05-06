@@ -41,48 +41,18 @@ async def run_graph_for_product(
     logger.info(f"Running [{graph_key}]: {name}")
     latency_callback.reset()
 
-    # --- Determine Input State (Simplified) ---
-    input_state = initial_state.copy()
-
-    # Check if graph requires 'product' in its input schema
-    graph_input_schema = getattr(graph_obj, "input_schema", None)
-    required_inputs = (
-        set(graph_input_schema.schema().get("required", []))
-        if graph_input_schema
-        else set()
-    )
-    input_properties = (
-        graph_input_schema.schema().get("properties", {}) if graph_input_schema else {}
-    )
-
-    # Determine input based on schema (add url if needed)
-    if "product" in required_inputs or "product" in input_properties:
-        input_state["product"] = name
-    # Specifically check for 'url' for graphs like scrape_summary
-    if "url" in required_inputs or "url" in input_properties:
-        if url:
-            input_state["url"] = url
-        else:
-            # Handle missing URL if required by the graph
-            logger.error(
-                f"Graph {graph_key} requires 'url' but none provided for {name}. Cannot execute."
-            )
-            # Create a failed RawResult immediately
-            return RawResult(
-                graph_key=graph_key,
-                product=product_info,
-                summary="Execution skipped: Missing required URL input.",
-                latency_ms=0,
-                ttft_ms=None,
-                node_latencies={},
-                error="Missing required URL input.",
-            )
-    # Check if *other* required inputs are missing (excluding product/url handled above)
-    elif required_inputs - set(input_state.keys()):
-        logger.warning(
-            f"Graph {graph_key} requires inputs ({required_inputs - set(input_state.keys())}) not provided by product name, URL, or initial_state. Relying on current state: {input_state}"
-        )
-        # Proceed, assuming initial_state + product/url is sufficient
+    # --- Prepare Initial State for the Unified State Model ---
+    # The graph itself will use the State Pydantic model for validation.
+    # We pass a dictionary that can populate it.
+    initial_graph_input_dict = {
+        "product": name,
+        "url": url,
+        # Add other fields from graph_config's initial_state if they exist in the unified State model
+        # e.g., search_engine
+    }
+    if "search_engine" in initial_state:
+        initial_graph_input_dict["search_engine"] = initial_state["search_engine"]
+    # Any other fields from initial_state that are part of the unified State model can be added here.
 
     # --- Execute Graph ---
     start_time = time.perf_counter()
@@ -99,7 +69,7 @@ async def run_graph_for_product(
             None  # Variable to store the data from the last relevant event
         )
         async for event in graph_obj.astream_events(
-            input_state, config={"callbacks": [latency_callback]}
+            initial_graph_input_dict, config={"callbacks": [latency_callback]}
         ):
             logger.trace(f"Stream event for {graph_key} - {name}: {event}")
 
@@ -125,34 +95,16 @@ async def run_graph_for_product(
         if final_event_data:
             graph_output = final_event_data
             # --- Extract Summary (Simplified) ---
-            # Check for the new summary_message field
-            if (
-                "summary_message" in graph_output
-                and graph_output["summary_message"] is not None
-            ):
-                # Extract content assuming it's a BaseMessage with a .content attribute
-                summary_msg_obj = graph_output["summary_message"]
-                if hasattr(summary_msg_obj, "content") and isinstance(
-                    summary_msg_obj.content, str
-                ):
-                    summary = summary_msg_obj.content
-                else:
-                    # Handle unexpected format
-                    summary = f"Summary message object format unexpected: {type(summary_msg_obj)}"
-                    logger.warning(summary)
-            # Fallback to previous fields if summary_message is not present or empty
-            elif "summary" in graph_output and graph_output["summary"] is not None:
-                summary = str(graph_output["summary"])
-                logger.debug(f"Using legacy 'summary' field for {graph_key} - {name}")
-            elif (
-                "search_results" in graph_output
-                and graph_output["search_results"] is not None
-            ):
-                # Use search_results as fallback (for direct_search graph)
-                summary = str(graph_output["search_results"])
-                logger.debug(f"Using 'search_results' field for {graph_key} - {name}")
+            # All graphs should now place their final string output in the 'output' field of the State
+            if isinstance(graph_output.get("output"), str):
+                summary = graph_output["output"]
+            elif graph_output.get("output") is None:
+                summary = "Graph output field was None."
+                logger.warning(
+                    f"Graph {graph_key} final state 'output' field is None for {name}. State: {graph_output}"
+                )
             else:
-                summary = f"Expected summary field (summary_message, summary, search_results) not found in final output keys: {list(graph_output.keys())}. Output: {str(graph_output)[:200]}..."
+                summary = f"Graph 'output' field not found or not a string. Keys: {list(graph_output.keys())}. Output: {str(graph_output.get('output'))[:200]}..."
                 logger.warning(summary)
         else:
             # Stream finished but we didn't capture a final state with output
