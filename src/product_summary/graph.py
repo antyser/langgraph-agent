@@ -32,8 +32,6 @@ Please search for information about the product mentioned and create a summary w
 Return the summary in markdown format and the summary only. No other text.
 """
 
-# Remove the old generate_summary_stream function
-# async def generate_summary_stream(...) -> AsyncGenerator[str, None]: ...
 
 
 # Add scrape_product_node

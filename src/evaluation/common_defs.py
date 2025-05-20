@@ -40,6 +40,18 @@ class EvaluationDetail(BaseModel):
     )
 
 
+class GeneralRubricResult(BaseModel):
+    """Evaluation result for a general formatting/content rubric."""
+
+    model_config = ConfigDict(extra="ignore")
+    rubric: str = Field(description="The text of the rubric being evaluated.")
+    evaluation: Literal["yes", "no"]
+    reason: Optional[str] = Field(
+        default=None,
+        description="Reason why the summary doesn't meet the rubric (only for 'no' evaluations).",
+    )
+
+
 class QuestionEvaluation(BaseModel):
     """Structured output type for LLM-based question evaluation."""
 
@@ -68,6 +80,14 @@ class EvaluatedResult(RawResult):
 
     question_details: List[EvaluationDetail]
     questions_answered: Dict[str, int]
+    general_rubric_results: List[Dict[str, Any]] = Field(
+        default_factory=list,
+        description="Evaluation results for general formatting and content rubrics.",
+    )
+    rubrics_summary: Dict[str, int] = Field(
+        default_factory=dict,
+        description="Summary counts of general rubric evaluation results (yes/no).",
+    )
 
 
 class GraphConfiguration(TypedDict):
