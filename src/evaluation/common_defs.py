@@ -52,6 +52,20 @@ class GeneralRubricResult(BaseModel):
     )
 
 
+class AccuracyMetricResult(BaseModel):
+    """Evaluation result for a single true statement's accuracy."""
+
+    model_config = ConfigDict(extra="ignore")
+    true_statement: str = Field(
+        description="The text of the true statement being evaluated."
+    )
+    evaluation: Literal["yes", "no"]
+    reason: Optional[str] = Field(
+        default=None,
+        description="Reason why the summary doesn't accurately cover the true statement (only for 'no' evaluations).",
+    )
+
+
 class QuestionEvaluation(BaseModel):
     """Structured output type for LLM-based question evaluation."""
 
@@ -87,6 +101,17 @@ class EvaluatedResult(RawResult):
     rubrics_summary: Dict[str, int] = Field(
         default_factory=dict,
         description="Summary counts of general rubric evaluation results (yes/no).",
+    )
+    accuracy_metric_details: List[AccuracyMetricResult] = Field(
+        default_factory=list,
+        description="Detailed evaluation results for accuracy against true statements.",
+    )
+    accuracy_summary: Dict[str, int] = Field(
+        default_factory=dict,
+        description="Summary counts of accuracy metric evaluation results (yes/no).",
+    )
+    summary_word_count: int = Field(
+        default=0, description="Total word count of the product summary."
     )
 
 

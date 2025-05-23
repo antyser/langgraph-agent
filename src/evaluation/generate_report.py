@@ -78,6 +78,31 @@ def generate_markdown_report(
     )
     rubrics_yes_pct = (total_rubrics_yes / total_rubrics * 100) if total_rubrics else 0
 
+    # Calculate average word count
+    total_word_count = sum(
+        r.summary_word_count
+        for r in evaluated_results
+        if hasattr(r, "summary_word_count")
+    )
+    avg_word_count = total_word_count / num_products if num_products else 0
+
+    # Calculate accuracy metrics
+    total_accuracy_checks = sum(
+        r.accuracy_summary.get("total", 0)
+        for r in evaluated_results
+        if hasattr(r, "accuracy_summary")
+    )
+    total_accuracy_yes = sum(
+        r.accuracy_summary.get("yes", 0)
+        for r in evaluated_results
+        if hasattr(r, "accuracy_summary")
+    )
+    accuracy_yes_pct = (
+        (total_accuracy_yes / total_accuracy_checks * 100)
+        if total_accuracy_checks
+        else 0
+    )
+
     md = []
     md.append(f"# Evaluation Report: {graph_key}")
     md.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -103,13 +128,21 @@ def generate_markdown_report(
         md.append(
             f"  - Met Successfully ('Yes'): {total_rubrics_yes} ({rubrics_yes_pct:.1f}%)"
         )
+    if num_products > 0:
+        md.append(f"- **Average Summary Word Count:** {avg_word_count:.0f}")
+    if total_accuracy_checks > 0:
+        md.append("- **Accuracy vs True Statements:**")
+        md.append(f"  - Total Accuracy Checks: {total_accuracy_checks}")
+        md.append(
+            f"  - Met Successfully ('Yes'): {total_accuracy_yes} ({accuracy_yes_pct:.1f}%)"
+        )
 
     md.append("\n## Individual Product Results")
     md.append(
-        "| # | Product | Overall Latency (s) | TTFT (ms) | Node Latencies (s) | Q's Answered | Rubrics Met | Summary Snippet | Error |"
+        "| # | Product | Overall Latency (s) | TTFT (ms) | Node Latencies (s) | Q's Answered | Rubrics Met | Accuracy Met | Word Count | Error |"
     )
     md.append(
-        "|---|---------|---------------------|-----------|--------------------|--------------|--------------|--------------------|-------|"
+        "|---|---------|---------------------|-----------|--------------------|--------------|-------------|--------------|------------|-------|"
     )
 
     for i, r in enumerate(evaluated_results):
@@ -120,7 +153,6 @@ def generate_markdown_report(
         node_lats = r.node_latencies
         q_answered = r.questions_answered
         rubrics_summary = getattr(r, "rubrics_summary", {})
-        summary = r.summary
         error = r.error
 
         node_lat_str = "N/A"
@@ -137,20 +169,14 @@ def generate_markdown_report(
         rubrics_met_str = (
             f"{rubrics_summary.get('yes', 0)}/{rubrics_summary.get('total', 0)}"
         )
-
-        # Add check to ensure summary is a string before processing
-        if isinstance(summary, str):
-            summary_snippet = summary.replace("\n", "<br>")
-        else:
-            logger.warning(
-                f"Summary for product {product_name} is not a string ({type(summary)}), using placeholder."
-            )
-            summary_snippet = "[Summary is not a string]"
+        accuracy_summary_data = getattr(r, "accuracy_summary", {})
+        accuracy_met_str = f"{accuracy_summary_data.get('yes', 0)}/{accuracy_summary_data.get('total', 0)}"
+        word_count_str = str(getattr(r, "summary_word_count", "N/A"))
 
         error_str = error if error else "None"
 
         md.append(
-            f"| {i+1} | {product_name} | {latency_s} | {ttft_str} | {node_lat_str} | {q_answered_str} | {rubrics_met_str} | {summary_snippet} | {error_str} |"
+            f"| {i+1} | {product_name} | {latency_s} | {ttft_str} | {node_lat_str} | {q_answered_str} | {rubrics_met_str} | {accuracy_met_str} | {word_count_str} | {error_str} |"
         )
 
     # Add section for detailed Q&A
@@ -182,6 +208,22 @@ def generate_markdown_report(
 
                 eval_icon = "✅" if evaluation == "yes" else "❌"
                 md.append(f"| {rubric_text} | {eval_icon} | {reason} |")
+            md.append("")  # Blank line
+
+        # Add accuracy metric evaluation section
+        accuracy_metric_details = getattr(r, "accuracy_metric_details", [])
+        if accuracy_metric_details:
+            md.append("#### Accuracy Against True Statements")
+            md.append("| True Statement | Accurate | Reason if Not Accurate |")
+            md.append("|----------------|----------|------------------------|")
+            for acc_detail in accuracy_metric_details:
+                true_statement_text = acc_detail.true_statement.replace(
+                    "|", "\\|"
+                ).replace("\n", "<br>")
+                acc_evaluation = acc_detail.evaluation
+                acc_reason = acc_detail.reason or ""
+                acc_eval_icon = "✅" if acc_evaluation == "yes" else "❌"
+                md.append(f"| {true_statement_text} | {acc_eval_icon} | {acc_reason} |")
             md.append("")  # Blank line
 
         md.append("#### Product-Specific Questions")
@@ -289,6 +331,31 @@ def update_combined_log(graph_key: str, evaluated_results: List[EvaluatedResult]
                 (total_rubrics_yes / total_rubrics * 100) if total_rubrics else 0
             )
 
+            # Calculate average word count
+            total_word_count = sum(
+                r.summary_word_count
+                for r in evaluated_results
+                if hasattr(r, "summary_word_count")
+            )
+            avg_word_count = total_word_count / num_products if num_products else 0
+
+            # Calculate accuracy metrics
+            total_accuracy_checks = sum(
+                r.accuracy_summary.get("total", 0)
+                for r in evaluated_results
+                if hasattr(r, "accuracy_summary")
+            )
+            total_accuracy_yes = sum(
+                r.accuracy_summary.get("yes", 0)
+                for r in evaluated_results
+                if hasattr(r, "accuracy_summary")
+            )
+            accuracy_yes_pct = (
+                (total_accuracy_yes / total_accuracy_checks * 100)
+                if total_accuracy_checks
+                else 0
+            )
+
             f.write(f"\nAverage Overall Latency: {avg_overall_latency:.2f} ms")
             if node_latency_avgs:
                 f.write("\nAverage Node Latencies (seconds):")
@@ -298,6 +365,14 @@ def update_combined_log(graph_key: str, evaluated_results: List[EvaluatedResult]
             if total_rubrics > 0:
                 f.write(
                     f"\nGeneral Formatting & Content Rubrics: {total_rubrics_yes}/{total_rubrics} met ({rubrics_yes_pct:.1f}%)"
+                )
+
+            if num_products > 0:
+                f.write(f"\nAverage Summary Word Count: {avg_word_count:.0f}")
+
+            if total_accuracy_checks > 0:
+                f.write(
+                    f"\nAccuracy vs True Statements: {total_accuracy_yes}/{total_accuracy_checks} met ({accuracy_yes_pct:.1f}%)"
                 )
 
             f.write(f"\n\n--- Individual Product Details ---")
@@ -318,6 +393,12 @@ def update_combined_log(graph_key: str, evaluated_results: List[EvaluatedResult]
                 rubrics_yes = rubrics_summary.get("yes", 0)
                 rubrics_total = rubrics_summary.get("total", 0)
 
+                # Get accuracy summary and word count
+                accuracy_summary_data = getattr(r, "accuracy_summary", {})
+                accuracy_yes = accuracy_summary_data.get("yes", 0)
+                accuracy_total = accuracy_summary_data.get("total", 0)
+                word_count = getattr(r, "summary_word_count", "N/A")
+
                 node_lats = r.node_latencies
                 summary = r.summary
                 error = r.error
@@ -335,6 +416,8 @@ def update_combined_log(graph_key: str, evaluated_results: List[EvaluatedResult]
                     f.write(f"\n   Node Latencies: {node_lat_str}")
                 f.write(f"\n   Questions answered: {q_answered}/{q_total}")
                 f.write(f"\n   Rubrics met: {rubrics_yes}/{rubrics_total}")
+                f.write(f"\n   Accuracy met: {accuracy_yes}/{accuracy_total}")
+                f.write(f"\n   Summary Word Count: {word_count}")
                 f.write(
                     f"\n   Summary Snippet: {summary[:150].replace(chr(10), ' ')}..."
                 )
@@ -352,6 +435,19 @@ def update_combined_log(graph_key: str, evaluated_results: List[EvaluatedResult]
                         )
                         f.write(
                             f"\n     - [{eval_str}] {result.get('rubric', 'Unknown')}{reason}"
+                        )
+
+                # Add detailed accuracy evaluation to log
+                accuracy_details_log = getattr(r, "accuracy_metric_details", [])
+                if accuracy_details_log:
+                    f.write("\n   Accuracy Against True Statements:")
+                    for acc_res in accuracy_details_log:
+                        acc_eval_str = "✓" if acc_res.evaluation == "yes" else "✗"
+                        acc_reason_log = (
+                            f" - {acc_res.reason}" if acc_res.reason else ""
+                        )
+                        f.write(
+                            f"\n     - [{acc_eval_str}] {acc_res.true_statement[:80]}...{acc_reason_log}"
                         )
 
                 # Add detailed Q&A to log

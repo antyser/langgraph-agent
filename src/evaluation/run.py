@@ -24,7 +24,7 @@ from loguru import logger
 load_dotenv()
 
 # Use absolute import for evaluation data
-from evaluation_data import PRODUCTS_TO_EVALUATE
+from evaluation_data import COVERAGE_TO_EVALUATE
 
 # Use absolute imports for evaluation components
 from src.evaluation.common_defs import (
@@ -189,7 +189,7 @@ async def main():
         else:
             # If no run-id or raw file doesn't exist in the specified run folder, run graph
             await execute_single_graph_run(
-                selected_graph_key, graph_config_to_run, PRODUCTS_TO_EVALUATE, run_dir
+                selected_graph_key, graph_config_to_run, COVERAGE_TO_EVALUATE, run_dir
             )
 
     if run_evaluation_flag:

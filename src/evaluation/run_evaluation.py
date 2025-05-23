@@ -14,6 +14,7 @@ from src.common.llm_models import create_gemini, create_openai
 from src.evaluation.common_defs import (
     EVAL_FILENAME,
     RAW_FILENAME,
+    AccuracyMetricResult,
     EvaluatedResult,
     EvaluationDetail,
     GeneralRubricResult,
@@ -22,6 +23,13 @@ from src.evaluation.common_defs import (
 )
 
 logger = logging.getLogger(__name__)
+
+
+def count_words(text: str) -> int:
+    """Counts the number of words in a given text string."""
+    if not isinstance(text, str) or not text.strip():
+        return 0
+    return len(text.split())
 
 
 async def check_general_rubrics(summary: str) -> List[GeneralRubricResult]:
@@ -237,6 +245,85 @@ Return ONLY a JSON object matching the QuestionEvaluation schema, containing a l
         ]
 
 
+async def check_accuracy_against_true_statements(
+    summary: str, true_statements: List[str]
+) -> List[AccuracyMetricResult]:
+    """
+    Evaluates if the product summary accurately covers the key information of each true statement.
+    Focuses on whether the core message of the true statement is present in the summary.
+    """
+    results: List[AccuracyMetricResult] = []
+    if (
+        not summary
+        or summary == "No summary generated."
+        or not isinstance(summary, str)
+    ):
+        logger.warning(
+            "Invalid or empty summary provided for accuracy metric evaluation."
+        )
+        return [
+            AccuracyMetricResult(
+                true_statement=ts,
+                evaluation="no",
+                reason="Invalid or empty summary provided.",
+            )
+            for ts in true_statements
+        ]
+
+    if not true_statements:
+        return []
+
+    eval_llm = create_openai()
+
+    class SingleAccuracyEvaluation(BaseModel):
+        true_statement: str
+        evaluation: Literal["yes", "no"]
+        reason: Optional[str] = None
+
+    structured_llm = eval_llm.with_structured_output(SingleAccuracyEvaluation)
+
+    for stmt_idx, true_statement_text in enumerate(true_statements):
+        try:
+            prompt = f"""Evaluate if the provided product summary accurately covers the KEY INFORMATION of the following true statement.
+The summary does NOT need to mention every single specific detail from the true statement, but it MUST capture the main point or an essential piece of information.
+
+Product Summary:
+---
+{summary}
+---
+
+True Statement to Evaluate (Statement #{stmt_idx + 1}):
+"{true_statement_text}"
+
+Does the summary accurately cover the KEY INFORMATION of this true statement?
+- Answer "yes" if the summary contains the core message or an essential piece of information from the true statement.
+- Answer "no" if the summary omits the key information from the true statement.
+- Provide a brief reason if your evaluation is "no".
+
+Return a JSON object with:
+1.  `true_statement`: The exact text of the true statement being evaluated.
+2.  `evaluation`: Your evaluation: "yes" or "no".
+3.  `reason`: A brief reason if the evaluation is "no".
+"""
+            messages = [HumanMessage(content=prompt)]
+            # logger.debug(f"Accuracy prompt for statement {stmt_idx+1}:\\n{prompt}") # Optional: for debugging prompts
+            result = await structured_llm.ainvoke(messages)
+            results.append(AccuracyMetricResult(**result.model_dump()))
+
+        except Exception as e:
+            logger.error(
+                f"Accuracy evaluation failed for true statement '{true_statement_text[:50]}...': {e}"
+            )
+            results.append(
+                AccuracyMetricResult(
+                    true_statement=true_statement_text,
+                    evaluation="no",
+                    reason=f"Evaluation failed: {e}",
+                )
+            )
+    return results
+
+
 async def evaluate_raw_results(raw_results: List[RawResult]) -> List[EvaluatedResult]:
     """
     Performs LLM-based question evaluation on a list of raw results.
@@ -254,6 +341,7 @@ async def evaluate_raw_results(raw_results: List[RawResult]) -> List[EvaluatedRe
             raw_result.product if isinstance(raw_result.product, dict) else {}
         )
         questions = product_dict.get("questions", [])
+        true_statements = product_dict.get("true_statements", [])
         product_name = product_dict.get("name", "Unknown")
 
         logger.info(
@@ -269,7 +357,18 @@ async def evaluate_raw_results(raw_results: List[RawResult]) -> List[EvaluatedRe
         logger.info(
             f"Evaluating general rubrics for [{raw_result.graph_key}]: {product_name}"
         )
-        general_rubric_results = await check_general_rubrics_one_by_one(summary)
+        general_rubric_results_models = await check_general_rubrics_one_by_one(summary)
+        general_rubric_results_dicts = [
+            r.model_dump() for r in general_rubric_results_models
+        ]
+
+        # Evaluate accuracy against true statements
+        logger.info(
+            f"Evaluating accuracy metrics for [{raw_result.graph_key}]: {product_name}"
+        )
+        accuracy_metric_details: List[AccuracyMetricResult] = (
+            await check_accuracy_against_true_statements(summary, true_statements)
+        )
 
         # Compute summary counts from the detailed results
         eval_counts = {"yes": 0, "no": 0, "partially": 0, "unknown": 0}
@@ -285,15 +384,30 @@ async def evaluate_raw_results(raw_results: List[RawResult]) -> List[EvaluatedRe
 
         # Compute rubric counts
         rubric_counts = {"yes": 0, "no": 0}
-        for rubric_result in general_rubric_results:
+        for rubric_result in general_rubric_results_models:
             rubric_counts[rubric_result.evaluation] = (
                 rubric_counts.get(rubric_result.evaluation, 0) + 1
             )
         rubrics_summary = {
             "yes": rubric_counts["yes"],
             "no": rubric_counts["no"],
-            "total": len(general_rubric_results),
+            "total": len(general_rubric_results_models),
         }
+
+        # Compute accuracy summary
+        accuracy_counts = {"yes": 0, "no": 0}
+        for acc_detail in accuracy_metric_details:
+            accuracy_counts[acc_detail.evaluation] = (
+                accuracy_counts.get(acc_detail.evaluation, 0) + 1
+            )
+        accuracy_summary = {
+            "yes": accuracy_counts["yes"],
+            "no": accuracy_counts["no"],
+            "total": len(accuracy_metric_details),
+        }
+
+        # Count words in the summary
+        summary_word_count = count_words(summary)
 
         # Create EvaluatedResult Pydantic model with detailed results
         try:
@@ -301,10 +415,11 @@ async def evaluate_raw_results(raw_results: List[RawResult]) -> List[EvaluatedRe
                 **raw_result.model_dump(),
                 question_details=evaluation_details,
                 questions_answered=questions_answered_summary,
-                general_rubric_results=[
-                    result.model_dump() for result in general_rubric_results
-                ],
+                general_rubric_results=general_rubric_results_dicts,
                 rubrics_summary=rubrics_summary,
+                accuracy_metric_details=[result for result in accuracy_metric_details],
+                accuracy_summary=accuracy_summary,
+                summary_word_count=summary_word_count,
             )
             evaluated_results.append(evaluated_result)
         except Exception as pydantic_error:
