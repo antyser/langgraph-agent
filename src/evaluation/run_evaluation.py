@@ -9,7 +9,7 @@ from typing import Any, Dict, List, Literal, Optional, TypedDict
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel
 
-from evaluation_data import GENERAL_EVALUATION_RUBRICS
+from evaluation_data import GENERAL_EVALUATION_RUBRICS_V2
 from src.common.llm_models import create_gemini, create_openai
 from src.evaluation.common_defs import (
     EVAL_FILENAME,
@@ -50,7 +50,7 @@ async def check_general_rubrics(summary: str) -> List[GeneralRubricResult]:
                 evaluation="no",
                 reason="Invalid or empty summary provided.",
             )
-            for rubric in GENERAL_EVALUATION_RUBRICS
+            for rubric in GENERAL_EVALUATION_RUBRICS_V2
         ]
 
     try:
@@ -62,7 +62,7 @@ async def check_general_rubrics(summary: str) -> List[GeneralRubricResult]:
         structured_llm = eval_llm.with_structured_output(RubricEvaluation)
 
         rubrics_text = "\n".join(
-            [f"{i+1}. {rubric}" for i, rubric in enumerate(GENERAL_EVALUATION_RUBRICS)]
+            [f"{i+1}. {rubric}" for i, rubric in enumerate(GENERAL_EVALUATION_RUBRICS_V2)]
         )
 
         prompt = f"""Evaluate if this product summary follows these general formatting and content rubrics. 
@@ -91,7 +91,7 @@ Return ONLY a JSON object matching the RubricEvaluation schema with a list of ev
         processed_rubrics = {r.rubric for r in result.evaluation_results}
 
         # For any missing rubrics, add them with "no" evaluation
-        for rubric in GENERAL_EVALUATION_RUBRICS:
+        for rubric in GENERAL_EVALUATION_RUBRICS_V2:
             if rubric not in processed_rubrics:
                 result.evaluation_results.append(
                     GeneralRubricResult(
@@ -105,7 +105,7 @@ Return ONLY a JSON object matching the RubricEvaluation schema with a list of ev
         logger.info(f"Raw evaluation results: {result.evaluation_results}")
         logger.info(f"Processed rubrics: {processed_rubrics}")
         logger.info(
-            f"Missing rubrics: {set(GENERAL_EVALUATION_RUBRICS) - processed_rubrics}"
+            f"Missing rubrics: {set(GENERAL_EVALUATION_RUBRICS_V2) - processed_rubrics}"
         )
 
         return result.evaluation_results
@@ -118,7 +118,7 @@ Return ONLY a JSON object matching the RubricEvaluation schema with a list of ev
                 evaluation="no",
                 reason=f"Evaluation failed: {e}",
             )
-            for rubric in GENERAL_EVALUATION_RUBRICS
+            for rubric in GENERAL_EVALUATION_RUBRICS_V2
         ]
 
 
@@ -129,7 +129,7 @@ async def check_general_rubrics_one_by_one(summary: str) -> List[GeneralRubricRe
     results = []
     eval_llm = create_openai()
 
-    for rubric in GENERAL_EVALUATION_RUBRICS:
+    for rubric in GENERAL_EVALUATION_RUBRICS_V2:
         try:
             # Define the per-rubric schema
             class SingleRubricEvaluation(BaseModel):
