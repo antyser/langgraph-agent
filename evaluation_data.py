@@ -3,42 +3,17 @@
 from typing import Any, Dict, List
 
 GENERAL_EVALUATION_RUBRICS_V2: List[str] = [
-    # ── A. HEADER FORMAT ────────────────────────────────────────────
-    "A1. Every required top-level section header (Pros, Cons, Mixed Reviews, Who it’s for, Who it’s not for, Usage/Care Tips, Specific Use-Case, Insights vs. Similar Products) is present.",
-    "A2. Every top-level header is bold (wrapped in **).",
-    "A3. Every top-level header appears alone on its own line, with no text or bullet on the same line.",
-    
-    # ── B. BULLET FORMAT ────────────────────────────────────────────
-    "B1. Under every top-level header, *all* content is written as bullet points (no paragraphs or numbered lists).",
-    "B2. Each bullet begins with a bold keyword (≤ 4 words) that ends with a single colon ‘:’.",
-    "B3. After the colon, the description follows on the *same* line and is ≤ 25 words.",
-    
-    # ── C. INTRO SENTENCE ───────────────────────────────────────────
-    "C1. The analysis opens with exactly one sentence in the form: \"Here's an analysis of [PRODUCT TITLE] based on the information available:\"",
-
-    # ── D. CONTENT QUALITY & RELEVANCE ──────────────────────────────
-    "D1. Bullet points focus on high-impact, decision-making factors repeatedly cited by experts or users (no trivial colour/size notes unless they are deal-breakers).",
-    
-    # ── E. CATEGORY PLACEMENT ───────────────────────────────────────
-    "E1. *Pros* list contains only positive points (no negatives, no mixed).",
-    "E2. *Cons* list contains only negative points (no positives, no mixed).",
-    "E3. *Mixed Reviews* list contains only points that have BOTH positive and negative aspects, and such points do **not** appear in Pros or Cons.",
-    "E4. Pros, Cons, and Mixed Reviews are three independent, clearly labelled lists (no sub-bullets that mix categories).",
-    
-    # ── F. USER PROFILE COVERAGE ────────────────────────────────────
-    "F1. The *Who it’s for* bullets reference at least one age group **or** life stage (e.g., seniors, toddlers, college students).",
-    "F2. The *Who it’s for* bullets mention at least one lifestyle/situation (e.g., frequent travellers, apartment dwellers, budget-conscious shoppers).",
-    "F3. The *Who it’s for* OR *Who it’s not for* bullets mention budget level (e.g., premium price, budget-friendly).",
-    
-    # ── G. COMPARISON WITH COMPETITORS ──────────────────────────────
-    "G1. *Insights vs. Similar Products* names at least one specific competing brand or model.",
-    "G2. For each competitor named, the bullet states a clear differentiator (better, worse, unique feature, or price gap).",
-    
-    # ── H. WORD COUNT ───────────────────────────────────────────────
-    "H1. Total word count of the output is between 500 and 700 words, inclusive.",
+    "1. All substantive content (e.g., descriptive points, user traits, comparisons) under any top-level or subheading must be written as bullet points.",
+    '2. Start the analysis with a one sentence intro, for example: "Here\'s an analysis of [product title] based on the information available:"',
+    "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+    '4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting "Mixed Reviews" if no such points exist.',
+    '5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting "Mixed Reviews" if no such points exist.',
+    "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+    "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+    "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
 ]
 
-COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
+COVERAGE_TO_EVALUATE: List[Dict[str, Any]] = [
     {
         "url": "https://www.amazon.com/dp/B08MLG2SG4",
         "name": "Amara Smoothie Melts – Mango Carrot",
@@ -48,7 +23,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Dissolvability & choking-risk explanation?",
             "4. Recommended age range stated?",
             "5. Parent/kid taste feedback included?",
-            "6. Value versus other toddler melt or pouch snacks?"
+            "6. Value versus other toddler melt or pouch snacks?",
         ],
     },
     {
@@ -60,7 +35,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Dual-spinner wheel quality & maneuverability described?",
             "4. Telescopic-handle sturdiness and TSA lock noted?",
             "5. Interior dividers/straps detailed?",
-            "6. Value compared with similar hard-side carry-ons?"
+            "6. Value compared with similar hard-side carry-ons?",
         ],
     },
     {
@@ -72,7 +47,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Purity & sustainability certifications (e.g., IFOS, MSC) cited?",
             "4. Wild-caught source identified?",
             "5. Burp-free / digestion comfort mentioned?",
-            "6. Cost per gram omega-3 benchmarked against other mass-market brands?"
+            "6. Cost per gram omega-3 benchmarked against other mass-market brands?",
         ],
     },
     {
@@ -84,7 +59,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Product form and typical daily dosage guidance provided?",
             "4. GMP / purity testing or allergen-free status noted?",
             "5. Potential digestive side-effect mention?",
-            "6. Value comparison versus soy-based lecithin?"
+            "6. Value comparison versus soy-based lecithin?",
         ],
     },
     {
@@ -96,7 +71,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. 0.72 GPM flow-rate advantage quantified?",
             "4. DIY install & tool-free filter-swap ease described?",
             "5. Annual operating cost versus other under-sink systems?",
-            "6. Warranty period clearly stated?"
+            "6. Warranty period clearly stated?",
         ],
     },
     {
@@ -108,7 +83,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Fit and sizing guidance provided?",
             "4. Durability / pilling feedback included?",
             "5. Breathability & moisture-wicking stated?",
-            "6. Price/value compared with premium workout tops?"
+            "6. Price/value compared with premium workout tops?",
         ],
     },
     {
@@ -120,7 +95,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Learning auto-schedule & typical energy-savings percent cited?",
             "4. App usability and remote-control reliability covered?",
             "5. Subscription-fee disclosure (core functions free) included?",
-            "6. Common reliability or Wi-Fi issues mentioned?"
+            "6. Common reliability or Wi-Fi issues mentioned?",
         ],
     },
     {
@@ -132,7 +107,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Thickness, strength, and moisture retention described?",
             "4. Suitability for sensitive/eczema-prone skin addressed?",
             "5. One-hand single-wipe dispensing performance covered?",
-            "6. Cost per wipe compared with other premium baby wipes?"
+            "6. Cost per wipe compared with other premium baby wipes?",
         ],
     },
     {
@@ -144,7 +119,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Wetness-indicator accuracy discussed?",
             "4. Fit & sizing guidance for different body types provided?",
             "5. Absorption speed / skin-dryness effectiveness explained?",
-            "6. Price compared with other premium diaper brands?"
+            "6. Price compared with other premium diaper brands?",
         ],
     },
     {
@@ -156,7 +131,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Descaling frequency prompts explained?",
             "4. Reliability and expected lifespan discussed?",
             "5. Noise level and sub-1-minute brew speed described?",
-            "6. Compatibility with reusable or third-party pods confirmed?"
+            "6. Compatibility with reusable or third-party pods confirmed?",
         ],
     },
     {
@@ -168,7 +143,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Battery life at 4 K 60 fps stated?",
             "4. Ruggedness & 33 ft waterproof rating covered?",
             "5. App workflow and AI editing ease discussed?",
-            "6. Overheating behaviour or limits mentioned?"
+            "6. Overheating behaviour or limits mentioned?",
         ],
     },
     {
@@ -180,7 +155,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Irritation-mitigation ingredients & nightly-use suitability covered?",
             "4. Lightweight texture & fast absorption described?",
             "5. Airless-pump packaging benefit noted?",
-            "6. Price/value versus other OTC retinol serums discussed?"
+            "6. Price/value versus other OTC retinol serums discussed?",
         ],
     },
     {
@@ -192,7 +167,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Cleanup ease & dishwasher-safe parts mentioned?",
             "4. Preheat time and overall cook-speed compared to oven/competitors?",
             "5. Noise level and initial plastic-smell reports addressed?",
-            "6. Control-panel intuitiveness described?"
+            "6. Control-panel intuitiveness described?",
         ],
     },
     {
@@ -204,7 +179,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. On-board mute/gain and zero-latency monitoring covered?",
             "4. Metal build and included shock-mount/pop filter described?",
             "5. Self-noise or gain-requirement info provided?",
-            "6. Price/performance versus similar broadcast-style mics discussed?"
+            "6. Price/performance versus similar broadcast-style mics discussed?",
         ],
     },
     {
@@ -216,7 +191,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Battery-life increase over iPhone 15 quantified?",
             "4. Action-button practical utility explained?",
             "5. Key missing features versus iPhone 16 Pro listed?",
-            "6. Launch-price change versus prior model highlighted?"
+            "6. Launch-price change versus prior model highlighted?",
         ],
     },
     {
@@ -228,7 +203,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Grip feel & added bulk assessed?",
             "4. Raised lip protection for screen and camera confirmed?",
             "5. Cleaning method and ease provided?",
-            "6. Value versus leather or silicone cases discussed?"
+            "6. Value versus leather or silicone cases discussed?",
         ],
     },
     {
@@ -240,7 +215,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Drowsiness side-effect likelihood described?",
             "4. Kid-friendly taste feedback included?",
             "5. Dosing tool accuracy/ease mentioned?",
-            "6. Storage requirements (room temp vs refrigeration) specified?"
+            "6. Storage requirements (room temp vs refrigeration) specified?",
         ],
     },
     {
@@ -252,7 +227,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. USDA Organic & Non-GMO certifications noted?",
             "4. Digestive comfort (gas/bloat) feedback covered?",
             "5. Cost per serving compared with other organic plant proteins?",
-            "6. Total servings per container stated?"
+            "6. Total servings per container stated?",
         ],
     },
     {
@@ -264,7 +239,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Cup-holder fit and handle comfort covered?",
             "4. Dishwasher safety and cleaning ease noted?",
             "5. Powder-coat scratch/dent resistance discussed?",
-            "6. Filled weight and portability addressed?"
+            "6. Filled weight and portability addressed?",
         ],
     },
     {
@@ -276,7 +251,7 @@ COVERAGE_TO_EVALUATE: List[Dict[str, Any]] =[
             "3. Even heating and induction compatibility described?",
             "4. Cool-touch handle & oven-safe temperature limit noted?",
             "5. Scratch resistance with everyday utensils mentioned?",
-            "6. Warranty length or overall value versus competing pans discussed?"
+            "6. Warranty length or overall value versus competing pans discussed?",
         ],
     },
 ]
