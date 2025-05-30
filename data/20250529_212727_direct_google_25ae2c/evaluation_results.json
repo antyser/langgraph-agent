@@ -1,0 +1,2322 @@
+[
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/dp/B08MLG2SG4",
+      "name": "Amara Smoothie Melts – Mango Carrot",
+      "questions": [
+        "1. Clean ingredients & no added sugar?",
+        "2. Allergen transparency (dairy / soy / nut / gluten)?",
+        "3. Dissolvability & choking-risk explanation?",
+        "4. Recommended age range stated?",
+        "5. Parent/kid taste feedback included?",
+        "6. Value versus other toddler melt or pouch snacks?"
+      ]
+    },
+    "summary": "Here's an analysis of Amara Smoothie Melts – Mango Carrot based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Made with simple, organic whole food ingredients like mango, coconut milk, carrot, and lemon juice.\n    *   Contains no added sugar or artificial ingredients.\n    *   Dairy-free and plant-based, suitable for those with dairy allergies.\n    *   Convenient, portable, and packaged in a resealable bag, requiring no refrigeration.\n    *   Generally well-liked by babies, toddlers, and even parents for their taste.\n\n*   **Cons:**\n    *   Some users report the texture is harder than expected and doesn't melt as described.\n    *   Considered pricey compared to other baby snacks by some consumers.\n    *   Bags may contain a limited amount of product for the price.\n    *   Can shrivel up if exposed to air for too long after opening.\n    *   One instance of a recall in 2021 for a different flavor (Carrot Raspberry) due to plastic pieces.\n\n*   **Mixed Reviews:**\n    *   **Meltability:** While designed to melt easily for tiny hands, some reviewers found them hard, while others felt they dissolved quickly.\n    *   **Value:** Opinions are mixed on whether the product is worth the cost, with some finding them competitively priced and others seeing them as expensive.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Parents seeking organic, no-added-sugar snacks for babies and toddlers.\n    *   Families looking for plant-based and dairy-free snack options.\n    *   Caregivers needing convenient, mess-free snacks for on-the-go.\n*   **Who it's not for:**\n    *   Those strictly adhering to the lowest possible snack cost.\n    *   Individuals concerned about potential texture inconsistency.\n    *   Consumers hesitant about products that have experienced past recalls, even for different flavors.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Reseal the bag well after opening for maximum freshness.\n    *   Best offered to seated, supervised children accustomed to chewing solid foods.\n    *   Can be introduced when a child sits independently, picks up food with fingers, and chews/mashes food.\n\n*   **Specific use-case considerations:**\n    *   Ideal for practicing pincer grip and improving hand-eye coordination due to their size.\n    *   Can be suitable for babies around 8-10 months and up, depending on developmental readiness.\n    *   Designed to provide a healthy snack option without the risk of a sugar crash.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Unlike Happy Baby Yogis and Gerber melts, Amara Smoothie Melts contain no added sugar and simpler, whole food ingredients without \"natural flavors\" or fillers like tapioca starch or juice concentrates.\n    *   Amara melts are plant-based and dairy-free, offering an alternative for those with dairy restrictions, whereas Happy Baby Yogis contain dairy.\n    *   Amara emphasizes using 100% organic fruits and vegetables, preserving taste, texture, and nutrients through a unique process, while competitors may use high-heat processing.",
+    "latency_ms": 15909.732584026642,
+    "ttft_ms": 9571.107083000243,
+    "node_latencies": {
+      "direct_search": 15.809194291010499
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Made with simple, organic whole food ingredients like mango, coconut milk, carrot, and lemon juice.\nContains no added sugar or artificial ingredients.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "partially",
+        "excerpt": "Dairy-free and plant-based, suitable for those with dairy allergies.",
+        "reason": "Dairy status is addressed, but there is no explicit mention of soy, nut, or gluten allergen information."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "partially",
+        "excerpt": "\"Meltability: While designed to melt easily for tiny hands, some reviewers found them hard, while others felt they dissolved quickly.\"",
+        "reason": "Meltability and dissolvability are discussed, but there is no explicit explanation of choking risk or precautions beyond general usage advice."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Can be suitable for babies around 8-10 months and up, depending on developmental readiness.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "Generally well-liked by babies, toddlers, and even parents for their taste.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Opinions are mixed on whether the product is worth the cost, with some finding them competitively priced and others seeing them as expensive.\nAmara melts...offering an alternative for those with dairy restrictions, whereas Happy Baby Yogis contain dairy.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 2,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 445
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Samsonite-Freeform-Hardside-Spinner-Black/dp/B01M0A3BKH/",
+      "name": "Samsonite Freeform Hardside Carry-On",
+      "questions": [
+        "1. Polypropylene shell & crack/scuff resistance covered?",
+        "2. Exact weight and carry-on dimensions listed?",
+        "3. Dual-spinner wheel quality & maneuverability described?",
+        "4. Telescopic-handle sturdiness and TSA lock noted?",
+        "5. Interior dividers/straps detailed?",
+        "6. Value compared with similar hard-side carry-ons?"
+      ]
+    },
+    "summary": "Here's an analysis of Samsonite Freeform Hardside Carry-On based on the information available:\n\n**Pros & Cons**\n\n- **Pros:** Lightweight design makes it easy to maneuver and lift. The spinner wheels offer smooth 360-degree rolling, gliding easily across various surfaces. It provides ample packing space and can fit enough for a four-day or even weeklong trip. The built-in TSA-approved combination lock adds security. It offers good value for its price point, being less expensive than some premium brands while still offering style and function.\n- **Cons:** The plastic grab handles are thin and lack comfortable grip. The retractable handle, while adequate, feels a bit too thin and its overall construction quality is not always convincing. The built-in luggage tag is well hidden and can be easily missed. Interior organization is basic, with minimal built-in pockets, requiring users to supplement with packing organizers. Some users report that the exterior scratches easily and can look worn after just a few trips.\n- **Mixed Reviews:** While generally considered durable, some users report durability issues, including handles breaking and zippers failing. Carry-on compliance can be hit-or-miss depending on the airline, as the stated dimensions may not include wheels and handles and can exceed some airlines' restrictions. The TSA lock and zipper quality receive mixed feedback, with some finding them good and others reporting issues. The flexible polypropylene shell helps with overstuffing but can also mean small items get tucked away in corners. The interior layout, while spacious, is basic, with some reviewers wishing for more zippered dividers like those found in competing brands.\n\n**User Profiles**\n\n- **Who it's for:** Price-conscious leisure and basic business travelers who take a handful of trips per year. Travelers who prioritize lightweight luggage and smooth maneuverability. Individuals looking for a stylish hard shell carry-on without the premium price tag.\n- **Who it's not for:** High-paced jet-setters who travel routinely and require maximum durability. Travelers who need extensive interior organization and multiple built-in pockets. Those who strictly adhere to airline carry-on size limits and cannot risk checking their bag.\n\n**Usage & Context**\n\n- **Usage or care tips:** Use a third-party luggage tag to ensure visibility. Supplement the basic interior with packing cubes and organizers for better structure. Be mindful that the smooth shell can be a little difficult to hold when lifting overhead.\n- **Specific use-case considerations:** The wheels may not perform well on grass, gravel, or dirt. The clamshell design requires a wide, steady surface to open fully.\n\n**Competitive Analysis**\n\n- Compared to premium brands like Away and Monos, the Samsonite Freeform is generally more affordable but may lack some advanced features, interior organization, and overall durability.\n- While Samsonite offers a 10-year limited warranty covering manufacturing defects, brands like Travelpro often provide a limited lifetime warranty which may offer more comprehensive coverage for frequent travelers.\n- The Freeform's interior is considered basic compared to some competitors; for instance, the Away Carry-On offers features like a hidden laundry bag and more intuitive compartments.",
+    "latency_ms": 17397.559167002328,
+    "ttft_ms": 10403.928124986123,
+    "node_latencies": {
+      "direct_search": 17.389957834006054
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "The flexible polypropylene shell helps with overstuffing but can also mean small items get tucked away in corners. Some users report that the exterior scratches easily and can look worn after just a few trips.",
+        "reason": "The summary mentions the shell is made of polypropylene and discusses scratching (scuff resistance), but does not detail crack resistance."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary does not provide any exact weight or carry-on dimensions."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "The spinner wheels offer smooth 360-degree rolling, gliding easily across various surfaces.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "The retractable handle, while adequate, feels a bit too thin and its overall construction quality is not always convincing. The built-in TSA-approved combination lock adds security.",
+        "reason": "Sturdiness of the handle is mentioned as lacking, and the TSA lock is noted, but the answer is not comprehensive on both points."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Interior organization is basic, with minimal built-in pockets, requiring users to supplement with packing organizers. The interior layout, while spacious, is basic, with some reviewers wishing for more zippered dividers like those found in competing brands.",
+        "reason": "It notes a lack of interior dividers and organization, but does not detail what, if any, dividers/straps are present."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "It offers good value for its price point, being less expensive than some premium brands while still offering style and function... Compared to premium brands like Away and Monos, the Samsonite Freeform is generally more affordable but may lack some advanced features, interior organization, and overall durability.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 2,
+      "partially": 3,
+      "no": 1,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 493
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/dp/B0CHN9X9S2",
+      "name": "Sports Research Fish Oil Mini-Softgels",
+      "questions": [
+        "1. EPA+DHA milligrams per serving stated?",
+        "2. Natural triglyceride form specified?",
+        "3. Purity & sustainability certifications (e.g., IFOS, MSC) cited?",
+        "4. Wild-caught source identified?",
+        "5. Burp-free / digestion comfort mentioned?",
+        "6. Cost per gram omega-3 benchmarked against other mass-market brands?"
+      ]
+    },
+    "summary": "Here's an analysis of Sports Research Fish Oil Mini-Softgels based on the information available:\n\n**Pros & Cons**\n\n- **Pros:**\n    - IFOS 5-star rated for purity and quality.\n    - Sustainably sourced from wild Alaska Pollock.\n    - Undergoes a 10-step refinement process to minimize fishy taste.\n    - Third-party tested for heavy metals and other contaminants.\n    - Provides a good concentration of EPA and DHA in triglyceride form.\n\n- **Cons:**\n    - Some users still report a mild fishy aftertaste or burps.\n    - The \"mini\" size is still considered large by some individuals.\n    - High dosage may not be suitable for all healthy adults without professional advice.\n\n**User Profiles**\n\n- **Who it's for:**\n    - Individuals seeking a certified high-quality omega-3 supplement.\n    - Those looking for a fish oil with minimal fishy aftertaste.\n    - People who prefer a more concentrated dose per softgel.\n\n- **Who it's not for:**\n    - Individuals highly sensitive to pill size, despite being \"mini\".\n    - Those who prefer vegan or non-fish-based omega-3 sources.\n    - People who require a lower dose of omega-3s unless advised by a professional.\n\n**Usage & Context**\n\n- **Usage or care tips:**\n    - Take 1 softgel daily with food, or as directed by a healthcare professional.\n    - Store at room temperature in a dry place away from light and excessive heat.\n    - Consult a healthcare professional if pregnant, nursing, or taking other medications.\n\n- **Specific use-case considerations:**\n    - May help support brain and cardiovascular health.\n    - Can potentially help lower elevated triglyceride levels.\n    - Some studies suggest potential benefits for mood and cognitive function.\n\n**Competitive Analysis**\n\n- **Insights vs. similar products:**\n    - Compared to Nordic Naturals and Thorne, Sports Research is often highlighted for its IFOS certification and value.\n    - While marketed as \"mini,\" the softgels may still be larger than gummies or liquids offered by brands like Nordic Naturals or Carlson Labs, which are alternatives for those with swallowing difficulties.\n    - Nature Made is noted as a more budget-friendly option, although not all their products carry the same level of third-party verification as Sports Research.",
+    "latency_ms": 16423.35120899952,
+    "ttft_ms": 10721.658750000643,
+    "node_latencies": {
+      "direct_search": 16.415800999995554
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary mentions a 'good concentration of EPA and DHA' but does not provide the specific milligrams per serving."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Provides a good concentration of EPA and DHA in triglyceride form.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "IFOS 5-star rated for purity and quality.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Sustainably sourced from wild Alaska Pollock.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Undergoes a 10-step refinement process to minimize fishy taste. ... Some users still report a mild fishy aftertaste or burps.",
+        "reason": "The summary discusses efforts to minimize aftertaste and mentions some users still experience mild burps, but does not state the product is completely burp-free."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "partially",
+        "excerpt": "Sports Research is often highlighted for its IFOS certification and value. ... Nature Made is noted as a more budget-friendly option, although not all their products carry the same level of third-party verification as Sports Research.",
+        "reason": "The summary provides a relative assessment of value and mentions cost in comparison to other brands, but does not specify cost per gram of omega-3."
+      }
+    ],
+    "questions_answered": {
+      "yes": 3,
+      "partially": 2,
+      "no": 1,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "no",
+        "reason": "The summary groups positives and negatives under 'Pros & Cons' with separate bullet points for 'Pros' and 'Cons', but these are subheadings rather than clearly labeled main sections. The rubric specifies that all points must be grouped under clearly labeled sections, not subheadings within a combined section. The summary also includes additional sections ('User Profiles', 'Usage & Context', 'Competitive Analysis') that are not relevant to this rubric, but the main issue is the lack of distinct, clearly labeled top-level 'Pros' and 'Cons' sections."
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting 'Mixed Reviews' if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 6,
+      "no": 1,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 338
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/dp/B003BHZ71G",
+      "name": "NOW Sunflower Lecithin 1 200 mg",
+      "questions": [
+        "1. Lecithin & phosphatidylcholine mg per serving listed?",
+        "2. Soy-free, non-GMO advantage explained?",
+        "3. Product form and typical daily dosage guidance provided?",
+        "4. GMP / purity testing or allergen-free status noted?",
+        "5. Potential digestive side-effect mention?",
+        "6. Value comparison versus soy-based lecithin?"
+      ]
+    },
+    "summary": "Here's an analysis of NOW Sunflower Lecithin 1200 mg based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Derived from non-GMO sunflowers, offering an alternative to soy lecithin.\n    *   May help emulsify fats and support fat digestion.\n    *   Contains phosphatidyl choline, important for cell membranes and nervous system function.\n    *   Often used by nursing mothers to help prevent clogged milk ducts and mastitis by making milk thinner.\n    *   NOW is generally considered a reputable brand with good quality standards and testing.\n\n*   **Cons:**\n    *   Large doses might cause digestive issues like stomach pain or diarrhea.\n    *   Some users have reported a strong smell.\n    *   Softgel size can be large for some individuals to swallow.\n    *   One user reported heart palpitations after taking it long-term, linking it to potential TMAO creation.\n\n*   **Mixed Reviews:**\n    *   **Effectiveness for Cholesterol:** While some sources suggest it can help lower cholesterol, the scientific evidence to support this use is not definitive.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Individuals seeking a soy-free and non-GMO lecithin supplement.\n    *   Breastfeeding mothers looking for a natural way to potentially prevent clogged milk ducts.\n    *   Those interested in supporting brain, nerve, and liver health.\n\n*   **Who it's not for:**\n    *   Individuals with known allergies or sensitivities to sunflower.\n    *   Those who have difficulty swallowing larger softgels.\n    *   People prone to digestive upset from supplements.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Take 2 softgels daily with food.\n    *   Store in a cool, dry place after opening.\n    *   Consult a physician if pregnant, nursing, taking medication, or have a medical condition.\n\n*   **Specific use-case considerations:**\n    *   For clogged milk ducts, some recommendations suggest taking 1200mg multiple times per day, but consulting a healthcare provider is advised.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   NOW Sunflower Lecithin is highlighted as a non-soy alternative, unlike many standard lecithin supplements that are soy-based.\n    *   Compared to other forms like powders or liquids, the softgels offer convenience and a pre-measured dose.\n    *   NOW is often considered a value brand, offering competitive pricing compared to some other supplement brands while maintaining quality standards.",
+    "latency_ms": 17688.663125009043,
+    "ttft_ms": 13269.430832995567,
+    "node_latencies": {
+      "direct_search": 17.680823958013207
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "NOW Sunflower Lecithin 1200 mg ... Contains phosphatidyl choline",
+        "reason": "The lecithin amount per serving (1200 mg) is stated, but the exact mg of phosphatidylcholine per serving is not specified."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Derived from non-GMO sunflowers, offering an alternative to soy lecithin.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Take 2 softgels daily with food. ... Compared to other forms like powders or liquids, the softgels offer convenience and a pre-measured dose.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "NOW is generally considered a reputable brand with good quality standards and testing.",
+        "reason": "GMP or specific purity/allergen-free status is not directly mentioned, but good quality standards and testing are noted."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "Large doses might cause digestive issues like stomach pain or diarrhea.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "NOW is often considered a value brand, offering competitive pricing compared to some other supplement brands while maintaining quality standards.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 2,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 353
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Aquasana-3-Stage-Filter-System-Chrome/dp/B06XGY3G28/",
+      "name": "Aquasana Claryum 3-Stage Max-Flow",
+      "questions": [
+        "1. NSF-certified contaminant reduction (lead, PFAS, etc.) specified?",
+        "2. Filter lifespan & replacement-cartridge cost stated?",
+        "3. 0.72 GPM flow-rate advantage quantified?",
+        "4. DIY install & tool-free filter-swap ease described?",
+        "5. Annual operating cost versus other under-sink systems?",
+        "6. Warranty period clearly stated?"
+      ]
+    },
+    "summary": "Here's an analysis of Aquasana Claryum 3-Stage Max-Flow based on the information available:\n\n**Pros & Cons**\n\n- **Pros:**\n- **Superior Filtration:** Reduces up to 99% of 78 contaminants, including lead, chlorine, microplastics, and PFAS.\n- **Retains Minerals:** Claryum technology keeps beneficial minerals like calcium, magnesium, and potassium for taste and health.\n- **Faster Flow Rate:** Offers a 44% faster flow rate (0.72 GPM) compared to the standard 3-Stage system.\n- **Certified Performance:** WQA tested and certified to NSF/ANSI Standards 42, 53 (including P473), and 401.\n- **Easy Filter Replacement:** Twist-off filters make replacement simple with no tools needed.\n\n- **Cons:**\n- **Higher Maintenance Cost:** Annual filter replacement costs can be perceived as high by some users.\n- **Potential Leaks:** Some users have reported issues with leaks, particularly around filter connections or o-rings.\n- **Flow Rate Issues:** While advertised as faster, some users still experience slower-than-expected water flow or a decrease over time.\n- **Plastic Components:** Despite an eco-friendly design emphasis, some parts are noted as being cheap plastic.\n- **Limited Warranty:** The system comes with a one-year limited warranty, which some may find short.\n\n**Mixed Reviews**\n\n- **Installation Difficulty:** Many find the installation easy, while others report difficulties or the need for a professional plumber.\n- **Water Taste/Quality:** Most users report great-tasting, clean water, but a few mention issues like lime residue after cooking.\n- **Value for Money:** Some consider it a high-quality system worth the cost, while others feel it's not worth the money due to issues.\n\n**User Profiles**- **Who it's for:**\n- Households wanting significantly cleaner and healthier drinking water from their tap.\n- Individuals or families looking for a convenient alternative to buying bottled water.\n- Those seeking certified filtration for a wide range of contaminants, including newer concerns like PFAS.\n\n- **Who it's not for:**\n- Users with very limited under-sink space, as the system requires some room for the filters and manifold.\n- Those on a very tight budget for ongoing maintenance costs due to filter replacements.\n- Individuals who are uncomfortable with basic plumbing tasks or drilling for the dedicated faucet.\n\n**Usage & Context**\n\n- **Usage or care tips:**\n- Change filters every 6 months or after 800 gallons for optimal performance and to prevent bacterial growth.\n- If flow slows, consider changing the pre-filter cartridge more often.\n- Hand-tighten filter sumps during replacement to avoid damage and leaks.\n\n- **Specific use-case considerations:**\n- The system is designed for use with cold water only.\n- Installation must comply with all state and local laws.\n- The housing should be replaced every 5 years to prevent potential leaks.\n\n**Competitive Analysis**\n\n- **Insights vs. similar products:**\n- The Max-Flow version offers a significantly faster flow rate compared to the standard Aquasana 3-Stage system, making it more convenient for filling containers quickly.\n- Compared to pitcher filters, this system filters a much wider range of contaminants (15x more) and offers a higher volume capacity before filter changes are needed.\n- While systems like Waterdrop or A.O. Smith offer under-sink filtration, the Aquasana Claryum technology specifically focuses on retaining beneficial minerals, which sets its water taste apart for some users.",
+    "latency_ms": 16817.90483300574,
+    "ttft_ms": 9738.798167003551,
+    "node_latencies": {
+      "direct_search": 16.81013024999993
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Reduces up to 99% of 78 contaminants, including lead, chlorine, microplastics, and PFAS. [...] WQA tested and certified to NSF/ANSI Standards 42, 53 (including P473), and 401.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "partially",
+        "excerpt": "Change filters every 6 months or after 800 gallons for optimal performance and to prevent bacterial growth. [...] Annual filter replacement costs can be perceived as high by some users.",
+        "reason": "Filter lifespan is specified (6 months or 800 gallons), but specific replacement-cartridge cost is not provided."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Offers a 44% faster flow rate (0.72 GPM) compared to the standard 3-Stage system.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Twist-off filters make replacement simple with no tools needed. [...] Many find the installation easy, while others report difficulties or the need for a professional plumber.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "No direct comparison of annual operating cost versus other under-sink systems is provided; only that some users perceive costs as high."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "The system comes with a one-year limited warranty, which some may find short.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 1,
+      "no": 1,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting 'Mixed Reviews' if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 522
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/CRZ-YOGA-Butterluxe-Racerback-Longline/dp/B0BKQ6HRLQ",
+      "name": "CRZ YOGA Butterluxe Racerback Tank",
+      "questions": [
+        "1. Butterluxe softness & comparison to Lululemon Align covered?",
+        "2. Support level and removable-pad built-in bra noted?",
+        "3. Fit and sizing guidance provided?",
+        "4. Durability / pilling feedback included?",
+        "5. Breathability & moisture-wicking stated?",
+        "6. Price/value compared with premium workout tops?"
+      ]
+    },
+    "summary": "Here's an analysis of CRZ YOGA Butterluxe Racerback Tank based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Extremely soft and comfortable Butterluxe fabric.\n    *   Offers a flattering fit for many body types.\n    *   Considered a high-quality dupe for more expensive brands like Lululemon.\n    *   Provides freedom of movement with its racerback design.\n    *   Many versions include a built-in bra with removable pads for light support.\n\n*   **Cons:**\n    *   May not provide sufficient support for high-impact activities.\n    *   Some users find the built-in bra pads uncomfortable or poorly shaped.\n    *   Sizing can be inconsistent, leading to fit issues for some.\n    *   The fabric may be prone to pilling over time.\n    *   The tight fit can feel too constricting in the stomach area for some preferences.\n\n*   **Mixed Reviews:**\n    *   **Length:** Available in both waist-length and full-length options, catering to different preferences for coverage.\n    *   **Fabric Thickness:** Generally considered of good thickness and not see-through, but some find it thinner compared to other brands.\n    *   **Fit:** While often praised as flattering and true to size, some reviewers suggest sizing up for a looser fit or report it running small.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Individuals seeking soft, comfortable tanks for low to medium-impact activities like yoga or lounging.\n    *   Shoppers looking for a budget-friendly alternative to premium activewear brands.\n    *   Those who prefer a built-in bra with removable padding for light support.\n\n*   **Who it's not for:**\n    *   People needing high-level support for intense workouts or running.\n    *   Users who dislike tight-fitting tops, particularly around the midsection.\n    *   Those sensitive about potential fabric pilling with extended wear.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Machine washable for easy care.\n    *   Remove pads from built-in bra before washing for best results.\n    *   Wash with like colors and tumble dry low; do not iron or dry clean.\n\n*   **Specific use-case considerations:**\n    *   Suitable for yoga, gym workouts, fitness, and casual wear.\n    *   High neck versions offer more coverage.\n    *   The Butterluxe fabric is breathable and wicks away moisture.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Frequently compared to and considered a strong dupe for the Lululemon Align tank due to similar softness and fit at a lower price point.\n    *   Offers comparable quality and feel to more expensive activewear, providing good value for money.\n    *   While the Butterluxe fabric is very similar to Lululemon's Nulu, the exact material composition and feel can have slight differences.",
+    "latency_ms": 14746.749209007248,
+    "ttft_ms": 8719.1015840217,
+    "node_latencies": {
+      "direct_search": 14.735713208006928
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Extremely soft and comfortable Butterluxe fabric...Considered a high-quality dupe for more expensive brands like Lululemon.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Many versions include a built-in bra with removable pads for light support.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "While often praised as flattering and true to size, some reviewers suggest sizing up for a looser fit or report it running small.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "The fabric may be prone to pilling over time.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "The Butterluxe fabric is breathable and wicks away moisture.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Frequently compared to and considered a strong dupe for the Lululemon Align tank due to similar softness and fit at a lower price point...providing good value for money.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 6,
+      "partially": 0,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 409
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/dp/B0131RG6VK",
+      "name": "Nest Learning Thermostat (3rd Gen)",
+      "questions": [
+        "1. DIY installation difficulty & C-wire requirement explained?",
+        "2. HVAC compatibility range listed?",
+        "3. Learning auto-schedule & typical energy-savings percent cited?",
+        "4. App usability and remote-control reliability covered?",
+        "5. Subscription-fee disclosure (core functions free) included?",
+        "6. Common reliability or Wi-Fi issues mentioned?"
+      ]
+    },
+    "summary": "Here's an analysis of Nest Learning Thermostat (3rd Gen) based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Sleek and appealing design with a high-resolution display that is easy to read from across the room.\n    *   Automatically learns user habits and creates a personalized schedule, which helps save energy.\n    *   Compatible with most 24V heating and cooling systems, including a variety of fuel types and stages.\n    *   Offers remote control via the Nest app from a smartphone, tablet, or laptop.\n    *   Provides energy usage history and reports to help users understand and optimize their consumption.\n    *   Works with Google Assistant and Amazon Alexa for voice control.\n    *   Can work without a C-wire in many systems, although a C-wire or Nest Power Connector is recommended for consistent power.\n    *   Includes features like Home/Away Assist and Eco Temperatures to automatically save energy when no one is home.\n    *   Can control hot water tanks and offers a hot water schedule.\n    *   The Nest Leaf appears on the display to indicate energy-saving temperature choices.\n\n*   **Cons:**\n    *   Lacks native compatibility with Apple HomeKit, requiring third-party solutions for integration.\n    *   Does not include remote room sensors out of the box, which are sold separately.\n    *   Initial learning phase can result in temperatures that are not always ideal until it fully adapts.\n    *   Some users find the rigid adherence to the learned schedule frustrating, especially after manual adjustments.\n    *   Entering setup information using the dial can be tedious.\n    *   The internal rechargeable battery is not user-replaceable, which could impact the device's lifespan.\n    *   May require a C-wire or Nest Power Connector for consistent power, particularly with certain HVAC systems or if experiencing battery drain issues.\n    *   Does not have a built-in speaker or air quality sensor like some competitors.\n\n*   **Mixed Reviews:**\n    *   **Installation:** Generally considered easy for most users, often taking under 30 minutes, but can be challenging depending on the existing HVAC system wiring, and professional installation is recommended for some setups like dual fuel systems or whole-home humidifiers.\n    *   **Smart Learning:** While the auto-schedule feature is a major draw and works well for many, some users report it being hit or miss and find themselves overriding it frequently.\n    *   **Durability/Lifespan:** Expected lifespan is around 10 years, but some users have reported issues or failures sooner, potentially related to the internal battery or system compatibility without a C-wire.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Individuals or families who want an aesthetically pleasing smart thermostat.\n    *   Users looking to automate their home climate and potentially reduce energy bills through a learning schedule.\n    *   Those already invested in or planning to use the Google Home ecosystem and other Nest products.\n\n*   **Who it's not for:**\n    *   Users who require native Apple HomeKit integration.\n    *   Households that need to monitor and control temperatures in multiple rooms independently without purchasing additional sensors.\n    *   Individuals with complex or proprietary HVAC systems that may require advanced wiring or may not be fully compatible without significant modifications.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Teach the thermostat good habits by manually adjusting the temperature to reinforce preferences.\n    *   Check Energy History and Home Reports regularly to understand energy usage patterns.\n    *   Consider manually switching to Eco Temperatures when leaving for an extended period.\n\n*   **Specific use-case considerations:**\n    *   Compatibility with multi-stage heating and cooling systems is supported.\n    *   The thermostat has a * connector that can be used for a third stage of heat, a humidifier, or a dehumidifier, but only one of these.\n    *   Works with zoned systems, including those with dampers.\n    *   Can control OpenTherm compatible modulating boilers for increased comfort and efficiency.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Compared to Ecobee thermostats, the Nest Learning Thermostat is often praised for its design but may offer fewer features out of the box, such as included remote sensors or built-in voice assistants.\n    *   While both aim for energy savings, Ecobee sometimes claims higher potential savings and offers more detailed long-term energy tracking compared to Nest's history and monthly reports.\n    *   Ecobee generally has better integration with Apple HomeKit, whereas the Nest Learning Thermostat's HomeKit compatibility is limited or requires workarounds.",
+    "latency_ms": 19903.91016600188,
+    "ttft_ms": 11099.884541006759,
+    "node_latencies": {
+      "direct_search": 19.890823541994905
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Installation: Generally considered easy for most users, often taking under 30 minutes, but can be challenging depending on the existing HVAC system wiring, and professional installation is recommended for some setups like dual fuel systems or whole-home humidifiers.",
+        "reason": "The summary discusses DIY installation difficulty and explains the C-wire requirement in multiple places, noting that installation can be more complex for some wiring and that a C-wire or Nest Power Connector is recommended for consistent power."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Compatible with most 24V heating and cooling systems, including a variety of fuel types and stages... Compatibility with multi-stage heating and cooling systems is supported.",
+        "reason": "The summary lists the HVAC compatibility range, specifying system types, stages, and additional details like OpenTherm and zoned systems."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "partially",
+        "excerpt": "Automatically learns user habits and creates a personalized schedule, which helps save energy... While the auto-schedule feature is a major draw and works well for many, some users report it being hit or miss and find themselves overriding it frequently.",
+        "reason": "Learning auto-schedule is described, but no specific or typical energy-savings percent is cited."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "Offers remote control via the Nest app from a smartphone, tablet, or laptop.",
+        "reason": "The summary confirms remote app control, but does not specifically address app usability or reliability."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of subscription fees or whether core features are free."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "partially",
+        "excerpt": "some users have reported issues or failures sooner, potentially related to the internal battery or system compatibility without a C-wire.",
+        "reason": "The summary mentions some reliability issues related to hardware (battery/system compatibility), but does not specifically mention Wi-Fi issues."
+      }
+    ],
+    "questions_answered": {
+      "yes": 2,
+      "partially": 3,
+      "no": 1,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 697
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Company-Conscious-Plant-Based-Hypoallergenic-Dermatologist/dp/B07SH6HN2X/",
+      "name": "Honest Clean Conscious Baby Wipes",
+      "questions": [
+        "1. No alcohol, parabens, fragrances, etc. confirmed?",
+        "2. Compostable plant-based material and eco certifications noted?",
+        "3. Thickness, strength, and moisture retention described?",
+        "4. Suitability for sensitive/eczema-prone skin addressed?",
+        "5. One-hand single-wipe dispensing performance covered?",
+        "6. Cost per wipe compared with other premium baby wipes?"
+      ]
+    },
+    "summary": "Here's an analysis of Honest Clean Conscious Baby Wipes based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Gentle formula suitable for sensitive skin.\n    *   Made with over 99% water and plant-based materials.\n    *   Thick, durable, and extra large for effective cleaning.\n    *   Hypoallergenic and dermatologist-tested.\n    *   Recognized by the National Eczema Association.\n    *   Compostable and disintegrate relatively quickly under composting conditions.\n    *   Free from plastic cloth/fabric, fragrances, parabens, and chlorine processing.\n    *   Have a pleasant or no chemical-like smell compared to some unscented alternatives.\n    *   Often praised for being easy to dispense from the package.\n*   **Cons:**\n    *   Can be more expensive compared to other baby wipe brands.\n    *   Some users report they can irritate a baby's face, even if gentle on the bottom.\n    *   Contain sodium benzoate, which some babies may react to with irritation or rash.\n    *   Packaging is primarily plastic, although the wipes themselves are plant-based.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Parents seeking wipes with minimal, transparent ingredients for sensitive skin.\n    *   Those prioritizing eco-friendly options like compostable and plant-based materials.\n    *   Families looking for durable and thick wipes capable of handling various messes.\n*   **Who it's not for:**\n    *   Budget-conscious consumers due to a higher price point per wipe.\n    *   Babies who have shown sensitivity or irritation to sodium benzoate.\n    *   Users specifically needing wipes that are verified safe and non-irritating for facial use.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Close the lid firmly after each use to maintain moisture.\n    *   Store at room temperature.\n    *   Do not flush the wipes.\n*   **Specific use-case considerations:**\n    *   Suitable for use on sensitive skin and for those with eczema.\n    *   Can be used for various cleaning tasks beyond diaper changes, like messy hands or surfaces.\n    *   Designed to be compostable, disintegrating in about 8 weeks under appropriate conditions.\n\n**Competitive Analysis**\n\n*   Compared to Water Wipes, Honest wipes have more ingredients but are significantly thicker and more durable, making cleanup easier for solid messes. Water Wipes are closer to 99.9% water with only grapefruit seed extract, while Honest has 7 ingredients and over 99% water.\n*   Honest wipes are often described as thicker and more durable than brands like Huggies Simply Clean or Pampers Sensitive, which some users find too thin or prone to tearing. While Pampers Aqua Pure is also durable, Honest provides a plant-based, compostable alternative.\n*   While brands like Millie Moon and Hello Bello are also popular \"conscious\" options, Honest is frequently cited for its thickness, durability, and specific certifications like the National Eczema Association Seal of Acceptance and EWG verification. Honest wipes are noted as being more durable and effective for messier changes compared to some alternatives.",
+    "latency_ms": 16684.32283299626,
+    "ttft_ms": 11732.84512499231,
+    "node_latencies": {
+      "direct_search": 16.67414266700507
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Free from plastic cloth/fabric, fragrances, parabens, and chlorine processing.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Compostable and disintegrate relatively quickly under composting conditions... plant-based materials... Recognized by the National Eczema Association.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Thick, durable, and extra large for effective cleaning... praised for being easy to dispense from the package.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Gentle formula suitable for sensitive skin... Hypoallergenic and dermatologist-tested... Recognized by the National Eczema Association.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Often praised for being easy to dispense from the package.",
+        "reason": "The summary mentions ease of dispensing but does not explicitly address one-hand single-wipe performance."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "partially",
+        "excerpt": "Can be more expensive compared to other baby wipe brands.",
+        "reason": "The summary states Honest wipes are more expensive but does not give a direct cost per wipe comparison with other premium brands."
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 2,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "no",
+        "reason": "The summary groups points under 'Pros' and 'Cons,' but does not use distinct, clearly labeled sections with those exact headings. Instead, it uses 'Pros & Cons' as a single heading with sub-bullets for each, which could be considered not fully compliant with the requirement to have clearly labeled sections for each. Also, the summary includes other sections ('User Profiles', 'Usage & Context', 'Competitive Analysis') outside the rubric's specified structure."
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 6,
+      "no": 1,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 450
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Millie-Moon-Diapers-COUCHES-22lbs-33lbs/dp/B0CHV6QYRV/",
+      "name": "Millie Moon Diapers",
+      "questions": [
+        "1. Overnight leak-protection performance validated?",
+        "2. Cloud-soft, hypoallergenic materials (no chlorine/fragrance) noted?",
+        "3. Wetness-indicator accuracy discussed?",
+        "4. Fit & sizing guidance for different body types provided?",
+        "5. Absorption speed / skin-dryness effectiveness explained?",
+        "6. Price compared with other premium diaper brands?"
+      ]
+    },
+    "summary": "Here's an analysis of Millie Moon Diapers based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Known for exceptional softness with CloudTouch™ technology, often described as feather soft or luxurious.\n    *   Many users report no leaks or blowouts, even overnight, and they perform well in absorbency tests.\n    *   Often recommended for babies with sensitive skin and are dermatologically tested.\n    *   Generally free from lotions, latex, fragrance, and elemental chlorine.\n    *   Considered a good value compared to some other \"luxury\" brands while still offering high quality.\n\n*   **Cons:**\n    *   Some users experience issues with fit and blowouts, particularly noting a lack of a specific blowout barrier in the back.\n    *   A few reports mention issues with the adhesive tabs not sticking well or being small.\n    *   Can have a bulkier design which might not be ideal for very active babies.\n    *   Some users have reported chemical smells, potentially linked to a change in pulp bleaching process.\n\n*   **Mixed Reviews:**\n    *   **Fit:** While some find the fit perfect and note they are high-waisted, others find them to run large or short, leading to leaks.\n    *   **Absorbency:** Praised for being very absorbent and keeping skin dry, some users still experience leaks, especially with heavy wetters or overnight.\n    *   **Diaper Rash:** Many users report no rashes due to the gentle materials, but a minority have experienced diaper rash.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Parents prioritizing softness and comfort for their baby's skin.\n    *   Those looking for a diaper free from common irritants like lotions and fragrances.\n    *   Parents seeking a high-quality diaper at a more accessible price point compared to ultra-premium options.\n\n*   **Who it's not for:**\n    *   Parents whose babies consistently experience blowouts due to the fit or lack of a dedicated back blowout barrier.\n    *   Those who prefer a very slim fitting diaper that is less bulky.\n    *   Consumers who need a brand with wider availability beyond Target stores.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Check the wetness indicator which turns purple when the diaper is full.\n    *   Available in smaller convenience bags for on-the-go use.\n    *   Ensure correct sizing based on baby's weight and body shape to optimize fit and prevent leaks.\n\n*   **Specific use-case considerations:**\n    *   Dermatologist tested and certified safe for sensitive skin.\n    *   Made with sustainably sourced wood pulp and OEKO-TEX STANDARD 100 certified.\n    *   Free from lotions, latex, fragrance, and elemental chlorine.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Millie Moon is often compared to brands like Pampers, Huggies, Honest Co., Coterie, and Dyper, generally being softer than Pampers Swaddlers but potentially less soft than Coterie.\n    *   Offers competitive absorbency, sometimes rivaling higher-priced options, though some users still prefer brands like Coterie for overnight leak protection.\n    *   Positioned as a more affordable \"luxury\" option compared to brands like Coterie and Dyper, primarily available at Target.",
+    "latency_ms": 16559.233875013888,
+    "ttft_ms": 9757.044292025967,
+    "node_latencies": {
+      "direct_search": 16.550904707983136
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Many users report no leaks or blowouts, even overnight, and they perform well in absorbency tests.",
+        "reason": "The summary mentions positive overnight performance anecdotally and in tests, but doesn't specify detailed validation or quantitative data."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Known for exceptional softness with CloudTouch™ technology... free from lotions, latex, fragrance, and elemental chlorine... dermatologically tested.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "partially",
+        "excerpt": "Check the wetness indicator which turns purple when the diaper is full.",
+        "reason": "The presence and function of the wetness indicator are noted, but its accuracy is not specifically discussed."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Ensure correct sizing based on baby's weight and body shape to optimize fit and prevent leaks... some find the fit perfect and note they are high-waisted, others find them to run large or short, leading to leaks.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Praised for being very absorbent and keeping skin dry, some users still experience leaks, especially with heavy wetters or overnight.",
+        "reason": "The summary addresses general absorbency and skin dryness via user reports, but does not detail absorption speed or provide direct evidence."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Considered a good value compared to some other 'luxury' brands while still offering high quality... Positioned as a more affordable 'luxury' option compared to brands like Coterie and Dyper.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 3,
+      "partially": 3,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 476
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Keurig-K-Elite-Temperature-Capability-Programmable/dp/B078NN17K3",
+      "name": "Keurig K-Elite Coffee Maker",
+      "questions": [
+        "1. Brew-temperature range & Strong/Iced mode impact covered?",
+        "2. 75 oz reservoir capacity and cleaning ease noted?",
+        "3. Descaling frequency prompts explained?",
+        "4. Reliability and expected lifespan discussed?",
+        "5. Noise level and sub-1-minute brew speed described?",
+        "6. Compatibility with reusable or third-party pods confirmed?"
+      ]
+    },
+    "summary": "Here's an analysis of Keurig K-Elite Coffee Maker based on the information available:\n\n**Pros & Cons**\n\n- **Pros:**\n    - Offers multiple brew sizes (4, 6, 8, 10, 12 oz) for versatility.\n    - Features a Strong Brew option for a bolder coffee taste.\n    - Includes an Iced button specifically for brewing over ice.\n    - Provides hot water on demand for other beverages or food.\n    - Has a large 75 oz removable water reservoir requiring fewer refills.\n    - Generally brews coffee quickly, often under a minute.\n    - Operates relatively quietly compared to some other models.\n    - Features programmable auto on/off and temperature control.\n    - Accommodates taller travel mugs with a removable drip tray.\n    - Some users report a slight reduction in the plastic aftertaste sometimes associated with K-Cups.\n\n- **Cons:**\n    - The \"Brew over ice\" feature may result in a watery or weak taste for some users.\n    - The large water reservoir, while convenient, takes up considerable counter space.\n    - Some users have reported issues with the machine becoming defective after a short period.\n    - The water reservoir, though large, may require frequent refilling depending on usage, and the \"add water\" light can be overly sensitive.\n    - Coffee temperature might not always reach the maximum setting.\n    - Lacks smart-home compatibility or an accompanying app.\n\n**User Profiles**\n\n- **Who it's for:**\n    - Individuals or households who consume multiple cups daily due to the large reservoir.\n    - Users who value customization options like brew strength, size, and temperature control.\n    - Those looking for a balance of features and cost without opting for ultra-premium models.\n\n- **Who it's not for:**\n    - Users who only drink coffee occasionally, as the features might be excessive.    - Those with very limited counter space due to its larger footprint.\n    - Users who prefer a more traditional drip coffee taste or are strongly averse to the K-Cup system.\n\n**Usage & Context**\n\n- **Usage or care tips:**\n    - Regular descaling is recommended to prevent mineral buildup and maintain performance.\n    - Cleaning the exit needle and other removable parts regularly helps prevent clogs and ensures proper brewing.\n    - Using filtered water can help prolong the lifespan of the machine and improve coffee taste.\n\n- **Specific use-case considerations:**\n    - Has a high altitude setting for optimal brewing in different locations.\n    - The hot water on demand feature is useful for instant meals and other hot beverages.\n    - Compatible with the Universal My K-Cup Reusable Coffee Filter for using ground coffee.\n\n**Competitive Analysis**\n\n- **Insights vs. similar products:**\n    - Compared to the Keurig K-Classic, the K-Elite offers more features like temperature control, strong brew, and iced settings, justifying its slightly higher price point.\n    - While the Nespresso Vertuo might offer better crema and a higher-end feel, the K-Elite provides broader compatibility with various third-party K-Cups.\n    - Some users have reported reliability issues with newer models like the K-Supreme, suggesting the K-Elite might be a more dependable option for some despite fewer advanced features.\n\nThe average lifespan of a Keurig machine is generally cited as 3-5 years, though some users report their machines lasting much longer with proper maintenance. The warranty typically covers defects but may be voided by using non-Keurig pods. Water filter cartridges should be replaced regularly, often every two months or after a certain volume of water has been used.",
+    "latency_ms": 16276.861874997849,
+    "ttft_ms": 8996.2236660067,
+    "node_latencies": {
+      "direct_search": 16.270679750014096
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Features programmable auto on/off and temperature control... Features a Strong Brew option for a bolder coffee taste... Includes an Iced button specifically for brewing over ice.",
+        "reason": "The summary mentions temperature control and the existence of Strong and Iced modes but does not specify the actual brew-temperature range or detail the exact impact of Strong/Iced modes beyond general descriptions."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Has a large 75 oz removable water reservoir requiring fewer refills... Cleaning the exit needle and other removable parts regularly helps prevent clogs and ensures proper brewing.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "partially",
+        "excerpt": "Regular descaling is recommended to prevent mineral buildup and maintain performance.",
+        "reason": "The summary states that regular descaling is recommended but does not provide specific frequency prompts or guidance."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "The average lifespan of a Keurig machine is generally cited as 3-5 years, though some users report their machines lasting much longer with proper maintenance. The warranty typically covers defects but may be voided by using non-Keurig pods.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "Generally brews coffee quickly, often under a minute... Operates relatively quietly compared to some other models.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Compatible with the Universal My K-Cup Reusable Coffee Filter for using ground coffee... provides broader compatibility with various third-party K-Cups.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 2,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "no",
+        "reason": "The summary uses clearly labeled 'Pros' and 'Cons' sections, but also includes significant evaluative comments in other sections such as 'User Profiles,' 'Usage & Context,' and 'Competitive Analysis,' which contain points that could be considered pros, cons, or mixed reviews. The rubric requires that all such points be grouped under the specified sections. Thus, the summary does not strictly follow the rubric."
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 6,
+      "no": 1,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 548
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Insta360-Standard-Bundle-Waterproof-Stabilization/dp/B0DBQBMQH2/",
+      "name": "Insta360 Ace Pro Action Cam",
+      "questions": [
+        "1. Daylight and low-light 4 K video quality (1/1.3″ sensor) detailed?",
+        "2. FlowState stabilization & horizon leveling effectiveness described?",
+        "3. Battery life at 4 K 60 fps stated?",
+        "4. Ruggedness & 33 ft waterproof rating covered?",
+        "5. App workflow and AI editing ease discussed?",
+        "6. Overheating behaviour or limits mentioned?"
+      ]
+    },
+    "summary": "Here's an analysis of Insta360 Ace Pro Action Cam based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Offers outstanding low-light video performance due to its larger 1/1.3\" sensor, Leica lens, and AI chip, surpassing competitors like GoPro Hero 12 and DJI Action 4.\n    *   Features a large, bright 2.4\" flip touchscreen which is excellent for vlogging and framing shots from various angles.\n    *   Capable of recording 8K video at 24fps and 4K video at up to 120fps, providing high resolution and slow-motion options.\n    *   Includes effective FlowState stabilization and Horizon Lock for smooth footage.\n    *   Supports fast charging, reaching 80% in about 22 minutes and full charge in around 46 minutes.\n\n*   **Cons:**\n    *   Audio quality can be inconsistent, with some users reporting poor quality, especially with the official mic adapter.\n    *   The camera can be perceived as slightly larger and heavier compared to some competitors like the DJI Action 4.\n    *   The included magnetic mounting system, while quick, can be bulky with certain accessories.\n    *   Some users report issues with the included software for direct transfer and upload.\n    *   The lens is not user-replaceable, unlike some competing models.\n\n*   **Mixed Reviews:**\n    *   **Battery Life:** Advertised runtime is around 100 minutes (4K30fps Active HDR), but real-world tests show it often falls slightly short, though still comparable to or better than some competitors.\n    *   **Image Sharpness:** While praised for overall image quality, some users feel it lacks the sharpness of competitors like the GoPro Hero 12 or DJI Action 4 in certain conditions.\n    *   **Overheating:** One user reported the camera overheating and shutting down easily.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Content creators and vloggers who benefit from the large flip screen and AI editing features.\n    *   Users who frequently shoot in challenging low-light conditions, including evening or indoor environments.\n    *   Action camera users who want high resolution (8K) and advanced stabilization.\n\n*   **Who it's not for:**\n    *   Users prioritizing the absolute smallest and lightest action camera.\n    *   Those who require superior external microphone compatibility without adapters.\n    *   Users who need a user-replaceable lens guard for extreme physical activities.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Consider the dual battery bundle for extended shooting sessions.\n    *   The camera is waterproof up to 10m (33ft) without a case, and up to 60m (196ft) with a Dive Case.\n    *   Supports microSD cards up to 1 TB.\n\n*   **Specific use-case considerations:**\n    *   Can operate in temperatures as low as -20°C, suitable for winter sports.\n    *   Features like Gesture Control and Voice Control 2.0 offer hands-free operation in certain scenarios.\n    *   AI Highlight Assistant can help identify key moments in videos for easier editing.\n\n**Competitive Analysis**\n\n*   Compared to the GoPro Hero 12, the Insta360 Ace Pro generally offers superior low-light performance and features an 8K recording option, while the Hero 12 is noted for its robust stabilization and wider field of view options in certain modes.\n*   The DJI Action 4 is another close competitor, often cited for its durability with a replaceable lens element and potentially smaller size, whereas the Ace Pro stands out with its flip screen and AI features.\n*   The Ace Pro's 1/1.3\" sensor is larger than the 1/1.9\" sensor found in the GoPro Hero 12, contributing significantly to its low-light advantage and dynamic range.\n\nThe Insta360 Ace Pro comes with a one-year limited warranty, with options for extended warranty or accidental damage coverage available. The price is competitive within the high-end action camera market, often compared to the pricing of recent GoPro and DJI models.",
+    "latency_ms": 19692.272790998686,
+    "ttft_ms": 11050.490125024226,
+    "node_latencies": {
+      "direct_search": 19.683759666979313
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Offers outstanding low-light video performance due to its larger 1/1.3\" sensor, Leica lens, and AI chip... praised for overall image quality, some users feel it lacks the sharpness of competitors like the GoPro Hero 12 or DJI Action 4 in certain conditions.",
+        "reason": "The summary discusses low-light performance and mentions overall image quality, but does not give detailed analysis of 4K video quality specifically in daylight and low-light conditions."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Includes effective FlowState stabilization and Horizon Lock for smooth footage.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "Battery life is given for 4K30fps (about 100 minutes), but there is no specific information for 4K 60fps."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "The camera is waterproof up to 10m (33ft) without a case, and up to 60m (196ft) with a Dive Case.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "AI Highlight Assistant can help identify key moments in videos for easier editing.",
+        "reason": "Mentions AI highlight assistant for editing, but the summary does not describe the app workflow or overall AI editing process in detail."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "One user reported the camera overheating and shutting down easily.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 3,
+      "partially": 2,
+      "no": 1,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 592
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Murad-Retinol-Youth-Renewal-Serum/dp/B01K629LDI/",
+      "name": "Murad Retinol Youth Renewal Serum",
+      "questions": [
+        "1. Tri-Active retinol technology explained?",
+        "2. Timeframe for visible results given?",
+        "3. Irritation-mitigation ingredients & nightly-use suitability covered?",
+        "4. Lightweight texture & fast absorption described?",
+        "5. Airless-pump packaging benefit noted?",
+        "6. Price/value versus other OTC retinol serums discussed?"
+      ]
+    },
+    "summary": "Here's an analysis of Murad Retinol Youth Renewal Serum based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Clinically proven to visibly improve fine lines and wrinkles in 2 weeks.\n    *   Effectively smooths skin texture and evens skin tone.\n    *   Gentle enough for sensitive skin and retinol beginners, minimizing dryness and irritation for many users.\n    *   Contains hydrating ingredients like Hyaluronic Acid, which helps combat potential dryness.\n    *   Features a Retinol Tri-Active Technology for fast-acting and prolonged benefits.\n\n*   **Cons:**\n    *   High price point is a significant deterrent for some users.\n    *   Murad does not disclose the specific percentage of retinol in the serum, which is a concern for some users who prefer to know the concentration of active ingredients.\n    *   Some users report a strong fragrance that may not be appealing or suitable for those sensitive to scents.    *   A few users experienced dryness or irritation, despite the gentle formulation claims.\n    *   The transparent bottom of the bottle might expose the retinol to light, potentially reducing its potency over time.\n\n*   **Mixed Reviews:**\n    *   **Effectiveness compared to other brands:** Some users find it effective, while others feel less expensive brands like The Ordinary offer comparable or better results.\n    *   **Initial breakouts (purging):** While many find it gentle, some users experienced initial breakouts when starting the serum.\n    *   **Texture and feel:** Generally described as silky smooth and fast-absorbing, but some find the texture less appealing than other serums.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Individuals looking to begin using retinol with a potentially gentle formula.\n    *   Those seeking to address mild to moderate signs of aging, such as fine lines, wrinkles, and uneven skin tone.\n    *   People with various skin types, including sensitive, dry, oily, balanced, and combination skin.\n\n*   **Who it's not for:**\n    *   Users who prefer products with disclosed active ingredient percentages.\n    *   Those on a strict budget due to its premium price.\n    *   Individuals highly sensitive to fragrance in skincare products.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Apply a thin layer to the face at night, followed by a moisturizer.\n    *   Reduce frequency of use if sensitivity occurs.\n    *   Always apply SPF in the morning when using this product.\n\n*   **Specific use-case considerations:**\n    *   Can be used as a preventative measure against signs of aging.\n    *   Suitable for use on the neck and chest as well as the face.\n    *   Can be incorporated into a routine with other Murad Retinol Youth Renewal products like the night cream and eye serum.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Compared to The Ordinary Granactive Retinoid, Murad does not disclose its retinol percentage, which some users see as a disadvantage, although both are noted as being potentially good for various concerns like acne and aging.\n    *   While Murad is highlighted for being gentle and hydrating due to Hyaluronic Acid, SkinCeuticals Retinol 0.3 is also praised for being gentle with a known concentration, though it may not be ideal for dry skin as it lacks dedicated moisturizing ingredients like ceramides or hyaluronic acid.\n    *   Products like Medik8 Crystal Retinal offer retinaldehyde, a form of retinoid that converts faster than retinol with potentially less irritation, providing an alternative for those seeking different retinoid types.",
+    "latency_ms": 25650.195124995662,
+    "ttft_ms": 17707.307374977972,
+    "node_latencies": {
+      "direct_search": 25.643940917012515
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Features a Retinol Tri-Active Technology for fast-acting and prolonged benefits.",
+        "reason": "Tri-Active retinol technology is mentioned as providing fast-acting and prolonged benefits, but there is no detailed explanation of what the technology specifically is or how it works."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Clinically proven to visibly improve fine lines and wrinkles in 2 weeks.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Gentle enough for sensitive skin and retinol beginners, minimizing dryness and irritation for many users. Contains hydrating ingredients like Hyaluronic Acid, which helps combat potential dryness.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Generally described as silky smooth and fast-absorbing",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary mentions the transparent bottom as a potential downside for retinol stability, but does not discuss the benefit of airless-pump packaging at all."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "High price point is a significant deterrent for some users...Some users find it effective, while others feel less expensive brands like The Ordinary offer comparable or better results.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 1,
+      "no": 1,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 539
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Ninja-Capacity-Dehydrate-Technology-AF141/dp/B0CSZ7WBYW/",
+      "name": "Ninja AF141 5-Qt Air Fryer",
+      "questions": [
+        "1. Air-fry performance and even crisping results detailed?",
+        "2. Real-world capacity expressed in pounds of food?",
+        "3. Cleanup ease & dishwasher-safe parts mentioned?",
+        "4. Preheat time and overall cook-speed compared to oven/competitors?",
+        "5. Noise level and initial plastic-smell reports addressed?",
+        "6. Control-panel intuitiveness described?"
+      ]
+    },
+    "summary": "Here's an analysis of Ninja AF141 5-Qt Air Fryer based on the information available:\n\n**Pros & Cons**\n\n**Pros:**\n- **Excellent Performance:** Delivers very good air frying results, producing crispy and evenly cooked food like fries and chicken wings.\n- **Fast Cooking:** Heats up quickly and cooks food rapidly, making it convenient for quick meals.\n- **Easy to Use:** Features intuitive controls and a simple digital display.\n- **Compact Design:** Doesn't take up excessive counter space, suitable for smaller kitchens.\n- **Easy to Clean:** The nonstick basket and crisper plate are generally easy to clean and are often dishwasher-safe.\n\n**Cons:**\n- **No Preheat Feature:** Lacks a dedicated preheat mode or indicator, requiring users to estimate timing.\n- **Can Be Loud:** Some users find the fan noise to be noticeable during operation.\n- **Limited Modes:** Offers only four cooking functions compared to models with more presets.\n- **No Shake Reminder:** Does not have a built-in reminder to shake the basket for even cooking.\n- **Gets Hot Externally:** The exterior and countertop beneath the unit can get warm during extended use.\n\n**Mixed Reviews**\n- **Capacity:** While rated at 5 quarts and fitting up to 4 lbs of fries, some users expected a larger capacity and note it's best for 2-3 people or requires cooking in batches for larger families.\n- **Evenness of Cooking:** Although generally producing good results, some reviews mention that cooking may not be completely even, with some areas potentially under or overcooked.\n- **Basket Coating:** The nonstick coating is noted as easy to clean, but there are some reports of the coating flaking over time, even with gentle cleaning.\n\n**User Profiles**\n\n**Who it's for:**\n- **Individuals or Couples:** The 5-quart capacity is well-suited for cooking meals for one or two people.\n- **Busy Home Cooks:** Appreciates fast cooking times and easy cleanup for convenience.\n- **Health-Conscious Users:** Wants to achieve crispy results with significantly less oil than traditional frying.\n\n**Who it's not for:**\n- **Large Families:** The 5-quart capacity is likely too small for cooking large quantities of food at once.\n- **Users Needing Many Presets:** May find the four cooking functions limiting compared to more versatile models.\n- **Noise-Sensitive Individuals:** The operational noise might be a drawback in quiet environments.\n\n**Usage & Context**\n\n**Usage or care tips:**\n- The nonstick basket and crisper plate are dishwasher-safe, but hand washing with a soft sponge is recommended to potentially extend their lifespan.\n- Allow the unit and basket to cool down before cleaning.\n- Avoid using abrasive scrubbers or harsh chemicals when cleaning the interior to prevent damage to the nonstick coating.\n\n**Specific use-case considerations:**\n- The unit should be placed away from walls due to hot air exhaust from the back.\n- The product contains chemicals, and users can refer to the manufacturer's provided link for more information.\n- The beeping sounds from the unit cannot be deactivated for security reasons.\n\n**Competitive Analysis**\n\n**Insights vs. similar products:**\n- Compared to the Salton AF2085, the Ninja AF141 has more basket surface area and a faster fan, leading to quicker cooking and crispier results.\n- It offers a wider temperature range and more stable temperature during cooking than some other air fryers, aiding in following recipes.\n- While the COSORI TurboBlaze is a larger 6-qt option, the Ninja AF141 is noted as the best small air fryer tested by one review, efficiently using its 5-qt space.",
+    "latency_ms": 17696.949250006583,
+    "ttft_ms": 10880.574916984187,
+    "node_latencies": {
+      "direct_search": 17.690538083028514
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Delivers very good air frying results, producing crispy and evenly cooked food like fries and chicken wings.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "While rated at 5 quarts and fitting up to 4 lbs of fries, some users expected a larger capacity...",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "The nonstick basket and crisper plate are generally easy to clean and are often dishwasher-safe.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "Heats up quickly and cooks food rapidly, making it convenient for quick meals.",
+        "reason": "The summary states it is fast but does not explicitly compare preheat time or overall speed to an oven or detail a direct competitor comparison for speed."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Some users find the fan noise to be noticeable during operation.",
+        "reason": "Noise is addressed, but there is no mention of any initial plastic smell."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Features intuitive controls and a simple digital display.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 2,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 564
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/FIFINE-Microphone-Voice-Over-Windscreen-Amplitank-K688/dp/B0B8SNVK5K/",
+      "name": "FIFINE K688 USB/XLR Microphone",
+      "questions": [
+        "1. Voice sound quality via USB and XLR detailed?",
+        "2. Cardioid dynamic background-noise rejection explained?",
+        "3. On-board mute/gain and zero-latency monitoring covered?",
+        "4. Metal build and included shock-mount/pop filter described?",
+        "5. Self-noise or gain-requirement info provided?",
+        "6. Price/performance versus similar broadcast-style mics discussed?"
+      ]
+    },
+    "summary": "Here's an analysis of FIFINE K688 USB/XLR Microphone based on the information available:\n\n**Pros & Cons**\n\n**Pros**\n- **Affordable Price:** The microphone is generally considered great value for its cost, often priced under $80.\n- **Dual Connectivity:** Features both USB-C and XLR outputs, offering flexibility for different setups.\n- **Good Build Quality:** The microphone and included shock mount are primarily made of metal, providing a solid feel.\n- **Clear Audio:** Provides clear and crisp audio quality, particularly for spoken word applications.\n- **Effective Noise Rejection:** The cardioid polar pattern helps minimize background noise and isolate the main sound source.\n\n**Cons**\n- **Low USB Output Volume:** The audio output via USB can be quiet compared to some competing microphones.\n- **No Included Stand:** The microphone does not come with a desk stand, requiring a separate purchase of a stand or boom arm.\n- **Thin Windscreen:** The included windscreen is relatively thin and may not fully prevent plosives.\n- **No XLR Cable Included:** An XLR cable is not included, which is necessary for using the XLR connection.\n- **Requires USB for Controls with XLR:** Even when using the XLR connection, the USB-C cable may still need to be plugged in for the mute and gain controls to function.\n\n**Mixed Reviews**\n- **Sound Profile:** Some users find the sound slightly dark or warm, while others note a potential for a \"boxy\" or \"honkiness\" in the mids that might require EQ.\n- **Shock Mount Effectiveness:** The included shock mount helps reduce vibrations, but some tapping noises may still be picked up directly from the mic body or cable.\n- **Plastic Mic Stand Mount:** While the mic body is metal, the part that attaches to a mic stand is made of plastic, raising some durability concerns.\n- **Limited Headphone Monitoring:** The zero-latency monitoring can be loud for setting levels but quiet relative to computer playback.\n- **Potential AMD USB Compatibility Issues:** A small number of users with AMD CPUs have reported issues with the USB connection.\n\n**User Profiles**\n\n**Who it's for**\n- **Budget-conscious creators:** Individuals looking for a cost-effective microphone for content creation like podcasting or streaming.\n- **Beginners wanting flexibility:** Users new to audio recording who want the option of starting with USB and upgrading to XLR later.\n- **Home studio users:** Those recording in untreated rooms who benefit from the dynamic mic's background noise rejection.\n\n**Who it's not for**\n- **Professional music recording:** The frequency response might not be ideal for capturing the full range and airiness desired for professional vocal or instrumental music recording.\n- **Users needing a stand included:** Individuals expecting a complete plug-and-play solution with a desk stand in the box.\n- **Xbox users:** The microphone is not directly compatible with Xbox consoles.\n\n**Usage & Context**\n\n- **Optimal Mic Positioning:** Due to its dynamic nature and cardioid pattern, positioning the microphone directly in front and relatively close is important for the best sound.\n- **Addressing Plosives:** Angling the microphone slightly off-axis or using an aftermarket windscreen designed for dynamic mics can help mitigate plosives.\n- **Troubleshooting Muting Issues:** If the mic auto-mutes, check for interference from wireless devices, ensure a proper data USB cable is used, and avoid USB hubs.\n\n**Competitive Analysis**\n\n- **Compared to Blue Yeti:** The K688 offers comparable audio quality for spoken word at a significantly lower price, although the Blue Yeti may have a slightly richer tone and offers multiple polar patterns.\n- **Compared to Rode NT-USB:** The K688 is considerably more affordable and offers both USB and XLR connections, while the Rode NT-USB is a USB-only condenser mic with a wider frequency response.\n- **Compared to other budget dynamics (e.g., Maono PD200X, Rode PodMic USB):** The K688 competes well in the budget dynamic mic space, offering a slightly warmer sound profile compared to some alternatives like the Maono PD200X.",
+    "latency_ms": 17550.729749986203,
+    "ttft_ms": 9530.97079199506,
+    "node_latencies": {
+      "direct_search": 17.54305070801638
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Provides clear and crisp audio quality, particularly for spoken word applications.",
+        "reason": "The summary notes the audio is clear and crisp, especially for spoken word, and mentions some users find the sound dark or boxy, but does not provide a detailed comparison of sound quality between USB and XLR modes."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Effective Noise Rejection: The cardioid polar pattern helps minimize background noise and isolate the main sound source.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "partially",
+        "excerpt": "Limited Headphone Monitoring: The zero-latency monitoring can be loud for setting levels but quiet relative to computer playback.",
+        "reason": "Zero-latency monitoring and mute/gain controls are mentioned, but the explanation is brief and does not fully detail the on-board controls' operation."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Good Build Quality: The microphone and included shock mount are primarily made of metal, providing a solid feel.\n...the included windscreen is relatively thin and may not fully prevent plosives.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Low USB Output Volume: The audio output via USB can be quiet compared to some competing microphones.",
+        "reason": "Mentions low USB output volume, which relates to gain, but does not explicitly discuss self-noise or detailed gain requirements."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Compared to Blue Yeti: The K688 offers comparable audio quality for spoken word at a significantly lower price...\nCompared to Rode NT-USB: The K688 is considerably more affordable and offers both USB and XLR connections...\nCompared to other budget dynamics... The K688 competes well in the budget dynamic mic space, offering a slightly warmer sound profile...",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 3,
+      "partially": 3,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 634
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Apple-iPhone-16-Version-128GB/dp/B0DHJH2GZL/",
+      "name": "Apple iPhone 16",
+      "questions": [
+        "1. A18 chip & Apple-Intelligence benefits illustrated?",
+        "2. Camera improvements over iPhone 15 detailed?",
+        "3. Battery-life increase over iPhone 15 quantified?",
+        "4. Action-button practical utility explained?",
+        "5. Key missing features versus iPhone 16 Pro listed?",
+        "6. Launch-price change versus prior model highlighted?"
+      ]
+    },
+    "summary": "Here's an analysis of Apple iPhone 16 based on the information available:\n\n**Pros & Cons***   **Pros:**\n    *   Features an upgraded A18 chip, expected to provide a performance boost and support Apple Intelligence features.\n    *   Includes a new Camera Control button for easier access to camera settings and capturing photos/videos.\n    *   The standard models feature a vertical camera layout, enabling Spatial Video recording for Vision Pro.\n    *   Improved battery life is expected across most models compared to the iPhone 15 series.\n    *   Supports faster 25W MagSafe wireless charging.\n    *   The ultrawide camera on the base models is rumored to have a faster aperture for improved low-light performance and may support macro photography.\n    *   Action button is included on the standard iPhone 16 models.\n\n*   **Cons:**\n    *   The standard iPhone 16 models are expected to retain a 60Hz display refresh rate.\n    *   Data transfer speeds via the USB-C port on the standard models remain at USB 2.0.\n    *   Some reports suggested a potential decrease in battery capacity for the iPhone 16 Plus, although overall battery life improvements are noted across the lineup.\n    *   The main camera sensor on the Pro models may remain the same for the third consecutive year according to some rumors.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Users within the Apple ecosystem looking for the latest technology and performance upgrades.\n    *   Individuals upgrading from older iPhone models seeking significant improvements in camera capabilities, processing power, and battery life.\n    *   Users who prioritize access to new features like Apple Intelligence and enhanced camera controls without necessarily needing the top-tier Pro features.\n\n*   **Who it's not for:**\n    *   Budget-conscious consumers, as pricing starts at $799 and increases with storage options.\n    *   Users who require a high refresh rate display for smoother scrolling and motion.\n    *   Individuals heavily invested in the Android ecosystem who prefer its flexibility and features.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Compared to the Samsung Galaxy S25, the iPhone 16 offers a sharper screen and faster charging, while the Galaxy S25 may provide more versatile camera zoom options and potentially longer battery life in some tests.\n    *   The iPhone 16's A18 chip is expected to deliver strong performance, though the Snapdragon 8 Elite chip in the Galaxy S25 is also noted for its power.\n    *   Both the iPhone 16 with Apple Intelligence and the Galaxy S25 with Galaxy AI are focusing on AI-driven features, offering different approaches to integrating AI into the user experience.",
+    "latency_ms": 18035.636708023958,
+    "ttft_ms": 13071.546374994796,
+    "node_latencies": {
+      "direct_search": 18.029330499994103
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Features an upgraded A18 chip, expected to provide a performance boost and support Apple Intelligence features.",
+        "reason": "The summary mentions the A18 chip and support for Apple Intelligence features, but does not provide specific examples or illustrations of the benefits."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Includes a new Camera Control button for easier access...vertical camera layout, enabling Spatial Video recording...ultrawide camera...rumored to have a faster aperture for improved low-light performance and may support macro photography.",
+        "reason": "The summary details several camera improvements over the iPhone 15."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary states 'improved battery life is expected' but does not quantify the increase over the iPhone 15."
+      },
+      {
+        "question_number": 4,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary mentions the Action button is included, but does not explain its practical utility or how it is used."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "The main camera sensor on the Pro models may remain the same for the third consecutive year...",
+        "reason": "The summary hints at differences (such as the main camera sensor on Pro models) but does not clearly list key missing features versus the iPhone 16 Pro."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The summary lists the starting price ($799) but does not mention any change compared to the prior model's launch price."
+      }
+    ],
+    "questions_answered": {
+      "yes": 1,
+      "partially": 2,
+      "no": 3,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 409
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Apple-iPhone-MagSafe-Camera-Control/dp/B0DGHH9WMX/",
+      "name": "Apple iPhone 16 FineWoven Case",
+      "questions": [
+        "1. Scratch, stain, and fray durability described?",
+        "2. MagSafe strength and possible imprinting noted?",
+        "3. Grip feel & added bulk assessed?",
+        "4. Raised lip protection for screen and camera confirmed?",
+        "5. Cleaning method and ease provided?",
+        "6. Value versus leather or silicone cases discussed?"
+      ]
+    },
+    "summary": "Here's an analysis of Apple iPhone 16 FineWoven Case based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Made from 68% post-consumer recycled content, offering a lower carbon footprint than leather.\n    *   Designed to fit snugly over the iPhone without adding significant bulk.\n    *   Features built-in magnets for seamless MagSafe accessory attachment and faster wireless charging.\n    *   Includes nice details like metallic buttons and on-screen animations when attached.\n    *   Provides a degree of protection against scratches and drops.\n\n*   **Cons:**\n    *   Material is highly susceptible to scratches, scuffs, and stains, often showing wear very quickly.\n    *   MagSafe accessories can leave permanent imprints on the fabric.\n    *   The material lacks durable water repellency and absorbs liquids easily.\n    *   Edges are described by some as hard, rough, and uncomfortable to hold.\n    *   Some users report issues with the durability of the case structure itself, including peeling or separation near ports.\n\n*   **Mixed Reviews:**\n    *   **Material Feel:** While Apple describes it as having a soft, suedelike feel, user opinions vary, with some finding it pleasant and others disliking the texture or finding it less premium than expected.\n    *   **Durability Expectation:** Apple states the material may show wear over time, but many users experienced significant wear within days or weeks, leading to disappointment regarding its longevity for the price.\n    *   **Charging Port Cutout:** Some report the USB-C port cutout is too narrow or imprecise, preventing certain third-party cables from fitting properly, although others had no issues.\n    *   **Grip:** Experiences with the case's grip are mixed; some find it secure, while others feel it is slippery.\n    *   **Value for Money:** Given the durability concerns and premium price point (often $60), many question whether the case is worth the cost compared to its performance or alternatives.\n\n**User Profiles***   **Who it's for:**\n    *   Environmentally conscious consumers looking for accessories made with recycled materials.\n    *   Users who prefer official Apple-branded accessories for guaranteed MagSafe compatibility and integrated features.\n    *   Those who prioritize a slim profile and unique texture over maximum protection or long-term pristine appearance.\n\n*   **Who it's not for:**    *   Users who need a highly durable case that resists scratches, stains, and general wear and tear.\n    *   Individuals who frequently expose their phone case to liquids or rough surfaces.\n    *   Value-conscious buyers expecting long-term durability and a premium feel commensurate with the price.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   The material may show wear over time, and interaction with MagSafe accessories will leave slight imprints.\n    *   Some users have reported success cleaning dirt and fingerprints with fabric detergent.\n    *   Apple suggests using a Silicone or Clear case if concerns exist about the FineWoven material showing wear.\n\n*   **Specific use-case considerations:**\n    *   The case is designed to align perfectly with MagSafe chargers and Qi-certified chargers.\n    *   The material is described as a microtwill with a suede-like feel, made from recycled content.\n    *   The FineWoven layer is thin (around 0.17mm) on top of the case's protective structure.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Compared to Apple's previous leather cases, FineWoven is less durable and doesn't develop the same type of patina; leather was often seen as more premium and aged better despite also showing wear.\n    *   Apple's Silicone cases are generally considered more durable and less prone to showing immediate wear and tear than FineWoven, though they can peel over time and attract lint.\n    *   Third-party case manufacturers like Peak Design and DBrand offer alternatives that some users feel provide better durability or value for money than official Apple cases, including FineWoven.",
+    "latency_ms": 19225.7289160043,
+    "ttft_ms": 12960.526915994706,
+    "node_latencies": {
+      "direct_search": 19.218848790973425
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Material is highly susceptible to scratches, scuffs, and stains, often showing wear very quickly... Some users report issues with the durability of the case structure itself, including peeling or separation near ports.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Features built-in magnets for seamless MagSafe accessory attachment... MagSafe accessories can leave permanent imprints on the fabric.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Designed to fit snugly over the iPhone without adding significant bulk... Experiences with the case's grip are mixed; some find it secure, while others feel it is slippery.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "There is no mention of raised lip protection for the screen or camera in the summary."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Some users have reported success cleaning dirt and fingerprints with fabric detergent.",
+        "reason": "A cleaning method is mentioned, but there is no clear assessment of the overall ease of cleaning."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Compared to Apple's previous leather cases, FineWoven is less durable... Apple's Silicone cases are generally considered more durable and less prone to showing immediate wear and tear than FineWoven... many question whether the case is worth the cost compared to its performance or alternatives.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 1,
+      "no": 1,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 590
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/dp/B0BJ62BW91",
+      "name": "Gravol Kids Liquid",
+      "questions": [
+        "1. Dimenhydrinate mg per dose & minimum age stated?",
+        "2. Prevention window (30–60 min) & duration of effect explained?",
+        "3. Drowsiness side-effect likelihood described?",
+        "4. Kid-friendly taste feedback included?",
+        "5. Dosing tool accuracy/ease mentioned?",
+        "6. Storage requirements (room temp vs refrigeration) specified?"
+      ]
+    },
+    "summary": "Here's an analysis of Gravol Kids Liquid based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Effective: Many users report it effectively prevents and treats motion sickness, nausea, vomiting, and dizziness in children.\n    *   Fast-acting: Some users note it starts working relatively quickly, often within 20-30 minutes.\n    *   Easy to administer: The liquid form is generally considered easy to measure and give to children, especially those who have trouble with pills.\n    *   Good taste: The mixed fruit flavor is often described as great or mild, making it more palatable for kids.\n    *   Dye-free and alcohol-free: The formulation is free from artificial dyes and alcohol.\n\n*   **Cons:**    *   Can cause drowsiness: A common side effect is marked drowsiness or tiredness.\n    *   May cause excitability: In some children, it can cause excitability instead of drowsiness.\n    *   Not effective for all: Some users have found it ineffective for their child's nausea or motion sickness.*   **Mixed Reviews:**\n    *   **Effectiveness for severe cases:** While generally effective for motion sickness, one user found it didn't work well for winding roads or turbulence.\n    *   **Taste perception:** Although many find the taste pleasant, one user felt the taste/smell made their stomach ache worse.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Children aged 2 to 12 years experiencing motion sickness, nausea, vomiting, or dizziness.\n    *   Families who travel frequently by car, plane, or boat and need to prevent or treat motion sickness.\n    *   Parents looking for an easy-to-administer liquid medication with a palatable fruit flavor for their children.\n\n*   **Who it's not for:**\n    *   Children under 2 years old, unless directed by a physician.\n    *   Individuals with certain medical conditions like glaucoma, chronic lung disease, or difficulty urinating due to an enlarged prostate gland, without consulting a doctor.\n    *   Those who need to avoid drowsiness or perform tasks requiring mental alertness after taking medication.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   For motion sickness prevention, administer the first dose at least 30 minutes, and preferably 1 to 2 hours, before starting activity or departure.\n    *   Store at room temperature between 15°C and 27°C (59°F-77°F).\n    *   Do not exceed the recommended dosage and prolonged use should only be under medical advice.\n\n*   **Specific use-case considerations:**\n    *   The active ingredient is Dimenhydrinate, an antihistamine.\n    *   Potential side effects include dry mouth, headache, dizziness, unusual tiredness, and increased sensitivity to UV rays.\n    *   Consult a doctor or pharmacist if the child is taking other antihistamines, tranquilizers, or sedating drugs.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Compared to chewable tablets like Dramamine Kids Chewable or Gravol Kids Chewable, the liquid form is often preferred for younger children or those with difficulty swallowing.\n    *   Gravol Kids Liquid contains Dimenhydrinate, similar to Dramamine products, which is a common active ingredient for motion sickness relief.\n    *   Unlike some natural remedies like ginger-based products, Gravol Kids Liquid uses an antihistamine for its anti-nausea effect.",
+    "latency_ms": 16505.99495798815,
+    "ttft_ms": 11257.228041999042,
+    "node_latencies": {
+      "direct_search": 16.497807415988063
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "The active ingredient is Dimenhydrinate, an antihistamine. ... Children aged 2 to 12 years...",
+        "reason": "The summary states the active ingredient (Dimenhydrinate) and the minimum age (2 years), but does NOT specify the mg per dose."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "partially",
+        "excerpt": "For motion sickness prevention, administer the first dose at least 30 minutes, and preferably 1 to 2 hours, before starting activity or departure.",
+        "reason": "The prevention window (at least 30 minutes before activity) is stated, but duration of effect is NOT explained."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Can cause drowsiness: A common side effect is marked drowsiness or tiredness.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Good taste: The mixed fruit flavor is often described as great or mild, making it more palatable for kids.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Easy to administer: The liquid form is generally considered easy to measure and give to children...",
+        "reason": "Ease of measuring and administration is mentioned, but specific dosing tool accuracy (e.g., included syringe or cup) is NOT addressed."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Store at room temperature between 15°C and 27°C (59°F-77°F).",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 3,
+      "partially": 3,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting 'Mixed Reviews' if no such points exist.",
+        "evaluation": "no",
+        "reason": "Several points appear both in the 'Cons' and 'Mixed Reviews' sections. For example, 'Taste perception' is mentioned as both a Con (one user felt the taste made their stomach ache worse) and in Mixed Reviews (although many find the taste pleasant, one user felt the taste/smell made their stomach ache worse). Similarly, 'Effectiveness for severe cases' is essentially covered in both Cons (not effective for all) and Mixed Reviews. This duplication violates the rubric's requirement that each point should appear in only one section."
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 6,
+      "no": 1,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 483
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Orgain-Organic-Protein-Powder-Strawberries/dp/B09SJ4WJNV/",
+      "name": "Orgain Organic Protein Powder – Strawberries & Cream",
+      "questions": [
+        "1. 21 g plant-protein blend (pea/rice/chia) listed?",
+        "2. Taste, sweetness level, and mixability described?",
+        "3. USDA Organic & Non-GMO certifications noted?",
+        "4. Digestive comfort (gas/bloat) feedback covered?",
+        "5. Cost per serving compared with other organic plant proteins?",
+        "6. Total servings per container stated?"
+      ]
+    },
+    "summary": "Here's an analysis of Orgain Organic Protein Powder – Strawberries & Cream based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Many users find the Strawberries & Cream flavor delicious and enjoyable.\n    *   It is certified USDA Organic and Non-GMO.\n    *   The powder is plant-based, using a blend of organic pea, brown rice, and chia seeds, providing a complete amino acid profile.\n    *   It is free from common allergens like soy, dairy, and gluten.\n    *   Contains prebiotic fiber, which can support gut health.\n*   **Cons:**\n    *   Some users find the taste too sweet or slightly artificial.\n    *   Mixability can be an issue for some, with reports of residue or chalkiness, especially when mixed with water.\n    *   Certain ingredients like erythritol and gums might cause digestive discomfort in sensitive individuals.\n    *   A past recall occurred for a different flavor due to an undeclared allergen (sesame), although no illnesses were reported for that specific incident.    *   Some users have reported intense nausea or illness after consuming Orgain plant-based protein powder, potentially linked to individual sensitivities or ingredients like erythritol.\n*   **Mixed Reviews:**\n    *   The texture is described differently by users, with some finding it smooth and creamy while others report a chalky or gritty consistency.\n    *   The smell is perceived differently by customers, with some finding it pleasant and others noting no distinct smell.\n    *   Opinions vary on how filling the protein powder is.\n    *   Some reviewers prefer mixing it with plant milk or in smoothies for better taste and texture compared to water alone.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Individuals seeking a certified organic, plant-based protein source.\n    *   People with dietary restrictions, including vegans, vegetarians, and those avoiding gluten, dairy, and soy.\n    *   Those looking for a protein powder with added fiber and a lower sugar content.\n*   **Who it's not for:**\n    *   Individuals with known sensitivities to ingredients like peas, brown rice, chia seeds, erythritol, or gums.    *   Those who strongly dislike the taste of stevia or erythritol, as they are used as sweeteners.\n    *   Individuals seeking a protein powder with the absolute highest protein content per serving compared to some competitors.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   Mix one scoop with 8-10 ounces of your preferred liquid, such as water, almond milk, or oat milk.\n    *   Can be blended into smoothies with fruits and vegetables for enhanced taste and nutrients.\n    *   Can be incorporated into recipes like overnight oats and baked goods.\n*   **Specific use-case considerations:**\n    *   Contains a complete amino acid profile from the blend of plant proteins.\n    *   Provides a significant amount of iron per serving.\n    *   Some users recommend using a countertop blender for better mixability due to the serving size.\n\n**Competitive Analysis**\n\n*   **Insights vs. similar products:**\n    *   Compared to Vega protein powders, Orgain generally offers a similar amount of protein per serving but may have slightly more fiber and fewer calories, though Vega Sport can have higher protein.\n    *   Orgain is often considered competitively priced, potentially offering more product for a similar cost compared to some Garden of Life options, though Garden of Life may offer a wider variety of protein sources and added vitamins/minerals.\n    *   While many plant-based protein powders can be gritty, Orgain is often described as having a smoother texture, though some users still report grittiness.",
+    "latency_ms": 17781.73670900287,
+    "ttft_ms": 10800.522417004686,
+    "node_latencies": {
+      "direct_search": 17.77310083300108
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "The powder is plant-based, using a blend of organic pea, brown rice, and chia seeds, providing a complete amino acid profile.",
+        "reason": "The summary states the plant protein sources (pea, rice, chia) but does NOT specify the amount per serving (21g)."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Many users find the Strawberries & Cream flavor delicious and enjoyable... Some users find the taste too sweet or slightly artificial. Mixability can be an issue for some, with reports of residue or chalkiness, especially when mixed with water.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "It is certified USDA Organic and Non-GMO.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Certain ingredients like erythritol and gums might cause digestive discomfort in sensitive individuals... Some users have reported intense nausea or illness after consuming Orgain plant-based protein powder, potentially linked to individual sensitivities or ingredients like erythritol.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Orgain is often considered competitively priced, potentially offering more product for a similar cost compared to some Garden of Life options...",
+        "reason": "The summary compares general pricing and value but does NOT explicitly state the cost per serving."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "no",
+        "excerpt": null,
+        "reason": "The total number of servings per container is not mentioned."
+      }
+    ],
+    "questions_answered": {
+      "yes": 3,
+      "partially": 2,
+      "no": 1,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 552
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/Quencher-Cupholder-Compatible-Insulated-Stainless/dp/B0DCDQ1RFV/",
+      "name": "Stanley Quencher H2.0 FlowState (40 oz)",
+      "questions": [
+        "1. Cold/iced and hot retention times verified?",
+        "2. Leak resistance in straw and fully-closed modes described?",
+        "3. Cup-holder fit and handle comfort covered?",
+        "4. Dishwasher safety and cleaning ease noted?",
+        "5. Powder-coat scratch/dent resistance discussed?",
+        "6. Filled weight and portability addressed?"
+      ]
+    },
+    "summary": "Here's an analysis of Stanley Quencher H2.0 FlowState (40 oz) based on the information available:\n\n**Pros & Cons**\n\n*   **Pros:**\n    *   Keeps drinks cold for extended periods, with ice lasting up to 2 days.\n    *   Fits in most car and truck cup holders due to its narrow base.\n    *   Features a comfortable, ergonomic handle with grip inserts.\n    *   Made with durable, BPA-free, 90% recycled stainless steel.\n    *   Dishwasher safe for easy cleaning.\n*   **Cons:**\n    *   Not entirely leakproof, especially from the straw opening, requiring it to be kept upright.\n    *   Can be heavy and cumbersome when full due to its large size.\n    *   Can get scratched or dented if dropped.\n    *   The plastic straw is rigid compared to some competitors' silicone straws.\n*   **Mixed Reviews:**\n    *   **Price:** Some users find it expensive, while others believe the durability and features justify the cost.\n    *   **Handle Design:** The large handle is comfortable for carrying but can feel overbearing when drinking.\n    *   **Car Fit:** While the base fits cup holders, the height can obstruct dashboard controls in some vehicles.\n\n**User Profiles**\n\n*   **Who it's for:**\n    *   Individuals seeking to increase their daily water intake due to the large capacity.\n    *   Commuters and travelers who need drinks to stay hot or cold for hours and want a cup holder-compatible option.\n    *   Those who value durable, sustainably-made drinkware with a lifetime warranty.\n*   **Who it's not for:**\n    *   Users who require a completely leakproof container for activities like hiking or easily tipping.\n    *   Individuals who prefer lightweight or more compact water bottles.\n    *   Those on a strict budget, as it is priced higher than some alternatives.\n\n**Usage & Context**\n\n*   **Usage or care tips:**\n    *   The lid disassembles for deep cleaning.\n    *   While dishwasher safe, some users prefer handwashing to maintain peak condition.\n*   **Specific use-case considerations:**\n    *   Made with 90% recycled stainless steel for environmental mindfulness.\n    *   Comes with a Lifetime Limited Warranty.\n\n**Competitive Analysis**\n\n*   The Stanley Quencher is often compared to tumblers from brands like Hydro Flask and Yeti.\n*   Compared to some competitors like Owala or Simple Modern, the Stanley Quencher's standard lid is not as leakproof.\n*   The Stanley 40 oz tumbler is generally priced similarly to or slightly higher than comparable large-capacity tumblers from Hydro Flask and Yeti.",
+    "latency_ms": 15964.056708995486,
+    "ttft_ms": 10221.129209006904,
+    "node_latencies": {
+      "direct_search": 15.957430665992433
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "partially",
+        "excerpt": "Keeps drinks cold for extended periods, with ice lasting up to 2 days.",
+        "reason": "The summary provides cold/ice retention duration, but does not mention hot retention times or specific test conditions."
+      },
+      {
+        "question_number": 2,
+        "evaluation": "partially",
+        "excerpt": "Not entirely leakproof, especially from the straw opening, requiring it to be kept upright.",
+        "reason": "Leak resistance of the straw is discussed; however, leak resistance in fully closed mode is not described."
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Fits in most car and truck cup holders due to its narrow base... Features a comfortable, ergonomic handle with grip inserts.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "yes",
+        "excerpt": "Dishwasher safe for easy cleaning... The lid disassembles for deep cleaning.",
+        "reason": null
+      },
+      {
+        "question_number": 5,
+        "evaluation": "yes",
+        "excerpt": "Can get scratched or dented if dropped.",
+        "reason": null
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "Can be heavy and cumbersome when full due to its large size.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 2,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 7,
+      "no": 0,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 379
+  },
+  {
+    "graph_key": "direct_google",
+    "product": {
+      "url": "https://www.amazon.com/SENSARTE-Nonstick-Frying-Pan-Skillet/dp/B086PHS2V8/",
+      "name": "SENSARTE ILAG Granite Nonstick Frying Pan",
+      "questions": [
+        "1. Initial nonstick performance & PFOA-free safety covered?",
+        "2. Expected nonstick lifespan and care-instruction tips given?",
+        "3. Even heating and induction compatibility described?",
+        "4. Cool-touch handle & oven-safe temperature limit noted?",
+        "5. Scratch resistance with everyday utensils mentioned?",
+        "6. Warranty length or overall value versus competing pans discussed?"
+      ]
+    },
+    "summary": "Here's an analysis of SENSARTE ILAG Granite Nonstick Frying Pan based on the information available:\n\n**Pros & Cons**\n\n**Pros**\n- **Excellent Nonstick:** Food slides off easily, requiring less oil for cooking.\n- **Easy to Clean:** The nonstick surface and lack of rivets make cleanup quick, often just needing a wipe or rinse.\n- **Even Heating:** The thick, flat stainless steel base distributes heat quickly and evenly.\n- **Suitable for All Stovetops:** Works on gas, electric, halogen, and induction cooktops.\n- **PFOA Free:** The pan is certified free of PFOA and other toxic substances for healthier cooking.\n\n**Cons**\n- **Limited Oven Safety:** The woodgrain bakelite handle typically limits oven use to around 300-302°F.\n- **Durability Concerns:** Some reviews suggest the nonstick coating may not hold up to improper use, like metal utensils or high heat.\n- **Handle Attachment:** The handle requires attachment, though a screwdriver is often included.\n\n**Mixed Reviews**\n- **Oven Safe Temperature:** While some sources state oven safety up to 302°F due to the handle, other Sensarte pans with removable handles can withstand much higher temperatures (up to 480°F or 550°F) if the handle is removed.\n- **Dishwasher Safe:** Some product listings indicate dishwasher compatibility, while others recommend hand washing for longevity.\n- **Weight:** Opinions on the pan's weight are mixed; some find it lightweight and easy to maneuver, while others find larger sizes slightly heavy.\n\n**User Profiles**\n\n**Who it's for**\n- **Budget-Conscious Cooks:** Offers good nonstick performance and features at an affordable price point.\n- **Health-Focused Individuals:** Those seeking PFOA-free and non-toxic cookware.\n- **Everyday Home Cooks:** Suitable for a wide variety of daily cooking tasks like eggs, pancakes, and stir-frying.\n\n**Who it's not for**\n- **High-Heat Searing Enthusiasts:** Limited oven temperature restricts finishing dishes at very high heats.\n- **Users of Metal Utensils:** The nonstick coating can be damaged by metal tools.\n- **Those Prioritizing Maximum Durability:** While generally sturdy, improper use can lead to a reduced lifespan of the nonstick coating.\n\n**Usage & Context**\n\n**Usage or care tips**\n- Hand washing is recommended to prolong the life of the nonstick coating.\n- Use low to medium heat and avoid preheating an empty pan.\n- Use only nonstick-friendly utensils made of wood, silicone, or heat-resistant plastic.\n\n**Specific use-case considerations**\n- Ensure there is always some oil, butter, liquid, or food in the pan before heating.\n- Allow the pan to cool before washing to prevent warping or damage to the coating.\n- For models with detachable handles, remove the handle before placing the pan in the oven to utilize higher oven-safe temperatures.\n\n**Competitive Analysis**\n\n**Insights vs. similar products**\n- Compared to some higher-end brands like Cuisinart or OXO, the Sensarte may have a lower oven temperature limit due to its handle design.\n- While offering good initial nonstick properties similar to brands like Carote, some user experiences suggest the long-term durability of the coating might be less robust if care instructions aren't strictly followed.\n- It provides a more budget-friendly entry point into nonstick granite or ceramic-coated pans compared to brands like Calphalon or Made-in.\n\nThe SENSARTE ILAG Granite Nonstick Frying Pan typically comes with a 1-year warranty covering defects in material and workmanship under normal household use, including the nonstick coating and handle. The warranty may not cover damage from incorrect use or normal wear of the nonstick coating. It is SGS approved, indicating it meets certain safety standards. The pan is constructed with a cast aluminum body and a stainless steel base, making it sturdy and induction compatible. Some versions offer detachable handles for increased oven versatility and easier storage.Here's an analysis of SENSARTE ILAG Granite Nonstick Frying Pan based on the information available:\n\n**Pros & Cons**\n\n**Pros**\n- **Excellent Nonstick:** Food releases easily, allowing cooking with less oil.\n- **Effortless Cleanup:** The nonstick surface and smooth interior make cleaning very quick.\n- **Even Heat Distribution:** The thick base promotes consistent heating across the pan surface.\n- **Universal Stovetop Compatibility:** Works on all cooktops, including induction.\n- **Healthy & Non-Toxic:** Certified free of PFOA, PFOS, and other harmful chemicals.\n\n**Cons**\n- **Low Oven Temperature:** The standard bakelite handle limits oven use to around 300°F.\n- **Coating Durability:** Can be susceptible to damage from metal utensils or excessive high heat.\n- **Handle Requires Attachment:** The handle needs to be screwed on upon arrival.\n\n**Mixed Reviews**\n- **Variable Oven Safety:** Some models with removable handles offer significantly higher oven temperature limits.\n- **Dishwasher Suitability:** While listed as dishwasher safe, hand washing is often recommended for longevity.\n- **Pan Weight:** Some users find it lightweight, while others perceive larger sizes as somewhat heavy.\n\n**User Profiles**\n\n**Who it's for**\n- **Budget-Conscious Cooks:** Provides good nonstick performance at an accessible price point.\n- **Health-Aware Consumers:** Ideal for those seeking cookware free from common toxic chemicals.\n- **Everyday Home Enthusiasts:** Suitable for preparing a wide range of common dishes easily.\n\n**Who it's not for**\n- **Chefs Needing High Oven Temps:** Not suitable for recipes requiring high-temperature oven finishing with the handle attached.- **Users of Metal Tools:** The nonstick surface is prone to damage from metal utensils.\n- **Those Demanding Extreme Longevity:** While durable with proper care, misuse can shorten the coating's lifespan.\n\n**Usage & Context**\n\n**Usage or care tips**\n- Clean gently with a soft sponge and avoid abrasive materials.\n- Always use low to medium heat for cooking.\n- Utilize only wood, silicone, or heat-resistant plastic utensils.\n\n**Specific use-case considerations**\n- Ensure there is food or liquid in the pan before heating on the stove.\n- Allow the pan to cool completely before washing to prevent potential warping.\n- For models with a removable handle, detach it for higher oven temperature cooking.\n\n**Competitive Analysis**\n\n**Insights vs. similar products**\n- Offers a more budget-friendly option compared to established brands known for durability like Calphalon or Made-in.\n- While providing excellent initial nonstick performance, its long-term resilience may lag behind premium brands if care instructions are not strictly followed.\n- The standard oven temperature limit is lower than some competitors with fully oven-safe designs or different handle materials.\n\nThe SENSARTE ILAG Granite Nonstick Frying Pan is typically backed by a 1-year warranty covering manufacturing defects under normal use. This warranty generally includes the nonstick coating and handle, but may not cover damage due to misuse or normal wear. It holds SGS certification, confirming it meets health and safety standards. The pan features a cast aluminum body with a stainless steel induction-compatible base, contributing to its sturdiness and versatility. Some variations include a detachable handle, enhancing oven usability and simplifying storage.",
+    "latency_ms": 22185.284665989457,
+    "ttft_ms": 9754.717042000266,
+    "node_latencies": {
+      "direct_search": 22.17776879199664
+    },
+    "error": null,
+    "question_details": [
+      {
+        "question_number": 1,
+        "evaluation": "yes",
+        "excerpt": "Excellent Nonstick: Food slides off easily, requiring less oil for cooking... PFOA Free: The pan is certified free of PFOA and other toxic substances for healthier cooking.",
+        "reason": null
+      },
+      {
+        "question_number": 2,
+        "evaluation": "yes",
+        "excerpt": "Durability Concerns: Some reviews suggest the nonstick coating may not hold up to improper use, like metal utensils or high heat... Hand washing is recommended to prolong the life of the nonstick coating. Use low to medium heat and avoid preheating an empty pan. Use only nonstick-friendly utensils made of wood, silicone, or heat-resistant plastic.",
+        "reason": null
+      },
+      {
+        "question_number": 3,
+        "evaluation": "yes",
+        "excerpt": "Even Heating: The thick, flat stainless steel base distributes heat quickly and evenly... Suitable for All Stovetops: Works on gas, electric, halogen, and induction cooktops.",
+        "reason": null
+      },
+      {
+        "question_number": 4,
+        "evaluation": "partially",
+        "excerpt": "Limited Oven Safety: The woodgrain bakelite handle typically limits oven use to around 300-302°F.",
+        "reason": "The summary gives the oven-safe temperature limit due to the handle, but does not specifically mention 'cool-touch' properties of the handle."
+      },
+      {
+        "question_number": 5,
+        "evaluation": "partially",
+        "excerpt": "Durability Concerns: Some reviews suggest the nonstick coating may not hold up to improper use, like metal utensils or high heat... Use only nonstick-friendly utensils made of wood, silicone, or heat-resistant plastic.",
+        "reason": "The summary advises against metal utensils and notes the coating may be damaged by improper use, but does not specifically state scratch resistance with general everyday (non-metal) utensils."
+      },
+      {
+        "question_number": 6,
+        "evaluation": "yes",
+        "excerpt": "The SENSARTE ILAG Granite Nonstick Frying Pan typically comes with a 1-year warranty covering defects in material and workmanship under normal household use, including the nonstick coating and handle... Compared to some higher-end brands like Cuisinart or OXO... It provides a more budget-friendly entry point into nonstick granite or ceramic-coated pans compared to brands like Calphalon or Made-in.",
+        "reason": null
+      }
+    ],
+    "questions_answered": {
+      "yes": 4,
+      "partially": 2,
+      "no": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "general_rubric_results": [
+      {
+        "rubric": "2. Start the analysis with a one sentence intro, for example: \"Here's an analysis of [product title] based on the information available:\"",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "5. Each point (Pro, Con, or Mixed Reviews) must appear in only one section. Do not allow duplicates or overlapping content between sections. Do not penalize summaries for omitting \"Mixed Reviews\" if no such points exist.",
+        "evaluation": "no",
+        "reason": "There are duplicate and overlapping points between the 'Pros', 'Cons', and 'Mixed Reviews' sections. For instance, the oven temperature limit and handle design appear both under 'Cons' (e.g., 'Limited Oven Safety' and 'Low Oven Temperature', 'Handle Attachment') and under 'Mixed Reviews' (e.g., 'Oven Safe Temperature', 'Variable Oven Safety', 'Handle Requires Attachment'). Similarly, the dishwasher suitability and weight are mentioned in both 'Mixed Reviews' and 'Cons'. This violates the rubric's instruction that each point must appear in only one section, with no overlaps or duplicates."
+      },
+      {
+        "rubric": "6. For both top-level subsections and inline points within them, item is materially meaningful to user decisions—not a trivial attribute such as color or size unless that trait is a known deal-breaker.",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "7. Specifies user profiles (eg: Who it's for / not), which reflect at least one or more of the following attributes: use case, age, lifestyle, budget, dietary or medical considerations etc",
+        "evaluation": "yes",
+        "reason": null
+      },
+      {
+        "rubric": "8. The content effectively highlights the product's key differentiators and unique selling propositions in comparison to similar products or product types. This may include either: Direct comparisons to specific named products or brands, or Category/type-level comparisons (e.g., comparing ingredient sources, formats, or formulations), as long as the distinctions are clear and decision-relevant.",
+        "evaluation": "yes",
+        "reason": null
+      }
+    ],
+    "rubrics_summary": {
+      "yes": 6,
+      "no": 1,
+      "total": 7
+    },
+    "accuracy_metric_details": [],
+    "accuracy_summary": {
+      "yes": 0,
+      "no": 0,
+      "total": 0
+    },
+    "summary_word_count": 1088
+  }
+]

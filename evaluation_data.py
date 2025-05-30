@@ -3,7 +3,6 @@
 from typing import Any, Dict, List
 
 GENERAL_EVALUATION_RUBRICS_V2: List[str] = [
-    "1. All substantive content (e.g., descriptive points, user traits, comparisons) under any top-level or subheading must be written as bullet points.",
     '2. Start the analysis with a one sentence intro, for example: "Here\'s an analysis of [product title] based on the information available:"',
     "3. For both top-level subsections and inline points within them, prioritize content that is high-impact for decision-making, is frequently highlighted in expert or user reviews, or serves as a key product differentiator or deal-breaker.",
     '4. All points must be grouped under clearly labeled sections: Pros, Cons, and—if applicable—Mixed Reviews. Do not penalize summaries for omitting "Mixed Reviews" if no such points exist.',
